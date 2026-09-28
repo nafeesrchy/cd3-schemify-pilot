@@ -10,18 +10,54 @@
       "title": "Clothes size now",
       "description": "Derived, average clothes size.",
       "oneOf": [
-        { "const": 1, "title": "10 or less" },
-        { "const": 2, "title": "10/12" },
-        { "const": 3, "title": "12" },
-        { "const": 4, "title": "12/14" },
-        { "const": 5, "title": "14" },
-        { "const": 6, "title": "14/16" },
-        { "const": 7, "title": "16" },
-        { "const": 8, "title": "16/18" },
-        { "const": 9, "title": "18" },
-        { "const": 10, "title": "18/20+" },
-        { "const": 11, "title": "20+" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "10 or less"
+        },
+        {
+          "const": 2,
+          "title": "10/12"
+        },
+        {
+          "const": 3,
+          "title": "12"
+        },
+        {
+          "const": 4,
+          "title": "12/14"
+        },
+        {
+          "const": 5,
+          "title": "14"
+        },
+        {
+          "const": 6,
+          "title": "14/16"
+        },
+        {
+          "const": 7,
+          "title": "16"
+        },
+        {
+          "const": 8,
+          "title": "16/18"
+        },
+        {
+          "const": 9,
+          "title": "18"
+        },
+        {
+          "const": 10,
+          "title": "18/20+"
+        },
+        {
+          "const": 11,
+          "title": "20+"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "No recruitment analogue -- clothes size was not asked at recruitment. Available on every questionnaire version."
     },
@@ -29,18 +65,54 @@
       "title": "Bra size now",
       "description": "Derived, average bra size.",
       "oneOf": [
-        { "const": 1, "title": "32" },
-        { "const": 2, "title": "32/34" },
-        { "const": 3, "title": "34" },
-        { "const": 4, "title": "34/36" },
-        { "const": 5, "title": "36" },
-        { "const": 6, "title": "36/38" },
-        { "const": 7, "title": "38" },
-        { "const": 8, "title": "38/40" },
-        { "const": 9, "title": "40" },
-        { "const": 10, "title": "40/42+" },
-        { "const": 11, "title": "42+" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "32"
+        },
+        {
+          "const": 2,
+          "title": "32/34"
+        },
+        {
+          "const": 3,
+          "title": "34"
+        },
+        {
+          "const": 4,
+          "title": "34/36"
+        },
+        {
+          "const": 5,
+          "title": "36"
+        },
+        {
+          "const": 6,
+          "title": "36/38"
+        },
+        {
+          "const": 7,
+          "title": "38"
+        },
+        {
+          "const": 8,
+          "title": "38/40"
+        },
+        {
+          "const": 9,
+          "title": "40"
+        },
+        {
+          "const": 10,
+          "title": "40/42+"
+        },
+        {
+          "const": 11,
+          "title": "42+"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "No recruitment analogue. Available on every questionnaire version."
     },
@@ -48,16 +120,46 @@
       "title": "Bra cup size now",
       "description": "Derived, average cup size.",
       "oneOf": [
-        { "const": 1, "title": "AA/A" },
-        { "const": 2, "title": "A/B" },
-        { "const": 3, "title": "B" },
-        { "const": 4, "title": "B/C" },
-        { "const": 5, "title": "C" },
-        { "const": 6, "title": "C/D" },
-        { "const": 7, "title": "D" },
-        { "const": 8, "title": "D/DD+" },
-        { "const": 9, "title": "DD+" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "AA/A"
+        },
+        {
+          "const": 2,
+          "title": "A/B"
+        },
+        {
+          "const": 3,
+          "title": "B"
+        },
+        {
+          "const": 4,
+          "title": "B/C"
+        },
+        {
+          "const": 5,
+          "title": "C"
+        },
+        {
+          "const": 6,
+          "title": "C/D"
+        },
+        {
+          "const": 7,
+          "title": "D"
+        },
+        {
+          "const": 8,
+          "title": "D/DD+"
+        },
+        {
+          "const": 9,
+          "title": "DD+"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "No recruitment analogue. Available on every questionnaire version."
     },
@@ -66,8 +168,15 @@
       "x-unit": "cm",
       "description": "Calculated from inches.",
       "anyOf": [
-        { "type": "number", "minimum": 60, "maximum": 110 },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "type": "number",
+          "minimum": 60,
+          "maximum": 110
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Valid range 60-110 is source-stated. Type number (not integer) since an inches-to-cm conversion can be fractional, same reasoning as recruitment's RHEIGHT/RWGT (D017)."
     },
@@ -76,8 +185,15 @@
       "x-unit": "cm",
       "description": "Calculated from inches.",
       "anyOf": [
-        { "type": "number", "minimum": 80, "maximum": 130 },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "type": "number",
+          "minimum": 80,
+          "maximum": 130
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Valid range 80-130 is source-stated. Type number, same reasoning as F1WST."
     },
@@ -86,8 +202,15 @@
       "x-unit": "kg",
       "description": "Calculated from stones/pounds.",
       "anyOf": [
-        { "type": "number", "minimum": 35, "maximum": 195 },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "type": "number",
+          "minimum": 35,
+          "maximum": 195
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Valid range 35-195 is source-stated (recruitment's RWGT had a narrower stated range of 35-150 -- transcribed as given, not reconciled). Type number, same reasoning as F1WST."
     },
@@ -95,11 +218,24 @@
       "title": "Body mass index",
       "x-unit": "kg/m2",
       "anyOf": [
-        { "type": "number", "minimum": 10, "maximum": 80 },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "type": "number"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source states no valid range; 10-80 reuses recruitment's RBMI bound (D018) for consistency rather than re-deriving a fresh one."
+      "$comment": "Source states no valid range; Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
     }
   },
-  "required": ["F1SIZE", "F1BRA", "F1CUP", "F1WST", "F1HIPS", "F1WGT", "F1BMI"]
+  "required": [
+    "F1SIZE",
+    "F1BRA",
+    "F1CUP",
+    "F1WST",
+    "F1HIPS",
+    "F1WGT",
+    "F1BMI"
+  ]
 }
