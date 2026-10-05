@@ -429,15 +429,15 @@ ID,country_region,country_region,converted,dictionary v14 sheet participant_geog
 PID,country_region,country_region,converted,dictionary v14 sheet participant_geographies row 3,
 COUNTRY_AT_REG,country_region,country_region,converted,dictionary v14 sheet participant_geographies row 4,
 REGION_AT_REG,country_region,country_region,converted,dictionary v14 sheet participant_geographies row 5,
-PID,lsoa,lsoa,converted,dictionary v14 sheet participant_geographies row 6,
-ID,lsoa,lsoa,converted,dictionary v14 sheet participant_geographies row 7,
-LSOA_AT_REG,lsoa,lsoa,converted,dictionary v14 sheet participant_geographies row 8,
-PID,msoa,msoa,converted,dictionary v14 sheet participant_geographies row 9,
-ID,msoa,msoa,converted,dictionary v14 sheet participant_geographies row 10,
-MSOA_AT_REG,msoa,msoa,converted,dictionary v14 sheet participant_geographies row 11,
-PID,intermediate_zones,intermediate_zones,converted,dictionary v14 sheet participant_geographies row 12,
-ID,intermediate_zones,intermediate_zones,converted,dictionary v14 sheet participant_geographies row 13,
-IZ_AT_REG,intermediate_zones,intermediate_zones,converted,dictionary v14 sheet participant_geographies row 14,
+PID,lsoa,lsoa,dropped,dictionary v14 sheet participant_geographies row 6,outside CD3's request to OFH (D132)
+ID,lsoa,lsoa,dropped,dictionary v14 sheet participant_geographies row 7,outside CD3's request to OFH (D132)
+LSOA_AT_REG,lsoa,lsoa,dropped,dictionary v14 sheet participant_geographies row 8,outside CD3's request to OFH (D132)
+PID,msoa,msoa,dropped,dictionary v14 sheet participant_geographies row 9,outside CD3's request to OFH (D132)
+ID,msoa,msoa,dropped,dictionary v14 sheet participant_geographies row 10,outside CD3's request to OFH (D132)
+MSOA_AT_REG,msoa,msoa,dropped,dictionary v14 sheet participant_geographies row 11,outside CD3's request to OFH (D132)
+PID,intermediate_zones,intermediate_zones,dropped,dictionary v14 sheet participant_geographies row 12,outside CD3's request to OFH (D132)
+ID,intermediate_zones,intermediate_zones,dropped,dictionary v14 sheet participant_geographies row 13,outside CD3's request to OFH (D132)
+IZ_AT_REG,intermediate_zones,intermediate_zones,dropped,dictionary v14 sheet participant_geographies row 14,outside CD3's request to OFH (D132)
 EVENT_DATE,nhse_eng_canpat,nhse_eng_canpat,converted,dictionary v14 sheet linked_nhse_health_records row 2,
 EVENT_END,nhse_eng_canpat,nhse_eng_canpat,converted,dictionary v14 sheet linked_nhse_health_records row 3,
 EVENT_PROPERTY_1,nhse_eng_canpat,nhse_eng_canpat,converted,dictionary v14 sheet linked_nhse_health_records row 4,
@@ -530,264 +530,264 @@ RT_FLAG,nhse_eng_canreg_treat,nhse_eng_canreg_treat,converted,dictionary v14 she
 SG_FLAG,nhse_eng_canreg_treat,nhse_eng_canreg_treat,converted,dictionary v14 sheet linked_nhse_health_records row 91,
 SIX_MONTHS_AFTER_FLAG,nhse_eng_canreg_treat,nhse_eng_canreg_treat,converted,dictionary v14 sheet linked_nhse_health_records row 92,
 WITHIN_SIX_MONTHS_FLAG,nhse_eng_canreg_treat,nhse_eng_canreg_treat,converted,dictionary v14 sheet linked_nhse_health_records row 93,
-ACUITY,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 94,
-ARRIVAL_DATE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 95,
-ARRIVAL_MODE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 96,
-ARRIVAL_TIME,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 97,
-ASSESSMENT_DATE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 98,
-ASSESSMENT_TIME,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 99,
-ATTENDANCE_CATEGORY,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 100,
-ATTENDANCE_SOURCE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 101,
-CHIEF_COMPLAINT,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 102,
-CODE_CLEANING_APPLIED,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 103,
-COMORBIDITIES_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 104,
-COMORBIDITIES_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 105,
-COMORBIDITIES_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 106,
-COMORBIDITIES_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 107,
-COMORBIDITIES_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 108,
-COMORBIDITIES_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 109,
-COMORBIDITIES_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 110,
-COMORBIDITIES_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 111,
-COMORBIDITIES_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 112,
-COMORBIDITIES_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 113,
-CONCLUSION_DATE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 114,
-CONCLUSION_TIME,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 115,
-CONVEYING_AMBULANCE_TRUST_OFH,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 116,
-DECIDED_TO_ADMIT_DATE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 117,
-DECIDED_TO_ADMIT_TIME,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 118,
-DEPARTMENT_TYPE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 119,
-DEPARTURE_DATE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 120,
-DEPARTURE_TIME,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 121,
-DIAGNOSIS_CODE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 122,
-DIAGNOSIS_CODE_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 123,
-DIAGNOSIS_CODE_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 124,
-DIAGNOSIS_CODE_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 125,
-DIAGNOSIS_CODE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 126,
-DIAGNOSIS_CODE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 127,
-DIAGNOSIS_CODE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 128,
-DIAGNOSIS_CODE_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 129,
-DIAGNOSIS_CODE_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 130,
-DIAGNOSIS_CODE_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 131,
-DIAGNOSIS_CODE_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 132,
-DIAGNOSIS_CODE_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 133,
-DIAGNOSIS_QUALIFIER_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 134,
-DIAGNOSIS_QUALIFIER_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 135,
-DIAGNOSIS_QUALIFIER_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 136,
-DIAGNOSIS_QUALIFIER_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 137,
-DIAGNOSIS_QUALIFIER_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 138,
-DIAGNOSIS_QUALIFIER_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 139,
-DIAGNOSIS_QUALIFIER_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 140,
-DIAGNOSIS_QUALIFIER_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 141,
-DIAGNOSIS_QUALIFIER_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 142,
-DIAGNOSIS_QUALIFIER_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 143,
-DIAGNOSIS_QUALIFIER_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 144,
-DIAGNOSIS_QUALIFIER_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 145,
-DISCHARGE_DESTINATION,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 146,
-DISCHARGE_FOLLOW_UP,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 147,
-DISCHARGE_STATUS,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 148,
-EPIKEY,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 149,
-INJURY_ACTIVITY_STATUS,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 150,
-INJURY_ACTIVITY_TYPE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 151,
-INJURY_DATE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 152,
-INJURY_TIME,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 153,
-INVESTIGATION_CODE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 154,
-INVESTIGATION_CODE_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 155,
-INVESTIGATION_CODE_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 156,
-INVESTIGATION_CODE_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 157,
-INVESTIGATION_CODE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 158,
-INVESTIGATION_CODE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 159,
-INVESTIGATION_CODE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 160,
-INVESTIGATION_CODE_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 161,
-INVESTIGATION_CODE_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 162,
-INVESTIGATION_CODE_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 163,
-INVESTIGATION_CODE_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 164,
-INVESTIGATION_CODE_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 165,
-INVESTIGATION_DATE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 166,
-INVESTIGATION_DATE_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 167,
-INVESTIGATION_DATE_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 168,
-INVESTIGATION_DATE_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 169,
-INVESTIGATION_DATE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 170,
-INVESTIGATION_DATE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 171,
-INVESTIGATION_DATE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 172,
-INVESTIGATION_DATE_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 173,
-INVESTIGATION_DATE_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 174,
-INVESTIGATION_DATE_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 175,
-INVESTIGATION_DATE_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 176,
-INVESTIGATION_DATE_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 177,
-INVESTIGATION_TIME_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 178,
-INVESTIGATION_TIME_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 179,
-INVESTIGATION_TIME_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 180,
-INVESTIGATION_TIME_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 181,
-INVESTIGATION_TIME_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 182,
-INVESTIGATION_TIME_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 183,
-INVESTIGATION_TIME_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 184,
-INVESTIGATION_TIME_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 185,
-INVESTIGATION_TIME_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 186,
-INVESTIGATION_TIME_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 187,
-INVESTIGATION_TIME_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 188,
-INVESTIGATION_TIME_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 189,
-PERIOD_LENGTH,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 190,
-PID,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 191,
-RECORD_IDENTIFIER,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 192,
-REFERRAL_ASSESSMENT_DATE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 193,
-REFERRAL_ASSESSMENT_DATE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 194,
-REFERRAL_ASSESSMENT_DATE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 195,
-REFERRAL_ASSESSMENT_DATE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 196,
-REFERRAL_ASSESSMENT_TIME_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 197,
-REFERRAL_ASSESSMENT_TIME_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 198,
-REFERRAL_ASSESSMENT_TIME_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 199,
-REFERRAL_ASSESSMENT_TIME_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 200,
-REFERRED_TO_SERVICE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 201,
-REFERRED_TO_SERVICE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 202,
-REFERRED_TO_SERVICE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 203,
-REFERRED_TO_SERVICE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 204,
-ROW_ID,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 205,
-SEEN_DATE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 206,
-SEEN_TIME,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 207,
-SEQUENCE_NUMBER_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 208,
-SEQUENCE_NUMBER_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 209,
-SEQUENCE_NUMBER_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 210,
-SEQUENCE_NUMBER_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 211,
-SEQUENCE_NUMBER_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 212,
-SEQUENCE_NUMBER_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 213,
-SEQUENCE_NUMBER_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 214,
-SEQUENCE_NUMBER_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 215,
-SEQUENCE_NUMBER_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 216,
-SEQUENCE_NUMBER_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 217,
-SEQUENCE_NUMBER_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 218,
-SEQUENCE_NUMBER_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 219,
-SERVICE_REQUEST_DATE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 220,
-SERVICE_REQUEST_DATE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 221,
-SERVICE_REQUEST_DATE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 222,
-SERVICE_REQUEST_DATE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 223,
-TREATMENT_CODE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 224,
-TREATMENT_CODE_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 225,
-TREATMENT_CODE_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 226,
-TREATMENT_CODE_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 227,
-TREATMENT_CODE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 228,
-TREATMENT_CODE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 229,
-TREATMENT_CODE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 230,
-TREATMENT_CODE_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 231,
-TREATMENT_CODE_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 232,
-TREATMENT_CODE_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 233,
-TREATMENT_CODE_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 234,
-TREATMENT_CODE_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 235,
-TREATMENT_DATE_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 236,
-TREATMENT_DATE_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 237,
-TREATMENT_DATE_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 238,
-TREATMENT_DATE_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 239,
-TREATMENT_DATE_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 240,
-TREATMENT_DATE_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 241,
-TREATMENT_DATE_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 242,
-TREATMENT_DATE_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 243,
-TREATMENT_DATE_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 244,
-TREATMENT_DATE_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 245,
-TREATMENT_DATE_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 246,
-TREATMENT_DATE_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 247,
-TREATMENT_FUNCTION_CODE,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 248,
-TREATMENT_TIME_1,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 249,
-TREATMENT_TIME_10,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 250,
-TREATMENT_TIME_11,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 251,
-TREATMENT_TIME_12,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 252,
-TREATMENT_TIME_2,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 253,
-TREATMENT_TIME_3,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 254,
-TREATMENT_TIME_4,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 255,
-TREATMENT_TIME_5,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 256,
-TREATMENT_TIME_6,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 257,
-TREATMENT_TIME_7,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 258,
-TREATMENT_TIME_8,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 259,
-TREATMENT_TIME_9,nhse_eng_ecds,nhse_eng_ecds,converted,dictionary v14 sheet linked_nhse_health_records row 260,
-AEARRIVALMODE,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 261,
-AEATTENDCAT,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 262,
-AEATTENDDISP,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 263,
-AEDEPTTYPE,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 264,
-AEKEY,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 265,
-AEREFSOURCE,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 266,
-ARRIVALDATE,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 267,
-ARRIVALTIME,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 268,
-CONCLTIME,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 269,
-DEPTIME,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 270,
-DIAGA_01,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 271,
-DIAGA_02,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 272,
-DIAGA_03,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 273,
-DIAGA_04,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 274,
-DIAGA_05,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 275,
-DIAGA_06,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 276,
-DIAGA_07,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 277,
-DIAGA_08,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 278,
-DIAGA_09,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 279,
-DIAGA_10,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 280,
-DIAGA_11,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 281,
-DIAGA_12,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 282,
-DIAGSCHEME,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 283,
-DIAGS_01,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 284,
-DIAGS_02,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 285,
-DIAGS_03,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 286,
-DIAGS_04,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 287,
-DIAGS_05,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 288,
-DIAGS_06,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 289,
-DIAGS_07,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 290,
-DIAGS_08,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 291,
-DIAGS_09,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 292,
-DIAGS_10,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 293,
-DIAGS_11,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 294,
-DIAGS_12,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 295,
-DIAG_01,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 296,
-DIAG_02,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 297,
-DIAG_03,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 298,
-DIAG_04,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 299,
-DIAG_05,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 300,
-DIAG_06,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 301,
-DIAG_07,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 302,
-DIAG_08,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 303,
-DIAG_09,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 304,
-DIAG_10,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 305,
-DIAG_11,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 306,
-DIAG_12,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 307,
-EPIKEY,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 308,
-IMD04_DECILE,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 309,
-INVEST2_01,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 310,
-INVEST2_02,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 311,
-INVEST2_03,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 312,
-INVEST2_04,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 313,
-INVEST2_05,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 314,
-INVEST2_06,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 315,
-INVEST2_07,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 316,
-INVEST2_08,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 317,
-INVEST2_09,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 318,
-INVEST2_10,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 319,
-INVEST2_11,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 320,
-INVEST2_12,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 321,
-INVEST_01,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 322,
-INVEST_02,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 323,
-INVEST_03,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 324,
-INVEST_04,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 325,
-INVEST_05,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 326,
-INVEST_06,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 327,
-INVEST_07,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 328,
-INVEST_08,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 329,
-INVEST_09,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 330,
-INVEST_10,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 331,
-INVEST_11,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 332,
-INVEST_12,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 333,
-PID,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 334,
-PROCODE3_OFH,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 335,
-PROTYPE,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 336,
-ROW_ID,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 337,
-SUSSPELLID,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 338,
-TREAT_01,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 339,
-TREAT_02,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 340,
-TREAT_03,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 341,
-TREAT_04,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 342,
-TREAT_05,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 343,
-TREAT_06,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 344,
-TREAT_07,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 345,
-TREAT_08,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 346,
-TREAT_09,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 347,
-TREAT_10,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 348,
-TREAT_11,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 349,
-TREAT_12,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 350,
-TRETTIME,nhse_eng_ed,nhse_eng_ed,converted,dictionary v14 sheet linked_nhse_health_records row 351,
+ACUITY,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 94,outside CD3's request to OFH (D132)
+ARRIVAL_DATE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 95,outside CD3's request to OFH (D132)
+ARRIVAL_MODE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 96,outside CD3's request to OFH (D132)
+ARRIVAL_TIME,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 97,outside CD3's request to OFH (D132)
+ASSESSMENT_DATE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 98,outside CD3's request to OFH (D132)
+ASSESSMENT_TIME,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 99,outside CD3's request to OFH (D132)
+ATTENDANCE_CATEGORY,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 100,outside CD3's request to OFH (D132)
+ATTENDANCE_SOURCE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 101,outside CD3's request to OFH (D132)
+CHIEF_COMPLAINT,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 102,outside CD3's request to OFH (D132)
+CODE_CLEANING_APPLIED,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 103,outside CD3's request to OFH (D132)
+COMORBIDITIES_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 104,outside CD3's request to OFH (D132)
+COMORBIDITIES_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 105,outside CD3's request to OFH (D132)
+COMORBIDITIES_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 106,outside CD3's request to OFH (D132)
+COMORBIDITIES_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 107,outside CD3's request to OFH (D132)
+COMORBIDITIES_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 108,outside CD3's request to OFH (D132)
+COMORBIDITIES_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 109,outside CD3's request to OFH (D132)
+COMORBIDITIES_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 110,outside CD3's request to OFH (D132)
+COMORBIDITIES_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 111,outside CD3's request to OFH (D132)
+COMORBIDITIES_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 112,outside CD3's request to OFH (D132)
+COMORBIDITIES_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 113,outside CD3's request to OFH (D132)
+CONCLUSION_DATE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 114,outside CD3's request to OFH (D132)
+CONCLUSION_TIME,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 115,outside CD3's request to OFH (D132)
+CONVEYING_AMBULANCE_TRUST_OFH,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 116,outside CD3's request to OFH (D132)
+DECIDED_TO_ADMIT_DATE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 117,outside CD3's request to OFH (D132)
+DECIDED_TO_ADMIT_TIME,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 118,outside CD3's request to OFH (D132)
+DEPARTMENT_TYPE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 119,outside CD3's request to OFH (D132)
+DEPARTURE_DATE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 120,outside CD3's request to OFH (D132)
+DEPARTURE_TIME,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 121,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 122,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 123,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 124,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 125,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 126,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 127,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 128,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 129,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 130,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 131,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 132,outside CD3's request to OFH (D132)
+DIAGNOSIS_CODE_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 133,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 134,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 135,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 136,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 137,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 138,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 139,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 140,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 141,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 142,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 143,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 144,outside CD3's request to OFH (D132)
+DIAGNOSIS_QUALIFIER_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 145,outside CD3's request to OFH (D132)
+DISCHARGE_DESTINATION,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 146,outside CD3's request to OFH (D132)
+DISCHARGE_FOLLOW_UP,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 147,outside CD3's request to OFH (D132)
+DISCHARGE_STATUS,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 148,outside CD3's request to OFH (D132)
+EPIKEY,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 149,outside CD3's request to OFH (D132)
+INJURY_ACTIVITY_STATUS,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 150,outside CD3's request to OFH (D132)
+INJURY_ACTIVITY_TYPE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 151,outside CD3's request to OFH (D132)
+INJURY_DATE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 152,outside CD3's request to OFH (D132)
+INJURY_TIME,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 153,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 154,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 155,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 156,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 157,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 158,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 159,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 160,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 161,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 162,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 163,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 164,outside CD3's request to OFH (D132)
+INVESTIGATION_CODE_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 165,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 166,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 167,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 168,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 169,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 170,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 171,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 172,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 173,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 174,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 175,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 176,outside CD3's request to OFH (D132)
+INVESTIGATION_DATE_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 177,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 178,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 179,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 180,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 181,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 182,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 183,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 184,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 185,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 186,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 187,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 188,outside CD3's request to OFH (D132)
+INVESTIGATION_TIME_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 189,outside CD3's request to OFH (D132)
+PERIOD_LENGTH,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 190,outside CD3's request to OFH (D132)
+PID,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 191,outside CD3's request to OFH (D132)
+RECORD_IDENTIFIER,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 192,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_DATE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 193,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_DATE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 194,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_DATE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 195,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_DATE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 196,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_TIME_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 197,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_TIME_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 198,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_TIME_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 199,outside CD3's request to OFH (D132)
+REFERRAL_ASSESSMENT_TIME_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 200,outside CD3's request to OFH (D132)
+REFERRED_TO_SERVICE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 201,outside CD3's request to OFH (D132)
+REFERRED_TO_SERVICE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 202,outside CD3's request to OFH (D132)
+REFERRED_TO_SERVICE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 203,outside CD3's request to OFH (D132)
+REFERRED_TO_SERVICE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 204,outside CD3's request to OFH (D132)
+ROW_ID,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 205,outside CD3's request to OFH (D132)
+SEEN_DATE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 206,outside CD3's request to OFH (D132)
+SEEN_TIME,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 207,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 208,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 209,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 210,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 211,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 212,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 213,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 214,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 215,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 216,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 217,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 218,outside CD3's request to OFH (D132)
+SEQUENCE_NUMBER_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 219,outside CD3's request to OFH (D132)
+SERVICE_REQUEST_DATE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 220,outside CD3's request to OFH (D132)
+SERVICE_REQUEST_DATE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 221,outside CD3's request to OFH (D132)
+SERVICE_REQUEST_DATE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 222,outside CD3's request to OFH (D132)
+SERVICE_REQUEST_DATE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 223,outside CD3's request to OFH (D132)
+TREATMENT_CODE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 224,outside CD3's request to OFH (D132)
+TREATMENT_CODE_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 225,outside CD3's request to OFH (D132)
+TREATMENT_CODE_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 226,outside CD3's request to OFH (D132)
+TREATMENT_CODE_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 227,outside CD3's request to OFH (D132)
+TREATMENT_CODE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 228,outside CD3's request to OFH (D132)
+TREATMENT_CODE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 229,outside CD3's request to OFH (D132)
+TREATMENT_CODE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 230,outside CD3's request to OFH (D132)
+TREATMENT_CODE_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 231,outside CD3's request to OFH (D132)
+TREATMENT_CODE_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 232,outside CD3's request to OFH (D132)
+TREATMENT_CODE_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 233,outside CD3's request to OFH (D132)
+TREATMENT_CODE_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 234,outside CD3's request to OFH (D132)
+TREATMENT_CODE_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 235,outside CD3's request to OFH (D132)
+TREATMENT_DATE_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 236,outside CD3's request to OFH (D132)
+TREATMENT_DATE_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 237,outside CD3's request to OFH (D132)
+TREATMENT_DATE_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 238,outside CD3's request to OFH (D132)
+TREATMENT_DATE_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 239,outside CD3's request to OFH (D132)
+TREATMENT_DATE_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 240,outside CD3's request to OFH (D132)
+TREATMENT_DATE_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 241,outside CD3's request to OFH (D132)
+TREATMENT_DATE_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 242,outside CD3's request to OFH (D132)
+TREATMENT_DATE_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 243,outside CD3's request to OFH (D132)
+TREATMENT_DATE_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 244,outside CD3's request to OFH (D132)
+TREATMENT_DATE_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 245,outside CD3's request to OFH (D132)
+TREATMENT_DATE_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 246,outside CD3's request to OFH (D132)
+TREATMENT_DATE_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 247,outside CD3's request to OFH (D132)
+TREATMENT_FUNCTION_CODE,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 248,outside CD3's request to OFH (D132)
+TREATMENT_TIME_1,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 249,outside CD3's request to OFH (D132)
+TREATMENT_TIME_10,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 250,outside CD3's request to OFH (D132)
+TREATMENT_TIME_11,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 251,outside CD3's request to OFH (D132)
+TREATMENT_TIME_12,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 252,outside CD3's request to OFH (D132)
+TREATMENT_TIME_2,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 253,outside CD3's request to OFH (D132)
+TREATMENT_TIME_3,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 254,outside CD3's request to OFH (D132)
+TREATMENT_TIME_4,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 255,outside CD3's request to OFH (D132)
+TREATMENT_TIME_5,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 256,outside CD3's request to OFH (D132)
+TREATMENT_TIME_6,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 257,outside CD3's request to OFH (D132)
+TREATMENT_TIME_7,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 258,outside CD3's request to OFH (D132)
+TREATMENT_TIME_8,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 259,outside CD3's request to OFH (D132)
+TREATMENT_TIME_9,nhse_eng_ecds,nhse_eng_ecds,dropped,dictionary v14 sheet linked_nhse_health_records row 260,outside CD3's request to OFH (D132)
+AEARRIVALMODE,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 261,outside CD3's request to OFH (D132)
+AEATTENDCAT,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 262,outside CD3's request to OFH (D132)
+AEATTENDDISP,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 263,outside CD3's request to OFH (D132)
+AEDEPTTYPE,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 264,outside CD3's request to OFH (D132)
+AEKEY,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 265,outside CD3's request to OFH (D132)
+AEREFSOURCE,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 266,outside CD3's request to OFH (D132)
+ARRIVALDATE,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 267,outside CD3's request to OFH (D132)
+ARRIVALTIME,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 268,outside CD3's request to OFH (D132)
+CONCLTIME,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 269,outside CD3's request to OFH (D132)
+DEPTIME,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 270,outside CD3's request to OFH (D132)
+DIAGA_01,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 271,outside CD3's request to OFH (D132)
+DIAGA_02,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 272,outside CD3's request to OFH (D132)
+DIAGA_03,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 273,outside CD3's request to OFH (D132)
+DIAGA_04,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 274,outside CD3's request to OFH (D132)
+DIAGA_05,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 275,outside CD3's request to OFH (D132)
+DIAGA_06,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 276,outside CD3's request to OFH (D132)
+DIAGA_07,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 277,outside CD3's request to OFH (D132)
+DIAGA_08,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 278,outside CD3's request to OFH (D132)
+DIAGA_09,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 279,outside CD3's request to OFH (D132)
+DIAGA_10,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 280,outside CD3's request to OFH (D132)
+DIAGA_11,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 281,outside CD3's request to OFH (D132)
+DIAGA_12,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 282,outside CD3's request to OFH (D132)
+DIAGSCHEME,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 283,outside CD3's request to OFH (D132)
+DIAGS_01,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 284,outside CD3's request to OFH (D132)
+DIAGS_02,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 285,outside CD3's request to OFH (D132)
+DIAGS_03,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 286,outside CD3's request to OFH (D132)
+DIAGS_04,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 287,outside CD3's request to OFH (D132)
+DIAGS_05,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 288,outside CD3's request to OFH (D132)
+DIAGS_06,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 289,outside CD3's request to OFH (D132)
+DIAGS_07,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 290,outside CD3's request to OFH (D132)
+DIAGS_08,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 291,outside CD3's request to OFH (D132)
+DIAGS_09,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 292,outside CD3's request to OFH (D132)
+DIAGS_10,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 293,outside CD3's request to OFH (D132)
+DIAGS_11,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 294,outside CD3's request to OFH (D132)
+DIAGS_12,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 295,outside CD3's request to OFH (D132)
+DIAG_01,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 296,outside CD3's request to OFH (D132)
+DIAG_02,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 297,outside CD3's request to OFH (D132)
+DIAG_03,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 298,outside CD3's request to OFH (D132)
+DIAG_04,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 299,outside CD3's request to OFH (D132)
+DIAG_05,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 300,outside CD3's request to OFH (D132)
+DIAG_06,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 301,outside CD3's request to OFH (D132)
+DIAG_07,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 302,outside CD3's request to OFH (D132)
+DIAG_08,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 303,outside CD3's request to OFH (D132)
+DIAG_09,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 304,outside CD3's request to OFH (D132)
+DIAG_10,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 305,outside CD3's request to OFH (D132)
+DIAG_11,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 306,outside CD3's request to OFH (D132)
+DIAG_12,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 307,outside CD3's request to OFH (D132)
+EPIKEY,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 308,outside CD3's request to OFH (D132)
+IMD04_DECILE,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 309,outside CD3's request to OFH (D132)
+INVEST2_01,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 310,outside CD3's request to OFH (D132)
+INVEST2_02,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 311,outside CD3's request to OFH (D132)
+INVEST2_03,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 312,outside CD3's request to OFH (D132)
+INVEST2_04,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 313,outside CD3's request to OFH (D132)
+INVEST2_05,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 314,outside CD3's request to OFH (D132)
+INVEST2_06,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 315,outside CD3's request to OFH (D132)
+INVEST2_07,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 316,outside CD3's request to OFH (D132)
+INVEST2_08,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 317,outside CD3's request to OFH (D132)
+INVEST2_09,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 318,outside CD3's request to OFH (D132)
+INVEST2_10,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 319,outside CD3's request to OFH (D132)
+INVEST2_11,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 320,outside CD3's request to OFH (D132)
+INVEST2_12,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 321,outside CD3's request to OFH (D132)
+INVEST_01,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 322,outside CD3's request to OFH (D132)
+INVEST_02,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 323,outside CD3's request to OFH (D132)
+INVEST_03,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 324,outside CD3's request to OFH (D132)
+INVEST_04,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 325,outside CD3's request to OFH (D132)
+INVEST_05,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 326,outside CD3's request to OFH (D132)
+INVEST_06,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 327,outside CD3's request to OFH (D132)
+INVEST_07,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 328,outside CD3's request to OFH (D132)
+INVEST_08,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 329,outside CD3's request to OFH (D132)
+INVEST_09,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 330,outside CD3's request to OFH (D132)
+INVEST_10,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 331,outside CD3's request to OFH (D132)
+INVEST_11,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 332,outside CD3's request to OFH (D132)
+INVEST_12,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 333,outside CD3's request to OFH (D132)
+PID,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 334,outside CD3's request to OFH (D132)
+PROCODE3_OFH,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 335,outside CD3's request to OFH (D132)
+PROTYPE,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 336,outside CD3's request to OFH (D132)
+ROW_ID,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 337,outside CD3's request to OFH (D132)
+SUSSPELLID,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 338,outside CD3's request to OFH (D132)
+TREAT_01,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 339,outside CD3's request to OFH (D132)
+TREAT_02,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 340,outside CD3's request to OFH (D132)
+TREAT_03,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 341,outside CD3's request to OFH (D132)
+TREAT_04,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 342,outside CD3's request to OFH (D132)
+TREAT_05,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 343,outside CD3's request to OFH (D132)
+TREAT_06,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 344,outside CD3's request to OFH (D132)
+TREAT_07,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 345,outside CD3's request to OFH (D132)
+TREAT_08,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 346,outside CD3's request to OFH (D132)
+TREAT_09,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 347,outside CD3's request to OFH (D132)
+TREAT_10,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 348,outside CD3's request to OFH (D132)
+TREAT_11,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 349,outside CD3's request to OFH (D132)
+TREAT_12,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 350,outside CD3's request to OFH (D132)
+TRETTIME,nhse_eng_ed,nhse_eng_ed,dropped,dictionary v14 sheet linked_nhse_health_records row 351,outside CD3's request to OFH (D132)
 ACSCFLAG,nhse_eng_inpat,nhse_eng_inpat,converted,dictionary v14 sheet linked_nhse_health_records row 352,
 ADMIDATE,nhse_eng_inpat,nhse_eng_inpat,converted,dictionary v14 sheet linked_nhse_health_records row 353,
 ADMIMETH,nhse_eng_inpat,nhse_eng_inpat,converted,dictionary v14 sheet linked_nhse_health_records row 354,

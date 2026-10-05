@@ -1,12 +1,12 @@
 # Our Future Health (OFH) — conversion progress
 
-package: CD3_Schemify_Pilot/OFH/json_schema · started: 2026-09-19 · 26 tables planned (all 26 scaffolded)
+package: CD3_Schemify_Pilot/OFH/json_schema · started: 2026-09-19 · 21 tables in scope (26 planned; 5 dropped as outside CD3's request, D132)
 grain: participant · questionnaire response · clinic appointment · linked-record event — per table, see D001
 dictionary: our_future_health_data_dictionary_v14.xlsx + our_future_health_codings_v14.xlsx + Baseline Questionnaire Logic v2.2.xlsx (1038 variables) — full inventory in SOURCES.md
 
 ## Tables
 
-The tables follow the dictionary's own entities. Participant geographies data holds four lookup tables and Linked health records data holds eleven NHS-linked tables.
+The tables follow the dictionary's own entities. Participant geographies data holds one table (country and region; the LSOA, MSOA and intermediate zone tables are outside CD3's request, D132) and Linked health records data holds nine NHS-linked tables (the two emergency care tables, ECDS and ED, are outside the request, D132).
 
 Order of work: participant → questionnaire (section by section) → clinic measurements → POCT lipid profile → participant geographies → linked health records → genetic data. Lifestyle (117 variables) and Medical history (128) are large; they may be converted in slices over several sittings and reach `drafted` only when every slice is in.
 
@@ -31,7 +31,8 @@ anything directly — a specific category, a change, a question, the final revie
 - structural not-applicable cell content: unknown until D008 is answered; no rule is encoded before that · D008
 - link keys: folded into each table's first category · D018
 - warnings: checks the source does not state but the steward accepted run as warnings, never rejections, from tools/warnings/<table>.warnings.json with tools/warn.py; the register marks them not-enforceable with a note · D122
-- page order: manifest.json `tables` lists the reading order (needs the local render.py patch, which a skill update would overwrite) · D091
+- scope: only the data CD3 has requested from OFH, per the Our Future Health cohort description; the dictionary's LSOA, MSOA, intermediate zone, ECDS and ED tables are dropped and their inventory rows marked `dropped` · D132
+- page order and grouping: manifest.json `tables` lists the reading order, and a mother title "Study — Group — Table" groups tables under one heading in the pages (both need local render.py patches, which a skill update would overwrite) · D091, D131
 - multi-select properties: array rule plus one `{const: [code], title}` branch per option so the dictionary page lists the options; regenerate from `items.oneOf` for every new multi-select, and remove if the library is fixed · D052
 - routed questions: `description` is "Shown if " + the logic file's `show_if` verbatim, added for every routed question in each new category · D053
 - titles are the dictionary's wording verbatim; no description unless the source states extra text; no coding text in `$comment` · D040, D041
@@ -50,15 +51,15 @@ anything directly — a specific category, a change, a question, the final revie
 | 8 | Clinic measurements data | Clinic measurements | `clinic_measurements/categories/clinic_measurements.json` | 34 | dictionary v14, entity `clinic_measurements` | confirmed | 2026-09-20 |
 | 9 | POCT lipid profile data | POCT lipid profile | `poct_lipid_profile/categories/poct_lipid_profile.json` | 19 | dictionary v14, entity `poct_lipid_profile` | confirmed | 2026-09-20 |
 | 10 | Participant geographies data — Country and region | Country and region | `country_region/categories/country_region.json` | 4 | dictionary v14, entity `country_region` | confirmed | 2026-09-20 |
-| 11 | Participant geographies data — LSOA | Lower layer super output areas (LSOA) | `lsoa/categories/lsoa.json` | 3 | dictionary v14, entity `lsoa` | confirmed | 2026-09-20 |
-| 12 | Participant geographies data — MSOA | Middle layer super output areas (MSOA) | `msoa/categories/msoa.json` | 3 | dictionary v14, entity `msoa` | confirmed | 2026-09-20 |
-| 13 | Participant geographies data — Intermediate zones | Intermediate zones (IZ) | `intermediate_zones/categories/intermediate_zones.json` | 3 | dictionary v14, entity `intermediate_zones` | confirmed | 2026-09-20 |
+| 11 | Participant geographies data — LSOA | Lower layer super output areas (LSOA) | `lsoa/categories/lsoa.json` | 3 | dictionary v14, entity `lsoa` | dropped (D132) | 2026-10-05 |
+| 12 | Participant geographies data — MSOA | Middle layer super output areas (MSOA) | `msoa/categories/msoa.json` | 3 | dictionary v14, entity `msoa` | dropped (D132) | 2026-10-05 |
+| 13 | Participant geographies data — Intermediate zones | Intermediate zones (IZ) | `intermediate_zones/categories/intermediate_zones.json` | 3 | dictionary v14, entity `intermediate_zones` | dropped (D132) | 2026-10-05 |
 | 14 | Linked health records data — Cancer pathways | Cancer pathways data | `nhse_eng_canpat/categories/nhse_eng_canpat.json` | 12 | dictionary v14, entity `nhse_eng_canpat` | confirmed | 2026-09-20 |
 | 15 | Linked health records data — Cancer treatment at tumour level | Cancer treatment data at tumour level | `nhse_eng_canreg_pattumour/categories/nhse_eng_canreg_pattumour.json` | 49 | dictionary v14, entity `nhse_eng_canreg_pattumour` | confirmed | 2026-09-20 |
 | 16 | Linked health records data — Cancer registry 1985–1994 | Cancer registry data (1 January 1985 to 31 December 1994) | `nhse_eng_canreg_pre1995/categories/nhse_eng_canreg_pre1995.json` | 9 | dictionary v14, entity `nhse_eng_canreg_pre1995` | confirmed | 2026-09-20 |
 | 17 | Linked health records data — Cancer treatment events | Cancer data by treatment event (from 1 January 1995) | `nhse_eng_canreg_treat/categories/nhse_eng_canreg_treat.json` | 22 | dictionary v14, entity `nhse_eng_canreg_treat` | confirmed | 2026-09-20 |
-| 18 | Linked health records data — Emergency care (ECDS) | Major A&E attendances (from 1 April 2020) | `nhse_eng_ecds/categories/nhse_eng_ecds.json` | 167 | dictionary v14, entity `nhse_eng_ecds` | confirmed | 2026-09-20 |
-| 19 | Linked health records data — Emergency department (ED) | Major A&E attendances (1 April 2007 to 31 March 2020) | `nhse_eng_ed/categories/nhse_eng_ed.json` | 91 | dictionary v14, entity `nhse_eng_ed` | confirmed | 2026-09-20 |
+| 18 | Linked health records data — Emergency care (ECDS) | Major A&E attendances (from 1 April 2020) | `nhse_eng_ecds/categories/nhse_eng_ecds.json` | 167 | dictionary v14, entity `nhse_eng_ecds` | dropped (D132) | 2026-10-05 |
+| 19 | Linked health records data — Emergency department (ED) | Major A&E attendances (1 April 2007 to 31 March 2020) | `nhse_eng_ed/categories/nhse_eng_ed.json` | 91 | dictionary v14, entity `nhse_eng_ed` | dropped (D132) | 2026-10-05 |
 | 20 | Linked health records data — Inpatient | Episodes of in-patient care | `nhse_eng_inpat/categories/nhse_eng_inpat.json` | 108 | dictionary v14, entity `nhse_eng_inpat` | confirmed | 2026-09-20 |
 | 21 | Linked health records data — Outpatient | Outpatient appointments (from 1 April 2003) | `nhse_eng_outpat/categories/nhse_eng_outpat.json` | 55 | dictionary v14, entity `nhse_eng_outpat` | confirmed | 2026-09-20 |
 | 22 | Linked health records data — Primary care medicines | Medicines dispensed in primary care (from 1 April 2018) | `nhse_eng_primcare_meds/categories/nhse_eng_primcare_meds.json` | 33 | dictionary v14, entity `nhse_eng_primcare_meds` | confirmed | 2026-09-20 |
@@ -78,7 +79,7 @@ anything directly — a specific category, a change, a question, the final revie
 - [x] common/defs.json + mother scaffold validate green (participant and questionnaire mothers only, D017)
 - [x] every category confirmed (D128)
 - [x] skip audit (ROUTING.md) — D129
-- [x] coverage audit 1:1 — 1,101/1,101; deliberate additions: PC1–PC40 and the 25 ancestry regions as columns (D124, D125)
+- [x] coverage audit 1:1 — 834 converted + 267 dropped = 1,101 (D132); deliberate additions: PC1–PC40 and the 25 ancestry regions as columns (D124, D125)
 - [x] pages current for the whole package
 - [x] review walked (2026-09-21) · [x] cleanup decided (keep the working files)
 
@@ -123,3 +124,5 @@ anything directly — a specific category, a change, a question, the final revie
 - 2026-09-21 · package wrap-up, skip audit and README · steward closed the six proposals (D129): R190, R192, R197 as warnings, R194–R196 declined; the remaining open questions were moved to the README's open items (D007, D009, D022, D030, D045, D047, D089, D101, D125, D126); README.md written (ten sections, 26 tables, 1,101 variables); `summary` green (1,101/1,101 converted, 169/209 encoded, 0 proposed, 0 unregistered, 169/169 fixtured), pages current · awaiting the review walk of agent-decided calls and the cleanup choice · next: review (walk the agent-decided ledger lines by theme), then cleanup
 - 2026-09-21 · review · the ledger walked in six groups (package, what is not checked, versions and multi-selects, routing from the logic file, clinic and linked records, genetic); every agent-decided line accepted, D130 added (explicit -998 on genetic text columns), D039 closed; open items live in the README · awaiting the cleanup choice · next: cleanup (fold state files into the README and delete them, or keep them)
 - 2026-09-21 · cleanup · steward chose to keep PROGRESS.md, DECISIONS.md and SOURCES.md as the working record in version control; no files deleted · next: — (complete)
+- 2026-09-21 · pages · steward asked for the linked health records tables (and the other multi-table groups) under one heading in the pages and navigation; render.py patched locally, dictionary and playground pages rebuilt, `render.py check` clean, contents list and masthead tabs grouped (D131) · next: — (complete)
+- 2026-10-05 · scope · steward asked for the OFH schema to follow the newer cohort description, limited to what CD3 has requested (D132); five tables outside the request removed (lsoa, msoa, intermediate_zones, nhse_eng_ecds, nhse_eng_ed: 267 variables, marked `dropped`, 8 register rows and 2 warning files removed); 21 tables and 834 variables remain and match the cohort description table by table; `summary` green (834/1,101 converted, 169/201 encoded, 0 unregistered, 169/169 fixtured); README, pages and sources updated; Cancer pathway kept with its caveat (D133) · next: — (complete)

@@ -16,6 +16,8 @@
 
 ## External sources
 
+- CD3's request to OFH: the Our Future Health cohort description (a CD3 analyst-facing overview, https://claude.ai/artifact/Tf76Xs2ZPUab63YeiKFoki), prepared 1 October 2026 · its section 3 lists the categories CD3 has requested (Questionnaire, Clinic measurements, POCT lipid profile, Genetic data, Country and region, Primary care medicines, Admitted patient care, Outpatients, Cancer registry, ONS death registration; Cancer pathway with a caveat) · scope source for D132 and D133 · consulted 2026-10-05
+
 - Our Future Health documentation, questionnaire data page (the original questionnaire) · https://ourfuturehealth.gitbook.io/our-future-health/data-types/questionnaire-data · would resolve: questionnaire version differences (D009, D010), routing for the `_1_1` items, the questionnaire's own skip arrows · steward-approved 2026-09-19 (given by the steward) · consulted 2026-09-19 (fetched and summarised: question versions, field-name pattern, multi-select storage, NULL for questions not shown, metric normalisation of height and weight; the PDFs and logic-file downloads it links were not opened)
 - Our Future Health website · https://www.ourfuturehealth.org.uk · agent's suggestion from memory, never opened · would resolve: general study documentation · suggested
 
