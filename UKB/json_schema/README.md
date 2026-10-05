@@ -251,7 +251,7 @@ Double-click `dictionary.html` to browse the dictionary (keyword search built in
 
 - **Which fields can really arrive blank (D038, D048).** Every column accepts `null` as the loosest reading. A count of blanks per field from inside the TRE would show which can be tightened, and the package's own validator can report it there.
 - **Skipped questions are empty cells (D049).** The 87 rules assume a skipped question is an empty cell. A count from inside the TRE would confirm it.
-- **R009's gate.** The source's link names `F903`, which is not a field; the vigorous-activity days question is `f904`. Probably a typo in the source; confirm, and the rule can be encoded.
-- **83 gate-only links (D050).** The source says a gate affects who was asked a question but not which answer; the data provider could supply the answers.
+- **R009's gate.** The source's link names `F903`, which is not a field; the vigorous-activity days question is `f904`. Probably a typo in the source; to confirm with the data provider (D053), and the rule can then be encoded.
+- **83 gate-only links (D050).** The source says a gate affects who was asked a question but not which answer; to confirm with the data provider (D053), who can supply the answers; each is then encoded like the 87 above.
 - **Date format (D015).** `YYYY-MM-DD` is assumed. Confirm it against a real export.
 - **Dictionary page and `null`.** Typed fields show "(nullable)" on the page; coded fields do not list `null` among their valid values.
