@@ -1,0 +1,1317 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/assessment_centre_verbal_interview_medical_conditions.json",
+  "title": "Assessment centre — Verbal interview: Medical conditions",
+  "description": "UK Biobank fields in the category Assessment centre > Verbal interview > Medical conditions, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "assessment_centre_verbal_interview_medical_conditions",
+  "properties": {
+    "f84": {
+      "title": "Cancer year/age first occurred",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 6,
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Time uncertain/unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Time uncertain/unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 37. Up to 6 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f87": {
+      "title": "Non-cancer illness year/age first occurred",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 37,
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Time uncertain/unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Time uncertain/unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 37. Up to 37 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f134": {
+      "title": "Number of self-reported cancers",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f135": {
+      "title": "Number of self-reported non-cancer illnesses",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f3140": {
+      "title": "Pregnant",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "Unsure"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100267. Initial assessment visit (instance 0)."
+    },
+    "f20001": {
+      "title": "Cancer code, self-reported",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 0,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1001,
+                "title": "lung cancer"
+              },
+              {
+                "const": 1002,
+                "title": "breast cancer"
+              },
+              {
+                "const": 1003,
+                "title": "skin cancer"
+              },
+              {
+                "const": 1004,
+                "title": "cancer of lip/mouth/pharynx/oral cavity"
+              },
+              {
+                "const": 1005,
+                "title": "salivary gland cancer"
+              },
+              {
+                "const": 1006,
+                "title": "larynx/throat cancer"
+              },
+              {
+                "const": 1007,
+                "title": "nasal cavity cancer"
+              },
+              {
+                "const": 1008,
+                "title": "ear cancer"
+              },
+              {
+                "const": 1009,
+                "title": "sinus cancer"
+              },
+              {
+                "const": 1010,
+                "title": "lip cancer"
+              },
+              {
+                "const": 1011,
+                "title": "tongue cancer"
+              },
+              {
+                "const": 1012,
+                "title": "gum cancer"
+              },
+              {
+                "const": 1015,
+                "title": "parotid gland cancer"
+              },
+              {
+                "const": 1016,
+                "title": "other salivary gland cancer"
+              },
+              {
+                "const": 1017,
+                "title": "oesophageal cancer"
+              },
+              {
+                "const": 1018,
+                "title": "stomach cancer"
+              },
+              {
+                "const": 1019,
+                "title": "small intestine/small bowel cancer"
+              },
+              {
+                "const": 1020,
+                "title": "large bowel cancer/colorectal cancer"
+              },
+              {
+                "const": 1021,
+                "title": "anal cancer"
+              },
+              {
+                "const": 1022,
+                "title": "colon cancer/sigmoid cancer"
+              },
+              {
+                "const": 1023,
+                "title": "rectal cancer"
+              },
+              {
+                "const": 1024,
+                "title": "liver/hepatocellular cancer"
+              },
+              {
+                "const": 1025,
+                "title": "gallbladder/bile duct cancer"
+              },
+              {
+                "const": 1026,
+                "title": "pancreas cancer"
+              },
+              {
+                "const": 1027,
+                "title": "small cell lung cancer"
+              },
+              {
+                "const": 1028,
+                "title": "non-small cell lung cancer"
+              },
+              {
+                "const": 1029,
+                "title": "peripheral nerve/autonomic nerve cancer"
+              },
+              {
+                "const": 1030,
+                "title": "eye and/or adnexal cancer"
+              },
+              {
+                "const": 1031,
+                "title": "meningeal cancer / malignant meningioma"
+              },
+              {
+                "const": 1032,
+                "title": "brain cancer / primary malignant brain tumour"
+              },
+              {
+                "const": 1033,
+                "title": "spinal cord or cranial nerve cancer"
+              },
+              {
+                "const": 1034,
+                "title": "kidney/renal cell cancer"
+              },
+              {
+                "const": 1035,
+                "title": "bladder cancer"
+              },
+              {
+                "const": 1036,
+                "title": "other cancer of urinary tract"
+              },
+              {
+                "const": 1037,
+                "title": "female genital tract cancer"
+              },
+              {
+                "const": 1038,
+                "title": "male genital tract cancer"
+              },
+              {
+                "const": 1039,
+                "title": "ovarian cancer"
+              },
+              {
+                "const": 1040,
+                "title": "uterine/endometrial cancer"
+              },
+              {
+                "const": 1041,
+                "title": "cervical cancer"
+              },
+              {
+                "const": 1042,
+                "title": "vaginal cancer"
+              },
+              {
+                "const": 1043,
+                "title": "vulval cancer"
+              },
+              {
+                "const": 1044,
+                "title": "prostate cancer"
+              },
+              {
+                "const": 1045,
+                "title": "testicular cancer"
+              },
+              {
+                "const": 1046,
+                "title": "penis cancer"
+              },
+              {
+                "const": 1047,
+                "title": "lymphoma"
+              },
+              {
+                "const": 1048,
+                "title": "leukaemia"
+              },
+              {
+                "const": 1050,
+                "title": "multiple myeloma"
+              },
+              {
+                "const": 1051,
+                "title": "myelofibrosis or myelodysplasia"
+              },
+              {
+                "const": 1052,
+                "title": "hodgkins lymphoma / hodgkins disease"
+              },
+              {
+                "const": 1053,
+                "title": "non-hodgkins lymphoma"
+              },
+              {
+                "const": 1055,
+                "title": "chronic lymphocytic"
+              },
+              {
+                "const": 1056,
+                "title": "chronic myeloid"
+              },
+              {
+                "const": 1058,
+                "title": "other haematological malignancy"
+              },
+              {
+                "const": 1059,
+                "title": "malignant melanoma"
+              },
+              {
+                "const": 1060,
+                "title": "non-melanoma skin cancer"
+              },
+              {
+                "const": 1061,
+                "title": "basal cell carcinoma"
+              },
+              {
+                "const": 1062,
+                "title": "squamous cell carcinoma"
+              },
+              {
+                "const": 1063,
+                "title": "primary bone cancer"
+              },
+              {
+                "const": 1064,
+                "title": "mesothelioma"
+              },
+              {
+                "const": 1065,
+                "title": "thyroid cancer"
+              },
+              {
+                "const": 1066,
+                "title": "parathyroid cancer"
+              },
+              {
+                "const": 1067,
+                "title": "adrenal cancer"
+              },
+              {
+                "const": 1068,
+                "title": "sarcoma/fibrosarcoma"
+              },
+              {
+                "const": 1070,
+                "title": "malignant lymph node, unspecified"
+              },
+              {
+                "const": 1071,
+                "title": "metastatic cancer (unknown primary)"
+              },
+              {
+                "const": 1072,
+                "title": "cin/pre-cancer cells cervix"
+              },
+              {
+                "const": 1073,
+                "title": "rodent ulcer"
+              },
+              {
+                "const": 1074,
+                "title": "acute myeloid leukaemia"
+              },
+              {
+                "const": 1075,
+                "title": "retinoblastoma"
+              },
+              {
+                "const": 1076,
+                "title": "kaposis sarcoma"
+              },
+              {
+                "const": 1077,
+                "title": "mouth cancer"
+              },
+              {
+                "const": 1078,
+                "title": "tonsil cancer"
+              },
+              {
+                "const": 1079,
+                "title": "oropharynx / oropharyngeal cancer"
+              },
+              {
+                "const": 1080,
+                "title": "trachea cancer"
+              },
+              {
+                "const": 1081,
+                "title": "thymus cancer / malignant thymoma"
+              },
+              {
+                "const": 1082,
+                "title": "heart / mediastinum cancer"
+              },
+              {
+                "const": 1084,
+                "title": "respiratory / intrathoracic cancer"
+              },
+              {
+                "const": 1085,
+                "title": "bone metastases / bony secondaries"
+              },
+              {
+                "const": 1086,
+                "title": "appendix cancer"
+              },
+              {
+                "const": 1087,
+                "title": "fallopian tube cancer"
+              },
+              {
+                "const": 1088,
+                "title": "malignant insulinoma"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1001
+          ],
+          "title": "lung cancer"
+        },
+        {
+          "const": [
+            1002
+          ],
+          "title": "breast cancer"
+        },
+        {
+          "const": [
+            1003
+          ],
+          "title": "skin cancer"
+        },
+        {
+          "const": [
+            1004
+          ],
+          "title": "cancer of lip/mouth/pharynx/oral cavity"
+        },
+        {
+          "const": [
+            1005
+          ],
+          "title": "salivary gland cancer"
+        },
+        {
+          "const": [
+            1006
+          ],
+          "title": "larynx/throat cancer"
+        },
+        {
+          "const": [
+            1007
+          ],
+          "title": "nasal cavity cancer"
+        },
+        {
+          "const": [
+            1008
+          ],
+          "title": "ear cancer"
+        },
+        {
+          "const": [
+            1009
+          ],
+          "title": "sinus cancer"
+        },
+        {
+          "const": [
+            1010
+          ],
+          "title": "lip cancer"
+        },
+        {
+          "const": [
+            1011
+          ],
+          "title": "tongue cancer"
+        },
+        {
+          "const": [
+            1012
+          ],
+          "title": "gum cancer"
+        },
+        {
+          "const": [
+            1015
+          ],
+          "title": "parotid gland cancer"
+        },
+        {
+          "const": [
+            1016
+          ],
+          "title": "other salivary gland cancer"
+        },
+        {
+          "const": [
+            1017
+          ],
+          "title": "oesophageal cancer"
+        },
+        {
+          "const": [
+            1018
+          ],
+          "title": "stomach cancer"
+        },
+        {
+          "const": [
+            1019
+          ],
+          "title": "small intestine/small bowel cancer"
+        },
+        {
+          "const": [
+            1020
+          ],
+          "title": "large bowel cancer/colorectal cancer"
+        },
+        {
+          "const": [
+            1021
+          ],
+          "title": "anal cancer"
+        },
+        {
+          "const": [
+            1022
+          ],
+          "title": "colon cancer/sigmoid cancer"
+        },
+        {
+          "const": [
+            1023
+          ],
+          "title": "rectal cancer"
+        },
+        {
+          "const": [
+            1024
+          ],
+          "title": "liver/hepatocellular cancer"
+        },
+        {
+          "const": [
+            1025
+          ],
+          "title": "gallbladder/bile duct cancer"
+        },
+        {
+          "const": [
+            1026
+          ],
+          "title": "pancreas cancer"
+        },
+        {
+          "const": [
+            1027
+          ],
+          "title": "small cell lung cancer"
+        },
+        {
+          "const": [
+            1028
+          ],
+          "title": "non-small cell lung cancer"
+        },
+        {
+          "const": [
+            1029
+          ],
+          "title": "peripheral nerve/autonomic nerve cancer"
+        },
+        {
+          "const": [
+            1030
+          ],
+          "title": "eye and/or adnexal cancer"
+        },
+        {
+          "const": [
+            1031
+          ],
+          "title": "meningeal cancer / malignant meningioma"
+        },
+        {
+          "const": [
+            1032
+          ],
+          "title": "brain cancer / primary malignant brain tumour"
+        },
+        {
+          "const": [
+            1033
+          ],
+          "title": "spinal cord or cranial nerve cancer"
+        },
+        {
+          "const": [
+            1034
+          ],
+          "title": "kidney/renal cell cancer"
+        },
+        {
+          "const": [
+            1035
+          ],
+          "title": "bladder cancer"
+        },
+        {
+          "const": [
+            1036
+          ],
+          "title": "other cancer of urinary tract"
+        },
+        {
+          "const": [
+            1037
+          ],
+          "title": "female genital tract cancer"
+        },
+        {
+          "const": [
+            1038
+          ],
+          "title": "male genital tract cancer"
+        },
+        {
+          "const": [
+            1039
+          ],
+          "title": "ovarian cancer"
+        },
+        {
+          "const": [
+            1040
+          ],
+          "title": "uterine/endometrial cancer"
+        },
+        {
+          "const": [
+            1041
+          ],
+          "title": "cervical cancer"
+        },
+        {
+          "const": [
+            1042
+          ],
+          "title": "vaginal cancer"
+        },
+        {
+          "const": [
+            1043
+          ],
+          "title": "vulval cancer"
+        },
+        {
+          "const": [
+            1044
+          ],
+          "title": "prostate cancer"
+        },
+        {
+          "const": [
+            1045
+          ],
+          "title": "testicular cancer"
+        },
+        {
+          "const": [
+            1046
+          ],
+          "title": "penis cancer"
+        },
+        {
+          "const": [
+            1047
+          ],
+          "title": "lymphoma"
+        },
+        {
+          "const": [
+            1048
+          ],
+          "title": "leukaemia"
+        },
+        {
+          "const": [
+            1050
+          ],
+          "title": "multiple myeloma"
+        },
+        {
+          "const": [
+            1051
+          ],
+          "title": "myelofibrosis or myelodysplasia"
+        },
+        {
+          "const": [
+            1052
+          ],
+          "title": "hodgkins lymphoma / hodgkins disease"
+        },
+        {
+          "const": [
+            1053
+          ],
+          "title": "non-hodgkins lymphoma"
+        },
+        {
+          "const": [
+            1055
+          ],
+          "title": "chronic lymphocytic"
+        },
+        {
+          "const": [
+            1056
+          ],
+          "title": "chronic myeloid"
+        },
+        {
+          "const": [
+            1058
+          ],
+          "title": "other haematological malignancy"
+        },
+        {
+          "const": [
+            1059
+          ],
+          "title": "malignant melanoma"
+        },
+        {
+          "const": [
+            1060
+          ],
+          "title": "non-melanoma skin cancer"
+        },
+        {
+          "const": [
+            1061
+          ],
+          "title": "basal cell carcinoma"
+        },
+        {
+          "const": [
+            1062
+          ],
+          "title": "squamous cell carcinoma"
+        },
+        {
+          "const": [
+            1063
+          ],
+          "title": "primary bone cancer"
+        },
+        {
+          "const": [
+            1064
+          ],
+          "title": "mesothelioma"
+        },
+        {
+          "const": [
+            1065
+          ],
+          "title": "thyroid cancer"
+        },
+        {
+          "const": [
+            1066
+          ],
+          "title": "parathyroid cancer"
+        },
+        {
+          "const": [
+            1067
+          ],
+          "title": "adrenal cancer"
+        },
+        {
+          "const": [
+            1068
+          ],
+          "title": "sarcoma/fibrosarcoma"
+        },
+        {
+          "const": [
+            1070
+          ],
+          "title": "malignant lymph node, unspecified"
+        },
+        {
+          "const": [
+            1071
+          ],
+          "title": "metastatic cancer (unknown primary)"
+        },
+        {
+          "const": [
+            1072
+          ],
+          "title": "cin/pre-cancer cells cervix"
+        },
+        {
+          "const": [
+            1073
+          ],
+          "title": "rodent ulcer"
+        },
+        {
+          "const": [
+            1074
+          ],
+          "title": "acute myeloid leukaemia"
+        },
+        {
+          "const": [
+            1075
+          ],
+          "title": "retinoblastoma"
+        },
+        {
+          "const": [
+            1076
+          ],
+          "title": "kaposis sarcoma"
+        },
+        {
+          "const": [
+            1077
+          ],
+          "title": "mouth cancer"
+        },
+        {
+          "const": [
+            1078
+          ],
+          "title": "tonsil cancer"
+        },
+        {
+          "const": [
+            1079
+          ],
+          "title": "oropharynx / oropharyngeal cancer"
+        },
+        {
+          "const": [
+            1080
+          ],
+          "title": "trachea cancer"
+        },
+        {
+          "const": [
+            1081
+          ],
+          "title": "thymus cancer / malignant thymoma"
+        },
+        {
+          "const": [
+            1082
+          ],
+          "title": "heart / mediastinum cancer"
+        },
+        {
+          "const": [
+            1084
+          ],
+          "title": "respiratory / intrathoracic cancer"
+        },
+        {
+          "const": [
+            1085
+          ],
+          "title": "bone metastases / bony secondaries"
+        },
+        {
+          "const": [
+            1086
+          ],
+          "title": "appendix cancer"
+        },
+        {
+          "const": [
+            1087
+          ],
+          "title": "fallopian tube cancer"
+        },
+        {
+          "const": [
+            1088
+          ],
+          "title": "malignant insulinoma"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 3. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20002": {
+      "title": "Non-cancer illness code, self-reported",
+      "type": [
+        "array",
+        "null"
+      ],
+      "uniqueItems": true,
+      "minItems": 0,
+      "maxItems": 37,
+      "items": {
+        "type": "integer",
+        "minimum": 1065,
+        "maximum": 1683
+      },
+      "$comment": "Source coding: encoding 6. Up to 37 entries, stored as an array in one field (D021). The source lists 445 codes, over the 300-code limit, so membership of the list is not checked: the schema asserts only an integer between the lowest (1065) and highest (1683) listed code (D039). Initial assessment visit (instance 0)."
+    },
+    "f20006": {
+      "title": "Interpolated Year when cancer first diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 6,
+          "items": {
+            "anyOf": [
+              {
+                "type": "number",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Date uncertain or unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Date uncertain or unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 13. Up to 6 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20007": {
+      "title": "Interpolated Age of participant when cancer first diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 6,
+          "items": {
+            "anyOf": [
+              {
+                "type": "number",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Date uncertain or unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Date uncertain or unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 13. Up to 6 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20008": {
+      "title": "Interpolated Year when non-cancer illness first diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 37,
+          "items": {
+            "anyOf": [
+              {
+                "type": "number",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Date uncertain or unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Date uncertain or unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 13. Up to 37 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20009": {
+      "title": "Interpolated Age of participant when non-cancer illness first diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 37,
+          "items": {
+            "anyOf": [
+              {
+                "type": "number",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Date uncertain or unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Date uncertain or unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 13. Up to 37 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20012": {
+      "title": "Method of recording time when cancer first diagnosed",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": -5,
+                "title": "Year of event"
+              },
+              {
+                "const": -4,
+                "title": "Age at event"
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Time uncertain/unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -5
+          ],
+          "title": "Year of event"
+        },
+        {
+          "const": [
+            -4
+          ],
+          "title": "Age at event"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Time uncertain/unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 14. Up to 6 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20013": {
+      "title": "Method of recording time when non-cancer illness first diagnosed",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 37,
+          "items": {
+            "oneOf": [
+              {
+                "const": -5,
+                "title": "Year of event"
+              },
+              {
+                "const": -4,
+                "title": "Age at event"
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Time uncertain/unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -5
+          ],
+          "title": "Year of event"
+        },
+        {
+          "const": [
+            -4
+          ],
+          "title": "Age at event"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Time uncertain/unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 14. Up to 37 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f84",
+    "f87",
+    "f134",
+    "f135",
+    "f3140",
+    "f20001",
+    "f20002",
+    "f20006",
+    "f20007",
+    "f20008",
+    "f20009",
+    "f20012",
+    "f20013"
+  ]
+}

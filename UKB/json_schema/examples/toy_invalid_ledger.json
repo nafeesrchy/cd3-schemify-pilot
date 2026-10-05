@@ -1,0 +1,77 @@
+{
+  "$comment": "Ground truth for toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row; tools/validate.py fixtures asserts each row FAILS with an error pointer on the named column.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "eid",
+      "kind": "range-break",
+      "value": 0,
+      "reason": "below minimum 1 (eid is a positive identifier)"
+    },
+    {
+      "row": 1,
+      "column": "eid",
+      "kind": "type-break",
+      "value": "1234567",
+      "reason": "string, not the declared integer type"
+    },
+    {
+      "row": 2,
+      "column": "eid",
+      "kind": "required-break",
+      "value": null,
+      "reason": "eid is required and absent"
+    },
+    {
+      "row": 3,
+      "column": "eid",
+      "kind": "type-break",
+      "value": null,
+      "reason": "null, but eid is never empty"
+    },
+    {
+      "row": 4,
+      "column": "f31",
+      "kind": "unknown-level",
+      "value": 1001,
+      "reason": "1001 is not a declared code for Sex"
+    },
+    {
+      "row": 5,
+      "column": "f33",
+      "kind": "pattern-break",
+      "value": "15-06-1970",
+      "reason": "DD-MM-YYYY does not match the declared YYYY-MM-DD pattern for Date of birth"
+    },
+    {
+      "row": 6,
+      "column": "f22189",
+      "kind": "type-break",
+      "value": "12.5",
+      "reason": "string, not the declared number type for Townsend deprivation index at recruitment"
+    },
+    {
+      "row": 7,
+      "column": "f699",
+      "kind": "type-break",
+      "value": "5",
+      "reason": "string, not the declared integer type for Length of time at current address"
+    },
+    {
+      "row": 8,
+      "column": "f6138",
+      "kind": "range-break",
+      "value": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        -7
+      ],
+      "reason": "7 selections exceeds maxItems 6 for Qualifications"
+    }
+  ]
+}

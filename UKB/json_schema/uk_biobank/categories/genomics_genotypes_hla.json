@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/genomics_genotypes_hla.json",
+  "title": "Genomics — Genotypes: HLA",
+  "description": "UK Biobank fields in the category Genomics > Genotypes > HLA, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "genomics_genotypes_hla",
+  "properties": {
+    "f22182": {
+      "title": "HLA imputation values",
+      "type": [
+        "string",
+        "null"
+      ],
+      "$comment": "The source states no format for this compound value, so any text is accepted."
+    }
+  },
+  "required": [
+    "f22182"
+  ]
+}

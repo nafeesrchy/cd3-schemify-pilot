@@ -1,0 +1,1676 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/assessment_centre_touchscreen_questionnaire_psychosocial_factors.json",
+  "title": "Assessment centre — Touchscreen questionnaire: Psychosocial factors",
+  "description": "UK Biobank fields in the category Assessment centre > Touchscreen questionnaire > Psychosocial factors, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "assessment_centre_touchscreen_questionnaire_psychosocial_factors",
+  "properties": {
+    "f1031": {
+      "title": "Frequency of friend/family visits",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Almost daily"
+        },
+        {
+          "const": 2,
+          "title": "2-4 times a week"
+        },
+        {
+          "const": 3,
+          "title": "About once a week"
+        },
+        {
+          "const": 4,
+          "title": "About once a month"
+        },
+        {
+          "const": 5,
+          "title": "Once every few months"
+        },
+        {
+          "const": 6,
+          "title": "Never or almost never"
+        },
+        {
+          "const": 7,
+          "title": "No friends/family outside household"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100327. Initial assessment visit (instance 0)."
+    },
+    "f1920": {
+      "title": "Mood swings",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1930": {
+      "title": "Miserableness",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1940": {
+      "title": "Irritability",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1950": {
+      "title": "Sensitivity / hurt feelings",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1960": {
+      "title": "Fed-up feelings",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1970": {
+      "title": "Nervous feelings",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1980": {
+      "title": "Worrier / anxious feelings",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1990": {
+      "title": "Tense / 'highly strung'",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2000": {
+      "title": "Worry too long after embarrassment",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2010": {
+      "title": "Suffer from 'nerves'",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2020": {
+      "title": "Loneliness, isolation",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2030": {
+      "title": "Guilty feelings",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2040": {
+      "title": "Risk taking",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2050": {
+      "title": "Frequency of depressed mood in last 2 weeks",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Not at all"
+        },
+        {
+          "const": 2,
+          "title": "Several days"
+        },
+        {
+          "const": 3,
+          "title": "More than half the days"
+        },
+        {
+          "const": 4,
+          "title": "Nearly every day"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100484. Initial assessment visit (instance 0)."
+    },
+    "f2060": {
+      "title": "Frequency of unenthusiasm / disinterest in last 2 weeks",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Not at all"
+        },
+        {
+          "const": 2,
+          "title": "Several days"
+        },
+        {
+          "const": 3,
+          "title": "More than half the days"
+        },
+        {
+          "const": 4,
+          "title": "Nearly every day"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100484. Initial assessment visit (instance 0)."
+    },
+    "f2070": {
+      "title": "Frequency of tenseness / restlessness in last 2 weeks",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Not at all"
+        },
+        {
+          "const": 2,
+          "title": "Several days"
+        },
+        {
+          "const": 3,
+          "title": "More than half the days"
+        },
+        {
+          "const": 4,
+          "title": "Nearly every day"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100484. Initial assessment visit (instance 0)."
+    },
+    "f2080": {
+      "title": "Frequency of tiredness / lethargy in last 2 weeks",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Not at all"
+        },
+        {
+          "const": 2,
+          "title": "Several days"
+        },
+        {
+          "const": 3,
+          "title": "More than half the days"
+        },
+        {
+          "const": 4,
+          "title": "Nearly every day"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100484. Initial assessment visit (instance 0)."
+    },
+    "f2090": {
+      "title": "Seen doctor (GP) for nerves, anxiety, tension or depression",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2100": {
+      "title": "Seen a psychiatrist for nerves, anxiety, tension or depression",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2110": {
+      "title": "Able to confide",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never or almost never"
+        },
+        {
+          "const": 1,
+          "title": "Once every few months"
+        },
+        {
+          "const": 2,
+          "title": "About once a month"
+        },
+        {
+          "const": 3,
+          "title": "About once a week"
+        },
+        {
+          "const": 4,
+          "title": "2-4 times a week"
+        },
+        {
+          "const": 5,
+          "title": "Almost daily"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100501. Initial assessment visit (instance 0)."
+    },
+    "f4526": {
+      "title": "Happiness",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Extremely happy"
+        },
+        {
+          "const": 2,
+          "title": "Very happy"
+        },
+        {
+          "const": 3,
+          "title": "Moderately happy"
+        },
+        {
+          "const": 4,
+          "title": "Moderately unhappy"
+        },
+        {
+          "const": 5,
+          "title": "Very unhappy"
+        },
+        {
+          "const": 6,
+          "title": "Extremely unhappy"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100478. Initial assessment visit (instance 0)."
+    },
+    "f4537": {
+      "title": "Work/job satisfaction",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Extremely happy"
+        },
+        {
+          "const": 2,
+          "title": "Very happy"
+        },
+        {
+          "const": 3,
+          "title": "Moderately happy"
+        },
+        {
+          "const": 4,
+          "title": "Moderately unhappy"
+        },
+        {
+          "const": 5,
+          "title": "Very unhappy"
+        },
+        {
+          "const": 6,
+          "title": "Extremely unhappy"
+        },
+        {
+          "const": 7,
+          "title": "I am not employed"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100479. Initial assessment visit (instance 0)."
+    },
+    "f4548": {
+      "title": "Health satisfaction",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Extremely happy"
+        },
+        {
+          "const": 2,
+          "title": "Very happy"
+        },
+        {
+          "const": 3,
+          "title": "Moderately happy"
+        },
+        {
+          "const": 4,
+          "title": "Moderately unhappy"
+        },
+        {
+          "const": 5,
+          "title": "Very unhappy"
+        },
+        {
+          "const": 6,
+          "title": "Extremely unhappy"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100478. Initial assessment visit (instance 0)."
+    },
+    "f4559": {
+      "title": "Family relationship satisfaction",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Extremely happy"
+        },
+        {
+          "const": 2,
+          "title": "Very happy"
+        },
+        {
+          "const": 3,
+          "title": "Moderately happy"
+        },
+        {
+          "const": 4,
+          "title": "Moderately unhappy"
+        },
+        {
+          "const": 5,
+          "title": "Very unhappy"
+        },
+        {
+          "const": 6,
+          "title": "Extremely unhappy"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100478. Initial assessment visit (instance 0)."
+    },
+    "f4570": {
+      "title": "Friendships satisfaction",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Extremely happy"
+        },
+        {
+          "const": 2,
+          "title": "Very happy"
+        },
+        {
+          "const": 3,
+          "title": "Moderately happy"
+        },
+        {
+          "const": 4,
+          "title": "Moderately unhappy"
+        },
+        {
+          "const": 5,
+          "title": "Very unhappy"
+        },
+        {
+          "const": 6,
+          "title": "Extremely unhappy"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100478. Initial assessment visit (instance 0)."
+    },
+    "f4581": {
+      "title": "Financial situation satisfaction",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Extremely happy"
+        },
+        {
+          "const": 2,
+          "title": "Very happy"
+        },
+        {
+          "const": 3,
+          "title": "Moderately happy"
+        },
+        {
+          "const": 4,
+          "title": "Moderately unhappy"
+        },
+        {
+          "const": 5,
+          "title": "Very unhappy"
+        },
+        {
+          "const": 6,
+          "title": "Extremely unhappy"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100478. Initial assessment visit (instance 0)."
+    },
+    "f4598": {
+      "title": "Ever depressed for a whole week",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f4609": {
+      "title": "Longest period of depression",
+      "x-unit": "weeks",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4620": {
+      "title": "Number of depression episodes",
+      "x-unit": "periods",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4631": {
+      "title": "Ever unenthusiastic/disinterested for a whole week",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f4642": {
+      "title": "Ever manic/hyper for 2 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f4653": {
+      "title": "Ever highly irritable/argumentative for 2 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5375": {
+      "title": "Longest period of unenthusiasm / disinterest",
+      "x-unit": "weeks",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f5386": {
+      "title": "Number of unenthusiastic/disinterested episodes",
+      "x-unit": "periods",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f5663": {
+      "title": "Length of longest manic/irritable episode",
+      "oneOf": [
+        {
+          "const": 11,
+          "title": "At least two days, but less than a week"
+        },
+        {
+          "const": 12,
+          "title": "Less than a week"
+        },
+        {
+          "const": 13,
+          "title": "A week or more"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100499. Initial assessment visit (instance 0)."
+    },
+    "f5674": {
+      "title": "Severity of manic/irritable episodes",
+      "oneOf": [
+        {
+          "const": 11,
+          "title": "No problems"
+        },
+        {
+          "const": 12,
+          "title": "Needed treatment or caused problems with work, relationships, finances, the law or other aspects of life"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100500. Initial assessment visit (instance 0)."
+    },
+    "f6145": {
+      "title": "Illness, injury, bereavement, stress in last 2 years",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Serious illness, injury or assault to yourself"
+              },
+              {
+                "const": 2,
+                "title": "Serious illness, injury or assault of a close relative"
+              },
+              {
+                "const": 3,
+                "title": "Death of a close relative"
+              },
+              {
+                "const": 4,
+                "title": "Death of a spouse or partner"
+              },
+              {
+                "const": 5,
+                "title": "Marital separation/divorce"
+              },
+              {
+                "const": 6,
+                "title": "Financial difficulties"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Serious illness, injury or assault to yourself"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Serious illness, injury or assault of a close relative"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Death of a close relative"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Death of a spouse or partner"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Marital separation/divorce"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Financial difficulties"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100502. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6156": {
+      "title": "Manic/hyper symptoms",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "oneOf": [
+              {
+                "const": 11,
+                "title": "I was more active than usual"
+              },
+              {
+                "const": 12,
+                "title": "I was more talkative than usual"
+              },
+              {
+                "const": 13,
+                "title": "I needed less sleep than usual"
+              },
+              {
+                "const": 14,
+                "title": "I was more creative or had more ideas than usual"
+              },
+              {
+                "const": 15,
+                "title": "All of the above"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            11
+          ],
+          "title": "I was more active than usual"
+        },
+        {
+          "const": [
+            12
+          ],
+          "title": "I was more talkative than usual"
+        },
+        {
+          "const": [
+            13
+          ],
+          "title": "I needed less sleep than usual"
+        },
+        {
+          "const": [
+            14
+          ],
+          "title": "I was more creative or had more ideas than usual"
+        },
+        {
+          "const": [
+            15
+          ],
+          "title": "All of the above"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100498. Up to 4 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6160": {
+      "title": "Leisure/social activities",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Sports club or gym"
+              },
+              {
+                "const": 2,
+                "title": "Pub or social club"
+              },
+              {
+                "const": 3,
+                "title": "Religious group"
+              },
+              {
+                "const": 4,
+                "title": "Adult education class"
+              },
+              {
+                "const": 5,
+                "title": "Other group activity"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Sports club or gym"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Pub or social club"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Religious group"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Adult education class"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Other group activity"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100328. Up to 5 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f10721": {
+      "title": "Illness, injury, bereavement, stress in last 2 years (pilot)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Serious illness, injury or assault to yourself"
+              },
+              {
+                "const": 2,
+                "title": "Serious illness, injury or assault of a close relative"
+              },
+              {
+                "const": 3,
+                "title": "Death of a close relative"
+              },
+              {
+                "const": 4,
+                "title": "Death of a spouse or partner"
+              },
+              {
+                "const": 5,
+                "title": "Marital separation/divorce"
+              },
+              {
+                "const": 6,
+                "title": "Financial difficulties"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Serious illness, injury or assault to yourself"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Serious illness, injury or assault of a close relative"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Death of a close relative"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Death of a spouse or partner"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Marital separation/divorce"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Financial difficulties"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100683. Up to 5 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f10740": {
+      "title": "Frequency of friend/family visits (pilot)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Almost daily"
+        },
+        {
+          "const": 2,
+          "title": "2-4 times a week"
+        },
+        {
+          "const": 3,
+          "title": "About once a week"
+        },
+        {
+          "const": 4,
+          "title": "About once a month"
+        },
+        {
+          "const": 5,
+          "title": "Once every few months"
+        },
+        {
+          "const": 6,
+          "title": "Never or almost never"
+        },
+        {
+          "const": 7,
+          "title": "No friends/family outside household"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100662. Initial assessment visit (instance 0)."
+    },
+    "f20122": {
+      "title": "Bipolar disorder status",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Bipolar Type I (Mania)"
+        },
+        {
+          "const": 2,
+          "title": "Bipolar Type II (Hypomania)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100694. Initial assessment visit (instance 0)."
+    },
+    "f20123": {
+      "title": "Single episode of probable major depression",
+      "oneOf": [
+        {
+          "$ref": "../../common/defs.json#/$defs/yes_no"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 7. Initial assessment visit (instance 0)."
+    },
+    "f20124": {
+      "title": "Probable recurrent major depression (moderate)",
+      "oneOf": [
+        {
+          "$ref": "../../common/defs.json#/$defs/yes_no"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 7. Initial assessment visit (instance 0)."
+    },
+    "f20125": {
+      "title": "Probable recurrent major depression (severe)",
+      "oneOf": [
+        {
+          "$ref": "../../common/defs.json#/$defs/yes_no"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 7. Initial assessment visit (instance 0)."
+    },
+    "f20126": {
+      "title": "Bipolar and major depression status",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No Bipolar or Depression"
+        },
+        {
+          "const": 1,
+          "title": "Bipolar I Disorder"
+        },
+        {
+          "const": 2,
+          "title": "Bipolar II Disorder"
+        },
+        {
+          "const": 3,
+          "title": "Probable Recurrent major depression (severe)"
+        },
+        {
+          "const": 4,
+          "title": "Probable Recurrent major depression (moderate)"
+        },
+        {
+          "const": 5,
+          "title": "Single Probable major depression episode"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100695. Initial assessment visit (instance 0)."
+    },
+    "f20127": {
+      "title": "Neuroticism score",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f1031",
+    "f1920",
+    "f1930",
+    "f1940",
+    "f1950",
+    "f1960",
+    "f1970",
+    "f1980",
+    "f1990",
+    "f2000",
+    "f2010",
+    "f2020",
+    "f2030",
+    "f2040",
+    "f2050",
+    "f2060",
+    "f2070",
+    "f2080",
+    "f2090",
+    "f2100",
+    "f2110",
+    "f4526",
+    "f4537",
+    "f4548",
+    "f4559",
+    "f4570",
+    "f4581",
+    "f4598",
+    "f4609",
+    "f4620",
+    "f4631",
+    "f4642",
+    "f4653",
+    "f5375",
+    "f5386",
+    "f5663",
+    "f5674",
+    "f6145",
+    "f6156",
+    "f6160",
+    "f10721",
+    "f10740",
+    "f20122",
+    "f20123",
+    "f20124",
+    "f20125",
+    "f20126",
+    "f20127"
+  ]
+}

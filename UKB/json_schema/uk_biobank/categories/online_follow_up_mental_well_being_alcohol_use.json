@@ -1,0 +1,434 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/online_follow_up_mental_well_being_alcohol_use.json",
+  "title": "Online follow-up — Mental well-being: Alcohol use",
+  "description": "UK Biobank fields in the category Online follow-up > Mental well-being > Alcohol use, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "online_follow_up_mental_well_being_alcohol_use",
+  "properties": {
+    "f29091": {
+      "title": "Frequency of drinking alcohol",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 1,
+          "title": "Monthly or less"
+        },
+        {
+          "const": 2,
+          "title": "2 to 4 times a month"
+        },
+        {
+          "const": 3,
+          "title": "2 to 3 times a week"
+        },
+        {
+          "const": 4,
+          "title": "4 or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1947."
+    },
+    "f29092": {
+      "title": "Amount of alcohol drunk on a typical drinking day",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "1 or 2"
+        },
+        {
+          "const": 2,
+          "title": "3 or 4"
+        },
+        {
+          "const": 3,
+          "title": "5 or 6"
+        },
+        {
+          "const": 4,
+          "title": "7, 8, or 9"
+        },
+        {
+          "const": 5,
+          "title": "10 or more"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1948."
+    },
+    "f29093": {
+      "title": "Frequency of consuming six or more units of alcohol",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Less than monthly"
+        },
+        {
+          "const": 3,
+          "title": "Monthly"
+        },
+        {
+          "const": 4,
+          "title": "Weekly"
+        },
+        {
+          "const": 5,
+          "title": "Daily or almost daily"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1949."
+    },
+    "f29094": {
+      "title": "Frequency of inability to cease drinking in last year",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Less than monthly"
+        },
+        {
+          "const": 3,
+          "title": "Monthly"
+        },
+        {
+          "const": 4,
+          "title": "Weekly"
+        },
+        {
+          "const": 5,
+          "title": "Daily or almost daily"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1949."
+    },
+    "f29095": {
+      "title": "Frequency of failure to fulfil normal expectations due to drinking alcohol in last year",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Less than monthly"
+        },
+        {
+          "const": 3,
+          "title": "Monthly"
+        },
+        {
+          "const": 4,
+          "title": "Weekly"
+        },
+        {
+          "const": 5,
+          "title": "Daily or almost daily"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1949."
+    },
+    "f29096": {
+      "title": "Frequency of needing morning drink of alcohol after heavy drinking session in last year",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Less than monthly"
+        },
+        {
+          "const": 3,
+          "title": "Monthly"
+        },
+        {
+          "const": 4,
+          "title": "Weekly"
+        },
+        {
+          "const": 5,
+          "title": "Daily or almost daily"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1949."
+    },
+    "f29097": {
+      "title": "Frequency of feeling guilt or remorse after drinking alcohol in last year",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Less than monthly"
+        },
+        {
+          "const": 3,
+          "title": "Monthly"
+        },
+        {
+          "const": 4,
+          "title": "Weekly"
+        },
+        {
+          "const": 5,
+          "title": "Daily or almost daily"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1949."
+    },
+    "f29098": {
+      "title": "Frequency of memory loss due to drinking alcohol in last year",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Less than monthly"
+        },
+        {
+          "const": 3,
+          "title": "Monthly"
+        },
+        {
+          "const": 4,
+          "title": "Weekly"
+        },
+        {
+          "const": 5,
+          "title": "Daily or almost daily"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1949."
+    },
+    "f29099": {
+      "title": "Ever been injured or injured someone else through drinking alcohol",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes, but not in the last year"
+        },
+        {
+          "const": 2,
+          "title": "Yes, during the last year"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1950."
+    },
+    "f29100": {
+      "title": "Ever had known person concerned about, or recommend reduction of, alcohol consumption",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes, but not in the last year"
+        },
+        {
+          "const": 2,
+          "title": "Yes, during the last year"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1950."
+    },
+    "f29101": {
+      "title": "Number of times known person has commented on drinking",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "One"
+        },
+        {
+          "const": 2,
+          "title": "Several"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1903."
+    },
+    "f29102": {
+      "title": "Age when known person first commented about drinking habits",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291."
+    },
+    "f29103": {
+      "title": "Age when known person last commented about drinking habits",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291."
+    },
+    "f29189": {
+      "title": "When online Alcohol use questionnaire started",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f29202": {
+      "title": "When online Alcohol use questionnaire completed",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    }
+  },
+  "required": [
+    "f29091",
+    "f29092",
+    "f29093",
+    "f29094",
+    "f29095",
+    "f29096",
+    "f29097",
+    "f29098",
+    "f29099",
+    "f29100",
+    "f29101",
+    "f29102",
+    "f29103",
+    "f29189",
+    "f29202"
+  ]
+}
