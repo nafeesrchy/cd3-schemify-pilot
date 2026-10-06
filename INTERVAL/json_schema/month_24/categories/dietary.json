@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_24/categories/dietary.json",
+  "title": "MONTH_24 — Dietary",
+  "description": "Pica (craved non-food substances) and changes in diet as a result of giving blood, from the 24-month questionnaire.",
+  "type": "object",
+  "x-variable-group": "dietary",
+  "$comment": "The source gives no 999 for these items.",
+  "$defs": {
+    "more_less_same": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "more"
+        },
+        {
+          "const": 2,
+          "title": "less"
+        },
+        {
+          "const": 3,
+          "title": "the same"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "properties": {
+    "Pica_1_24m": {
+      "title": "In the last 2 years, since joining the study, have you craved and regularly eaten or chewed any of the following non-nutritional, substances?",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Ice"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 = 1 à Ice'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "Pica_2_24m": {
+      "title": "In the last 2 years, since joining the study, have you craved and regularly eaten or chewed any of the following non-nutritional, substances?",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Clay"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 = 1 à Ice'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "Pica_3_24m": {
+      "title": "In the last 2 years, since joining the study, have you craved and regularly eaten or chewed any of the following non-nutritional, substances?",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Dirt"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 = 1 à Ice'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "Pica_4_24m": {
+      "title": "In the last 2 years, since joining the study, have you craved and regularly eaten or chewed any of the following non-nutritional, substances?",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Raw pasta"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 = 1 à Ice'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "Pica_5_24m": {
+      "title": "In the last 2 years, since joining the study, have you craved and regularly eaten or chewed any of the following non-nutritional, substances?",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Chalk"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 = 1 à Ice'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "Pica_6_24m": {
+      "title": "In the last 2 years, since joining the study, have you craved and regularly eaten or chewed any of the following non-nutritional, substances?",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Coal"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 = 1 à Ice'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "Pica_7_24m": {
+      "title": "In the last 2 years, since joining the study, have you craved and regularly eaten or chewed any of the following non-nutritional, substances?",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "None"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 = 1 à Ice'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "eatTyp_change_24m": {
+      "title": "Thinking about your usual diet have you changed the types of food you eat as a result of giving blood?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source coding cell reads '1 = yes, 2 = no, ' with a stray trailing comma; no code is missing."
+    },
+    "eatTyp_INTERVAL_24m": {
+      "title": "When did you change the types of food you eat?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Before I joined INTERVAL"
+        },
+        {
+          "const": 2,
+          "title": "While taking part in INTERVAL"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "eatTyp_more_a_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less red meat as a result of giving blood?"
+    },
+    "eatTyp_more_b_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less white meat or fish as a result of giving blood?"
+    },
+    "eatTyp_more_c_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less eggs as a result of giving blood?"
+    },
+    "eatTyp_more_d_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less dairy foods (cheese, milk etc.) as a result of giving blood?"
+    },
+    "eatTyp_more_e_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less green vegetables as a result of giving blood?"
+    },
+    "eatTyp_more_f_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less lentils or beans as a result of giving blood?"
+    },
+    "eatTyp_more_g_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less fruit as a result of giving blood?"
+    },
+    "eatTyp_more_h_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less snacks e.g. biscuits, cakes, crisps as a result of giving blood?"
+    },
+    "eatTyp_more_i_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you drink more or less tea or coffee as a result of giving blood?"
+    },
+    "eatTyp_more_j_24m": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you drink more or less alcohol as a result of giving blood?"
+    }
+  },
+  "required": [
+    "Pica_1_24m",
+    "Pica_2_24m",
+    "Pica_3_24m",
+    "Pica_4_24m",
+    "Pica_5_24m",
+    "Pica_6_24m",
+    "Pica_7_24m",
+    "eatTyp_change_24m",
+    "eatTyp_INTERVAL_24m",
+    "eatTyp_more_a_24m",
+    "eatTyp_more_b_24m",
+    "eatTyp_more_c_24m",
+    "eatTyp_more_d_24m",
+    "eatTyp_more_e_24m",
+    "eatTyp_more_f_24m",
+    "eatTyp_more_g_24m",
+    "eatTyp_more_h_24m",
+    "eatTyp_more_i_24m",
+    "eatTyp_more_j_24m"
+  ]
+}

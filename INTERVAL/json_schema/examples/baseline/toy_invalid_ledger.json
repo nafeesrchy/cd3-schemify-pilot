@@ -1,0 +1,242 @@
+{
+  "$comment": "Ground truth for baseline/toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "sexPulse",
+      "kind": "unknown-level",
+      "value": 3,
+      "reason": "3 is not a declared code (1 male, 2 female)"
+    },
+    {
+      "row": 1,
+      "column": "ethnic_bl",
+      "kind": "unknown-level",
+      "value": 17,
+      "reason": "17 is not a declared code (1-16, 999)"
+    },
+    {
+      "row": 2,
+      "column": "ethnic_bl",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 3,
+      "column": "yearPulse",
+      "kind": "wrong-type",
+      "value": "1970",
+      "reason": "a year is an integer or null; a string is never legal"
+    },
+    {
+      "row": 4,
+      "column": "agePulse",
+      "kind": "wrong-type",
+      "value": "forty",
+      "reason": "age is a number or null; a string is never legal"
+    },
+    {
+      "row": 5,
+      "column": "agePulse",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 6,
+      "column": "shoeSize",
+      "kind": "undeclared-column",
+      "reason": "not in the dictionary; rejected by unevaluatedProperties"
+    },
+    {
+      "row": 7,
+      "column": "sexPulse",
+      "kind": "wrong-type",
+      "value": "",
+      "reason": "an empty string is not a legal blank; a blank is null"
+    },
+    {
+      "row": 8,
+      "column": "centre",
+      "kind": "unknown-level",
+      "value": 26,
+      "reason": "26 is not a declared code (1-25)"
+    },
+    {
+      "row": 9,
+      "column": "outCome",
+      "kind": "unknown-level",
+      "value": 1.5,
+      "reason": "1.5 is not a declared outcome code"
+    },
+    {
+      "row": 10,
+      "column": "startDate_bl",
+      "kind": "wrong-type",
+      "value": 20130312,
+      "reason": "a date is text (or null), never a number"
+    },
+    {
+      "row": 11,
+      "column": "ht_bl",
+      "kind": "wrong-type",
+      "value": "tall",
+      "reason": "height is a number or null; a string is never legal"
+    },
+    {
+      "row": 12,
+      "column": "wt_bl",
+      "kind": "wrong-type",
+      "value": "heavy",
+      "reason": "weight is a number, 777 or null; a string is never legal"
+    },
+    {
+      "row": 13,
+      "column": "anemia_bl",
+      "kind": "unknown-level",
+      "value": 3,
+      "reason": "3 is not a declared code (1 yes, 2 no, 999)"
+    },
+    {
+      "row": 14,
+      "column": "restlessLeg_bl",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 15,
+      "column": "hrt_bl",
+      "kind": "unknown-level",
+      "value": 2,
+      "reason": "2 is not a declared code: 'no' is 0 on this item"
+    },
+    {
+      "row": 16,
+      "column": "menopause_bl",
+      "kind": "unknown-level",
+      "value": 5,
+      "reason": "5 is not a declared code (1-4, 999)"
+    },
+    {
+      "row": 17,
+      "column": "health1_bl",
+      "kind": "unknown-level",
+      "value": 6,
+      "reason": "6 is not a declared code (1-5, 999)"
+    },
+    {
+      "row": 18,
+      "column": "PF_bl",
+      "kind": "range-break",
+      "value": 101,
+      "reason": "above the source-stated maximum 100"
+    },
+    {
+      "row": 19,
+      "column": "yearAgo_bl",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 20,
+      "column": "ageVeg_bl",
+      "kind": "range-break",
+      "value": 71,
+      "reason": "above the source-stated maximum 70 (older ages are code 777)"
+    },
+    {
+      "row": 21,
+      "column": "liver_bl",
+      "kind": "range-break",
+      "value": 21,
+      "reason": "above 20 times / week (more is code 777)"
+    },
+    {
+      "row": 22,
+      "column": "veg_bl",
+      "kind": "unknown-level",
+      "value": 5,
+      "reason": "5 is not a declared code (1-4)"
+    },
+    {
+      "row": 23,
+      "column": "smCig_bl",
+      "kind": "range-break",
+      "value": 81,
+      "reason": "above 80 per day (more is code 777)"
+    },
+    {
+      "row": 24,
+      "column": "alcFreq_bl",
+      "kind": "unknown-level",
+      "value": 2.0,
+      "reason": "2.0 is not a declared frequency code"
+    },
+    {
+      "row": 25,
+      "column": "smStartAge_bl",
+      "kind": "range-break",
+      "value": 9,
+      "reason": "between the code 0.1 (less than 10) and the range 10-70"
+    },
+    {
+      "row": 26,
+      "column": "work_bl",
+      "kind": "unknown-level",
+      "value": 6,
+      "reason": "6 is not a declared code (1-5, 999)"
+    },
+    {
+      "row": 27,
+      "column": "leisure_bl",
+      "kind": "unknown-level",
+      "value": 5,
+      "reason": "5 is not a declared code (1-4, 999)"
+    },
+    {
+      "row": 28,
+      "column": "ABORH",
+      "kind": "unknown-level",
+      "value": "C+",
+      "reason": "not one of the eight listed blood groups"
+    },
+    {
+      "row": 29,
+      "column": "CRP_bl",
+      "kind": "wrong-type",
+      "value": "high",
+      "reason": "a measurement is a number or null; a string is never legal"
+    },
+    {
+      "row": 30,
+      "column": "dateFERR_bl",
+      "kind": "wrong-type",
+      "value": 20130501,
+      "reason": "a date is text (or null), never a number"
+    },
+    {
+      "row": 31,
+      "column": "processDate_bl",
+      "kind": "wrong-type",
+      "value": 20130501,
+      "reason": "a date is text (or null), never a number"
+    },
+    {
+      "row": 32,
+      "column": "WBC_10_9_L_bl",
+      "kind": "wrong-type",
+      "value": "high",
+      "reason": "a measurement is a number or null; a string is never legal"
+    },
+    {
+      "row": 33,
+      "column": "Wgs_QC_bl",
+      "kind": "wrong-type",
+      "value": 12345,
+      "reason": "typed as text (or null); a number is never legal"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "study": "INTERVAL",
+  "tables": [
+    "baseline",
+    "month_6",
+    "month_12",
+    "month_18",
+    "month_24",
+    "ehr_linkage"
+  ]
+}

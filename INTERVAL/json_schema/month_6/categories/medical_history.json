@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_6/categories/medical_history.json",
+  "title": "MONTH_6 — Medical History",
+  "description": "Doctor visits, hospital attendance, symptoms and iron-related items for the last 6 months, from the 6-month questionnaire.",
+  "type": "object",
+  "x-variable-group": "medical_history",
+  "$comment": "All items are coded 1 = yes, 2 = no; the source gives no 999 for this questionnaire's items.",
+  "$defs": {
+    "yes_no": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "properties": {
+    "heartProblems_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you seen a doctor or been to hospital in the last 6 months for a heart problem (including stroke)?"
+    },
+    "hFailure_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had heart failure?"
+    },
+    "hFailure_hosp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows hFailure_6m in the dictionary."
+    },
+    "MI_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had a heart attack?"
+    },
+    "MI_hosp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows MI_6m in the dictionary."
+    },
+    "angina_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had angina?"
+    },
+    "angina_hosp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows angina_6m in the dictionary."
+    },
+    "stroke_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had a stroke?"
+    },
+    "stroke_hosp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows stroke_6m in the dictionary."
+    },
+    "TIA_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had a TIA?"
+    },
+    "TIA_hosp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows TIA_6m in the dictionary."
+    },
+    "fall_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you seen a doctor for a fall in the last 6 months?"
+    },
+    "fall_hosp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you been to hospital for a fall in the last 6 months?"
+    },
+    "trans_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you seen a doctor due to a transport accident in the last 6 months?"
+    },
+    "trans_hosp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you been to hospital due to a transport accident in the last 6 months?"
+    },
+    "ill_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you been to hospital for any other new illness in the last 6 months?"
+    },
+    "ironLow_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months have you seen a doctor who has told you that you have low iron levels or anaemia?"
+    },
+    "ironSupp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months have you seen a doctor who has prescribed iron supplements for you?"
+    },
+    "tired_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you more tired than usual in the last 6 months?",
+      "$comment": "Source typo kept in the title: 'Have you more tired' [sic]."
+    },
+    "breathless_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you felt more breathless in the last 6 months?"
+    },
+    "palp_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced palpitations in the last 6 months?"
+    },
+    "dizzy_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced dizziness in the last 6 months?"
+    },
+    "feelFaint_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced feeling faint in the last 6 months?"
+    },
+    "faint_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced fainting in the last 6 months?"
+    },
+    "chestPain_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced chest pain in the last 6 months?"
+    },
+    "restlessLeg_6m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced restless legs syndrome in the last 6 months?"
+    }
+  },
+  "required": [
+    "heartProblems_6m",
+    "hFailure_6m",
+    "hFailure_hosp_6m",
+    "MI_6m",
+    "MI_hosp_6m",
+    "angina_6m",
+    "angina_hosp_6m",
+    "stroke_6m",
+    "stroke_hosp_6m",
+    "TIA_6m",
+    "TIA_hosp_6m",
+    "fall_6m",
+    "fall_hosp_6m",
+    "trans_6m",
+    "trans_hosp_6m",
+    "ill_6m",
+    "ironLow_6m",
+    "ironSupp_6m",
+    "tired_6m",
+    "breathless_6m",
+    "palp_6m",
+    "dizzy_6m",
+    "feelFaint_6m",
+    "faint_6m",
+    "chestPain_6m",
+    "restlessLeg_6m"
+  ]
+}

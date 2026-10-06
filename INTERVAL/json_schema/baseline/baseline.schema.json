@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/baseline.schema.json",
+  "title": "INTERVAL — BASELINE table",
+  "description": "Array of donor records. One element is one donor at baseline (recruitment): the recruitment record, the baseline questionnaire and the baseline blood sample. A blank in the provider's data is written as an empty string; the dictionary's own codes are kept as constants.",
+  "$comment": "Category files are wired into allOf as each category is converted. JSON Schema cannot enforce uniqueness of rows: the dictionary lists no participant identifier (D010/D011).",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "BASELINE record",
+    "allOf": [
+      {
+        "$ref": "categories/demographics.json"
+      },
+      {
+        "$ref": "categories/recruitment.json"
+      },
+      {
+        "$ref": "categories/anthropometric.json"
+      },
+      {
+        "$ref": "categories/medical_history.json"
+      },
+      {
+        "$ref": "categories/reproductive_hormonal.json"
+      },
+      {
+        "$ref": "categories/general_health_sf36.json"
+      },
+      {
+        "$ref": "categories/dietary.json"
+      },
+      {
+        "$ref": "categories/behavioral.json"
+      },
+      {
+        "$ref": "categories/occupation_physical_activity.json"
+      },
+      {
+        "$ref": "categories/blood_biomarkers.json"
+      },
+      {
+        "$ref": "categories/blood_counts_assays.json"
+      },
+      {
+        "$ref": "categories/omics.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

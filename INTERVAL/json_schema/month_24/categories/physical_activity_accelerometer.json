@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_24/categories/physical_activity_accelerometer.json",
+  "title": "MONTH_24 — Physical Activity (accelerometer)",
+  "description": "Accelerometer file dates, wear time and derived activity measures from the 24-month contact.",
+  "type": "object",
+  "x-variable-group": "physical_activity_accelerometer",
+  "$comment": "The dictionary gives no unit column and no ranges for these items (units appear inside some descriptions, e.g. 'minutes/day'); none are asserted and measured values are typed number (D078). The row 'enmo_0plus - enmo_4000plus', which the source says provides 60 variables, is not in this category until the data provider lists the column names (D013).",
+  "properties": {
+    "firstFileDate": {
+      "title": "First timestamp of hdf5 file, date",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source description says 'date' but states no format; typed as text, no pattern (D022, D078)."
+    },
+    "lastFileDate": {
+      "title": "Last timestamp of hdf5 file, date",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source description says 'date' but states no format; typed as text, no pattern (D022, D078)."
+    },
+    "Pwear": {
+      "title": "Wear time. (The Pwear variable has been set to 1 during the night (midnight-6am), to “impute” sleep when the monitor was flagged as non-worn during those times.)",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Pwear_morning": {
+      "title": "Number of valid hrs during free-living; between 00.01 and 06.00",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Pwear_noon": {
+      "title": "Number of valid hrs during free-living; between 06:01 and 12:00",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Pwear_afternoon": {
+      "title": "Number of valid hrs during free-living; between 12:01 and 18:00",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Pwear_night": {
+      "title": "Number of valid hrs during free-living; between 18:01 and 24:00",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Pwear_wkday": {
+      "title": "Number of valid hrs during free-living; weekday",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Pwear_wkend": {
+      "title": "Number of valid hrs during free-living; weekend day",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "enmo_mean": {
+      "title": "Average acceleration (milli-g) (consolidated)",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "include": {
+      "title": "1=Pwear>=48 & all Pwear_quads>=9. 2=Pwear>=48 & 3 Pwear_quads>=9",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Pwear>=48 & all Pwear_quads>=9"
+        },
+        {
+          "const": 2,
+          "title": "Pwear>=48 & 3 Pwear_quads>=9"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The codes are written inside the source description ('1=Pwear>=48 & all Pwear_quads>=9. 2=Pwear>=48 & 3 Pwear_quads>=9'); the dictionary lists no other value (D078)."
+    },
+    "imputed": {
+      "title": "1=Data imputed if not worn (proportional to Pwear)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Data imputed if not worn (proportional to Pwear)"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The only value the source states is 1 (written inside the description); it states nothing for data that were not imputed, so none is asserted (D078)."
+    },
+    "sed_25": {
+      "title": "Sedentary time (minutes/day) threshold 25milli-g",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "sed_30": {
+      "title": "Sedentary time (minutes/day) threshold 30milli-g",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "sed_35": {
+      "title": "Sedentary time (minutes/day) threshold 35milli-g",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "mvpa_100": {
+      "title": "Moderate-Vigorous intenstity activity (minutes) threshold 100milli-g",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source typo kept in the title: 'intenstity' [sic]."
+    },
+    "mvpa_125": {
+      "title": "Moderate-Vigorous intenstity activity (minutes) threshold 125milli-g",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source typo kept in the title: 'intenstity' [sic]."
+    },
+    "mvpa_150": {
+      "title": "Moderate-Vigorous intenstity activity (minutes) threshold 150milli-g",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source typo kept in the title: 'intenstity' [sic]."
+    }
+  },
+  "required": [
+    "firstFileDate",
+    "lastFileDate",
+    "Pwear",
+    "Pwear_morning",
+    "Pwear_noon",
+    "Pwear_afternoon",
+    "Pwear_night",
+    "Pwear_wkday",
+    "Pwear_wkend",
+    "enmo_mean",
+    "include",
+    "imputed",
+    "sed_25",
+    "sed_30",
+    "sed_35",
+    "mvpa_100",
+    "mvpa_125",
+    "mvpa_150"
+  ]
+}

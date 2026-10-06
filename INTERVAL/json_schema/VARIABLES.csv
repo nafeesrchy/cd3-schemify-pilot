@@ -1,0 +1,986 @@
+variable,table,category,status,source,notes
+sexPulse,baseline,demographics,converted,P1v4 basicInfo row 2,
+monthPulse,baseline,unassigned,dropped,P1v4 basicInfo row 3,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+yearPulse,baseline,demographics,converted,P1v4 basicInfo row 4,
+agePulse,baseline,demographics,converted,P1v4 basicInfo row 5,
+ethnicPulse,baseline,demographics,converted,P1v4 basicInfo row 6,
+attendanceDate,baseline,recruitment,converted,P1v4 basicInfo row 7,
+centre,baseline,recruitment,converted,P1v4 basicInfo row 8,
+newDonor,baseline,unassigned,dropped,P1v4 basicInfo row 9,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+recruitmentSource,baseline,unassigned,dropped,P1v4 basicInfo row 10,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+ABORH,baseline,blood_biomarkers,converted,P1v4 basicInfo row 11,
+appointmentTime,baseline,unassigned,dropped,P1v4 basicInfo row 12,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+interval,baseline,unassigned,dropped,P1v4 basicInfo row 13,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Non_Randomised,baseline,unassigned,dropped,P1v4 basicInfo row 14,"request option (""Include non-randomised participant data""), not obviously a data column — marker £; not requested (no X in v4 Requested column) — out of scope, D-scope"
+outCome,baseline,recruitment,converted,P1v4 basicInfo row 15,
+startDate_bl,baseline,recruitment,converted,P1v4 questionnaire_bl row 2,
+ht_bl,baseline,anthropometric,converted,P1v4 questionnaire_bl row 3,
+wt_bl,baseline,anthropometric,converted,P1v4 questionnaire_bl row 4,
+health1_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 5,
+yearAgo_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 6,
+vig_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 7,
+mod_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 8,
+lift_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 9,
+stairA_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 10,
+stairB_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 11,
+bend_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 12,
+mile_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 13,
+halfmile_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 14,
+walk_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 15,
+bath_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 16,
+phys_time_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 17,
+phys_less_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 18,
+phys_kind_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 19,
+phys_diff_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 20,
+emo_time_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 21,
+emo_less_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 22,
+emo_care_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 23,
+social1_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 24,
+pain1_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 25,
+pain2_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 26,
+getUp_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 27,
+nervous_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 28,
+down_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 29,
+calm_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 30,
+energy_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 31,
+sad_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 32,
+worn_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 33,
+happy_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 34,
+tired_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 35,
+social2_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 36,
+sick_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 37,
+others_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 38,
+worse_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 39,
+health2_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 40,
+ethnic_bl,baseline,demographics,converted,P1v4 questionnaire_bl row 41,
+anemia_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 42,
+restlessLeg_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 43,
+painChest_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 44,
+shortBreath_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 45,
+painCalf_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 46,
+painJoint_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 47,
+ironDr_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 48,
+ironMulti_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 49,
+ironSupp_bl,baseline,medical_history,converted,P1v4 questionnaire_bl row 50,
+hrt_bl,baseline,reproductive_hormonal,converted,P1v4 questionnaire_bl row 51,
+pill_bl,baseline,reproductive_hormonal,converted,P1v4 questionnaire_bl row 52,
+menopause_bl,baseline,reproductive_hormonal,converted,P1v4 questionnaire_bl row 53,
+meatEater_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 54,
+ageVeg_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 55,
+liver_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 56,
+redMeat_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 57,
+poultry_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 58,
+whiteFish_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 59,
+oilyFish_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 60,
+veg_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 61,
+fruit_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 62,
+juice_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 63,
+smooth_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 64,
+tea_bl,baseline,dietary,converted,P1v4 questionnaire_bl row 65,
+alcEver_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 66,
+alcCurr_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 67,
+alcYearsStop_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 68,
+alcFreq_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 69,
+alcWhite_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 70,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+alcRed_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 71,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+alcBeer_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 72,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+alcSpirit_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 73,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+alcFwine_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 74,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+alcPops_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 75,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+smEver_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 76,
+smCurr_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 77,
+smStartAge_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 78,
+smStopAge_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 79,
+smFreq_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 80,
+smCig_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 81,
+smCigar_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 82,
+smPipe_bl,baseline,behavioral,converted,P1v4 questionnaire_bl row 83,
+work_bl,baseline,occupation_physical_activity,converted,P1v4 questionnaire_bl row 84,
+leisure_bl,baseline,occupation_physical_activity,converted,P1v4 questionnaire_bl row 85,
+occupation_bl,baseline,occupation_physical_activity,converted,P1v4 questionnaire_bl row 86,
+blood6m_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 87,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+blood2y_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 88,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+bloodLife_bl,baseline,unassigned,dropped,P1v4 questionnaire_bl row 89,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+PF_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 90,marker #
+RP_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 91,marker #
+BP_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 92,marker #
+GH_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 93,marker #
+VT_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 94,marker #
+SF_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 95,marker #
+RE_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 96,marker #
+MH_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 97,marker #
+PF_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 98,marker #
+RP_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 99,marker #
+BP_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 100,marker #
+GH_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 101,marker #
+VT_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 102,marker #
+SF_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 103,marker #
+RE_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 104,marker #
+MH_NBS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 105,marker #
+PCS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 106,marker #
+MCS_bl,baseline,general_health_sf36,converted,P1v4 questionnaire_bl row 107,marker #
+startDate_6m,month_6,unassigned,dropped,P1v4 questionnaire_6m row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+health1_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 3,
+mod_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 4,
+stairA_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 5,
+phys_less_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 6,
+phys_kind_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 7,
+emo_less_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 8,
+emo_care_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 9,
+pain2_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 10,
+calm_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 11,
+energy_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 12,
+sad_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 13,
+social2_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 14,
+heartProblems_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 15,
+hFailure_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 16,
+hFailure_hosp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 17,
+MI_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 18,
+MI_hosp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 19,
+angina_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 20,
+angina_hosp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 21,
+stroke_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 22,
+stroke_hosp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 23,
+TIA_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 24,
+TIA_hosp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 25,
+fall_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 26,
+fall_hosp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 27,
+trans_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 28,
+trans_hosp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 29,
+ill_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 30,
+ironLow_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 31,
+ironSupp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 32,
+tired_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 33,
+breathless_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 34,
+palp_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 35,
+dizzy_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 36,
+feelFaint_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 37,
+faint_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 38,
+chestPain_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 39,
+restlessLeg_6m,month_6,medical_history,converted,P1v4 questionnaire_6m row 40,
+PF_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 41,marker #
+RP_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 42,marker #
+BP_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 43,marker #
+GH_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 44,marker #
+VT_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 45,marker #
+SF_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 46,marker #
+RE_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 47,marker #
+MH_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 48,marker #
+PF_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 49,marker #
+RP_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 50,marker #
+BP_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 51,marker #
+GH_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 52,marker #
+VT_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 53,marker #
+SF_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 54,marker #
+RE_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 55,marker #
+MH_NBS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 56,marker #
+PCS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 57,marker #
+MCS_6m,month_6,general_health_sf12,converted,P1v4 questionnaire_6m row 58,marker #
+startDate_12m,month_12,unassigned,dropped,P1v4 questionnaire_12m row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+health1_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 3,
+mod_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 4,
+stairA_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 5,
+phys_less_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 6,
+phys_kind_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 7,
+emo_less_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 8,
+emo_care_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 9,
+pain2_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 10,
+calm_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 11,
+energy_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 12,
+sad_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 13,
+social2_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 14,
+heartProblems_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 15,
+hFailure_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 16,
+hFailure_hosp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 17,
+MI_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 18,
+MI_hosp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 19,
+angina_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 20,
+angina_hosp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 21,
+stroke_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 22,
+stroke_hosp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 23,
+TIA_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 24,
+TIA_hosp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 25,
+fall_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 26,
+fall_hosp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 27,
+trans_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 28,
+trans_hosp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 29,
+ill_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 30,
+ironLow_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 31,
+ironSupp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 32,
+tired_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 33,
+breathless_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 34,
+palp_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 35,
+dizzy_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 36,
+feelFaint_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 37,
+faint_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 38,
+chestPain_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 39,
+epileptic_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 40,
+restlessLeg_12m,month_12,medical_history,converted,P1v4 questionnaire_12m row 41,
+PF_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 42,marker #
+RP_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 43,marker #
+BP_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 44,marker #
+GH_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 45,marker #
+VT_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 46,marker #
+SF_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 47,marker #
+RE_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 48,marker #
+MH_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 49,marker #
+PF_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 50,marker #
+RP_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 51,marker #
+BP_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 52,marker #
+GH_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 53,marker #
+VT_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 54,marker #
+SF_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 55,marker #
+RE_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 56,marker #
+MH_NBS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 57,marker #
+PCS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 58,marker #
+MCS_12m,month_12,general_health_sf12,converted,P1v4 questionnaire_12m row 59,marker #
+startDate_18m,month_18,unassigned,dropped,P1v4 questionnaire_18m row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+health1_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 3,
+mod_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 4,
+stairA_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 5,
+phys_less_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 6,
+phys_kind_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 7,
+emo_less_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 8,
+emo_care_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 9,
+pain2_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 10,
+calm_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 11,
+energy_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 12,
+sad_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 13,
+social2_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 14,
+ironLow_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 15,
+ironSupp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 16,
+restlessLeg_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 17,
+heartProblems_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 18,
+hFailure_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 19,
+hFailure_hosp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 20,
+MI_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 21,
+MI_hosp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 22,
+angina_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 23,
+angina_hosp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 24,
+stroke_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 25,
+stroke_hosp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 26,
+TIA_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 27,
+TIA_hosp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 28,
+fall_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 29,
+fall_hosp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 30,
+trans_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 31,
+trans_hosp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 32,
+ill_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 33,
+tired_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 34,
+breathless_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 35,
+palp_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 36,
+dizzy_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 37,
+feelFaint_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 38,
+faint_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 39,
+chestPain_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 40,
+epileptic_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 41,
+rls_1_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 42,
+rls_2_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 43,
+rls_3_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 44,
+rls_4_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 45,
+rls_5_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 46,
+rls_6a_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 47,"expanded from group row ""rls_6a_18m – rls_6f_18m"" (6 columns)"
+rls_6b_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 47,"expanded from group row ""rls_6a_18m – rls_6f_18m"" (6 columns)"
+rls_6c_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 47,"expanded from group row ""rls_6a_18m – rls_6f_18m"" (6 columns)"
+rls_6d_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 47,"expanded from group row ""rls_6a_18m – rls_6f_18m"" (6 columns)"
+rls_6e_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 47,"expanded from group row ""rls_6a_18m – rls_6f_18m"" (6 columns)"
+rls_6f_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 47,"expanded from group row ""rls_6a_18m – rls_6f_18m"" (6 columns)"
+rls_7a_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 48,"expanded from group row ""rls_7a_18m – rls_7f_18m"" (6 columns)"
+rls_7b_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 48,"expanded from group row ""rls_7a_18m – rls_7f_18m"" (6 columns)"
+rls_7c_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 48,"expanded from group row ""rls_7a_18m – rls_7f_18m"" (6 columns)"
+rls_7d_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 48,"expanded from group row ""rls_7a_18m – rls_7f_18m"" (6 columns)"
+rls_7e_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 48,"expanded from group row ""rls_7a_18m – rls_7f_18m"" (6 columns)"
+rls_7f_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 48,"expanded from group row ""rls_7a_18m – rls_7f_18m"" (6 columns)"
+rls_8_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 49,
+rls_9a_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 50,
+rls_9b_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 51,
+rls_10_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 52,
+rls_11_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 53,
+rls_12_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 54,
+rls_13_18m,month_18,medical_history,converted,P1v4 questionnaire_18m row 55,
+PF_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 56,marker #
+RP_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 57,marker #
+BP_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 58,marker #
+GH_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 59,marker #
+VT_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 60,marker #
+SF_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 61,marker #
+RE_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 62,marker #
+MH_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 63,marker #
+PF_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 64,marker #
+RP_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 65,marker #
+BP_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 66,marker #
+GH_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 67,marker #
+VT_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 68,marker #
+SF_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 69,marker #
+RE_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 70,marker #
+MH_NBS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 71,marker #
+PCS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 72,marker #
+MCS_18m,month_18,general_health_sf12,converted,P1v4 questionnaire_18m row 73,marker #
+startDate_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+health1_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 3,
+yearAgo_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 4,
+vig_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 5,
+mod_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 6,
+lift_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 7,
+stairA_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 8,
+stairB_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 9,
+bend_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 10,
+mile_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 11,
+halfmile_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 12,
+walk_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 13,
+bath_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 14,
+phys_time_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 15,
+phys_less_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 16,
+phys_kind_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 17,
+phys_diff_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 18,
+emo_time_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 19,
+emo_less_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 20,
+emo_care_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 21,
+social1_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 22,
+pain1_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 23,
+pain2_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 24,
+getUp_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 25,
+nervous_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 26,
+down_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 27,
+calm_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 28,
+energy_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 29,
+sad_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 30,
+worn_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 31,
+happy_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 32,
+tired_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 33,
+social2_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 34,
+sick_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 35,
+others_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 36,
+worse_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 37,
+health2_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 38,
+haemLow_24m,month_24,blood_donation,converted,P1v4 questionnaire_24m row 39,
+ironLow_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 40,
+ironSupp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 41,
+ironFreq_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 42,
+restlessLeg_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 43,
+heartProblems_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 44,
+hFailure_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 45,
+hFailure_hosp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 46,
+MI_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 47,
+MI_hosp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 48,
+angina_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 49,
+angina_hosp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 50,
+stroke_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 51,
+stroke_hosp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 52,
+TIA_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 53,
+TIA_hosp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 54,
+fall_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 55,
+fall_hosp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 56,
+trans_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 57,
+trans_hosp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 58,
+ill_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 59,
+moreTired_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 60,
+dizzy_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 61,
+feelFaint_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 62,
+faint_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 63,
+epileptic_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 64,
+breathless_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 65,
+Breathless_scale_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 66,
+palp_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 67,
+Palp_ECG_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 68,
+chestPain_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 69,
+chestPain_ECG_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 70,
+headache_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 71,
+sleepDisturbed_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 72,
+irritable_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 73,
+notConcentrate_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 74,
+notRelax_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 75,
+Pica_1_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 76,"expanded from group row ""Pica_1_24m – Pica_7_24m"" (7 columns)"
+Pica_2_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 76,"expanded from group row ""Pica_1_24m – Pica_7_24m"" (7 columns)"
+Pica_3_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 76,"expanded from group row ""Pica_1_24m – Pica_7_24m"" (7 columns)"
+Pica_4_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 76,"expanded from group row ""Pica_1_24m – Pica_7_24m"" (7 columns)"
+Pica_5_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 76,"expanded from group row ""Pica_1_24m – Pica_7_24m"" (7 columns)"
+Pica_6_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 76,"expanded from group row ""Pica_1_24m – Pica_7_24m"" (7 columns)"
+Pica_7_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 76,"expanded from group row ""Pica_1_24m – Pica_7_24m"" (7 columns)"
+rls_1_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 77,
+rls_2_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 78,
+rls_3_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 79,
+rls_4_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 80,
+rls_5_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 81,
+rls_6a_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 82,"expanded from group row ""rls_6a_24m – rls_6g_24m"" (7 columns)"
+rls_6b_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 82,"expanded from group row ""rls_6a_24m – rls_6g_24m"" (7 columns)"
+rls_6c_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 82,"expanded from group row ""rls_6a_24m – rls_6g_24m"" (7 columns)"
+rls_6d_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 82,"expanded from group row ""rls_6a_24m – rls_6g_24m"" (7 columns)"
+rls_6e_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 82,"expanded from group row ""rls_6a_24m – rls_6g_24m"" (7 columns)"
+rls_6f_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 82,"expanded from group row ""rls_6a_24m – rls_6g_24m"" (7 columns)"
+rls_6g_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 82,"expanded from group row ""rls_6a_24m – rls_6g_24m"" (7 columns)"
+rls_7a_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 83,"expanded from group row ""rls_7a_24m – rls_7g_24m"" (7 columns)"
+rls_7b_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 83,"expanded from group row ""rls_7a_24m – rls_7g_24m"" (7 columns)"
+rls_7c_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 83,"expanded from group row ""rls_7a_24m – rls_7g_24m"" (7 columns)"
+rls_7d_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 83,"expanded from group row ""rls_7a_24m – rls_7g_24m"" (7 columns)"
+rls_7e_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 83,"expanded from group row ""rls_7a_24m – rls_7g_24m"" (7 columns)"
+rls_7f_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 83,"expanded from group row ""rls_7a_24m – rls_7g_24m"" (7 columns)"
+rls_7g_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 83,"expanded from group row ""rls_7a_24m – rls_7g_24m"" (7 columns)"
+rls_8_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 84,
+rls_9a_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 85,
+rls_9b_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 86,
+rls_10_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 87,
+rls_11_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 88,
+rls_12_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 89,
+rls_13_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 90,
+med_gluc_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 91,
+med_hyperten_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 92,
+med_lipid_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 93,
+supp_otc_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 94,
+supp_otc_2_24m,month_24,medical_history,converted,P1v4 questionnaire_24m row 95,
+easy_a_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 96,"expanded from group row ""easy_a_24m – easy_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+easy_b_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 96,"expanded from group row ""easy_a_24m – easy_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+easy_c_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 96,"expanded from group row ""easy_a_24m – easy_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+easy_d_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 96,"expanded from group row ""easy_a_24m – easy_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+easy_e_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 96,"expanded from group row ""easy_a_24m – easy_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+easy_f_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 96,"expanded from group row ""easy_a_24m – easy_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_a_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_b_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_c_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_d_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_e_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_f_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_g_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+difficult_h_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 97,"expanded from group row ""difficult_a_24m – difficult_h_24m"" (8 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+appt_pref_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 98,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+appt_time_a_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 99,"expanded from group row ""appt_time_a_24m – appt_time_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+appt_time_b_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 99,"expanded from group row ""appt_time_a_24m – appt_time_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+appt_time_c_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 99,"expanded from group row ""appt_time_a_24m – appt_time_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+appt_time_d_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 99,"expanded from group row ""appt_time_a_24m – appt_time_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+appt_time_e_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 99,"expanded from group row ""appt_time_a_24m – appt_time_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+appt_time_f_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 99,"expanded from group row ""appt_time_a_24m – appt_time_f_24m"" (6 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+reminder_time_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 100,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+prior_centre_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 101,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+future_centre_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 102,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+amount_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 103,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+bloodservice_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 104,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+help_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 105,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+research_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 106,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+friends_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 107,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+trust_blood_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 108,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+trust_university_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 109,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+better_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 110,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+partic_future_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 111,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+feel_after_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 112,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+eatBefore_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 113,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+drinkBefore_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 114,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+eatAfter_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 115,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+drinkAfter_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 116,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+eatTyp_change_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 117,
+eatTyp_INTERVAL_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 118,
+eatTyp_more_a_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 119,
+eatTyp_more_b_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 120,
+eatTyp_more_c_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 121,
+eatTyp_more_d_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 122,
+eatTyp_more_e_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 123,
+eatTyp_more_f_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 124,
+eatTyp_more_g_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 125,
+eatTyp_more_h_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 126,
+eatTyp_more_i_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 127,
+eatTyp_more_j_24m,month_24,dietary,converted,P1v4 questionnaire_24m row 128,
+pa_change_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 129,
+pa_changeWhen_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 130,
+pa_day_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 131,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+pa_week_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 132,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+words_1_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 133,"expanded from group row ""words_1 – words_5_24m"" (5 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+words_2_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 133,"expanded from group row ""words_1 – words_5_24m"" (5 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+words_3_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 133,"expanded from group row ""words_1 – words_5_24m"" (5 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+words_4_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 133,"expanded from group row ""words_1 – words_5_24m"" (5 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+words_5_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 133,"expanded from group row ""words_1 – words_5_24m"" (5 columns); not requested (no X in v4 Requested column) — out of scope, D-scope"
+pa_continue_24m,month_24,unassigned,dropped,P1v4 questionnaire_24m row 134,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+get_about_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 135,
+tv_daybefore6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 136,
+tv_dayafter6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 137,
+tv_endbefore6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 138,
+tv_endafter6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 139,
+comp_daybefore6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 140,
+comp_dayafter6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 141,
+comp_endbefore6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 142,
+comp_endafter6_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 143,
+stairs_day_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 144,
+stairs_end_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 145,
+employ_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 146,
+work_hours4_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 147,
+work_hours3_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 148,
+work_hours2_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 149,
+work_hours1_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 150,
+work_type_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 151,
+work_distance_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 152,
+work_travel_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 153,
+work_transcar_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 154,
+work_transpt_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 155,
+work_transbic_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 156,
+work_transwalk_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 157,
+leis_cswimFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 158,"expanded from group row ""leis_cswim … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cswimHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 158,"expanded from group row ""leis_cswim … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cswimMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 158,"expanded from group row ""leis_cswim … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_swimFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 159,"expanded from group row ""leis_swim … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_swimHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 159,"expanded from group row ""leis_swim … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_swimMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 159,"expanded from group row ""leis_swim … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_climbFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 160,"expanded from group row ""leis_climb … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_climbHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 160,"expanded from group row ""leis_climb … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_climbMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 160,"expanded from group row ""leis_climb … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_walkFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 161,"expanded from group row ""leis_walk … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_walkHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 161,"expanded from group row ""leis_walk … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_walkMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 161,"expanded from group row ""leis_walk … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_rtcycleFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 162,"expanded from group row ""leis_rtcycle … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_rtcycleHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 162,"expanded from group row ""leis_rtcycle … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_rtcycleMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 162,"expanded from group row ""leis_rtcycle … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cycleFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 163,"expanded from group row ""leis_cycle … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cycleHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 163,"expanded from group row ""leis_cycle … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cycleMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 163,"expanded from group row ""leis_cycle … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_lawnFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 164,"expanded from group row ""leis_lawn … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_lawnHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 164,"expanded from group row ""leis_lawn … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_lawnMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 164,"expanded from group row ""leis_lawn … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_waterFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 165,"expanded from group row ""leis_water … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_waterHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 165,"expanded from group row ""leis_water … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_waterMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 165,"expanded from group row ""leis_water … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_digFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 166,"expanded from group row ""leis_dig … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_digHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 166,"expanded from group row ""leis_dig … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_digMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 166,"expanded from group row ""leis_dig … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_weedFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 167,"expanded from group row ""leis_weed … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_weedHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 167,"expanded from group row ""leis_weed … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_weedMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 167,"expanded from group row ""leis_weed … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_diyFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 168,"expanded from group row ""leis_diy … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_diyHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 168,"expanded from group row ""leis_diy … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_diyMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 168,"expanded from group row ""leis_diy … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_hAeroFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 169,"expanded from group row ""leis_hAero … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_hAeroHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 169,"expanded from group row ""leis_hAero … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_hAeroMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 169,"expanded from group row ""leis_hAero … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_aeroFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 170,"expanded from group row ""leis_aero … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_aeroHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 170,"expanded from group row ""leis_aero … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_aeroMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 170,"expanded from group row ""leis_aero … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_wExerFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 171,"expanded from group row ""leis_wExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_wExerHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 171,"expanded from group row ""leis_wExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_wExerMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 171,"expanded from group row ""leis_wExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cExerFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 172,"expanded from group row ""leis_cExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cExerHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 172,"expanded from group row ""leis_cExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_cExerMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 172,"expanded from group row ""leis_cExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fExerFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 173,"expanded from group row ""leis_fExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fExerHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 173,"expanded from group row ""leis_fExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fExerMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 173,"expanded from group row ""leis_fExer … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_danceFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 174,"expanded from group row ""leis_dance … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_danceHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 174,"expanded from group row ""leis_dance … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_danceMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 174,"expanded from group row ""leis_dance … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_runFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 175,"expanded from group row ""leis_run … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_runHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 175,"expanded from group row ""leis_run … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_runMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 175,"expanded from group row ""leis_run … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_jogFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 176,"expanded from group row ""leis_jog … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_jogHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 176,"expanded from group row ""leis_jog … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_jogMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 176,"expanded from group row ""leis_jog … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_bowlFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 177,"expanded from group row ""leis_bowl … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_bowlHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 177,"expanded from group row ""leis_bowl … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_bowlMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 177,"expanded from group row ""leis_bowl … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_tennisFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 178,"expanded from group row ""leis_tennis … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_tennisHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 178,"expanded from group row ""leis_tennis … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_tennisMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 178,"expanded from group row ""leis_tennis … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_squashFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 179,"expanded from group row ""leis_squash … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_squashHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 179,"expanded from group row ""leis_squash … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_squashMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 179,"expanded from group row ""leis_squash … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_tTenFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 180,"expanded from group row ""leis_tTen … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_tTenHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 180,"expanded from group row ""leis_tTen … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_tTenMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 180,"expanded from group row ""leis_tTen … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_golfFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 181,"expanded from group row ""leis_golf … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_golfHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 181,"expanded from group row ""leis_golf … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_golfMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 181,"expanded from group row ""leis_golf … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_footyFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 182,"expanded from group row ""leis_footy … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_footyHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 182,"expanded from group row ""leis_footy … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_footyMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 182,"expanded from group row ""leis_footy … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_crickFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 183,"expanded from group row ""leis_crick … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_crickHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 183,"expanded from group row ""leis_crick … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_crickMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 183,"expanded from group row ""leis_crick … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_rowFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 184,"expanded from group row ""leis_row … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_rowHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 184,"expanded from group row ""leis_row … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_rowMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 184,"expanded from group row ""leis_row … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_netBFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 185,"expanded from group row ""leis_netB … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_netBHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 185,"expanded from group row ""leis_netB … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_netBMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 185,"expanded from group row ""leis_netB … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fishFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 186,"expanded from group row ""leis_fish … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fishHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 186,"expanded from group row ""leis_fish … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fishMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 186,"expanded from group row ""leis_fish … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_horseFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 187,"expanded from group row ""leis_horse … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_horseHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 187,"expanded from group row ""leis_horse … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_horseMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 187,"expanded from group row ""leis_horse … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_snookFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 188,"expanded from group row ""leis_snook … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_snookHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 188,"expanded from group row ""leis_snook … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_snookMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 188,"expanded from group row ""leis_snook … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_musicFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 189,"expanded from group row ""leis_music … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_musicHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 189,"expanded from group row ""leis_music … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_musicMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 189,"expanded from group row ""leis_music … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_iceFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 190,"expanded from group row ""leis_ice … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_iceHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 190,"expanded from group row ""leis_ice … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_iceMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 190,"expanded from group row ""leis_ice … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_sailFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 191,"expanded from group row ""leis_sail … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_sailHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 191,"expanded from group row ""leis_sail … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_sailMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 191,"expanded from group row ""leis_sail … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fightFreq_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 192,"expanded from group row ""leis_fight … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fightHrs_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 192,"expanded from group row ""leis_fight … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+leis_fightMin_24m,month_24,occupation_physical_activity,converted,P1v4 questionnaire_24m row 192,"expanded from group row ""leis_fight … _24m"" (3 columns Freq/Hrs/Min per Categories text; suffix placement assumed)"
+PF_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 193,marker #
+RP_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 194,marker #
+BP_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 195,marker #
+GH_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 196,marker #
+VT_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 197,marker #
+SF_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 198,marker #
+RE_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 199,marker #
+MH_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 200,marker #
+PF_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 201,marker #
+RP_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 202,marker #
+BP_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 203,marker #
+GH_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 204,marker #
+VT_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 205,marker #
+SF_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 206,marker #
+RE_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 207,marker #
+MH_NBS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 208,marker #
+PCS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 209,marker #
+MCS_24m,month_24,general_health_sf36,converted,P1v4 questionnaire_24m row 210,marker #
+pairs_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 2,
+fluidIQ_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 3,
+stroop_MRT_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 4,
+colours_MRT_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 5,
+attention_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 6,
+mood_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 7,
+trailsA_duration_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 8,
+trailsB_duration_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 9,
+trailsDiff_24m,month_24,cognitive,converted,P1v4 cognitiveTest row 10,
+firstFileDate,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 2,
+firstFileTime,month_24,unassigned,dropped,P1v4 physicalActivity row 3,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+lastFileDate,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 4,
+lastFileTime,month_24,unassigned,dropped,P1v4 physicalActivity row 5,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+RecordLength,month_24,unassigned,dropped,P1v4 physicalActivity row 6,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Pwear,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 7,
+Pwear_morning,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 8,
+Pwear_noon,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 9,
+Pwear_afternoon,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 10,
+Pwear_night,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 11,
+Pwear_wkday,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 12,
+Pwear_wkend,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 13,
+enmo_mean,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 14,
+enmo_0plus – enmo_4000plus,month_24,physical_activity_accelerometer,deferred,P1v4 physicalActivity row 15,"ONE row standing for 60 columns (""this will provide 60 variables … thresholds between >=0-4000""); thresholds not listed — names not derivable - deferred until the data provider lists the 60 column names (D013, D078)"
+include,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 16,
+imputed,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 17,
+sed_25,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 18,
+sed_30,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 19,
+sed_35,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 20,
+mvpa_100,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 21,
+mvpa_125,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 22,
+mvpa_150,month_24,physical_activity_accelerometer,converted,P1v4 physicalActivity row 23,
+nDonation_hx2,baseline,unassigned,dropped,P1v4 donationHistory row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nLowHB_hx2,baseline,unassigned,dropped,P1v4 donationHistory row 3,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nOtherDef_hx2,baseline,unassigned,dropped,P1v4 donationHistory row 4,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nUnder_hx2,baseline,unassigned,dropped,P1v4 donationHistory row 5,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nOtherAtt_hx2,baseline,unassigned,dropped,P1v4 donationHistory row 6,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+earliestData_hx2,baseline,unassigned,dropped,P1v4 donationHistory row 7,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nDonation_hx5,baseline,unassigned,dropped,P1v4 donationHistory row 9,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+nLowHB_hx5,baseline,unassigned,dropped,P1v4 donationHistory row 10,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+nOtherDef_hx5,baseline,unassigned,dropped,P1v4 donationHistory row 11,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+nUnder_hx5,baseline,unassigned,dropped,P1v4 donationHistory row 12,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+nOtherAtt_hx5,baseline,unassigned,dropped,P1v4 donationHistory row 13,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+earliestData_hx5,baseline,unassigned,dropped,P1v4 donationHistory row 14,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+nDonation,month_24,unassigned,dropped,P1v4 outcomes row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nLowHB,month_24,unassigned,dropped,P1v4 outcomes row 3,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nOtherDef,month_24,unassigned,dropped,P1v4 outcomes row 4,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nUnder,month_24,unassigned,dropped,P1v4 outcomes row 5,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxBruising,baseline,unassigned,dropped,P1v4 adverseEventHistory row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxRebleed,baseline,unassigned,dropped,P1v4 adverseEventHistory row 3,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxFaint,baseline,unassigned,dropped,P1v4 adverseEventHistory row 4,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxFaint1,baseline,unassigned,dropped,P1v4 adverseEventHistory row 5,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxFaint2,baseline,unassigned,dropped,P1v4 adverseEventHistory row 6,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxFaint3,baseline,unassigned,dropped,P1v4 adverseEventHistory row 7,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxFaint4,baseline,unassigned,dropped,P1v4 adverseEventHistory row 8,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxVeni,baseline,unassigned,dropped,P1v4 adverseEventHistory row 9,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+hxOther,baseline,unassigned,dropped,P1v4 adverseEventHistory row 10,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nBruising,month_24,unassigned,dropped,P1v4 adverseEvents row 2,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nRebleed,month_24,unassigned,dropped,P1v4 adverseEvents row 3,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint,month_24,unassigned,dropped,P1v4 adverseEvents row 4,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint1,month_24,unassigned,dropped,P1v4 adverseEvents row 5,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint2,month_24,unassigned,dropped,P1v4 adverseEvents row 6,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint3,month_24,unassigned,dropped,P1v4 adverseEvents row 7,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint4,month_24,unassigned,dropped,P1v4 adverseEvents row 8,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nVeni,month_24,unassigned,dropped,P1v4 adverseEvents row 9,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nOther,month_24,unassigned,dropped,P1v4 adverseEvents row 10,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nBruisingAfter,month_24,unassigned,dropped,P1v4 adverseEvents row 11,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaintAfter,month_24,unassigned,dropped,P1v4 adverseEvents row 12,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint1After,month_24,unassigned,dropped,P1v4 adverseEvents row 13,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint2After,month_24,unassigned,dropped,P1v4 adverseEvents row 14,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint3After,month_24,unassigned,dropped,P1v4 adverseEvents row 15,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nFaint4After,month_24,unassigned,dropped,P1v4 adverseEvents row 16,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nVeniAfter,month_24,unassigned,dropped,P1v4 adverseEvents row 17,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+nOtherAfter,month_24,unassigned,dropped,P1v4 adverseEvents row 18,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+CRP_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 2,
+dateCRP_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 3,
+FERR_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 4,
+dateFERR_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 5,
+HEP_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 6,
+dateHEP_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 7,
+IRON_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 8,
+dateIRON_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 9,
+TRANSFS_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 10,
+dateTRANSFS_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 11,
+UIBC_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 12,
+dateUIBC_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 13,
+TRANSF_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 14,
+dateTRANSF_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 15,
+Total_C_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 16,marker *
+LDL_C_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 17,marker *
+HDL_C_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 18,marker *
+Total_TG_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 19,marker *
+ApoB_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 20,marker *
+ApoA1_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 21,marker *
+Glucose_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 22,marker *
+Creatinine_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 23,marker *
+Albumin_bl,baseline,blood_biomarkers,converted,P1v4 biomarkers row 24,marker *
+TCHOL_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 26,marker #
+dateTCHOL_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 27,marker #
+CRP_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 28,marker #
+dateCRP_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 29,marker #
+FERR_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 30,marker #
+dateFERR_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 31,marker #
+HEP_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 32,marker #
+dateHEP_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 33,marker #
+FRUCTO_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 34,marker #
+dateFRUCTO_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 35,marker #
+HDL_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 36,marker #
+dateHDL_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 37,marker #
+TRIG_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 38,marker #
+dateTRIG_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 39,marker #
+LDL_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 40,marker #
+dateLDL_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 41,marker #
+HBA1C_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 42,marker #
+dateHBA1C_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 43,marker #
+HBF_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 44,marker #
+dateHBF_24m,month_24,blood_biomarkers,converted,P1v4 biomarkers row 45,marker #
+processDate_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 2,
+processTime_bl,baseline,unassigned,dropped,P1v4 bloods row 3,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+WBC_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 4,
+RBC_10_12_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 5,
+HGB_g_dL_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 6,
+HCT_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 7,
+MCV_fL_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 8,
+MCH_pg_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 9,
+MCHC_g_dL_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 10,
+PLT_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 11,
+RDW_SD_fL_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 12,
+RDW_CV_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 13,
+PDW_fL_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 14,
+MPV_fL_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 15,
+P_LCR_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 16,
+PCT_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 17,
+NRBC_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 18,
+NRBC_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 19,
+NEUT_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 20,
+LYMPH_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 21,
+MONO_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 22,
+EO_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 23,
+BASO_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 24,
+NEUT_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 25,
+LYMPH_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 26,
+MONO_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 27,
+EO_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 28,
+BASO_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 29,
+IG_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 30,
+IG_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 31,
+RET_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 32,
+RET_10_6_uL_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 33,
+IRF_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 34,
+LFR_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 35,
+MFR_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 36,
+HFR_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 37,
+RET_He_pg_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 38,
+IPF_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 39,
+PLT_I_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 40,
+MicroR_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 41,
+MacroR_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 42,
+TNC_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 43,
+WBC_N_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 44,
+TNC_N_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 45,
+BA_N_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 46,
+BA_N_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 47,
+WBC_D_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 48,
+TNC_D_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 49,
+NEUTx_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 50,
+NEUTx_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 51,
+LYMP_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 52,
+LYMP_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 53,
+HFLC_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 54,
+HFLC_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 55,
+BA_D_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 56,
+BA_D_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 57,
+NE_SSC_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 58,
+NE_SFL_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 59,
+NE_FSC_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 60,
+LY_X_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 61,
+LY_Y_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 62,
+LY_Z_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 63,
+MO_X_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 64,
+MO_Y_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 65,
+MO_Z_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 66,
+NE_WX_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 67,
+NE_WY_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 68,
+NE_WZ_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 69,
+LY_WX_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 70,
+LY_WY_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 71,
+LY_WZ_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 72,
+MO_WX_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 73,
+MO_WY_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 74,
+MO_WZ_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 75,
+RBC_O_10_12_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 76,
+PLT_O_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 77,
+RBC_He_pg_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 78,
+Delta_He_pg_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 79,
+RET_Y_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 80,
+RET_RBC_Y_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 81,
+IRF_Y_ch_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 82,
+FRC_10_12_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 83,
+FRC_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 84,
+HYPO_He_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 85,
+HYPER_He_PCT_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 86,
+RPI_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 87,
+RET_UPP_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 88,
+RET_TNC_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 89,
+PLT_F_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 90,
+H_IPF_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 91,
+IPFx_10_9_L_bl,baseline,blood_counts_assays,converted,P1v4 bloods row 92,
+attendanceDate_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 94,marker #
+appointmentTime_24m,month_24,unassigned,dropped,P1v4 bloods row 95,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+processDate_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 96,marker #
+processTime_24m,month_24,unassigned,dropped,P1v4 bloods row 97,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+WBC_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 98,marker #
+RBC_10_12_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 99,marker #
+HGB_g_dL_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 100,marker #
+HCT_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 101,marker #
+MCV_fL_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 102,marker #
+MCH_pg_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 103,marker #
+MCHC_g_dL_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 104,marker #
+PLT_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 105,marker #
+RDW_SD_fL_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 106,marker #
+RDW_CV_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 107,marker #
+PDW_fL_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 108,marker #
+MPV_fL_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 109,marker #
+P_LCR_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 110,marker #
+PCT_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 111,marker #
+NRBC_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 112,marker #
+NRBC_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 113,marker #
+NEUT_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 114,marker #
+LYMPH_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 115,marker #
+MONO_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 116,marker #
+EO_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 117,marker #
+BASO_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 118,marker #
+NEUT_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 119,marker #
+LYMPH_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 120,marker #
+MONO_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 121,marker #
+EO_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 122,marker #
+BASO_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 123,marker #
+IG_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 124,marker #
+IG_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 125,marker #
+RET_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 126,marker #
+RET_10_6_uL_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 127,marker #
+IRF_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 128,marker #
+LFR_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 129,marker #
+MFR_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 130,marker #
+HFR_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 131,marker #
+RET_He_pg_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 132,marker #
+IPF_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 133,marker #
+PLT_I_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 134,marker #
+MicroR_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 135,marker #
+MacroR_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 136,marker #
+TNC_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 137,marker #
+WBC_N_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 138,marker #
+TNC_N_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 139,marker #
+BA_N_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 140,marker #
+BA_N_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 141,marker #
+WBC_D_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 142,marker #
+TNC_D_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 143,marker #
+NEUTx_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 144,marker #
+NEUTx_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 145,marker #
+LYMP_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 146,marker #
+LYMP_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 147,marker #
+HFLC_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 148,marker #
+HFLC_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 149,marker #
+BA_D_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 150,marker #
+BA_D_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 151,marker #
+NE_SSC_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 152,marker #
+NE_SFL_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 153,marker #
+NE_FSC_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 154,marker #
+LY_X_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 155,marker #
+LY_Y_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 156,marker #
+LY_Z_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 157,marker #
+MO_X_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 158,marker #
+MO_Y_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 159,marker #
+MO_Z_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 160,marker #
+NE_WX_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 161,marker #
+NE_WY_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 162,marker #
+NE_WZ_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 163,marker #
+LY_WX_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 164,marker #
+LY_WY_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 165,marker #
+LY_WZ_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 166,marker #
+MO_WX_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 167,marker #
+MO_WY_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 168,marker #
+MO_WZ_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 169,marker #
+RBC_O_10_12_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 170,marker #
+PLT_O_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 171,marker #
+RBC_He_pg_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 172,marker #
+Delta_He_pg_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 173,marker #
+RET_Y_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 174,marker #
+RET_RBC_Y_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 175,marker #
+IRF_Y_ch_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 176,marker #
+FRC_10_12_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 177,marker #
+FRC_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 178,marker #
+HYPO_He_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 179,marker #
+HYPER_He_PCT_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 180,marker #
+RPI_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 181,marker #
+RET_UPP_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 182,marker #
+RET_TNC_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 183,marker #
+PLT_F_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 184,marker #
+H_IPF_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 185,marker #
+IPFx_10_9_L_24m,month_24,blood_counts_assays,converted,P1v4 bloods row 186,marker #
+Affymetrix_QC_bl,baseline,omics,converted,P1v4 omics row 2,
+Affymetrix_gwasQC_bl,baseline,omics,converted,P1v4 omics row 3,
+Wes_gwasQC_bl,baseline,omics,converted,P1v4 omics row 4,
+Wgs_RAW_bl,baseline,omics,converted,P1v4 omics row 5,
+Wgs_QC_bl,baseline,omics,converted,P1v4 omics row 6,
+Wgs_gwasQC_bl,baseline,omics,converted,P1v4 omics row 7,
+Metabolon_met_RAW_bl,baseline,omics,converted,P1v4 omics row 8,
+Metabolon_met_QC_bl,baseline,omics,converted,P1v4 omics row 9,
+Metabolon_met_gwasQC_bl,baseline,omics,converted,P1v4 omics row 10,
+Metabolon_lip_QC_bl,baseline,omics,converted,P1v4 omics row 11,
+Soma1129_QC_bl,baseline,omics,converted,P1v4 omics row 12,
+Soma1129_gwasQC_bl,baseline,omics,converted,P1v4 omics row 13,
+Soma4000_QC_bl,baseline,omics,converted,P1v4 omics row 14,
+Soma4000_gwasQC_bl,baseline,omics,converted,P1v4 omics row 15,
+Caprion_Raw_bl,baseline,unassigned,dropped,P1v4 omics row 16,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Caprion_QC_bl,baseline,unassigned,dropped,P1v4 omics row 17,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Caprion_gwasQC_bl,baseline,unassigned,dropped,P1v4 omics row 18,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+CPA_Raw_bl,baseline,unassigned,dropped,P1v4 omics row 19,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+CPA_QC_bl,baseline,unassigned,dropped,P1v4 omics row 20,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+CPA_gwasQC_bl,baseline,unassigned,dropped,P1v4 omics row 21,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Genos_Raw_bl,baseline,unassigned,dropped,P1v4 omics row 22,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Genos_QC_bl,baseline,unassigned,dropped,P1v4 omics row 23,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Genos_gwasQC_bl,baseline,unassigned,dropped,P1v4 omics row 24,"not requested (no X in v4 Requested column) — out of scope, D-scope"
+Affymetrix_QC_24m,month_24,omics,converted,P1v4 omics row 26,marker #
+Affymetrix_gwasQC_24m,month_24,omics,converted,P1v4 omics row 27,marker #
+Wgs_RAW_24m,month_24,omics,converted,P1v4 omics row 28,marker #
+Wgs_QC_24m,month_24,omics,converted,P1v4 omics row 29,marker #
+Wgs_gwasQC_24m,month_24,omics,converted,P1v4 omics row 30,marker #
+Caprion_Raw_24m,month_24,unassigned,dropped,P1v4 omics row 31,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+Caprion_QC_24m,month_24,unassigned,dropped,P1v4 omics row 32,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+Caprion_gwasQC_24m,month_24,unassigned,dropped,P1v4 omics row 33,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+CPA_Raw_24m,month_24,unassigned,dropped,P1v4 omics row 34,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+CPA_QC_24m,month_24,unassigned,dropped,P1v4 omics row 35,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+CPA_gwasQC_24m,month_24,unassigned,dropped,P1v4 omics row 36,"marker #; not requested (no X in v4 Requested column) — out of scope, D-scope"
+Olink_cvd2_QC_24m,month_24,omics,converted,P1v4 omics row 37,marker #
+Olink_cvd2_gwasQC_24m,month_24,omics,converted,P1v4 omics row 38,marker #
+Olink_cvd3_QC_24m,month_24,omics,converted,P1v4 omics row 39,marker #
+Olink_cvd3_gwasQC_24m,month_24,omics,converted,P1v4 omics row 40,marker #
+Olink_inf_QC_24m,month_24,omics,converted,P1v4 omics row 41,marker #
+Olink_inf_gwasQC_24m,month_24,omics,converted,P1v4 omics row 42,marker #
+Olink_neu_QC_24m,month_24,omics,converted,P1v4 omics row 43,marker #
+Olink_neu_gwasQC_24m,month_24,omics,converted,P1v4 omics row 44,marker #
+RNASeq_RAW_24m,month_24,omics,converted,P1v4 omics row 45,marker #
+RNASeq_QC_24m,month_24,omics,converted,P1v4 omics row 46,marker #
+RNASeq_gwasQC_24m,month_24,omics,converted,P1v4 omics row 47,marker #
+Caliber_CAN,ehr_linkage,linked_records,converted,P1v4 EHRData row 2,
+Caliber_MOR,ehr_linkage,linked_records,converted,P1v4 EHRData row 3,
+Caliber_HES,ehr_linkage,linked_records,converted,P1v4 EHRData row 4,
+Caliber_OP,ehr_linkage,linked_records,converted,P1v4 EHRData row 5,
+CenDate,ehr_linkage,unassigned,dropped,P1v4 EHRData row 6,"named only in a footnote of the EHRData sheet (""This dataset will also contain variable CenDate: Censor date…""); not a listed row; not requested (no X in v4 Requested column) — out of scope, D-scope"

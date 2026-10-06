@@ -1,0 +1,556 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_18/categories/medical_history.json",
+  "title": "MONTH_18 — Medical History",
+  "description": "Doctor visits, hospital attendance, symptoms, iron-related items and the restless-legs questions for the last 6 months, from the 18-month questionnaire.",
+  "type": "object",
+  "x-variable-group": "medical_history",
+  "$comment": "Most items are coded 1 = yes, 2 = no with no 999; the restless-legs items rls_5, rls_8, rls_9a and rls_9b give a '999 = don't know' (without 'prefer not to answer') and are inlined with the source's own label.",
+  "$defs": {
+    "yes_no": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "yes_no_dont_know": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "const": 999,
+          "title": "don’t know"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "properties": {
+    "ironLow_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months have you seen a doctor who has told you that you have low iron levels or anaemia?"
+    },
+    "ironSupp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months have you seen a doctor who has prescribed iron supplements for you?"
+    },
+    "restlessLeg_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "When you try to relax in the evening or sleep at night, do you ever have unpleasant, restless feelings in your legs that can be relieved by walking or movement?"
+    },
+    "heartProblems_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you seen a doctor or been to hospital in the last 6 months for a heart problem (including stroke)?",
+      "$comment": "Source coding cell reads '1 = yes, 2 = no, ' with a stray trailing comma; no code is missing."
+    },
+    "hFailure_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had heart failure?"
+    },
+    "hFailure_hosp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows hFailure_18m in the dictionary."
+    },
+    "MI_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had a heart attack?"
+    },
+    "MI_hosp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows MI_18m in the dictionary."
+    },
+    "angina_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had angina?"
+    },
+    "angina_hosp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows angina_18m in the dictionary."
+    },
+    "stroke_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had a stroke?"
+    },
+    "stroke_hosp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows stroke_18m in the dictionary."
+    },
+    "TIA_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did the doctor tell you that you had a TIA?"
+    },
+    "TIA_hosp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Did you attend a hospital?",
+      "$comment": "Source wording is the title alone; it follows TIA_18m in the dictionary."
+    },
+    "fall_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you seen a doctor for a fall in the last 6 months?"
+    },
+    "fall_hosp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you been to hospital for a fall in the last 6 months?"
+    },
+    "trans_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you seen a doctor due to a transport accident in the last 6 months?"
+    },
+    "trans_hosp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you been to hospital due to a transport accident in the last 6 months?"
+    },
+    "ill_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you been to hospital for any other new illness in the last 6 months?"
+    },
+    "tired_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you been more tired than usual in the last 6 months?",
+      "$comment": "Source typo kept in the title: 'Have you more tired' [sic]."
+    },
+    "breathless_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you felt more breathless in the last 6 months?"
+    },
+    "palp_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced palpitations in the last 6 months?"
+    },
+    "dizzy_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced dizziness in the last 6 months?"
+    },
+    "feelFaint_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced feeling faint in the last 6 months?"
+    },
+    "faint_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced fainting in the last 6 months?"
+    },
+    "chestPain_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced chest pain in the last 6 months?"
+    },
+    "epileptic_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Have you experienced a fit or epileptic seizure in the last 6 months?"
+    },
+    "rls_1_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do you have, or have you had, recurrent uncomfortable feelings or sensations in your legs while you are sitting or lying down?"
+    },
+    "rls_2_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do you, or have you had, a recurrent need or urge to move your legs while you were sitting or lying down?"
+    },
+    "rls_3_18m": {
+      "title": "Are you more likely to have these feelings when you are resting (either sitting or lying down) or when you are physically active?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "resting"
+        },
+        {
+          "const": 2,
+          "title": "active"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_4_18m": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do these feelings usually start when you are resting (either sitting or lying, down)?"
+    },
+    "rls_5_18m": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "If you get up or move around when you have these feelings do these feelings get any better while you actually keep moving?"
+    },
+    "rls_6a_18m": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Morning"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_6b_18m": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Mid-day"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_6c_18m": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Afternoon"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_6d_18m": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Evening"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_6e_18m": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Night"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_6f_18m": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "About equal at all times"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_7a_18m": {
+      "title": "Which times of day are these feelings in your legs least likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Morning"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_7b_18m": {
+      "title": "Which times of day are these feelings in your legs least likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Mid-day"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_7c_18m": {
+      "title": "Which times of day are these feelings in your legs least likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Afternoon"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_7d_18m": {
+      "title": "Which times of day are these feelings in your legs least likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Evening"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_7e_18m": {
+      "title": "Which times of day are these feelings in your legs least likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Night"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_7f_18m": {
+      "title": "Which times of day are these feelings in your legs least likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "About equal at all times"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a = 1 à Morning'; 'à' is how the source's arrow came through). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D060)."
+    },
+    "rls_8_18m": {
+      "title": "Will simply changing leg position by itself once without continuing to move usually relieve these feelings?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Usually relieves"
+        },
+        {
+          "const": 2,
+          "title": "Does not usually relieve"
+        },
+        {
+          "const": 999,
+          "title": "Don’t know"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_9a_18m": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Are these feelings ever due to muscle cramps?"
+    },
+    "rls_9b_18m": {
+      "title": "If so, are they always due to muscle cramps?",
+      "x-universe": "Those who answered yes to rls_9a_18m.",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "const": 999,
+          "title": "don’t know"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source wording begins 'If so' (R002). The dictionary has no value for people outside that universe (no 998 at 18 months), so no rule is enforced (D059)."
+    },
+    "rls_10_18m": {
+      "title": "Do these feelings occur only when sitting or only when lying down?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Neither"
+        },
+        {
+          "const": 2,
+          "title": "Only when sitting"
+        },
+        {
+          "const": 3,
+          "title": "Only when lying down"
+        },
+        {
+          "const": 4,
+          "title": "Both when sitting & when lying down"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_11_18m": {
+      "title": "When you actually experience the feelings in your legs, how distressing are they?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Not at all distressing"
+        },
+        {
+          "const": 2,
+          "title": "A little bit"
+        },
+        {
+          "const": 3,
+          "title": "Moderately"
+        },
+        {
+          "const": 4,
+          "title": "Extremely distressing"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_12_18m": {
+      "title": "In the past 12 months, how often did you experience these feelings in your legs?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Every day"
+        },
+        {
+          "const": 2,
+          "title": "4-5 days per wk"
+        },
+        {
+          "const": 3,
+          "title": "2-3 days per wk"
+        },
+        {
+          "const": 4,
+          "title": "1 day per wk"
+        },
+        {
+          "const": 5,
+          "title": "2 days per month"
+        },
+        {
+          "const": 6,
+          "title": "1 day per month or less"
+        },
+        {
+          "const": 7,
+          "title": "Never"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_13_18m": {
+      "title": "Approximately how old were you when you first noticed these feelings in your legs?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "less that 10 years old"
+        },
+        {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 75,
+          "title": "age"
+        },
+        {
+          "const": 777,
+          "title": "more than 75 years old"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source typo kept in a label: 'less that' [sic]; the coding cell also ends in a stray comma. Whole years assumed for 10 - 75 (D061). The source gives no 999 for this item."
+    }
+  },
+  "required": [
+    "ironLow_18m",
+    "ironSupp_18m",
+    "restlessLeg_18m",
+    "heartProblems_18m",
+    "hFailure_18m",
+    "hFailure_hosp_18m",
+    "MI_18m",
+    "MI_hosp_18m",
+    "angina_18m",
+    "angina_hosp_18m",
+    "stroke_18m",
+    "stroke_hosp_18m",
+    "TIA_18m",
+    "TIA_hosp_18m",
+    "fall_18m",
+    "fall_hosp_18m",
+    "trans_18m",
+    "trans_hosp_18m",
+    "ill_18m",
+    "tired_18m",
+    "breathless_18m",
+    "palp_18m",
+    "dizzy_18m",
+    "feelFaint_18m",
+    "faint_18m",
+    "chestPain_18m",
+    "epileptic_18m",
+    "rls_1_18m",
+    "rls_2_18m",
+    "rls_3_18m",
+    "rls_4_18m",
+    "rls_5_18m",
+    "rls_6a_18m",
+    "rls_6b_18m",
+    "rls_6c_18m",
+    "rls_6d_18m",
+    "rls_6e_18m",
+    "rls_6f_18m",
+    "rls_7a_18m",
+    "rls_7b_18m",
+    "rls_7c_18m",
+    "rls_7d_18m",
+    "rls_7e_18m",
+    "rls_7f_18m",
+    "rls_8_18m",
+    "rls_9a_18m",
+    "rls_9b_18m",
+    "rls_10_18m",
+    "rls_11_18m",
+    "rls_12_18m",
+    "rls_13_18m"
+  ]
+}

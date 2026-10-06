@@ -1,0 +1,38 @@
+# Sources — INTERVAL
+
+> Intake complete (2026-10-05): sources surveyed, interview answered, categories approved, package scaffolded. Plan and status: `PROGRESS.md`; rulings: `DECISIONS.md`.
+
+## Dictionary files
+
+Copies live in `../raw_data/` (copied 2026-10-05 from `Harmonization/Original Cohort Metadata and Schemas/INTERVAL/`; the legacy folder `Harmonised Cohort Schemas (legacy)/CD3_INTERVAL_Schema/raw_data/` holds older, differently-hashed copies of v3 and Phase 2/3/4 v2 and is not used).
+
+- `raw_data/dataRequestForm_PHASE1_EXT_Template_v4.xlsx` · Excel, 17 sheets (1 `overview` + 16 data sheets) · header row 1 on every data sheet: `Variable_name | Description | Time_point | Categories (or Units) | (unnamed marker column: & # * £) | Requested`; one row per variable, no data-type column, no section-header rows; `Categories` holds the value labels inline as one text cell (`1 = yes, 2 = no, 999 = don't know / prefer not to answer`), or a unit (`metres`, `mmol/l`); `Requested` is the researcher's order-form tick (`X`), not dictionary content. 867 data rows → 985 columns after expanding group rows (below). · registered 2026-10-05 · **working Phase 1 copy** (latest), pending the steward's confirmation (v3 vs v4).
+- `raw_data/dataRequestForm_PHASE1_EXT_Template_v3.xlsx` · same layout, 868 data rows · registered 2026-10-05 · **older sibling of v4.** Full diff v3→v4: variable list identical except v4 drops `Caliber_GP` (EHRData: "available for COVID-19 related research only"); v4 re-words the five `hxFaint*` descriptions to add the DV1–DV4 visit codes; everything else is `Requested`-column ticks and the overview's "v3"→"v4". No coding or label differences.
+- `raw_data/dataRequestForm_PHASE234_EXT_Template_v2.xlsx` · Excel, 11 sheets (1 `overview` + 10 data sheets) · same layout; `questionnaire_48m` has three extra empty columns (G–I). 671 data rows → 804 columns after expanding group rows. Its overview says the form "is only valid alongside a completed INTERVAL Phase I form which will contain the relevant basic information variables" and points to "documentation about the INTERVAL structure" (not in hand). · registered 2026-10-05
+
+### Parse notes (all three files)
+
+- **Variable identity**: every column name is unique across both files because questionnaire/blood/omics columns carry a wave suffix (`_bl`, `_6m` … `_48m`; `_24m` also on bloods/biomarkers/omics). No `donorID` or other participant identifier appears in either file — only the overview's remark that datasets of one release merge on a release-specific `ID_PROJECTID` column. (`../COHORT_DESCRIPTION.md` §3 says `donorID` "exists throughout"; it is not in these dictionaries.)
+- **Group rows (one row = several delivered columns)**, expanded in `VARIABLES.csv` (one inventory row per delivered column, source row cited, `notes` says "expanded from group row"): checkbox groups written `rls_6a_18m – rls_6f_18m`, `Pica_1_24m – Pica_7_24m`, `easy_a_24m – easy_f_24m`, `difficult_a…h`, `appt_time_a…f`, `words_1 – words_5_24m`; and the 41 leisure-activity items per wave (24m, 48m) written `leis_cswim … _24m`, whose `Categories` cell names `leis_cswimFreq`, `…Hrs`, `…Min` (3 columns each; the wave-suffix position, `leis_cswimFreq_24m`, is an assumption). `enmo_0plus – enmo_4000plus` (physicalActivity) stays ONE row: the source says it "will provide 60 variables" at thresholds between 0–4000 but lists none. The marker text `& :5.` / `& :10.` on group rows is unexplained and not used.
+- **Not variables, kept visible**: the `*NHSBT codes for adverse events` footnote row on `adverseEventHistory`, `adverseEvents`, `P234_adverseEvents` (not inventoried; legacy counts of 10/18/18 include it); `Non_Randomised` (basicInfo, marker `£`: "Include non-randomised participant data" — an order-form option, inventoried `pending` with that note); `CenDate` (named only in a footnote under EHRData: "This dataset will also contain variable CenDate"; inventoried `pending`).
+- **Marker column** (`&`, `#`, `*`, `£`): no legend in the files. Observed: `#` marks derived or repeat-at-24m items (SF-36 scores, 24m/48m blood and omics repeats); `*` marks nine Nightingale NMR biomarkers; `£` only `Non_Randomised`. Undocumented; not carried into the schemas.
+- **Value codes seen**: `999 = don't know / prefer not to answer` on 246 columns; `777` as a *top-coded value* ("greater than 50", "more than 70 years old") on 31 columns; `998 = not applicable` on 85 columns (17 items × 5 waves 24m–48m: `Breathless_scale`, five `*_hosp`, `ironFreq`, ten `rls_*`). Compound codes also occur (`0.1 = less than once a week`, `1.00 … 9.99` outcome codes, `A+/B+/…` strings, `HH:MM` times, `String length 20`). The dictionaries state **no dataset-wide missing-value convention** and give **no data types**.
+- **Typos / defects noticed** (preserve in `$comment` when converted): "limit to in the following activity" (30m–42m), "one filght of stairs" (48m), `leis_rtcycle Freq` (space inside a name), "EMNO" for ENMO, "Capion" for Caprion; `ABORH` has no `Time_point`.
+- **Routing scan verdict**: signals seen — `998 = not applicable` on 85 columns with no universe stated (rls_* block after `restlessLeg_*`; `*_hosp` after the heart-problem items; `ironFreq` after `ironSupp`; `Breathless_scale`); "(vegetarians only)" in the `ageVeg_bl` wording (quoted → `ROUTING.csv` R001); gate-and-detail families (`alcEver`/`alcCurr`/`alcYearsStop`, `smEver`/`smCurr`/`smStartAge`/`smStopAge`, `anemia`/`iron*`, `menopause`/`hrt`/`pill`) and sex-specific items (`hrt`, `pill`, `menopause`) in a mixed-sex cohort; no branching-logic column, no questionnaire among the inputs.
+
+## External sources
+
+- INTERVAL study website — phases, questionnaire schedule, data access · https://www.intervalstudy.org.uk/ · would resolve: Phase I/II/III definitions, the "INTERVAL structure" documentation the Phase 2 form refers to · suggested
+- INTERVAL questionnaires / structure documentation (steward to supply, if the study team has them) · — · would resolve: skip logic (998 universes), exact delivered column names for group rows, `enmo_*` thresholds, marker legend · suggested
+- NIHR BioResource / Blood Donors Studies BioResource data-access page · https://bioresource.nihr.ac.uk/ · would resolve: data-release structure, `ID_PROJECTID` convention · suggested
+- `../COHORT_DESCRIPTION.md` (internal CD3 brief, 2026-09-28) · internal context, **not authority**: written from the same two files plus the study site; at least one claim (a `donorID` field) is not borne out by the dictionaries.
+- `Harmonization/Harmonised Cohort Schemas (legacy)/CD3_INTERVAL_Schema/` · earlier auto-generated schemas (26 files, no categories or routing, `null` as missing, `x-` keywords) · rejected as source: this package transcribes from the dictionaries only.
+
+## Scope (D001)
+
+Phase 1 v4 only, and only rows with `X` in `Requested`. `VARIABLES.csv` holds the 985 Phase 1 columns: 856 `pending` (requested), 129 `dropped` (not requested). The Phase 2/3/4 workbook and v3 stay registered above but are out of scope and not inventoried. Sheets with no requested variable at all: `donationHistory`, `outcomes`, `adverseEventHistory`, `adverseEvents` (the first three nothing, the last nothing) — no tables will come from them.
+
+## The steward
+
+- the steward · first-hand: (little — defers on most data questions) · defers to: the INTERVAL data provider (study team) for anything the dictionary does not state
+- ask here: scope, grain, table layout, conventions · not here: participant identifier, delivered column names for group rows, `enmo_*` thresholds, 998 universes, marker legend — all `open` ledger lines marked "to consult the data provider" (D010–D015)

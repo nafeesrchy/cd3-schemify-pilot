@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_24/categories/blood_donation.json",
+  "title": "MONTH_24 — Blood Donation",
+  "description": "Whether the donor was told at a blood donation that they had low haemoglobin, from the 24-month questionnaire.",
+  "type": "object",
+  "x-variable-group": "blood_donation",
+  "$comment": "Coded 1 = yes, 2 = no; the source gives no 999 for this item.",
+  "properties": {
+    "haemLow_24m": {
+      "title": "In the last 6 months have you been told by a member of NHSBT staff at your blood donation that you have low haemoglobin levels?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "haemLow_24m"
+  ]
+}

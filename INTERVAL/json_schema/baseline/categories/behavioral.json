@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/behavioral.json",
+  "title": "BASELINE — Behavioral",
+  "description": "Alcohol drinking and smoking from the baseline questionnaire.",
+  "type": "object",
+  "x-variable-group": "behavioral",
+  "$defs": {
+    "yes_no_dont_know": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "frequency": {
+      "oneOf": [
+        {
+          "const": 6.5,
+          "title": "6-7 times / week"
+        },
+        {
+          "const": 4.0,
+          "title": "3-5 times / week"
+        },
+        {
+          "const": 1.5,
+          "title": "1-2 times / week"
+        },
+        {
+          "const": 0.5,
+          "title": "1-3 times / month"
+        },
+        {
+          "const": 0.1,
+          "title": "special occasions only"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The source gives no 999 for these items."
+    },
+    "age_started": {
+      "oneOf": [
+        {
+          "const": 0.1,
+          "title": "less than 10 years old"
+        },
+        {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 70,
+          "title": "age started"
+        },
+        {
+          "const": 777,
+          "title": "greater than 70 years old"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The source gives no 999 for these items. Whole years assumed for 10 - 70 because the fractional value 0.1 is listed as its own code (D039)."
+    },
+    "per_day": {
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "don't smoke it"
+        },
+        {
+          "const": 0.1,
+          "title": "less than one per day"
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 80,
+          "title": "number per day"
+        },
+        {
+          "const": 777,
+          "title": "greater than 80 per day"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The source gives no 999 for these items. Whole numbers assumed for 1 - 80 because 0.1 is listed as its own code (D039)."
+    }
+  },
+  "properties": {
+    "alcEver_bl": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Have you ever drunk alcohol?"
+    },
+    "alcCurr_bl": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Do you currently drink alcohol?"
+    },
+    "alcYearsStop_bl": {
+      "title": "For how long have you stopped drinking alcohol?",
+      "oneOf": [
+        {
+          "const": 0.1,
+          "title": "less than one month"
+        },
+        {
+          "const": 0.3,
+          "title": "1-6 months"
+        },
+        {
+          "const": 0.7,
+          "title": "6-12 months"
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50,
+          "title": "years stopped"
+        },
+        {
+          "const": 777,
+          "title": "greater than 50 years"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The source gives no 999 for this item. Whole years assumed for 1-50 because fractional values are listed as their own codes (D039)."
+    },
+    "alcFreq_bl": {
+      "$ref": "#/$defs/frequency",
+      "title": "About how often do / did you drink alcohol?"
+    },
+    "smEver_bl": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Have you ever smoked?"
+    },
+    "smCurr_bl": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Do you currently smoke?"
+    },
+    "smStartAge_bl": {
+      "$ref": "#/$defs/age_started",
+      "title": "How old were you when you first started smoking?"
+    },
+    "smStopAge_bl": {
+      "$ref": "#/$defs/age_started",
+      "title": "How old were you when you stopped smoking?",
+      "$comment": "Dictionary defect: the source labels the 10 - 70 range 'age started' on this 'stopped smoking' item (copied from smStartAge_bl); kept as written (D039)."
+    },
+    "smFreq_bl": {
+      "$ref": "#/$defs/frequency",
+      "title": "About how often do / did you smoke?"
+    },
+    "smCig_bl": {
+      "$ref": "#/$defs/per_day",
+      "title": "How many cigarettes do / did you smoke in a typical day?"
+    },
+    "smCigar_bl": {
+      "$ref": "#/$defs/per_day",
+      "title": "How many cigars do / did you smoke in a typical day?"
+    },
+    "smPipe_bl": {
+      "$ref": "#/$defs/per_day",
+      "title": "How many pipes do / did you smoke in a typical day?"
+    }
+  },
+  "required": [
+    "alcEver_bl",
+    "alcCurr_bl",
+    "alcYearsStop_bl",
+    "alcFreq_bl",
+    "smEver_bl",
+    "smCurr_bl",
+    "smStartAge_bl",
+    "smStopAge_bl",
+    "smFreq_bl",
+    "smCig_bl",
+    "smCigar_bl",
+    "smPipe_bl"
+  ]
+}

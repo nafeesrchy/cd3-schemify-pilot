@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/reproductive_hormonal.json",
+  "title": "BASELINE — Reproductive/Hormonal",
+  "description": "Hormone replacement therapy, oral contraceptive use and menopause from the baseline questionnaire.",
+  "type": "object",
+  "x-variable-group": "reproductive_hormonal",
+  "properties": {
+    "hrt_bl": {
+      "title": "Do you regularly take hormone replacement therapy medications?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 0,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source codes: 1 = yes, 0 = no — 'no' is 0 here, unlike the 2 used for 'no' on the other yes/no items in this table."
+    },
+    "pill_bl": {
+      "title": "Do you regularly take oral contraceptive medications?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 0,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source codes: 1 = yes, 0 = no — 'no' is 0 here, unlike the 2 used for 'no' on the other yes/no items in this table."
+    },
+    "menopause_bl": {
+      "title": "Have you had your menopause?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "const": 3,
+          "title": "not sure – had hysterectomy"
+        },
+        {
+          "const": 4,
+          "title": "not sure – other reason"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "hrt_bl",
+    "pill_bl",
+    "menopause_bl"
+  ]
+}

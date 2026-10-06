@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/ehr_linkage/categories/linked_records.json",
+  "title": "EHR_LINKAGE — Linked Records",
+  "description": "Caliber endpoint items from linked health records: cancer registry, ONS mortality, hospital episodes and hospital out-patients.",
+  "type": "object",
+  "x-variable-group": "linked_records",
+  "$comment": "Source note on the EHRData sheet: \"Caliber endpoints will output as a dataset called 'Caliber' This dataset will also contain variable CenDate: Censor date for the combined sources of data;\". CenDate was not requested (no X) and is not in this table (D086).",
+  "properties": {
+    "Caliber_CAN": {
+      "title": "Caliber Endpoints (Data Source: Cancer Registry)",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The dictionary (sheet EHRData, header 'Output Dataset') gives only a description naming the Caliber endpoint source: no Categories text, no type. Typed as text until the data provider says what the column holds (D086)."
+    },
+    "Caliber_MOR": {
+      "title": "Caliber Endpoints (Data Source: ONS Mortality)",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The dictionary (sheet EHRData, header 'Output Dataset') gives only a description naming the Caliber endpoint source: no Categories text, no type. Typed as text until the data provider says what the column holds (D086)."
+    },
+    "Caliber_HES": {
+      "title": "Caliber Endpoints (DataSource: Hospital episodes)",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The dictionary (sheet EHRData, header 'Output Dataset') gives only a description naming the Caliber endpoint source: no Categories text, no type. Typed as text until the data provider says what the column holds (D086)."
+    },
+    "Caliber_OP": {
+      "title": "Caliber Endpoints (DataSource: Hospital out patients)",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The dictionary (sheet EHRData, header 'Output Dataset') gives only a description naming the Caliber endpoint source: no Categories text, no type. Typed as text until the data provider says what the column holds (D086)."
+    }
+  },
+  "required": [
+    "Caliber_CAN",
+    "Caliber_MOR",
+    "Caliber_HES",
+    "Caliber_OP"
+  ]
+}

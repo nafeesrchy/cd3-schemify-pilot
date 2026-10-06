@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/anthropometric.json",
+  "title": "BASELINE — Anthropometric",
+  "description": "Self-reported height and weight from the baseline questionnaire.",
+  "type": "object",
+  "x-variable-group": "anthropometric",
+  "properties": {
+    "ht_bl": {
+      "title": "self-reported height",
+      "x-unit": "metres",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: 'metres'. No range stated, none asserted; number because the source does not say whole metres (D026)."
+    },
+    "wt_bl": {
+      "title": "self-reported weight",
+      "x-unit": "kilograms",
+      "anyOf": [
+        {
+          "type": "number",
+          "not": {
+            "enum": [
+              777
+            ]
+          }
+        },
+        {
+          "const": 777,
+          "title": "> 190kg"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: 'kilograms (777 > 190kg)'. 777 is a top-code for weights above 190 kg, kept as its own labelled code (D027); the numeric branch excludes 777 so the code keeps its meaning. No other range stated, none asserted (D026)."
+    }
+  },
+  "required": [
+    "ht_bl",
+    "wt_bl"
+  ]
+}

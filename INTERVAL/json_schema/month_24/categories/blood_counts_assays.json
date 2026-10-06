@@ -1,0 +1,1199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_24/categories/blood_counts_assays.json",
+  "title": "MONTH_24 — Blood Counts & Assays",
+  "description": "Full blood count and related haematology analyser results for the 24-month research blood sample, and the dates the sample was taken and processed.",
+  "type": "object",
+  "x-variable-group": "blood_counts_assays",
+  "$comment": "Units are as written in the source (the source text reads '109/L' and '1012/L', most likely 10^9/L and 10^12/L with the superscripts lost; kept as written). The dictionary states no ranges, so none are asserted; measured values are typed number because no data type is stated (D082).",
+  "properties": {
+    "attendanceDate_24m": {
+      "title": "Date when sample was taken.",
+      "description": "For 2 year samples, only date was provided",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "No date format is stated, so no pattern is asserted and the column is typed as text (D022, D082)."
+    },
+    "processDate_24m": {
+      "title": "Date when sample is processed by the lab",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "No date format is stated, so no pattern is asserted and the column is typed as text (D022, D082)."
+    },
+    "WBC_10_9_L_24m": {
+      "title": "White blood cell (leukocyte) count (reported)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RBC_10_12_L_24m": {
+      "title": "Red blood cell (erythrocyte) count (reported)",
+      "x-unit": "1012/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HGB_g_dL_24m": {
+      "title": "Haemoglobin concentration",
+      "x-unit": "g/dL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HCT_PCT_24m": {
+      "title": "Haematocrit (volume percentage of blood occupied by red cells)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MCV_fL_24m": {
+      "title": "Mean corpuscular (red cell) volume",
+      "x-unit": "fL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MCH_pg_24m": {
+      "title": "Mean corpuscular haemoglobin",
+      "x-unit": "pg",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MCHC_g_dL_24m": {
+      "title": "Mean corpuscular haemoglobin concentration",
+      "x-unit": "g/dL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "PLT_10_9_L_24m": {
+      "title": "Platelet (thrombocyte) count (reported)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RDW_SD_fL_24m": {
+      "title": "Red cell distribution width; standard deviation of red cell volume distribution [estimated as width at 20% modal height of red cell volume histogram]",
+      "x-unit": "fL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RDW_CV_PCT_24m": {
+      "title": "Red cell distribution width; coefficient of variation of cell volume distribution [estimated as (B-A)/(A+B) where A<B and [A,B] contains 68.7% of the cell volume distribution; presumably there is a second constraint to ensure that A+B=2*MCV but this is not mentioned in the manual]",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "PDW_fL_24m": {
+      "title": "Platelet distribution width; standard deviation of platelet volume distribution [estimated as width at 20% modal height of platelet volume histogram]",
+      "x-unit": "fL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MPV_fL_24m": {
+      "title": "Mean platelet volume",
+      "x-unit": "fL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "P_LCR_PCT_24m": {
+      "title": "Platelet large cell ratio [=#{platelets with volume > 12 fl}/#{platelets of ordinary volume}]",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "PCT_PCT_24m": {
+      "title": "Plateletcrit (volume percentage of blood occupied by platelets)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NRBC_10_9_L_24m": {
+      "title": "Nucleated red blood cell count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NRBC_PCT_24m": {
+      "title": "Nucleated red blood cell percentage (of white blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NEUT_10_9_L_24m": {
+      "title": "Neutrophil count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LYMPH_10_9_L_24m": {
+      "title": "Lymphocyte count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MONO_10_9_L_24m": {
+      "title": "Monocyte count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "EO_10_9_L_24m": {
+      "title": "Eosinophil count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "BASO_10_9_L_24m": {
+      "title": "Basophil count (reported)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NEUT_PCT_24m": {
+      "title": "Neutrophil percentage (of white blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LYMPH_PCT_24m": {
+      "title": "Lymphocyte percentage (of white blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MONO_PCT_24m": {
+      "title": "Monocyte percentage (of white blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "EO_PCT_24m": {
+      "title": "Eosinophil percentage (of white cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "BASO_PCT_24m": {
+      "title": "Basophil percentage (of white cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "IG_10_9_L_24m": {
+      "title": "Immature granulocyte count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "IG_PCT_24m": {
+      "title": "Immature granulocyte percentage (of white cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RET_PCT_24m": {
+      "title": "Reticulocyte percentage (of red cell and reticulocyte count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RET_10_6_uL_24m": {
+      "title": "Reticulocyte count",
+      "x-unit": "106/µL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "IRF_PCT_24m": {
+      "title": "Immature reticulocyte fraction",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LFR_PCT_24m": {
+      "title": "Low fluorescence reticulocyte ratio (percentage of reticulocytes that are low fl.)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MFR_PCT_24m": {
+      "title": "Medium fluorescence reticulocyte ratio (percentage of reticulocytes that are medium fl.)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HFR_PCT_24m": {
+      "title": "High fluorescence reticulocyte ratio (percentage of reticulocytes that are high fl.)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RET_He_pg_24m": {
+      "title": "Reticulocyte haemoglobin equivalent (mean mass of hemoglobin carried by reticulocytes; RET channel)",
+      "x-unit": "pg",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "IPF_24m": {
+      "title": "Immature platelet fraction (as percentage of platelet count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "PLT_I_10_9_L_24m": {
+      "title": "Platelet count (impedence channel)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source typo kept in the title: 'impedence' [sic]."
+    },
+    "MicroR_PCT_24m": {
+      "title": "Microcytic red blood cell percentage (of red blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MacroR_PCT_24m": {
+      "title": "Macrocytic red blood cell percentage (of red blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "TNC_10_9_L_24m": {
+      "title": "Total nucleated cell count (reported)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "WBC_N_10_9_L_24m": {
+      "title": "White blood cell count (WNR channel; reported by default)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "TNC_N_10_9_L_24m": {
+      "title": "Total nucleated cell count (WNR channel; reported by default)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "BA_N_10_9_L_24m": {
+      "title": "Basophil count (WNR channel; reported by default)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "BA_N_PCT_24m": {
+      "title": "Basophil percentage (of white cell count; WNR channel; reported by default)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "WBC_D_10_9_L_24m": {
+      "title": "White blood cell count (WDF channel; used to determine differential percentages)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "TNC_D_10_9_L_24m": {
+      "title": "Total nucleated cell count (WDF channel)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NEUTx_10_9_L_24m": {
+      "title": "Immature granulocyte adjusted neutrophil count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NEUTx_PCT_24m": {
+      "title": "Immature granulocyte adjusted neutrophil percentage (of white blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LYMP_10_9_L_24m": {
+      "title": "High fluorescence adjusted lymphocyte count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LYMP_PCT_24m": {
+      "title": "High fluorescence adjusted lymphocyte percentage (of white blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HFLC_10_9_L_24m": {
+      "title": "High fluorescence lymphocyte count",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HFLC_PCT_24m": {
+      "title": "High fluorescence lymphocyte percentage (of white blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "BA_D_10_9_L_24m": {
+      "title": "Basophil count (WDF channel)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "BA_D_PCT_24m": {
+      "title": "Basophil percentage (WDF channel)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NE_SSC_ch_24m": {
+      "title": "Neutrophil side scatter (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NE_SFL_ch_24m": {
+      "title": "Neutrophil side fluorescence (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NE_FSC_ch_24m": {
+      "title": "Neutrophil forward scatter (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LY_X_ch_24m": {
+      "title": "Lymphocyte side scatter (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LY_Y_ch_24m": {
+      "title": "Lymphocyte side fluorescence (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LY_Z_ch_24m": {
+      "title": "Lymphocyte forward scatter (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MO_X_ch_24m": {
+      "title": "Monocyte side scatter (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MO_Y_ch_24m": {
+      "title": "Monocyte side fluorescence (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MO_Z_ch_24m": {
+      "title": "Monocyte forward scatter (average; WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NE_WX_24m": {
+      "title": "Neutrophil side scatter distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NE_WY_24m": {
+      "title": "Neutrophil side fluorescence distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "NE_WZ_24m": {
+      "title": "Neutrophil forward scatter distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LY_WX_24m": {
+      "title": "Lymphocyte side scatter distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LY_WY_24m": {
+      "title": "Lymphocyte side fluorescence distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LY_WZ_24m": {
+      "title": "Lymphocyte forward scatter distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MO_WX_24m": {
+      "title": "Monocyte side scatter distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MO_WY_24m": {
+      "title": "Monocytes side fluorescence distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "MO_WZ_24m": {
+      "title": "Monocyte forward scatter distribution width (WDF channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RBC_O_10_12_L_24m": {
+      "title": "Red blood cell count (RET channel)",
+      "x-unit": "1012/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "PLT_O_10_9_L_24m": {
+      "title": "Platelet count (RET channel)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RBC_He_pg_24m": {
+      "title": "Mean mature corposcular haemoglobin (calculated from high angle forward scatter; RET channel)",
+      "x-unit": "pg",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source typo kept in the title: 'corposcular' [sic]."
+    },
+    "Delta_He_pg_24m": {
+      "title": "Delta haemoglobin",
+      "x-unit": "pg",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RET_Y_ch_24m": {
+      "title": "Reticulocyte forward scatter (mean; RET channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RET_RBC_Y_ch_24m": {
+      "title": "Red blood cell forward scatter (mean; RET channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "IRF_Y_ch_24m": {
+      "title": "Immature reticulocyte forward scatter (mean; RET channel)",
+      "x-unit": "ch",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "FRC_10_12_L_24m": {
+      "title": "Fragmented red blood cell count",
+      "x-unit": "1012/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "FRC_PCT_24m": {
+      "title": "Fragmented red blood cell percentage (of red blood cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HYPO_He_PCT_24m": {
+      "title": "Hypo-haemoglobinised red cell percentage (of red cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HYPER_He_PCT_24m": {
+      "title": "Hyper-haemoglobinised red cell percentage (of red cell count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RPI_24m": {
+      "title": "Reticulocyte production index",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RET_UPP_24m": {
+      "title": "The cell count in the UPP area (RET channel)",
+      "x-unit": "1/V_RET",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "RET_TNC_24m": {
+      "title": "The cell count in the total nucleated cell area RET channel)",
+      "x-unit": "1/V_RET",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "PLT_F_10_9_L_24m": {
+      "title": "Platelet count (PLT-F channel; the count reported by default)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "H_IPF_24m": {
+      "title": "High fluorescence immature platelet fraction (as percentage of platelet count)",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "IPFx_10_9_L_24m": {
+      "title": "Immature platelet count (PLT-F channel)",
+      "x-unit": "109/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "attendanceDate_24m",
+    "processDate_24m",
+    "WBC_10_9_L_24m",
+    "RBC_10_12_L_24m",
+    "HGB_g_dL_24m",
+    "HCT_PCT_24m",
+    "MCV_fL_24m",
+    "MCH_pg_24m",
+    "MCHC_g_dL_24m",
+    "PLT_10_9_L_24m",
+    "RDW_SD_fL_24m",
+    "RDW_CV_PCT_24m",
+    "PDW_fL_24m",
+    "MPV_fL_24m",
+    "P_LCR_PCT_24m",
+    "PCT_PCT_24m",
+    "NRBC_10_9_L_24m",
+    "NRBC_PCT_24m",
+    "NEUT_10_9_L_24m",
+    "LYMPH_10_9_L_24m",
+    "MONO_10_9_L_24m",
+    "EO_10_9_L_24m",
+    "BASO_10_9_L_24m",
+    "NEUT_PCT_24m",
+    "LYMPH_PCT_24m",
+    "MONO_PCT_24m",
+    "EO_PCT_24m",
+    "BASO_PCT_24m",
+    "IG_10_9_L_24m",
+    "IG_PCT_24m",
+    "RET_PCT_24m",
+    "RET_10_6_uL_24m",
+    "IRF_PCT_24m",
+    "LFR_PCT_24m",
+    "MFR_PCT_24m",
+    "HFR_PCT_24m",
+    "RET_He_pg_24m",
+    "IPF_24m",
+    "PLT_I_10_9_L_24m",
+    "MicroR_PCT_24m",
+    "MacroR_PCT_24m",
+    "TNC_10_9_L_24m",
+    "WBC_N_10_9_L_24m",
+    "TNC_N_10_9_L_24m",
+    "BA_N_10_9_L_24m",
+    "BA_N_PCT_24m",
+    "WBC_D_10_9_L_24m",
+    "TNC_D_10_9_L_24m",
+    "NEUTx_10_9_L_24m",
+    "NEUTx_PCT_24m",
+    "LYMP_10_9_L_24m",
+    "LYMP_PCT_24m",
+    "HFLC_10_9_L_24m",
+    "HFLC_PCT_24m",
+    "BA_D_10_9_L_24m",
+    "BA_D_PCT_24m",
+    "NE_SSC_ch_24m",
+    "NE_SFL_ch_24m",
+    "NE_FSC_ch_24m",
+    "LY_X_ch_24m",
+    "LY_Y_ch_24m",
+    "LY_Z_ch_24m",
+    "MO_X_ch_24m",
+    "MO_Y_ch_24m",
+    "MO_Z_ch_24m",
+    "NE_WX_24m",
+    "NE_WY_24m",
+    "NE_WZ_24m",
+    "LY_WX_24m",
+    "LY_WY_24m",
+    "LY_WZ_24m",
+    "MO_WX_24m",
+    "MO_WY_24m",
+    "MO_WZ_24m",
+    "RBC_O_10_12_L_24m",
+    "PLT_O_10_9_L_24m",
+    "RBC_He_pg_24m",
+    "Delta_He_pg_24m",
+    "RET_Y_ch_24m",
+    "RET_RBC_Y_ch_24m",
+    "IRF_Y_ch_24m",
+    "FRC_10_12_L_24m",
+    "FRC_PCT_24m",
+    "HYPO_He_PCT_24m",
+    "HYPER_He_PCT_24m",
+    "RPI_24m",
+    "RET_UPP_24m",
+    "RET_TNC_24m",
+    "PLT_F_10_9_L_24m",
+    "H_IPF_24m",
+    "IPFx_10_9_L_24m"
+  ]
+}

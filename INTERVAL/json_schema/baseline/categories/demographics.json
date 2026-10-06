@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/demographics.json",
+  "title": "BASELINE — Demographics",
+  "description": "Sex, year of birth, age at recruitment and ethnicity from the basicInfo and baseline questionnaire sheets.",
+  "type": "object",
+  "x-variable-group": "demographics",
+  "properties": {
+    "sexPulse": {
+      "title": "gender",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "male"
+        },
+        {
+          "const": 2,
+          "title": "female"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "yearPulse": {
+      "title": "year of birth",
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source (basicInfo, Time_point blank) lists no coding or range. Type integer is the agent's reading of a year (D019); no bound is asserted."
+    },
+    "agePulse": {
+      "title": "age at recruitment into INTERVAL",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: 'age (years)'; Time_point 'recruitment'. No range stated, none asserted; number rather than integer because the source does not say whole years (D019)."
+    },
+    "ethnicPulse": {
+      "title": "ethnicity",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source (basicInfo) gives the description 'ethnicity' and no Categories text at all — no codes, no type. Typed as free text until the data provider says what the column holds (D020)."
+    },
+    "ethnic_bl": {
+      "title": "self-reported ethnicity",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "White - British"
+        },
+        {
+          "const": 2,
+          "title": "White - Irish"
+        },
+        {
+          "const": 3,
+          "title": "White - Other"
+        },
+        {
+          "const": 4,
+          "title": "Mixed - White and Black Caribbean"
+        },
+        {
+          "const": 5,
+          "title": "Mixed - White and Black African"
+        },
+        {
+          "const": 6,
+          "title": "Mixed - White and Asian"
+        },
+        {
+          "const": 7,
+          "title": "Mixed - Other"
+        },
+        {
+          "const": 8,
+          "title": "Asian - Indian"
+        },
+        {
+          "const": 9,
+          "title": "Asian - Pakistani"
+        },
+        {
+          "const": 10,
+          "title": "Asian - Bangladeshi"
+        },
+        {
+          "const": 11,
+          "title": "Asian - Other"
+        },
+        {
+          "const": 12,
+          "title": "Black - Caribbean"
+        },
+        {
+          "const": 13,
+          "title": "Black - African"
+        },
+        {
+          "const": 14,
+          "title": "Black - Other"
+        },
+        {
+          "const": 15,
+          "title": "Chinese"
+        },
+        {
+          "const": 16,
+          "title": "Other"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source label for 999: \"Don't know/prefer not to answer\" (shared definition worded 'Don't know / prefer not to answer')."
+    }
+  },
+  "required": [
+    "sexPulse",
+    "yearPulse",
+    "agePulse",
+    "ethnicPulse",
+    "ethnic_bl"
+  ]
+}

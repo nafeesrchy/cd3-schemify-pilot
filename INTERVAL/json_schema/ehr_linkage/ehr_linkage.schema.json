@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/ehr_linkage/ehr_linkage.schema.json",
+  "title": "INTERVAL — EHR_LINKAGE table",
+  "description": "Array of donor records. One element is one donor in the linked-record (Caliber endpoint) data. A blank in the provider's data is written as an empty string; the dictionary's own codes are kept as constants.",
+  "$comment": "Category files are wired into allOf as each category is converted. JSON Schema cannot enforce uniqueness of rows: the dictionary lists no participant identifier (D010/D011).",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "EHR_LINKAGE record",
+    "allOf": [
+      {
+        "$ref": "categories/linked_records.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}
