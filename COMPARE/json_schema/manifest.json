@@ -1,0 +1,11 @@
+{
+  "study": "COMPARE",
+  "tables": [
+    "basic_info",
+    "questionnaires",
+    "hb_measurements",
+    "bloods",
+    "biomarkers",
+    "omics"
+  ]
+}
