@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/questionnaires/questionnaires.schema.json",
+  "title": "COMPARE — QUESTIONNAIRES table",
+  "description": "Array of donor records. One element is one donor in the questionnaires (questionnaires sheet): the health and lifestyle questionnaire answers, with the second questionnaire's dates where the donor completed two. A blank in the provider's data is written as null; the dictionary's own codes are kept as constants.",
+  "$comment": "Category files are wired into allOf as each category is converted. JSON Schema cannot enforce uniqueness of rows across the table; the identifier's format and whether the other tables carry it are open questions for the data provider (D009).",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "QUESTIONNAIRES record",
+    "allOf": [
+      {
+        "$ref": "categories/questionnaire_completion.json"
+      },
+      {
+        "$ref": "categories/demographics.json"
+      },
+      {
+        "$ref": "categories/anthropometric.json"
+      },
+      {
+        "$ref": "categories/fitzpatrick_skin_type.json"
+      },
+      {
+        "$ref": "categories/reproductive_hormonal.json"
+      },
+      {
+        "$ref": "categories/behavioral.json"
+      },
+      {
+        "$ref": "categories/occupation_physical_activity.json"
+      },
+      {
+        "$ref": "categories/blood_donation.json"
+      },
+      {
+        "$ref": "categories/dietary.json"
+      },
+      {
+        "$ref": "categories/general_health.json"
+      },
+      {
+        "$ref": "categories/medical_history.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

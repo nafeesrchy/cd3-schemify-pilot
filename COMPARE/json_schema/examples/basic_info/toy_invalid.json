@@ -1,0 +1,63 @@
+[
+  {
+    "identifier": 12345,
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": null,
+    "ABORH": "A+"
+  },
+  {
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": null,
+    "ABORH": "A+"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": null,
+    "ABORH": "A+",
+    "shoeSize": 42
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": 12345,
+    "ABORH": "A+"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 3,
+    "agePulse": 45.5,
+    "ethnicPulse": null,
+    "ABORH": "A+"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ABORH": "A+"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": null,
+    "ABORH": "text"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": null,
+    "ABORH": "C+"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": null
+  }
+]

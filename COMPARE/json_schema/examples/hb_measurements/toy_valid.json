@@ -1,0 +1,98 @@
+[
+  {
+    "spkDate_hs": "2013-05-01",
+    "Hb_hs": 12.5,
+    "hemDate_hc": null,
+    "hemValue_hc": null,
+    "orsDate_os": "2014-02-11",
+    "Hb_os": 12.5
+  },
+  {
+    "spkDate_hs": "2014-02-11",
+    "Hb_hs": 0,
+    "hemDate_hc": "2013-05-01",
+    "hemValue_hc": 135,
+    "orsDate_os": null,
+    "Hb_os": 0
+  },
+  {
+    "spkDate_hs": null,
+    "Hb_hs": null,
+    "hemDate_hc": "2014-02-11",
+    "hemValue_hc": 12.5,
+    "orsDate_os": "2013-05-01",
+    "Hb_os": null
+  },
+  {
+    "spkDate_hs": "2013-05-01",
+    "Hb_hs": 135,
+    "hemDate_hc": null,
+    "hemValue_hc": 0,
+    "orsDate_os": "2014-02-11",
+    "Hb_os": 135
+  },
+  {
+    "spkDate_hs": "2014-02-11",
+    "Hb_hs": 12.5,
+    "hemDate_hc": "2013-05-01",
+    "hemValue_hc": null,
+    "orsDate_os": null,
+    "Hb_os": 12.5
+  },
+  {
+    "spkDate_hs": null,
+    "Hb_hs": 0,
+    "hemDate_hc": "2014-02-11",
+    "hemValue_hc": 135,
+    "orsDate_os": "2013-05-01",
+    "Hb_os": 0
+  },
+  {
+    "spkDate_hs": "2013-05-01",
+    "Hb_hs": null,
+    "hemDate_hc": null,
+    "hemValue_hc": 12.5,
+    "orsDate_os": "2014-02-11",
+    "Hb_os": null
+  },
+  {
+    "spkDate_hs": "2014-02-11",
+    "Hb_hs": 135,
+    "hemDate_hc": "2013-05-01",
+    "hemValue_hc": 0,
+    "orsDate_os": null,
+    "Hb_os": 135
+  },
+  {
+    "spkDate_hs": null,
+    "Hb_hs": 12.5,
+    "hemDate_hc": "2014-02-11",
+    "hemValue_hc": null,
+    "orsDate_os": "2013-05-01",
+    "Hb_os": 12.5
+  },
+  {
+    "spkDate_hs": "2013-05-01",
+    "Hb_hs": 0,
+    "hemDate_hc": null,
+    "hemValue_hc": 135,
+    "orsDate_os": "2014-02-11",
+    "Hb_os": 0
+  },
+  {
+    "spkDate_hs": "2014-02-11",
+    "Hb_hs": null,
+    "hemDate_hc": "2013-05-01",
+    "hemValue_hc": 12.5,
+    "orsDate_os": null,
+    "Hb_os": null
+  },
+  {
+    "spkDate_hs": null,
+    "Hb_hs": 135,
+    "hemDate_hc": "2014-02-11",
+    "hemValue_hc": 0,
+    "orsDate_os": "2013-05-01",
+    "Hb_os": 135
+  }
+]

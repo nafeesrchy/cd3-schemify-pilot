@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/hb_measurements/categories/haemoglobin_measurements.json",
+  "title": "HB_MEASUREMENTS — Haemoglobin Measurements",
+  "description": "The date and haemoglobin value measured at donation by the Haemospect, Hemocue and Orsense devices.",
+  "type": "object",
+  "x-variable-group": "haemoglobin_measurements",
+  "$comment": "Units are as written in the source: g/l for Haemospect and Hemocue, g/dL for Orsense. The dictionary states no ranges, so none are asserted; values are typed number because no data type is stated (D035). The time-of-measurement columns are not requested.",
+  "properties": {
+    "spkDate_hs": {
+      "title": "Haemospect: Date when measurement was taken.",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Units cell: 'Date'; no date format is stated, so no pattern is asserted and the column is typed as text (D035)."
+    },
+    "Hb_hs": {
+      "title": "Haemospect: Haemoglobin value",
+      "description": "measurement at time of donation, post-donation testing is available on 'bloods' sheet",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "hemDate_hc": {
+      "title": "Hemocue: Date when measurement was taken.",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Units cell: 'Date'; no date format is stated, so no pattern is asserted and the column is typed as text (D035)."
+    },
+    "hemValue_hc": {
+      "title": "Hemocue: Haemoglobin value",
+      "description": "measurement at time of donation, post-donation testing is available on 'bloods' sheet",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "orsDate_os": {
+      "title": "Orsense: Date when measurement was taken.",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Units cell: 'Date'; no date format is stated, so no pattern is asserted and the column is typed as text (D035)."
+    },
+    "Hb_os": {
+      "title": "Orsense: Haemoglobin value",
+      "description": "measurement at time of donation, post-donation testing is available on 'bloods' sheet",
+      "x-unit": "g/dL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "spkDate_hs",
+    "Hb_hs",
+    "hemDate_hc",
+    "hemValue_hc",
+    "orsDate_os",
+    "Hb_os"
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "$comment": "Ground truth for questionnaires/toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "endDate_p2",
+      "kind": "wrong-type",
+      "value": 12345,
+      "reason": "a number is never legal here"
+    },
+    {
+      "row": 1,
+      "column": "endDate_p2",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 2,
+      "column": "shoeSize",
+      "kind": "undeclared-column",
+      "reason": "not in the dictionary; rejected by unevaluatedProperties"
+    },
+    {
+      "row": 3,
+      "column": "ethnic",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 4,
+      "column": "ethnic",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 5,
+      "column": "ethnic",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 6,
+      "column": "ethnic",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 7,
+      "column": "wt",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 8,
+      "column": "ht",
+      "kind": "range-break",
+      "value": 3.5,
+      "reason": "above the source-stated maximum 2.99"
+    },
+    {
+      "row": 9,
+      "column": "wt",
+      "kind": "range-break",
+      "value": 30,
+      "reason": "below the source-stated minimum 38"
+    },
+    {
+      "row": 10,
+      "column": "wt",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 11,
+      "column": "fitzEyes",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 12,
+      "column": "fitzEyes",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 13,
+      "column": "fitzExpose",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 14,
+      "column": "fitzExpose",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 15,
+      "column": "hrt",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 16,
+      "column": "hrt",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 17,
+      "column": "menopause",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 18,
+      "column": "menopause",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 19,
+      "column": "alcFreq",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 20,
+      "column": "smCig",
+      "kind": "range-break",
+      "value": 81,
+      "reason": "above 80 per day (more is code 777)"
+    },
+    {
+      "row": 21,
+      "column": "alcFreq",
+      "kind": "unknown-level",
+      "value": 2.0,
+      "reason": "2.0 is not a declared frequency code"
+    },
+    {
+      "row": 22,
+      "column": "alcFreq",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 23,
+      "column": "occupation",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 24,
+      "column": "occupation",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 25,
+      "column": "pa_leisure",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 26,
+      "column": "pa_leisure",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 27,
+      "column": "haemLow",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 28,
+      "column": "haemLow",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 29,
+      "column": "feel_after",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 30,
+      "column": "feel_after",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 31,
+      "column": "meatEater",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 32,
+      "column": "meatEater",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 33,
+      "column": "eatTyp_moreJ",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 34,
+      "column": "eatTyp_moreJ",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 35,
+      "column": "health1",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 36,
+      "column": "health1",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 37,
+      "column": "health2",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 38,
+      "column": "health2",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 39,
+      "column": "ironLow",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 40,
+      "column": "ironLow",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 41,
+      "column": "med_lipid",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 42,
+      "column": "med_lipid",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    }
+  ]
+}

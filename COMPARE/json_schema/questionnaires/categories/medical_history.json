@@ -1,0 +1,783 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/questionnaires/categories/medical_history.json",
+  "title": "QUESTIONNAIRES — Medical History",
+  "description": "Doctor-told iron levels, symptoms, pica, iron supplements, restless legs, breathlessness, difficulty walking and medication items from the questionnaire.",
+  "type": "object",
+  "x-variable-group": "medical_history",
+  "$comment": "Items carry the source's own codes: 998 = not applicable on the restless-legs follow-up items (universe not stated, D011), and a plain '999 = don't know' (no 'prefer not to answer') on some items, inlined with the source's own label.",
+  "$defs": {
+    "yes_no": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "time_scale": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "all the time"
+        },
+        {
+          "const": 2,
+          "title": "most of the time"
+        },
+        {
+          "const": 3,
+          "title": "some of the time"
+        },
+        {
+          "const": 4,
+          "title": "a little of the time"
+        },
+        {
+          "const": 5,
+          "title": "none of the time"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "yes_no_not_applicable_dont_know": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "const": 999,
+          "title": "don't know"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "yes_no_dont_know_prefer_not_to_answer": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "yes_no_dont_know": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "const": 999,
+          "title": "don't know"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "properties": {
+    "ironLow": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months has your GP or a hospital doctor told you that you have low iron levels or anaemia?"
+    },
+    "headache": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months, have you experienced headaches more frequently than usual?"
+    },
+    "sleepDisturbed": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months, have you experienced sleep disturbance more frequently than usual?"
+    },
+    "irritable": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months, have you experienced irritability more frequently than usual?"
+    },
+    "notConcentrate": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months, have you experienced reduced ability to concentrate more frequently than usual?"
+    },
+    "notRelax": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months, have you experienced restlessness / inability to relax more frequently than usual?"
+    },
+    "pica_1": {
+      "title": "In the last 6 months, have you craved and regularly eaten or chewed any of the following non-nutritional substances.",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Ice"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 : 1 = Ice'; the source's variable name is lower case 'pica_1'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "pica_2": {
+      "title": "In the last 6 months, have you craved and regularly eaten or chewed any of the following non-nutritional substances.",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Clay"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 : 1 = Ice'; the source's variable name is lower case 'pica_1'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "pica_3": {
+      "title": "In the last 6 months, have you craved and regularly eaten or chewed any of the following non-nutritional substances.",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Dirt"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 : 1 = Ice'; the source's variable name is lower case 'pica_1'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "pica_4": {
+      "title": "In the last 6 months, have you craved and regularly eaten or chewed any of the following non-nutritional substances.",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Raw pasta"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 : 1 = Ice'; the source's variable name is lower case 'pica_1'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "pica_5": {
+      "title": "In the last 6 months, have you craved and regularly eaten or chewed any of the following non-nutritional substances.",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Chalk"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 : 1 = Ice'; the source's variable name is lower case 'pica_1'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "pica_6": {
+      "title": "In the last 6 months, have you craved and regularly eaten or chewed any of the following non-nutritional substances.",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Coal"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 : 1 = Ice'; the source's variable name is lower case 'pica_1'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "pica_7": {
+      "title": "In the last 6 months, have you craved and regularly eaten or chewed any of the following non-nutritional substances.",
+      "description": "Please tick all that apply",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "None"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'tick all that apply' question. The source codes only 1 = the option (written 'Pica_1 : 1 = Ice'; the source's variable name is lower case 'pica_1'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "ironSuppPres": {
+      "$ref": "#/$defs/yes_no",
+      "title": "In the last 6 months has your GP or a hospital doctor prescribed iron supplements for you?"
+    },
+    "ironFreqPres": {
+      "$ref": "#/$defs/time_scale",
+      "title": "How regularly have you taken the iron supplements prescribed to you, over the last 6 months?"
+    },
+    "ironSuppMulti": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do you currently take over-the-counter iron supplements that are contained within multivitamins / other supplements?"
+    },
+    "ironFreqMulti": {
+      "$ref": "#/$defs/time_scale",
+      "title": "How regularly do you take the over-the-counter iron supplements that are contained within multivitamins / other supplements?"
+    },
+    "ironSuppOnly": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do you currently take supplements of iron that are iron only supplements?"
+    },
+    "ironFreqOnly": {
+      "$ref": "#/$defs/time_scale",
+      "title": "How regularly do you take over-the-counter supplements that are iron only?"
+    },
+    "rls_1": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do you have, or have you had, recurrent uncomfortable feelings or sensations in your legs while you are sitting or lying down?"
+    },
+    "rls_2": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do you, or have you had, a recurrent need or urge to move your legs while you were sitting or lying down?"
+    },
+    "rls_3": {
+      "title": "Are you more likely to have these feelings when you are resting (either sitting or lying down) or when you are physically active?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "resting"
+        },
+        {
+          "const": 2,
+          "title": "active"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_4": {
+      "title": "Do these feelings usually start when you are resting (either sitting or lying, down)?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source punctuation kept in the title: 'lying, down'."
+    },
+    "rls_5": {
+      "$ref": "#/$defs/yes_no_not_applicable_dont_know",
+      "title": "If you get up or move around when you have these feelings do these feelings get any better while you actually keep moving?"
+    },
+    "rls_6a": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Morning"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_6b": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Mid-day"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_6c": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Afternoon"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_6d": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Evening"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_6e": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Night"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_6f": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "About equal at all times"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_6g": {
+      "title": "Which times of day are these feelings in your legs most likely to occur? (more than one option)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "not applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question; here the option itself is 'not applicable' (the source writes 'rls_6g : 1 = not applicable'), a ticked box and not the 998 code. The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_7a": {
+      "title": "Which times of day are these feelings in your legs least likely to occur?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Morning"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_7b": {
+      "title": "Which times of day are these feelings in your legs least likely to occur?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Mid-day"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_7c": {
+      "title": "Which times of day are these feelings in your legs least likely to occur?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Afternoon"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_7d": {
+      "title": "Which times of day are these feelings in your legs least likely to occur?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Evening"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_7e": {
+      "title": "Which times of day are these feelings in your legs least likely to occur?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Night"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_7f": {
+      "title": "Which times of day are these feelings in your legs least likely to occur?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "About equal at all times"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question. The source codes only 1 = the option (written 'rls_6a : 1 = Morning'). The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_7g": {
+      "title": "Which times of day are these feelings in your legs least likely to occur?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "not applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Checkbox column of a 'more than one option' question; here the option itself is 'not applicable' (the source writes 'rls_6g : 1 = not applicable'), a ticked box and not the 998 code. The dictionary states no value for an unticked box, so none is asserted; a blank is null (D030)."
+    },
+    "rls_8": {
+      "title": "Will simply changing leg position by itself once without continuing to move usually relieve these feelings?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Usually relieves"
+        },
+        {
+          "const": 2,
+          "title": "Does not usually relieve"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "const": 999,
+          "title": "Don't know"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_9a": {
+      "$ref": "#/$defs/yes_no_not_applicable_dont_know",
+      "title": "Are these feelings ever due to muscle cramps?"
+    },
+    "rls_9b": {
+      "title": "If so, are they always due to muscle cramps?",
+      "x-universe": "Those who answered yes to rls_9a.",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "const": 999,
+          "title": "don't know"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source wording begins 'If so'."
+    },
+    "rls_10": {
+      "title": "Do these feelings occur only when sitting or only when lying down?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Neither"
+        },
+        {
+          "const": 2,
+          "title": "Only when sitting"
+        },
+        {
+          "const": 3,
+          "title": "Only when lying down"
+        },
+        {
+          "const": 4,
+          "title": "Both when sitting & when lying down"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_11": {
+      "title": "When you actually experience the feelings in your legs, how distressing are they?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Not at all distressing"
+        },
+        {
+          "const": 2,
+          "title": "A little bit"
+        },
+        {
+          "const": 3,
+          "title": "Moderately"
+        },
+        {
+          "const": 4,
+          "title": "Extremely distressing"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_12": {
+      "title": "In the past 12 months, how often did you experience these feelings in your legs?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Every day"
+        },
+        {
+          "const": 2,
+          "title": "4-5 days per wk"
+        },
+        {
+          "const": 3,
+          "title": "2-3 days per wk"
+        },
+        {
+          "const": 4,
+          "title": "1 day per wk"
+        },
+        {
+          "const": 5,
+          "title": "2 days per month"
+        },
+        {
+          "const": 6,
+          "title": "1 day per month or less"
+        },
+        {
+          "const": 7,
+          "title": "Never"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "rls_13": {
+      "title": "Approximately how old were you when you first noticed these feelings in your legs?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "less than 10 years old"
+        },
+        {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 75,
+          "title": "age"
+        },
+        {
+          "const": 777,
+          "title": "more than 75 years old"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Whole years assumed for 10 - 75 (D031). The source gives no 999 for this item; 998 is 'not applicable' (universe not stated, D011)."
+    },
+    "painChest": {
+      "$ref": "#/$defs/yes_no_dont_know_prefer_not_to_answer",
+      "title": "Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to: Chest pain that goes away within 10 minutes of resting?"
+    },
+    "shortBreath": {
+      "$ref": "#/$defs/yes_no_dont_know_prefer_not_to_answer",
+      "title": "Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to: Shortness of breath that requires you to stop?"
+    },
+    "painCalf": {
+      "$ref": "#/$defs/yes_no_dont_know_prefer_not_to_answer",
+      "title": "Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to: Pain in your calves that goes away on resting?"
+    },
+    "painJoint": {
+      "$ref": "#/$defs/yes_no_dont_know_prefer_not_to_answer",
+      "title": "Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to: Pain in your joints?"
+    },
+    "breathless": {
+      "$ref": "#/$defs/yes_no",
+      "title": "Do you ever experience breathlessness?"
+    },
+    "Breathless_scale": {
+      "title": "Please choose a phrase that best describes your breathlessness.",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Not troubled by breathlessness except on strenuous exercise"
+        },
+        {
+          "const": 2,
+          "title": "Short of breath when hurrying on the level or walking up a slight hill"
+        },
+        {
+          "const": 3,
+          "title": "Walk slower than most people on the level, stop after a mile or so, or stop after 15 minutes walking at own pace"
+        },
+        {
+          "const": 4,
+          "title": "Stop for breath after walking about 100 yards or after a few minutes on ground level"
+        },
+        {
+          "const": 5,
+          "title": "Too breathless to leave the house, or breathless when undressing"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_applicable"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "med_gluc": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Do you currently take any medications that control your blood sugar?"
+    },
+    "med_hyperten": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Do you currently take any medications that control your blood pressure?"
+    },
+    "med_lipid": {
+      "$ref": "#/$defs/yes_no_dont_know",
+      "title": "Do you currently take any medications that control your cholesterol?"
+    }
+  },
+  "required": [
+    "ironLow",
+    "headache",
+    "sleepDisturbed",
+    "irritable",
+    "notConcentrate",
+    "notRelax",
+    "pica_1",
+    "pica_2",
+    "pica_3",
+    "pica_4",
+    "pica_5",
+    "pica_6",
+    "pica_7",
+    "ironSuppPres",
+    "ironFreqPres",
+    "ironSuppMulti",
+    "ironFreqMulti",
+    "ironSuppOnly",
+    "ironFreqOnly",
+    "rls_1",
+    "rls_2",
+    "rls_3",
+    "rls_4",
+    "rls_5",
+    "rls_6a",
+    "rls_6b",
+    "rls_6c",
+    "rls_6d",
+    "rls_6e",
+    "rls_6f",
+    "rls_6g",
+    "rls_7a",
+    "rls_7b",
+    "rls_7c",
+    "rls_7d",
+    "rls_7e",
+    "rls_7f",
+    "rls_7g",
+    "rls_8",
+    "rls_9a",
+    "rls_9b",
+    "rls_10",
+    "rls_11",
+    "rls_12",
+    "rls_13",
+    "painChest",
+    "shortBreath",
+    "painCalf",
+    "painJoint",
+    "breathless",
+    "Breathless_scale",
+    "med_gluc",
+    "med_hyperten",
+    "med_lipid"
+  ]
+}

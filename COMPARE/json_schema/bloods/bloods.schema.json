@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/bloods/bloods.schema.json",
+  "title": "COMPARE — BLOODS table",
+  "description": "Array of donor records. One element is one donor in the research blood sample results (bloods sheet): visit 1 (baseline) and visit 2 (follow-up) columns side by side. A blank in the provider's data is written as null; the dictionary's own codes are kept as constants.",
+  "$comment": "Category files are wired into allOf as each category is converted. JSON Schema cannot enforce uniqueness of rows across the table; the identifier's format and whether the other tables carry it are open questions for the data provider (D009).",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "BLOODS record",
+    "allOf": [
+      {
+        "$ref": "categories/blood_counts_assays_visit_1.json"
+      },
+      {
+        "$ref": "categories/blood_counts_assays_visit_2.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

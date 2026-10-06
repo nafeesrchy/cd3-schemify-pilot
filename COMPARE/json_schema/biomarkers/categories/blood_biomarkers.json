@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/biomarkers/categories/blood_biomarkers.json",
+  "title": "BIOMARKERS — Blood Biomarkers",
+  "description": "Nightingale NMR biomarker results for the baseline (visit 1) research blood sample.",
+  "type": "object",
+  "x-variable-group": "blood_biomarkers",
+  "$comment": "Units are as written in the source. The dictionary states no ranges, so none are asserted; values are typed number because no data type is stated (D039).",
+  "properties": {
+    "Total_C_ntg": {
+      "title": "Nightingale - Total cholesterol",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "non_HDL_C_ntg": {
+      "title": "Nightingale - Total cholesterol minus HDL-C",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LDL_C_ntg": {
+      "title": "Nightingale - LDL cholesterol",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HDL_C_ntg": {
+      "title": "Nightingale - HDL cholesterol",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Total_TG_ntg": {
+      "title": "Nightingale - Total triglycerides",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ApoB_ntg": {
+      "title": "Nightingale - Apolipoprotein B",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ApoA1_ntg": {
+      "title": "Nightingale - Apolipoprotein A1",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Glucose_ntg": {
+      "title": "Nightingale - Glucose",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Creatinine_ntg": {
+      "title": "Nightingale - Creatinine",
+      "x-unit": "μmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Albumin_ntg": {
+      "title": "Nightingale - Albumin",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Total_C_ntg",
+    "non_HDL_C_ntg",
+    "LDL_C_ntg",
+    "HDL_C_ntg",
+    "Total_TG_ntg",
+    "ApoB_ntg",
+    "ApoA1_ntg",
+    "Glucose_ntg",
+    "Creatinine_ntg",
+    "Albumin_ntg"
+  ]
+}

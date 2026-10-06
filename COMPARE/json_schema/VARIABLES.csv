@@ -1,0 +1,429 @@
+variable,table,category,status,source,notes
+identifier,basic_info,identification,converted,v3 basicInfo row 2,
+sexPulse,basic_info,demographics,converted,v3 basicInfo row 3,
+agePulse,basic_info,demographics,converted,v3 basicInfo row 4,
+ethnicPulse,basic_info,demographics,converted,v3 basicInfo row 5,
+team,basic_info,unassigned,dropped,v3 basicInfo row 6,not requested (no X in v3 Requested column) - out of scope
+commsCode,basic_info,unassigned,dropped,v3 basicInfo row 7,not requested (no X in v3 Requested column) - out of scope
+ABORH,basic_info,blood_group,converted,v3 basicInfo row 8,
+startDate,questionnaires,questionnaire_completion,converted,v3 questionnaires row 3,marker & #
+startTime,questionnaires,unassigned,dropped,v3 questionnaires row 4,not requested (no X in v3 Requested column) - out of scope; marker & #
+endDate,questionnaires,questionnaire_completion,converted,v3 questionnaires row 5,marker & #
+endTime,questionnaires,unassigned,dropped,v3 questionnaires row 6,not requested (no X in v3 Requested column) - out of scope; marker & #
+startDate_p2,questionnaires,questionnaire_completion,converted,v3 questionnaires row 7,marker *
+startTime_p2,questionnaires,unassigned,dropped,v3 questionnaires row 8,not requested (no X in v3 Requested column) - out of scope; marker *
+endDate_p2,questionnaires,questionnaire_completion,converted,v3 questionnaires row 9,marker *
+endTime_p2,questionnaires,unassigned,dropped,v3 questionnaires row 10,not requested (no X in v3 Requested column) - out of scope; marker *
+ht,questionnaires,anthropometric,converted,v3 questionnaires row 11,marker & #
+wt,questionnaires,anthropometric,converted,v3 questionnaires row 12,marker & #
+ethnic,questionnaires,demographics,converted,v3 questionnaires row 13,marker & #
+occupation,questionnaires,occupation_physical_activity,converted,v3 questionnaires row 14,marker & #
+fitzEyes,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 15,marker & #
+fitzHair,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 16,marker & #
+fitzSkin,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 17,marker & #
+fitzFreckle,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 18,marker & #
+fitzBurn,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 19,marker & #
+fitzTan1,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 20,marker & #
+fitzTan2,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 21,marker & #
+fitzFace,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 22,marker & #
+fitzExpose,questionnaires,fitzpatrick_skin_type,converted,v3 questionnaires row 23,marker & #
+cuso41,questionnaires,unassigned,dropped,v3 questionnaires row 24,not requested (no X in v3 Requested column) - out of scope; marker & ^
+cuso42,questionnaires,unassigned,dropped,v3 questionnaires row 25,not requested (no X in v3 Requested column) - out of scope; marker & ^
+cuso43,questionnaires,unassigned,dropped,v3 questionnaires row 26,not requested (no X in v3 Requested column) - out of scope; marker & ^
+cuso44,questionnaires,unassigned,dropped,v3 questionnaires row 27,not requested (no X in v3 Requested column) - out of scope; marker & ^
+importance1,questionnaires,unassigned,dropped,v3 questionnaires row 28,"expanded from group row ""importance1 - importance5"" (5 columns); not requested (no X in v3 Requested column) - out of scope"
+importance2,questionnaires,unassigned,dropped,v3 questionnaires row 28,"expanded from group row ""importance1 - importance5"" (5 columns); not requested (no X in v3 Requested column) - out of scope"
+importance3,questionnaires,unassigned,dropped,v3 questionnaires row 28,"expanded from group row ""importance1 - importance5"" (5 columns); not requested (no X in v3 Requested column) - out of scope"
+importance4,questionnaires,unassigned,dropped,v3 questionnaires row 28,"expanded from group row ""importance1 - importance5"" (5 columns); not requested (no X in v3 Requested column) - out of scope"
+importance5,questionnaires,unassigned,dropped,v3 questionnaires row 28,"expanded from group row ""importance1 - importance5"" (5 columns); not requested (no X in v3 Requested column) - out of scope"
+preference1,questionnaires,unassigned,dropped,v3 questionnaires row 29,"expanded from group row ""preference1 - preference3"" (3 columns); not requested (no X in v3 Requested column) - out of scope"
+preference2,questionnaires,unassigned,dropped,v3 questionnaires row 29,"expanded from group row ""preference1 - preference3"" (3 columns); not requested (no X in v3 Requested column) - out of scope"
+preference3,questionnaires,unassigned,dropped,v3 questionnaires row 29,"expanded from group row ""preference1 - preference3"" (3 columns); not requested (no X in v3 Requested column) - out of scope"
+ironLow,questionnaires,medical_history,converted,v3 questionnaires row 30,marker & #
+haemLow,questionnaires,blood_donation,converted,v3 questionnaires row 31,marker & #
+headache,questionnaires,medical_history,converted,v3 questionnaires row 32,marker & #
+sleepDisturbed,questionnaires,medical_history,converted,v3 questionnaires row 33,marker & #
+irritable,questionnaires,medical_history,converted,v3 questionnaires row 34,marker & #
+notConcentrate,questionnaires,medical_history,converted,v3 questionnaires row 35,marker & #
+notRelax,questionnaires,medical_history,converted,v3 questionnaires row 36,marker & #
+pica_1,questionnaires,medical_history,converted,v3 questionnaires row 37,"expanded from group row ""pica_1 – pica_7"" (7 columns)"
+pica_2,questionnaires,medical_history,converted,v3 questionnaires row 37,"expanded from group row ""pica_1 – pica_7"" (7 columns)"
+pica_3,questionnaires,medical_history,converted,v3 questionnaires row 37,"expanded from group row ""pica_1 – pica_7"" (7 columns)"
+pica_4,questionnaires,medical_history,converted,v3 questionnaires row 37,"expanded from group row ""pica_1 – pica_7"" (7 columns)"
+pica_5,questionnaires,medical_history,converted,v3 questionnaires row 37,"expanded from group row ""pica_1 – pica_7"" (7 columns)"
+pica_6,questionnaires,medical_history,converted,v3 questionnaires row 37,"expanded from group row ""pica_1 – pica_7"" (7 columns)"
+pica_7,questionnaires,medical_history,converted,v3 questionnaires row 37,"expanded from group row ""pica_1 – pica_7"" (7 columns)"
+ironSuppPres,questionnaires,medical_history,converted,v3 questionnaires row 38,marker & #
+ironFreqPres,questionnaires,medical_history,converted,v3 questionnaires row 39,marker & #
+ironSuppMulti,questionnaires,medical_history,converted,v3 questionnaires row 40,marker & #
+ironFreqMulti,questionnaires,medical_history,converted,v3 questionnaires row 41,marker & #
+ironSuppOnly,questionnaires,medical_history,converted,v3 questionnaires row 42,marker & #
+ironFreqOnly,questionnaires,medical_history,converted,v3 questionnaires row 43,marker & #
+rls_1,questionnaires,medical_history,converted,v3 questionnaires row 44,marker & #
+rls_2,questionnaires,medical_history,converted,v3 questionnaires row 45,marker & #
+rls_3,questionnaires,medical_history,converted,v3 questionnaires row 46,marker & #
+rls_4,questionnaires,medical_history,converted,v3 questionnaires row 47,marker & #
+rls_5,questionnaires,medical_history,converted,v3 questionnaires row 48,marker & #
+rls_6a,questionnaires,medical_history,converted,v3 questionnaires row 49,"expanded from group row ""rls_6a – rls_6g"" (7 columns)"
+rls_6b,questionnaires,medical_history,converted,v3 questionnaires row 49,"expanded from group row ""rls_6a – rls_6g"" (7 columns)"
+rls_6c,questionnaires,medical_history,converted,v3 questionnaires row 49,"expanded from group row ""rls_6a – rls_6g"" (7 columns)"
+rls_6d,questionnaires,medical_history,converted,v3 questionnaires row 49,"expanded from group row ""rls_6a – rls_6g"" (7 columns)"
+rls_6e,questionnaires,medical_history,converted,v3 questionnaires row 49,"expanded from group row ""rls_6a – rls_6g"" (7 columns)"
+rls_6f,questionnaires,medical_history,converted,v3 questionnaires row 49,"expanded from group row ""rls_6a – rls_6g"" (7 columns)"
+rls_6g,questionnaires,medical_history,converted,v3 questionnaires row 49,"expanded from group row ""rls_6a – rls_6g"" (7 columns)"
+rls_7a,questionnaires,medical_history,converted,v3 questionnaires row 50,"expanded from group row ""rls_7a – rls_7g"" (7 columns)"
+rls_7b,questionnaires,medical_history,converted,v3 questionnaires row 50,"expanded from group row ""rls_7a – rls_7g"" (7 columns)"
+rls_7c,questionnaires,medical_history,converted,v3 questionnaires row 50,"expanded from group row ""rls_7a – rls_7g"" (7 columns)"
+rls_7d,questionnaires,medical_history,converted,v3 questionnaires row 50,"expanded from group row ""rls_7a – rls_7g"" (7 columns)"
+rls_7e,questionnaires,medical_history,converted,v3 questionnaires row 50,"expanded from group row ""rls_7a – rls_7g"" (7 columns)"
+rls_7f,questionnaires,medical_history,converted,v3 questionnaires row 50,"expanded from group row ""rls_7a – rls_7g"" (7 columns)"
+rls_7g,questionnaires,medical_history,converted,v3 questionnaires row 50,"expanded from group row ""rls_7a – rls_7g"" (7 columns)"
+rls_8,questionnaires,medical_history,converted,v3 questionnaires row 51,marker & #
+rls_9a,questionnaires,medical_history,converted,v3 questionnaires row 52,marker & #
+rls_9b,questionnaires,medical_history,converted,v3 questionnaires row 53,marker & #
+rls_10,questionnaires,medical_history,converted,v3 questionnaires row 54,marker & #
+rls_11,questionnaires,medical_history,converted,v3 questionnaires row 55,marker & #
+rls_12,questionnaires,medical_history,converted,v3 questionnaires row 56,marker & #
+rls_13,questionnaires,medical_history,converted,v3 questionnaires row 57,marker & #
+health1,questionnaires,general_health,converted,v3 questionnaires row 58,marker & #
+yearAgo,questionnaires,general_health,converted,v3 questionnaires row 59,marker & #
+vig,questionnaires,general_health,converted,v3 questionnaires row 60,marker & #
+mod,questionnaires,general_health,converted,v3 questionnaires row 61,marker & #
+lift,questionnaires,general_health,converted,v3 questionnaires row 62,marker & #
+stairA,questionnaires,general_health,converted,v3 questionnaires row 63,marker & #
+stairB,questionnaires,general_health,converted,v3 questionnaires row 64,marker & #
+bend,questionnaires,general_health,converted,v3 questionnaires row 65,marker & #
+mile,questionnaires,general_health,converted,v3 questionnaires row 66,marker & #
+halfmile,questionnaires,general_health,converted,v3 questionnaires row 67,marker & #
+walk,questionnaires,general_health,converted,v3 questionnaires row 68,marker & #
+bath,questionnaires,general_health,converted,v3 questionnaires row 69,marker & #
+phys_time,questionnaires,general_health,converted,v3 questionnaires row 70,marker & #
+phys_less,questionnaires,general_health,converted,v3 questionnaires row 71,marker & #
+phys_kind,questionnaires,general_health,converted,v3 questionnaires row 72,marker & #
+phys_diff,questionnaires,general_health,converted,v3 questionnaires row 73,marker & #
+emo_time,questionnaires,general_health,converted,v3 questionnaires row 74,marker & #
+emo_less,questionnaires,general_health,converted,v3 questionnaires row 75,marker & #
+emo_care,questionnaires,general_health,converted,v3 questionnaires row 76,marker & #
+social1,questionnaires,general_health,converted,v3 questionnaires row 77,marker & #
+pain1,questionnaires,general_health,converted,v3 questionnaires row 78,marker & #
+pain2,questionnaires,general_health,converted,v3 questionnaires row 79,marker & #
+getUp,questionnaires,general_health,converted,v3 questionnaires row 80,marker & #
+nervous,questionnaires,general_health,converted,v3 questionnaires row 81,marker & #
+down,questionnaires,general_health,converted,v3 questionnaires row 82,marker & #
+calm,questionnaires,general_health,converted,v3 questionnaires row 83,marker & #
+energy,questionnaires,general_health,converted,v3 questionnaires row 84,marker & #
+sad,questionnaires,general_health,converted,v3 questionnaires row 85,marker & #
+worn,questionnaires,general_health,converted,v3 questionnaires row 86,marker & #
+happy,questionnaires,general_health,converted,v3 questionnaires row 87,marker & #
+tired,questionnaires,general_health,converted,v3 questionnaires row 88,marker & #
+social2,questionnaires,general_health,converted,v3 questionnaires row 89,marker & #
+sick,questionnaires,general_health,converted,v3 questionnaires row 90,marker & #
+others,questionnaires,general_health,converted,v3 questionnaires row 91,marker & #
+worse,questionnaires,general_health,converted,v3 questionnaires row 92,marker & #
+health2,questionnaires,general_health,converted,v3 questionnaires row 93,marker & #
+painChest,questionnaires,medical_history,converted,v3 questionnaires row 94,marker & #
+shortBreath,questionnaires,medical_history,converted,v3 questionnaires row 95,marker & #
+painCalf,questionnaires,medical_history,converted,v3 questionnaires row 96,marker & #
+painJoint,questionnaires,medical_history,converted,v3 questionnaires row 97,marker & #
+feel_after,questionnaires,blood_donation,converted,v3 questionnaires row 98,marker & #
+breathless,questionnaires,medical_history,converted,v3 questionnaires row 99,marker & #
+Breathless_scale,questionnaires,medical_history,converted,v3 questionnaires row 100,marker & #
+bdri1,questionnaires,unassigned,dropped,v3 questionnaires row 101,not requested (no X in v3 Requested column) - out of scope; marker & #
+bdri2,questionnaires,unassigned,dropped,v3 questionnaires row 102,not requested (no X in v3 Requested column) - out of scope; marker & #
+bdri3,questionnaires,unassigned,dropped,v3 questionnaires row 103,not requested (no X in v3 Requested column) - out of scope; marker & #
+bdri4,questionnaires,unassigned,dropped,v3 questionnaires row 104,not requested (no X in v3 Requested column) - out of scope; marker & #
+faint,questionnaires,unassigned,dropped,v3 questionnaires row 105,not requested (no X in v3 Requested column) - out of scope; marker & #
+delayFaint,questionnaires,unassigned,dropped,v3 questionnaires row 106,not requested (no X in v3 Requested column) - out of scope; marker & #
+med_gluc,questionnaires,medical_history,converted,v3 questionnaires row 107,marker & #
+med_hyperten,questionnaires,medical_history,converted,v3 questionnaires row 108,marker & #
+med_lipid,questionnaires,medical_history,converted,v3 questionnaires row 109,marker & #
+hrt,questionnaires,reproductive_hormonal,converted,v3 questionnaires row 110,marker & #
+pill,questionnaires,reproductive_hormonal,converted,v3 questionnaires row 111,marker & #
+menopause,questionnaires,reproductive_hormonal,converted,v3 questionnaires row 112,marker & #
+smEver,questionnaires,behavioral,converted,v3 questionnaires row 113,marker & #
+smCurr,questionnaires,behavioral,converted,v3 questionnaires row 114,marker & #
+smStartAge,questionnaires,behavioral,converted,v3 questionnaires row 115,marker & #
+smStopAge,questionnaires,behavioral,converted,v3 questionnaires row 116,marker & #
+smFreq,questionnaires,behavioral,converted,v3 questionnaires row 117,marker & #
+smCig,questionnaires,behavioral,converted,v3 questionnaires row 118,marker & #
+smCigar,questionnaires,behavioral,converted,v3 questionnaires row 119,marker & #
+smPipe,questionnaires,behavioral,converted,v3 questionnaires row 120,marker & #
+alcEver,questionnaires,behavioral,converted,v3 questionnaires row 121,marker & #
+alcCurr,questionnaires,behavioral,converted,v3 questionnaires row 122,marker & #
+alcYearsStop,questionnaires,behavioral,converted,v3 questionnaires row 123,marker & #
+alcFreq,questionnaires,behavioral,converted,v3 questionnaires row 124,marker & #
+alcWhite,questionnaires,unassigned,dropped,v3 questionnaires row 125,not requested (no X in v3 Requested column) - out of scope; marker & #
+alcRed,questionnaires,unassigned,dropped,v3 questionnaires row 126,not requested (no X in v3 Requested column) - out of scope; marker & #
+alcBeer,questionnaires,unassigned,dropped,v3 questionnaires row 127,not requested (no X in v3 Requested column) - out of scope; marker & #
+alcSpirit,questionnaires,unassigned,dropped,v3 questionnaires row 128,not requested (no X in v3 Requested column) - out of scope; marker & #
+alcFwine,questionnaires,unassigned,dropped,v3 questionnaires row 129,not requested (no X in v3 Requested column) - out of scope; marker & #
+alcPops,questionnaires,unassigned,dropped,v3 questionnaires row 130,not requested (no X in v3 Requested column) - out of scope; marker & #
+meatEater,questionnaires,dietary,converted,v3 questionnaires row 131,marker & #
+ageVeg,questionnaires,dietary,converted,v3 questionnaires row 132,marker & #
+liver,questionnaires,dietary,converted,v3 questionnaires row 133,marker & #
+redMeat,questionnaires,dietary,converted,v3 questionnaires row 134,marker & #
+poultry,questionnaires,dietary,converted,v3 questionnaires row 135,marker & #
+whiteFish,questionnaires,dietary,converted,v3 questionnaires row 136,marker & #
+oilyFish,questionnaires,dietary,converted,v3 questionnaires row 137,marker & #
+veg,questionnaires,dietary,converted,v3 questionnaires row 138,marker & #
+fruit,questionnaires,dietary,converted,v3 questionnaires row 139,marker & #
+juice,questionnaires,dietary,converted,v3 questionnaires row 140,marker & #
+smooth,questionnaires,dietary,converted,v3 questionnaires row 141,marker & #
+tea,questionnaires,dietary,converted,v3 questionnaires row 142,marker & #
+eatBefore,questionnaires,unassigned,dropped,v3 questionnaires row 143,not requested (no X in v3 Requested column) - out of scope; marker & #
+drinkBefore,questionnaires,unassigned,dropped,v3 questionnaires row 144,not requested (no X in v3 Requested column) - out of scope; marker & #
+eatAfter,questionnaires,unassigned,dropped,v3 questionnaires row 145,not requested (no X in v3 Requested column) - out of scope; marker & #
+drinkAfter,questionnaires,unassigned,dropped,v3 questionnaires row 146,not requested (no X in v3 Requested column) - out of scope; marker & #
+eatTyp_change,questionnaires,unassigned,dropped,v3 questionnaires row 147,not requested (no X in v3 Requested column) - out of scope; marker & #
+eatTyp_when,questionnaires,dietary,converted,v3 questionnaires row 148,marker & #
+eatTyp_moreA,questionnaires,dietary,converted,v3 questionnaires row 149,marker & #
+eatTyp_moreB,questionnaires,dietary,converted,v3 questionnaires row 150,marker & #
+eatTyp_moreC,questionnaires,dietary,converted,v3 questionnaires row 151,marker & #
+eatTyp_moreD,questionnaires,dietary,converted,v3 questionnaires row 152,marker & #
+eatTyp_moreE,questionnaires,dietary,converted,v3 questionnaires row 153,marker & #
+eatTyp_moreF,questionnaires,dietary,converted,v3 questionnaires row 154,marker & #
+eatTyp_moreG,questionnaires,dietary,converted,v3 questionnaires row 155,marker & #
+eatTyp_moreH,questionnaires,dietary,converted,v3 questionnaires row 156,marker & #
+eatTyp_moreI,questionnaires,dietary,converted,v3 questionnaires row 157,marker & #
+eatTyp_moreJ,questionnaires,dietary,converted,v3 questionnaires row 158,marker & #
+pa_change,questionnaires,occupation_physical_activity,converted,v3 questionnaires row 159,marker & #
+pa_day,questionnaires,unassigned,dropped,v3 questionnaires row 160,not requested (no X in v3 Requested column) - out of scope; marker & #
+pa_week,questionnaires,unassigned,dropped,v3 questionnaires row 161,not requested (no X in v3 Requested column) - out of scope; marker & #
+pa_work,questionnaires,occupation_physical_activity,converted,v3 questionnaires row 162,marker & #
+pa_leisure,questionnaires,occupation_physical_activity,converted,v3 questionnaires row 163,marker & #
+nDonation_hx2,basic_info,unassigned,dropped,v3 donationHistory row 2,not requested (no X in v3 Requested column) - out of scope
+nLowHB_hx2,basic_info,unassigned,dropped,v3 donationHistory row 3,not requested (no X in v3 Requested column) - out of scope
+nOtherDef_hx2,basic_info,unassigned,dropped,v3 donationHistory row 4,not requested (no X in v3 Requested column) - out of scope
+nUnder_hx2,basic_info,unassigned,dropped,v3 donationHistory row 5,not requested (no X in v3 Requested column) - out of scope
+nOtherAtt_hx2,basic_info,unassigned,dropped,v3 donationHistory row 6,not requested (no X in v3 Requested column) - out of scope
+earliestDate_hx2,basic_info,unassigned,dropped,v3 donationHistory row 7,not requested (no X in v3 Requested column) - out of scope
+nDonation_hx5,basic_info,unassigned,dropped,v3 donationHistory row 9,not requested (no X in v3 Requested column) - out of scope; marker #
+nLowHB_hx5,basic_info,unassigned,dropped,v3 donationHistory row 10,not requested (no X in v3 Requested column) - out of scope; marker #
+nOtherDef_hx5,basic_info,unassigned,dropped,v3 donationHistory row 11,not requested (no X in v3 Requested column) - out of scope; marker #
+nUnder_hx5,basic_info,unassigned,dropped,v3 donationHistory row 12,not requested (no X in v3 Requested column) - out of scope; marker #
+nOtherAtt_hx5,basic_info,unassigned,dropped,v3 donationHistory row 13,not requested (no X in v3 Requested column) - out of scope; marker #
+earliestDate_hx5,basic_info,unassigned,dropped,v3 donationHistory row 14,not requested (no X in v3 Requested column) - out of scope; marker #
+hxBruising,basic_info,unassigned,dropped,v3 adverseEventHistory row 2,not requested (no X in v3 Requested column) - out of scope
+hxRebleed,basic_info,unassigned,dropped,v3 adverseEventHistory row 3,not requested (no X in v3 Requested column) - out of scope
+hxFaint,basic_info,unassigned,dropped,v3 adverseEventHistory row 4,not requested (no X in v3 Requested column) - out of scope
+hxFaint1,basic_info,unassigned,dropped,v3 adverseEventHistory row 5,not requested (no X in v3 Requested column) - out of scope
+hxFaint2,basic_info,unassigned,dropped,v3 adverseEventHistory row 6,not requested (no X in v3 Requested column) - out of scope
+hxFaint3,basic_info,unassigned,dropped,v3 adverseEventHistory row 7,not requested (no X in v3 Requested column) - out of scope
+hxFaint4,basic_info,unassigned,dropped,v3 adverseEventHistory row 8,not requested (no X in v3 Requested column) - out of scope
+hxVeni,basic_info,unassigned,dropped,v3 adverseEventHistory row 9,not requested (no X in v3 Requested column) - out of scope
+hxOther,basic_info,unassigned,dropped,v3 adverseEventHistory row 10,not requested (no X in v3 Requested column) - out of scope
+spkDate_hs,hb_measurements,haemoglobin_measurements,converted,v3 Hb_measurements row 2,
+spkTime_hs,hb_measurements,unassigned,dropped,v3 Hb_measurements row 3,not requested (no X in v3 Requested column) - out of scope
+Hb_hs,hb_measurements,haemoglobin_measurements,converted,v3 Hb_measurements row 4,
+hemDate_hc,hb_measurements,haemoglobin_measurements,converted,v3 Hb_measurements row 6,marker #
+hemTime_hc,hb_measurements,unassigned,dropped,v3 Hb_measurements row 7,not requested (no X in v3 Requested column) - out of scope; marker #
+hemValue_hc,hb_measurements,haemoglobin_measurements,converted,v3 Hb_measurements row 8,marker #
+orsDate_os,hb_measurements,haemoglobin_measurements,converted,v3 Hb_measurements row 10,marker *
+orsTime_os,hb_measurements,unassigned,dropped,v3 Hb_measurements row 11,not requested (no X in v3 Requested column) - out of scope; marker *
+Hb_os,hb_measurements,haemoglobin_measurements,converted,v3 Hb_measurements row 12,marker *
+donationDate_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 2,
+appointmentTime_v1,bloods,unassigned,dropped,v3 bloods row 3,not requested (no X in v3 Requested column) - out of scope; marker ^
+processDate_v1,bloods,unassigned,dropped,v3 bloods row 4,not requested (no X in v3 Requested column) - out of scope
+processTime_v1,bloods,unassigned,dropped,v3 bloods row 5,not requested (no X in v3 Requested column) - out of scope
+WBC_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 6,
+RBC_10_12_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 7,
+HGB_g_dL_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 8,
+HCT_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 9,
+MCV_fL_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 10,
+MCH_pg_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 11,
+MCHC_g_dL_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 12,
+PLT_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 13,
+RDW_SD_fL_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 14,
+RDW_CV_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 15,
+PDW_fL_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 16,
+MPV_fL_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 17,
+P_LCR_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 18,
+PCT_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 19,
+NRBC_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 20,
+NRBC_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 21,
+NEUT_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 22,
+LYMPH_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 23,
+MONO_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 24,
+EO_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 25,
+BASO_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 26,
+NEUT_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 27,
+LYMPH_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 28,
+MONO_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 29,
+EO_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 30,
+BASO_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 31,
+IG_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 32,
+IG_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 33,
+RET_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 34,
+RET_10_6_uL_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 35,
+IRF_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 36,
+LFR_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 37,
+MFR_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 38,
+HFR_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 39,
+RET_He_pg_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 40,
+IPF_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 41,
+PLT_I_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 42,
+MicroR_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 43,
+MacroR_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 44,
+TNC_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 45,
+WBC_N_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 46,
+TNC_N_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 47,
+BA_N_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 48,
+BA_N_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 49,
+WBC_D_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 50,
+TNC_D_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 51,
+NEUTx_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 52,
+NEUTx_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 53,
+LYMP_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 54,
+LYMP_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 55,
+HFLC_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 56,
+HFLC_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 57,
+BA_D_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 58,
+BA_D_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 59,
+NE_SSC_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 60,
+NE_SFL_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 61,
+NE_FSC_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 62,
+LY_X_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 63,
+LY_Y_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 64,
+LY_Z_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 65,
+MO_X_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 66,
+MO_Y_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 67,
+MO_Z_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 68,
+NE_WX_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 69,
+NE_WY_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 70,
+NE_WZ_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 71,
+LY_WX_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 72,
+LY_WY_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 73,
+LY_WZ_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 74,
+MO_WX_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 75,
+MO_WY_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 76,
+MO_WZ_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 77,
+RBC_O_10_12_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 78,
+PLT_O_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 79,
+RBC_He_pg_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 80,
+Delta_He_pg_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 81,
+RET_Y_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 82,
+RET_RBC_Y_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 83,
+IRF_Y_ch_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 84,
+FRC_10_12_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 85,
+FRC_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 86,
+HYPO_He_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 87,
+HYPER_He_PCT_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 88,
+RPI_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 89,
+RET_UPP_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 90,
+RET_TNC_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 91,
+PLT_F_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 92,
+H_IPF_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 93,
+IPFx_10_9_L_v1,bloods,blood_counts_assays_visit_1,converted,v3 bloods row 94,
+donationDate_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 96,marker #
+appointmentTime_v2,bloods,unassigned,dropped,v3 bloods row 98,not requested (no X in v3 Requested column) - out of scope; marker *
+processDate_v2,bloods,unassigned,dropped,v3 bloods row 99,not requested (no X in v3 Requested column) - out of scope; marker #
+processTime_v2,bloods,unassigned,dropped,v3 bloods row 100,not requested (no X in v3 Requested column) - out of scope; marker #
+WBC_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 101,marker #
+RBC_10_12_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 102,marker #
+HGB_g_dL_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 103,marker #
+HCT_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 104,marker #
+MCV_fL_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 105,marker #
+MCH_pg_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 106,marker #
+MCHC_g_dL_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 107,marker #
+PLT_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 108,marker #
+RDW_SD_fL_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 109,marker #
+RDW_CV_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 110,marker #
+PDW_fL_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 111,marker #
+MPV_fL_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 112,marker #
+P_LCR_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 113,marker #
+PCT_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 114,marker #
+NRBC_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 115,marker #
+NRBC_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 116,marker #
+NEUT_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 117,marker #
+LYMPH_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 118,marker #
+MONO_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 119,marker #
+EO_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 120,marker #
+BASO_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 121,marker #
+NEUT_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 122,marker #
+LYMPH_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 123,marker #
+MONO_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 124,marker #
+EO_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 125,marker #
+BASO_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 126,marker #
+IG_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 127,marker #
+IG_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 128,marker #
+RET_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 129,marker #
+RET_10_6_uL_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 130,marker #
+IRF_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 131,marker #
+LFR_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 132,marker #
+MFR_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 133,marker #
+HFR_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 134,marker #
+RET_He_pg_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 135,marker #
+IPF_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 136,marker #
+PLT_I_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 137,marker #
+MicroR_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 138,marker #
+MacroR_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 139,marker #
+TNC_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 140,marker #
+WBC_N_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 141,marker #
+TNC_N_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 142,marker #
+BA_N_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 143,marker #
+BA_N_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 144,marker #
+WBC_D_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 145,marker #
+TNC_D_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 146,marker #
+NEUTx_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 147,marker #
+NEUTx_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 148,marker #
+LYMP_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 149,marker #
+LYMP_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 150,marker #
+HFLC_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 151,marker #
+HFLC_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 152,marker #
+BA_D_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 153,marker #
+BA_D_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 154,marker #
+NE_SSC_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 155,marker #
+NE_SFL_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 156,marker #
+NE_FSC_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 157,marker #
+LY_X_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 158,marker #
+LY_Y_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 159,marker #
+LY_Z_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 160,marker #
+MO_X_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 161,marker #
+MO_Y_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 162,marker #
+MO_Z_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 163,marker #
+NE_WX_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 164,marker #
+NE_WY_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 165,marker #
+NE_WZ_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 166,marker #
+LY_WX_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 167,marker #
+LY_WY_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 168,marker #
+LY_WZ_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 169,marker #
+MO_WX_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 170,marker #
+MO_WY_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 171,marker #
+MO_WZ_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 172,marker #
+RBC_O_10_12_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 173,marker #
+PLT_O_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 174,marker #
+RBC_He_pg_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 175,marker #
+Delta_He_pg_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 176,marker #
+RET_Y_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 177,marker #
+RET_RBC_Y_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 178,marker #
+IRF_Y_ch_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 179,marker #
+FRC_10_12_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 180,marker #
+FRC_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 181,marker #
+HYPO_He_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 182,marker #
+HYPER_He_PCT_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 183,marker #
+RPI_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 184,marker #
+RET_UPP_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 185,marker #
+RET_TNC_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 186,marker #
+PLT_F_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 187,marker #
+H_IPF_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 188,marker #
+IPFx_10_9_L_v2,bloods,blood_counts_assays_visit_2,converted,v3 bloods row 189,marker #
+Total_C_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 2,
+non_HDL_C_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 3,
+LDL_C_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 4,
+HDL_C_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 5,
+Total_TG_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 6,
+ApoB_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 7,
+ApoA1_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 8,
+Glucose_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 9,
+Creatinine_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 10,
+Albumin_ntg,biomarkers,blood_biomarkers,converted,v3 biomarkers row 11,
+Affymetrix_QC,omics,omics,converted,v3 omics row 2,
+smearID_v1,omics,omics,converted,v3 omics row 4,
+smearID_v2,omics,omics,converted,v3 omics row 5,
+Affymetrix_gwasQC,omics,unassigned,dropped,v3 omics row 6,not requested (no X in v3 Requested column) - out of scope
+Wes_gwasQC,omics,unassigned,dropped,v3 omics row 7,not requested (no X in v3 Requested column) - out of scope
+Wgs_gwasQC,omics,unassigned,dropped,v3 omics row 8,not requested (no X in v3 Requested column) - out of scope
+Caliber_CAN,omics,unassigned,dropped,v3 EHRData row 2,not requested (no X in v3 Requested column) - out of scope
+Caliber_MOR,omics,unassigned,dropped,v3 EHRData row 3,not requested (no X in v3 Requested column) - out of scope
+Caliber_HES,omics,unassigned,dropped,v3 EHRData row 4,not requested (no X in v3 Requested column) - out of scope
+Caliber_OP,omics,unassigned,dropped,v3 EHRData row 5,not requested (no X in v3 Requested column) - out of scope
