@@ -1,0 +1,248 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/questionnaires/categories/dietary.json",
+  "title": "QUESTIONNAIRES — Dietary",
+  "description": "Meat, fish, fruit, vegetable and tea consumption, and changes in diet as a result of giving blood, from the questionnaire.",
+  "type": "object",
+  "x-variable-group": "dietary",
+  "$comment": "The source gives no 999 for most items here (only meatEater and ageVeg).",
+  "$defs": {
+    "times_of_day": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "with meals"
+        },
+        {
+          "const": 2,
+          "title": "between meals"
+        },
+        {
+          "const": 3,
+          "title": "with and between meals"
+        },
+        {
+          "const": 4,
+          "title": "never / rarely"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "more_less_same": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "more"
+        },
+        {
+          "const": 2,
+          "title": "less"
+        },
+        {
+          "const": 3,
+          "title": "the same"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "weekly_times": {
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "do not eat it"
+        },
+        {
+          "const": 0.1,
+          "title": "less than once a week"
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20,
+          "title": "times / week"
+        },
+        {
+          "const": 777,
+          "title": "more than 20 times per week"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source codes: 0 = do not eat it, 0.1 = less than once a week, 1 - 20 = times / week, 777 = more than 20 times per week. The source gives no 999 for these items. Whole numbers assumed for 1 - 20 because the fractional value 0.1 is listed as its own code (D024)."
+    }
+  },
+  "properties": {
+    "meatEater": {
+      "title": "Do you eat meat or fish?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ageVeg": {
+      "title": "How old were you when you last ate any kind of meat or fish (vegetarians only)?",
+      "x-universe": "Vegetarians only.",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "never eaten meat / fish"
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 70,
+          "title": "age"
+        },
+        {
+          "const": 777,
+          "title": "more than 70 years old"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source wording: '(vegetarians only)' (R001). The dictionary gives no value for people outside that universe, so no rule is enforced (D024). Whole years assumed for 1 - 70 (D024)."
+    },
+    "liver": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average week how many times do you eat liver (any type e.g. pigs, chicken, lambs)?"
+    },
+    "redMeat": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average week how many times do you eat red meat (e.g. beef, lamb, pork, bacon, ham, sausages, burgers)?"
+    },
+    "poultry": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average week how many times do you eat poultry (e.g. chicken, turkey)?"
+    },
+    "whiteFish": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average week how many times do you eat White fish (e.g. cod, haddock, tinned tuna)?"
+    },
+    "oilyFish": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average week how many times do you eat oily fish (canned or fresh e.g. sardines, mackerel, salmon, trout)?"
+    },
+    "veg": {
+      "$ref": "#/$defs/times_of_day",
+      "title": "Please indicate the times during an average day that you consume vegetables (excluding potatoes)"
+    },
+    "fruit": {
+      "$ref": "#/$defs/times_of_day",
+      "title": "Please indicate the times during an average day that you consume fruit (whole)"
+    },
+    "juice": {
+      "$ref": "#/$defs/times_of_day",
+      "title": "Please indicate the times during an average day that you consume fruit juice"
+    },
+    "smooth": {
+      "$ref": "#/$defs/times_of_day",
+      "title": "Please indicate the times during an average day that you consume fruit smoothies"
+    },
+    "tea": {
+      "$ref": "#/$defs/times_of_day",
+      "title": "Please indicate the times during an average day that you consume tea"
+    },
+    "eatTyp_when": {
+      "title": "When did you change the types of food you eat?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Before I joined COMPARE"
+        },
+        {
+          "const": 2,
+          "title": "While taking part in COMPARE"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "eatTyp_moreA": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less red meat as a result of giving blood?"
+    },
+    "eatTyp_moreB": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less white meat or fish as a result of giving blood?"
+    },
+    "eatTyp_moreC": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less eggs as a result of giving blood?"
+    },
+    "eatTyp_moreD": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less dairy foods (cheese, milk etc.) as a result of giving blood?"
+    },
+    "eatTyp_moreE": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less green vegetables as a result of giving blood?"
+    },
+    "eatTyp_moreF": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less lentils or beans as a result of giving blood?"
+    },
+    "eatTyp_moreG": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less fruit as a result of giving blood?"
+    },
+    "eatTyp_moreH": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you eat more or less snacks e.g. biscuits, cakes, crisps as a result of giving blood?"
+    },
+    "eatTyp_moreI": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you drink more or less tea or coffee as a result of giving blood?"
+    },
+    "eatTyp_moreJ": {
+      "$ref": "#/$defs/more_less_same",
+      "title": "Do you drink more or less alcohol as a result of giving blood?"
+    }
+  },
+  "required": [
+    "meatEater",
+    "ageVeg",
+    "liver",
+    "redMeat",
+    "poultry",
+    "whiteFish",
+    "oilyFish",
+    "veg",
+    "fruit",
+    "juice",
+    "smooth",
+    "tea",
+    "eatTyp_when",
+    "eatTyp_moreA",
+    "eatTyp_moreB",
+    "eatTyp_moreC",
+    "eatTyp_moreD",
+    "eatTyp_moreE",
+    "eatTyp_moreF",
+    "eatTyp_moreG",
+    "eatTyp_moreH",
+    "eatTyp_moreI",
+    "eatTyp_moreJ"
+  ]
+}

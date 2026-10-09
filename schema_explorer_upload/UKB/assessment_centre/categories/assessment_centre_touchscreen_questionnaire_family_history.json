@@ -1,0 +1,1649 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/assessment_centre/categories/assessment_centre_touchscreen_questionnaire_family_history.json",
+  "title": "Assessment centre — Touchscreen questionnaire: Family history",
+  "description": "UK Biobank fields in the category Assessment centre > Touchscreen questionnaire > Family history, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "assessment_centre_touchscreen_questionnaire_family_history",
+  "properties": {
+    "f1797": {
+      "title": "Father still alive",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1807": {
+      "title": "Father's age at death",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f1835": {
+      "title": "Mother still alive",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1845": {
+      "title": "Mother's age",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f1873": {
+      "title": "Number of full brothers",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f1883": {
+      "title": "Number of full sisters",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2946": {
+      "title": "Father's age",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3526": {
+      "title": "Mother's age at death",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3912": {
+      "title": "Adopted father still alive",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3942": {
+      "title": "Adopted mother still alive",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3972": {
+      "title": "Number of adopted brothers",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3982": {
+      "title": "Number of adopted sisters",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4501": {
+      "title": "Non-accidental death in close genetic family",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5057": {
+      "title": "Number of older siblings",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f20107": {
+      "title": "Illnesses of father",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 10,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Heart disease"
+              },
+              {
+                "const": 2,
+                "title": "Stroke"
+              },
+              {
+                "const": 3,
+                "title": "Lung cancer"
+              },
+              {
+                "const": 4,
+                "title": "Bowel cancer"
+              },
+              {
+                "const": 5,
+                "title": "Breast cancer"
+              },
+              {
+                "const": 6,
+                "title": "Chronic bronchitis/emphysema"
+              },
+              {
+                "const": 8,
+                "title": "High blood pressure"
+              },
+              {
+                "const": 9,
+                "title": "Diabetes"
+              },
+              {
+                "const": 10,
+                "title": "Alzheimer's disease/dementia"
+              },
+              {
+                "const": 11,
+                "title": "Parkinson's disease"
+              },
+              {
+                "const": 12,
+                "title": "Severe depression"
+              },
+              {
+                "const": 13,
+                "title": "Prostate cancer"
+              },
+              {
+                "const": 14,
+                "title": "Hip fracture"
+              },
+              {
+                "const": -27,
+                "title": "None of the above (group 2)"
+              },
+              {
+                "const": -23,
+                "title": "Prefer not to answer (group 2)"
+              },
+              {
+                "const": -21,
+                "title": "Do not know (group 2)"
+              },
+              {
+                "const": -17,
+                "title": "None of the above (group 1)"
+              },
+              {
+                "const": -13,
+                "title": "Prefer not to answer (group 1)"
+              },
+              {
+                "const": -11,
+                "title": "Do not know (group 1)"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Heart disease"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Stroke"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Lung cancer"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Bowel cancer"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Breast cancer"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Chronic bronchitis/emphysema"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "High blood pressure"
+        },
+        {
+          "const": [
+            9
+          ],
+          "title": "Diabetes"
+        },
+        {
+          "const": [
+            10
+          ],
+          "title": "Alzheimer's disease/dementia"
+        },
+        {
+          "const": [
+            11
+          ],
+          "title": "Parkinson's disease"
+        },
+        {
+          "const": [
+            12
+          ],
+          "title": "Severe depression"
+        },
+        {
+          "const": [
+            13
+          ],
+          "title": "Prostate cancer"
+        },
+        {
+          "const": [
+            14
+          ],
+          "title": "Hip fracture"
+        },
+        {
+          "const": [
+            -27
+          ],
+          "title": "None of the above (group 2)"
+        },
+        {
+          "const": [
+            -23
+          ],
+          "title": "Prefer not to answer (group 2)"
+        },
+        {
+          "const": [
+            -21
+          ],
+          "title": "Do not know (group 2)"
+        },
+        {
+          "const": [
+            -17
+          ],
+          "title": "None of the above (group 1)"
+        },
+        {
+          "const": [
+            -13
+          ],
+          "title": "Prefer not to answer (group 1)"
+        },
+        {
+          "const": [
+            -11
+          ],
+          "title": "Do not know (group 1)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1010. Up to 10 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20110": {
+      "title": "Illnesses of mother",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 11,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Heart disease"
+              },
+              {
+                "const": 2,
+                "title": "Stroke"
+              },
+              {
+                "const": 3,
+                "title": "Lung cancer"
+              },
+              {
+                "const": 4,
+                "title": "Bowel cancer"
+              },
+              {
+                "const": 5,
+                "title": "Breast cancer"
+              },
+              {
+                "const": 6,
+                "title": "Chronic bronchitis/emphysema"
+              },
+              {
+                "const": 8,
+                "title": "High blood pressure"
+              },
+              {
+                "const": 9,
+                "title": "Diabetes"
+              },
+              {
+                "const": 10,
+                "title": "Alzheimer's disease/dementia"
+              },
+              {
+                "const": 11,
+                "title": "Parkinson's disease"
+              },
+              {
+                "const": 12,
+                "title": "Severe depression"
+              },
+              {
+                "const": 13,
+                "title": "Prostate cancer"
+              },
+              {
+                "const": 14,
+                "title": "Hip fracture"
+              },
+              {
+                "const": -27,
+                "title": "None of the above (group 2)"
+              },
+              {
+                "const": -23,
+                "title": "Prefer not to answer (group 2)"
+              },
+              {
+                "const": -21,
+                "title": "Do not know (group 2)"
+              },
+              {
+                "const": -17,
+                "title": "None of the above (group 1)"
+              },
+              {
+                "const": -13,
+                "title": "Prefer not to answer (group 1)"
+              },
+              {
+                "const": -11,
+                "title": "Do not know (group 1)"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Heart disease"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Stroke"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Lung cancer"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Bowel cancer"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Breast cancer"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Chronic bronchitis/emphysema"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "High blood pressure"
+        },
+        {
+          "const": [
+            9
+          ],
+          "title": "Diabetes"
+        },
+        {
+          "const": [
+            10
+          ],
+          "title": "Alzheimer's disease/dementia"
+        },
+        {
+          "const": [
+            11
+          ],
+          "title": "Parkinson's disease"
+        },
+        {
+          "const": [
+            12
+          ],
+          "title": "Severe depression"
+        },
+        {
+          "const": [
+            13
+          ],
+          "title": "Prostate cancer"
+        },
+        {
+          "const": [
+            14
+          ],
+          "title": "Hip fracture"
+        },
+        {
+          "const": [
+            -27
+          ],
+          "title": "None of the above (group 2)"
+        },
+        {
+          "const": [
+            -23
+          ],
+          "title": "Prefer not to answer (group 2)"
+        },
+        {
+          "const": [
+            -21
+          ],
+          "title": "Do not know (group 2)"
+        },
+        {
+          "const": [
+            -17
+          ],
+          "title": "None of the above (group 1)"
+        },
+        {
+          "const": [
+            -13
+          ],
+          "title": "Prefer not to answer (group 1)"
+        },
+        {
+          "const": [
+            -11
+          ],
+          "title": "Do not know (group 1)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1010. Up to 11 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20111": {
+      "title": "Illnesses of siblings",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Heart disease"
+              },
+              {
+                "const": 2,
+                "title": "Stroke"
+              },
+              {
+                "const": 3,
+                "title": "Lung cancer"
+              },
+              {
+                "const": 4,
+                "title": "Bowel cancer"
+              },
+              {
+                "const": 5,
+                "title": "Breast cancer"
+              },
+              {
+                "const": 6,
+                "title": "Chronic bronchitis/emphysema"
+              },
+              {
+                "const": 8,
+                "title": "High blood pressure"
+              },
+              {
+                "const": 9,
+                "title": "Diabetes"
+              },
+              {
+                "const": 10,
+                "title": "Alzheimer's disease/dementia"
+              },
+              {
+                "const": 11,
+                "title": "Parkinson's disease"
+              },
+              {
+                "const": 12,
+                "title": "Severe depression"
+              },
+              {
+                "const": 13,
+                "title": "Prostate cancer"
+              },
+              {
+                "const": 14,
+                "title": "Hip fracture"
+              },
+              {
+                "const": -27,
+                "title": "None of the above (group 2)"
+              },
+              {
+                "const": -23,
+                "title": "Prefer not to answer (group 2)"
+              },
+              {
+                "const": -21,
+                "title": "Do not know (group 2)"
+              },
+              {
+                "const": -17,
+                "title": "None of the above (group 1)"
+              },
+              {
+                "const": -13,
+                "title": "Prefer not to answer (group 1)"
+              },
+              {
+                "const": -11,
+                "title": "Do not know (group 1)"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Heart disease"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Stroke"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Lung cancer"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Bowel cancer"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Breast cancer"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Chronic bronchitis/emphysema"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "High blood pressure"
+        },
+        {
+          "const": [
+            9
+          ],
+          "title": "Diabetes"
+        },
+        {
+          "const": [
+            10
+          ],
+          "title": "Alzheimer's disease/dementia"
+        },
+        {
+          "const": [
+            11
+          ],
+          "title": "Parkinson's disease"
+        },
+        {
+          "const": [
+            12
+          ],
+          "title": "Severe depression"
+        },
+        {
+          "const": [
+            13
+          ],
+          "title": "Prostate cancer"
+        },
+        {
+          "const": [
+            14
+          ],
+          "title": "Hip fracture"
+        },
+        {
+          "const": [
+            -27
+          ],
+          "title": "None of the above (group 2)"
+        },
+        {
+          "const": [
+            -23
+          ],
+          "title": "Prefer not to answer (group 2)"
+        },
+        {
+          "const": [
+            -21
+          ],
+          "title": "Do not know (group 2)"
+        },
+        {
+          "const": [
+            -17
+          ],
+          "title": "None of the above (group 1)"
+        },
+        {
+          "const": [
+            -13
+          ],
+          "title": "Prefer not to answer (group 1)"
+        },
+        {
+          "const": [
+            -11
+          ],
+          "title": "Do not know (group 1)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1010. Up to 12 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20112": {
+      "title": "Illnesses of adopted father",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 7,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Heart disease"
+              },
+              {
+                "const": 2,
+                "title": "Stroke"
+              },
+              {
+                "const": 3,
+                "title": "Lung cancer"
+              },
+              {
+                "const": 4,
+                "title": "Bowel cancer"
+              },
+              {
+                "const": 5,
+                "title": "Breast cancer"
+              },
+              {
+                "const": 6,
+                "title": "Chronic bronchitis/emphysema"
+              },
+              {
+                "const": 8,
+                "title": "High blood pressure"
+              },
+              {
+                "const": 9,
+                "title": "Diabetes"
+              },
+              {
+                "const": 10,
+                "title": "Alzheimer's disease/dementia"
+              },
+              {
+                "const": 11,
+                "title": "Parkinson's disease"
+              },
+              {
+                "const": 12,
+                "title": "Severe depression"
+              },
+              {
+                "const": 13,
+                "title": "Prostate cancer"
+              },
+              {
+                "const": 14,
+                "title": "Hip fracture"
+              },
+              {
+                "const": -27,
+                "title": "None of the above (group 2)"
+              },
+              {
+                "const": -23,
+                "title": "Prefer not to answer (group 2)"
+              },
+              {
+                "const": -21,
+                "title": "Do not know (group 2)"
+              },
+              {
+                "const": -17,
+                "title": "None of the above (group 1)"
+              },
+              {
+                "const": -13,
+                "title": "Prefer not to answer (group 1)"
+              },
+              {
+                "const": -11,
+                "title": "Do not know (group 1)"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Heart disease"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Stroke"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Lung cancer"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Bowel cancer"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Breast cancer"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Chronic bronchitis/emphysema"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "High blood pressure"
+        },
+        {
+          "const": [
+            9
+          ],
+          "title": "Diabetes"
+        },
+        {
+          "const": [
+            10
+          ],
+          "title": "Alzheimer's disease/dementia"
+        },
+        {
+          "const": [
+            11
+          ],
+          "title": "Parkinson's disease"
+        },
+        {
+          "const": [
+            12
+          ],
+          "title": "Severe depression"
+        },
+        {
+          "const": [
+            13
+          ],
+          "title": "Prostate cancer"
+        },
+        {
+          "const": [
+            14
+          ],
+          "title": "Hip fracture"
+        },
+        {
+          "const": [
+            -27
+          ],
+          "title": "None of the above (group 2)"
+        },
+        {
+          "const": [
+            -23
+          ],
+          "title": "Prefer not to answer (group 2)"
+        },
+        {
+          "const": [
+            -21
+          ],
+          "title": "Do not know (group 2)"
+        },
+        {
+          "const": [
+            -17
+          ],
+          "title": "None of the above (group 1)"
+        },
+        {
+          "const": [
+            -13
+          ],
+          "title": "Prefer not to answer (group 1)"
+        },
+        {
+          "const": [
+            -11
+          ],
+          "title": "Do not know (group 1)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1010. Up to 7 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20113": {
+      "title": "Illnesses of adopted mother",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Heart disease"
+              },
+              {
+                "const": 2,
+                "title": "Stroke"
+              },
+              {
+                "const": 3,
+                "title": "Lung cancer"
+              },
+              {
+                "const": 4,
+                "title": "Bowel cancer"
+              },
+              {
+                "const": 5,
+                "title": "Breast cancer"
+              },
+              {
+                "const": 6,
+                "title": "Chronic bronchitis/emphysema"
+              },
+              {
+                "const": 8,
+                "title": "High blood pressure"
+              },
+              {
+                "const": 9,
+                "title": "Diabetes"
+              },
+              {
+                "const": 10,
+                "title": "Alzheimer's disease/dementia"
+              },
+              {
+                "const": 11,
+                "title": "Parkinson's disease"
+              },
+              {
+                "const": 12,
+                "title": "Severe depression"
+              },
+              {
+                "const": 13,
+                "title": "Prostate cancer"
+              },
+              {
+                "const": 14,
+                "title": "Hip fracture"
+              },
+              {
+                "const": -27,
+                "title": "None of the above (group 2)"
+              },
+              {
+                "const": -23,
+                "title": "Prefer not to answer (group 2)"
+              },
+              {
+                "const": -21,
+                "title": "Do not know (group 2)"
+              },
+              {
+                "const": -17,
+                "title": "None of the above (group 1)"
+              },
+              {
+                "const": -13,
+                "title": "Prefer not to answer (group 1)"
+              },
+              {
+                "const": -11,
+                "title": "Do not know (group 1)"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Heart disease"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Stroke"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Lung cancer"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Bowel cancer"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Breast cancer"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Chronic bronchitis/emphysema"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "High blood pressure"
+        },
+        {
+          "const": [
+            9
+          ],
+          "title": "Diabetes"
+        },
+        {
+          "const": [
+            10
+          ],
+          "title": "Alzheimer's disease/dementia"
+        },
+        {
+          "const": [
+            11
+          ],
+          "title": "Parkinson's disease"
+        },
+        {
+          "const": [
+            12
+          ],
+          "title": "Severe depression"
+        },
+        {
+          "const": [
+            13
+          ],
+          "title": "Prostate cancer"
+        },
+        {
+          "const": [
+            14
+          ],
+          "title": "Hip fracture"
+        },
+        {
+          "const": [
+            -27
+          ],
+          "title": "None of the above (group 2)"
+        },
+        {
+          "const": [
+            -23
+          ],
+          "title": "Prefer not to answer (group 2)"
+        },
+        {
+          "const": [
+            -21
+          ],
+          "title": "Do not know (group 2)"
+        },
+        {
+          "const": [
+            -17
+          ],
+          "title": "None of the above (group 1)"
+        },
+        {
+          "const": [
+            -13
+          ],
+          "title": "Prefer not to answer (group 1)"
+        },
+        {
+          "const": [
+            -11
+          ],
+          "title": "Do not know (group 1)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1010. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20114": {
+      "title": "Illnesses of adopted siblings",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 7,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Heart disease"
+              },
+              {
+                "const": 2,
+                "title": "Stroke"
+              },
+              {
+                "const": 3,
+                "title": "Lung cancer"
+              },
+              {
+                "const": 4,
+                "title": "Bowel cancer"
+              },
+              {
+                "const": 5,
+                "title": "Breast cancer"
+              },
+              {
+                "const": 6,
+                "title": "Chronic bronchitis/emphysema"
+              },
+              {
+                "const": 8,
+                "title": "High blood pressure"
+              },
+              {
+                "const": 9,
+                "title": "Diabetes"
+              },
+              {
+                "const": 10,
+                "title": "Alzheimer's disease/dementia"
+              },
+              {
+                "const": 11,
+                "title": "Parkinson's disease"
+              },
+              {
+                "const": 12,
+                "title": "Severe depression"
+              },
+              {
+                "const": 13,
+                "title": "Prostate cancer"
+              },
+              {
+                "const": 14,
+                "title": "Hip fracture"
+              },
+              {
+                "const": -27,
+                "title": "None of the above (group 2)"
+              },
+              {
+                "const": -23,
+                "title": "Prefer not to answer (group 2)"
+              },
+              {
+                "const": -21,
+                "title": "Do not know (group 2)"
+              },
+              {
+                "const": -17,
+                "title": "None of the above (group 1)"
+              },
+              {
+                "const": -13,
+                "title": "Prefer not to answer (group 1)"
+              },
+              {
+                "const": -11,
+                "title": "Do not know (group 1)"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Heart disease"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Stroke"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Lung cancer"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Bowel cancer"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Breast cancer"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Chronic bronchitis/emphysema"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "High blood pressure"
+        },
+        {
+          "const": [
+            9
+          ],
+          "title": "Diabetes"
+        },
+        {
+          "const": [
+            10
+          ],
+          "title": "Alzheimer's disease/dementia"
+        },
+        {
+          "const": [
+            11
+          ],
+          "title": "Parkinson's disease"
+        },
+        {
+          "const": [
+            12
+          ],
+          "title": "Severe depression"
+        },
+        {
+          "const": [
+            13
+          ],
+          "title": "Prostate cancer"
+        },
+        {
+          "const": [
+            14
+          ],
+          "title": "Hip fracture"
+        },
+        {
+          "const": [
+            -27
+          ],
+          "title": "None of the above (group 2)"
+        },
+        {
+          "const": [
+            -23
+          ],
+          "title": "Prefer not to answer (group 2)"
+        },
+        {
+          "const": [
+            -21
+          ],
+          "title": "Do not know (group 2)"
+        },
+        {
+          "const": [
+            -17
+          ],
+          "title": "None of the above (group 1)"
+        },
+        {
+          "const": [
+            -13
+          ],
+          "title": "Prefer not to answer (group 1)"
+        },
+        {
+          "const": [
+            -11
+          ],
+          "title": "Do not know (group 1)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1010. Up to 7 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f1797",
+    "f1807",
+    "f1835",
+    "f1845",
+    "f1873",
+    "f1883",
+    "f2946",
+    "f3526",
+    "f3912",
+    "f3942",
+    "f3972",
+    "f3982",
+    "f4501",
+    "f5057",
+    "f20107",
+    "f20110",
+    "f20111",
+    "f20112",
+    "f20113",
+    "f20114"
+  ]
+}

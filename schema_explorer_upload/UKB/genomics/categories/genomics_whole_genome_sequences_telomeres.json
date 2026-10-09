@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/genomics/categories/genomics_whole_genome_sequences_telomeres.json",
+  "title": "Genomics — Whole genome sequences: Telomeres",
+  "description": "UK Biobank fields in the category Genomics > Whole genome sequences > Telomeres, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "genomics_whole_genome_sequences_telomeres",
+  "properties": {
+    "f22190": {
+      "title": "Unadjusted T/S ratio",
+      "x-unit": "ratio",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f22191": {
+      "title": "Adjusted T/S ratio",
+      "x-unit": "ratio",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f22192": {
+      "title": "Z-adjusted T/S log",
+      "x-unit": "ratio",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f22193": {
+      "title": "Telomere measurement plate",
+      "type": [
+        "string",
+        "null"
+      ],
+      "$comment": "Marked private in UK Biobank's field list. Initial assessment visit (instance 0)."
+    },
+    "f22194": {
+      "title": "T/S ratio for regression dilution bias",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f22190",
+    "f22191",
+    "f22192",
+    "f22193",
+    "f22194"
+  ]
+}

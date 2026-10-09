@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/genomics/categories/genomics_polygenic_risk_scores_genetically_deduced_phenotypes.json",
+  "title": "Genomics — Polygenic Risk Scores: Genetically deduced phenotypes",
+  "description": "UK Biobank fields in the category Genomics > Polygenic Risk Scores > Genetically deduced phenotypes, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "genomics_polygenic_risk_scores_genetically_deduced_phenotypes",
+  "properties": {
+    "f23165": {
+      "title": "Blood-type haplotype",
+      "oneOf": [
+        {
+          "const": "AA",
+          "title": "AA"
+        },
+        {
+          "const": "AB",
+          "title": "AB"
+        },
+        {
+          "const": "AO",
+          "title": "AO"
+        },
+        {
+          "const": "BB",
+          "title": "BB"
+        },
+        {
+          "const": "BO",
+          "title": "BO"
+        },
+        {
+          "const": "OO",
+          "title": "OO"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 169."
+    },
+    "f30079": {
+      "title": "Genomic ancestry",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "African ancestry (AFR)"
+        },
+        {
+          "const": 2,
+          "title": "Admixed American ancestry (AMR)"
+        },
+        {
+          "const": 3,
+          "title": "Central/South Asian ancestry (CSA)"
+        },
+        {
+          "const": 4,
+          "title": "East Asian ancestry (EAS)"
+        },
+        {
+          "const": 5,
+          "title": "European ancestry (EUR)"
+        },
+        {
+          "const": 6,
+          "title": "Middle Eastern ancestry (MID)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2523."
+    },
+    "f30105": {
+      "title": "Clonal haematopoiesis of indeterminate potential (CHIP) number of variants",
+      "x-unit": "mutations",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "f30106": {
+      "title": "Clonal haematopoiesis of indeterminate potential (CHIP) variant",
+      "type": [
+        "array",
+        "null"
+      ],
+      "uniqueItems": false,
+      "minItems": 0,
+      "maxItems": 7,
+      "items": {
+        "type": "string"
+      },
+      "$comment": "Up to 7 entries, stored as an array in one field (D021)."
+    },
+    "f30107": {
+      "title": "Clonal haematopoiesis of indeterminate potential (CHIP) variant allele frequency (VAF)",
+      "type": [
+        "array",
+        "null"
+      ],
+      "uniqueItems": false,
+      "minItems": 0,
+      "maxItems": 7,
+      "items": {
+        "type": "number"
+      },
+      "$comment": "Up to 7 entries, stored as an array in one field (D021)."
+    }
+  },
+  "required": [
+    "f23165",
+    "f30079",
+    "f30105",
+    "f30106",
+    "f30107"
+  ]
+}

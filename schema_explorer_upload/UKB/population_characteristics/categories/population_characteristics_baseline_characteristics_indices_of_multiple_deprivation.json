@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/population_characteristics/categories/population_characteristics_baseline_characteristics_indices_of_multiple_deprivation.json",
+  "title": "Population characteristics — Baseline characteristics: Indices of Multiple Deprivation",
+  "description": "UK Biobank fields in the category Population characteristics > Baseline characteristics > Indices of Multiple Deprivation, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "population_characteristics_baseline_characteristics_indices_of_multiple_deprivation",
+  "properties": {
+    "f26410": {
+      "title": "Index of Multiple Deprivation (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "2010 English Indices of Deprivation, matched as closely as possible to the baseline assessment date. No plausibility bound stated (D013)."
+    },
+    "f26411": {
+      "title": "Income score (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2010 English Indices of Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26412": {
+      "title": "Employment score (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2010 English Indices of Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26413": {
+      "title": "Health score (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2010 English Indices of Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26414": {
+      "title": "Education score (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2010 English Indices of Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26415": {
+      "title": "Housing score (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2010 English Indices of Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26416": {
+      "title": "Crime score (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2010 English Indices of Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26417": {
+      "title": "Living environment score (England)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2010 English Indices of Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26418": {
+      "title": "Income score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26419": {
+      "title": "Employment score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26420": {
+      "title": "Health score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26421": {
+      "title": "Education score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26422": {
+      "title": "Access to services score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26423": {
+      "title": "Housing score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26424": {
+      "title": "Physical environment score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26425": {
+      "title": "Community safety score (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 9 sub-domain scores in the 2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26426": {
+      "title": "Index of Multiple Deprivation (Wales)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "2008 Welsh Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26427": {
+      "title": "Index of Multiple Deprivation (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26428": {
+      "title": "Income score (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26429": {
+      "title": "Employment score (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26430": {
+      "title": "Health score (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26431": {
+      "title": "Education score (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26432": {
+      "title": "Housing score (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26433": {
+      "title": "Access to services score (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    },
+    "f26434": {
+      "title": "Crime score (Scotland)",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "One of 8 sub-domain scores in the 2009 Scottish Index of Multiple Deprivation. No plausibility bound stated (D013)."
+    }
+  },
+  "required": [
+    "f26410",
+    "f26411",
+    "f26412",
+    "f26413",
+    "f26414",
+    "f26415",
+    "f26416",
+    "f26417",
+    "f26418",
+    "f26419",
+    "f26420",
+    "f26421",
+    "f26422",
+    "f26423",
+    "f26424",
+    "f26425",
+    "f26426",
+    "f26427",
+    "f26428",
+    "f26429",
+    "f26430",
+    "f26431",
+    "f26432",
+    "f26433",
+    "f26434"
+  ]
+}

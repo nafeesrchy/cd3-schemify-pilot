@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ofh-pilot/OFH_all_tables.schema.json",
+  "title": "OFH: all tables (explorer view)",
+  "description": "Generated browsing view of the OFH schemify package: every table's categories side by side in one record, so the cohort appears as one dataset in the schema explorer. Not for validating data: the tables have different row types (see the package's own schemas).",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "title": "OFH record (all tables)",
+    "allOf": [
+      {
+        "$ref": "participant/categories/participant.json"
+      },
+      {
+        "$ref": "questionnaire/categories/questionnaire_information.json"
+      },
+      {
+        "$ref": "questionnaire/categories/about_you_and_household.json"
+      },
+      {
+        "$ref": "questionnaire/categories/work_and_education.json"
+      },
+      {
+        "$ref": "questionnaire/categories/lifestyle.json"
+      },
+      {
+        "$ref": "questionnaire/categories/family_health_history.json"
+      },
+      {
+        "$ref": "questionnaire/categories/medical_history.json"
+      },
+      {
+        "$ref": "clinic_measurements/categories/clinic_measurements.json"
+      },
+      {
+        "$ref": "poct_lipid_profile/categories/poct_lipid_profile.json"
+      },
+      {
+        "$ref": "country_region/categories/country_region.json"
+      },
+      {
+        "$ref": "nhse_eng_canpat/categories/nhse_eng_canpat.json"
+      },
+      {
+        "$ref": "nhse_eng_canreg_pattumour/categories/nhse_eng_canreg_pattumour.json"
+      },
+      {
+        "$ref": "nhse_eng_canreg_pre1995/categories/nhse_eng_canreg_pre1995.json"
+      },
+      {
+        "$ref": "nhse_eng_canreg_treat/categories/nhse_eng_canreg_treat.json"
+      },
+      {
+        "$ref": "nhse_eng_inpat/categories/nhse_eng_inpat.json"
+      },
+      {
+        "$ref": "nhse_eng_outpat/categories/nhse_eng_outpat.json"
+      },
+      {
+        "$ref": "nhse_eng_primcare_meds/categories/nhse_eng_primcare_meds.json"
+      },
+      {
+        "$ref": "nhse_engwal_deaths/categories/nhse_engwal_deaths.json"
+      },
+      {
+        "$ref": "participant_nhs_linked/categories/participant_nhs_linked.json"
+      },
+      {
+        "$ref": "genotype_sample_qc_metrics/categories/genotype_sample_qc_metrics.json"
+      },
+      {
+        "$ref": "snv_pvcf/categories/snv_pvcf.json"
+      },
+      {
+        "$ref": "snv_kinship/categories/snv_kinship.json"
+      },
+      {
+        "$ref": "imputed_sample_qc_metrics/categories/imputed_sample_qc_metrics.json"
+      },
+      {
+        "$ref": "imputed_pvcf/categories/imputed_pvcf.json"
+      },
+      {
+        "$ref": "variant_summary_statistics/categories/variant_summary_statistics.json"
+      },
+      {
+        "$ref": "ancestry_estimation_metrics/categories/ancestry_estimation_metrics.json"
+      }
+    ]
+  }
+}

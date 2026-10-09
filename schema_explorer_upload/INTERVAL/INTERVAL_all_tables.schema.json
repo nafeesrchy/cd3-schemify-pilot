@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/INTERVAL_all_tables.schema.json",
+  "title": "INTERVAL: all tables (explorer view)",
+  "description": "Generated browsing view of the INTERVAL schemify package: every table's categories side by side in one record, so the cohort appears as one dataset in the schema explorer. Not for validating data: the tables have different row types (see the package's own schemas).",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "title": "INTERVAL record (all tables)",
+    "allOf": [
+      {
+        "$ref": "baseline/categories/demographics.json"
+      },
+      {
+        "$ref": "baseline/categories/recruitment.json"
+      },
+      {
+        "$ref": "baseline/categories/anthropometric.json"
+      },
+      {
+        "$ref": "baseline/categories/medical_history.json"
+      },
+      {
+        "$ref": "baseline/categories/reproductive_hormonal.json"
+      },
+      {
+        "$ref": "baseline/categories/general_health_sf36.json"
+      },
+      {
+        "$ref": "baseline/categories/dietary.json"
+      },
+      {
+        "$ref": "baseline/categories/behavioral.json"
+      },
+      {
+        "$ref": "baseline/categories/occupation_physical_activity.json"
+      },
+      {
+        "$ref": "baseline/categories/blood_biomarkers.json"
+      },
+      {
+        "$ref": "baseline/categories/blood_counts_assays.json"
+      },
+      {
+        "$ref": "baseline/categories/omics.json"
+      },
+      {
+        "$ref": "month_6/categories/general_health_sf12.json"
+      },
+      {
+        "$ref": "month_6/categories/medical_history.json"
+      },
+      {
+        "$ref": "month_12/categories/general_health_sf12.json"
+      },
+      {
+        "$ref": "month_12/categories/medical_history.json"
+      },
+      {
+        "$ref": "month_18/categories/general_health_sf12.json"
+      },
+      {
+        "$ref": "month_18/categories/medical_history.json"
+      },
+      {
+        "$ref": "month_24/categories/general_health_sf36.json"
+      },
+      {
+        "$ref": "month_24/categories/medical_history.json"
+      },
+      {
+        "$ref": "month_24/categories/dietary.json"
+      },
+      {
+        "$ref": "month_24/categories/occupation_physical_activity.json"
+      },
+      {
+        "$ref": "month_24/categories/blood_donation.json"
+      },
+      {
+        "$ref": "month_24/categories/cognitive.json"
+      },
+      {
+        "$ref": "month_24/categories/physical_activity_accelerometer.json"
+      },
+      {
+        "$ref": "month_24/categories/blood_biomarkers.json"
+      },
+      {
+        "$ref": "month_24/categories/blood_counts_assays.json"
+      },
+      {
+        "$ref": "month_24/categories/omics.json"
+      },
+      {
+        "$ref": "ehr_linkage/categories/linked_records.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-mws-pilot/recruitment/categories/demographics.json",
+  "title": "MWS Recruitment — Demographics",
+  "description": "Administrative and demographic fields recorded at recruitment: birth year, recruitment year, age, region of residence, and which questionnaire version the participant completed.",
+  "type": "object",
+  "x-variable-group": "demographics",
+  "properties": {
+    "RYOB": {
+      "title": "Year of birth",
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Source states no explicit valid range for this field. Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
+    },
+    "RYSUBMIT": {
+      "title": "Year of recruitment into the MWS",
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
+    },
+    "RAGE": {
+      "title": "Age at recruitment",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 48
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Source states a valid range of From=48 only (To is blank/unstated). Minimum 48 is source-stated and kept. Bound trimmed to that source-stated minimum only -- the earlier agent-decided maximum (120) was retired per Montse's dictionary-fidelity requirement (D101-D104)."
+    },
+    "RREGION": {
+      "title": "Region of residence at recruitment",
+      "description": "Derived field; UK regional breast-screening-style catchment areas as recorded at recruitment.",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Oxford"
+        },
+        {
+          "const": 2,
+          "title": "East Anglia"
+        },
+        {
+          "const": 3,
+          "title": "South West"
+        },
+        {
+          "const": 4,
+          "title": "Thames"
+        },
+        {
+          "const": 5,
+          "title": "West Midlands"
+        },
+        {
+          "const": 6,
+          "title": "North Yorks"
+        },
+        {
+          "const": 7,
+          "title": "Trent"
+        },
+        {
+          "const": 8,
+          "title": "North West (Mersey)"
+        },
+        {
+          "const": 9,
+          "title": "North West (Manc./Lancs.)"
+        },
+        {
+          "const": 10,
+          "title": "Scotland"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ]
+    },
+    "RQTYPE": {
+      "title": "Questionnaire version completed",
+      "description": "A code determining which version of the recruitment questionnaire the participant completed. Other fields' source-stated Availability columns (Aqua/Blue/Other) reference this same three-way split.",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Blue"
+        },
+        {
+          "const": 2,
+          "title": "Aqua"
+        },
+        {
+          "const": 3,
+          "title": "Other"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "RYOB",
+    "RYSUBMIT",
+    "RAGE",
+    "RREGION",
+    "RQTYPE"
+  ]
+}

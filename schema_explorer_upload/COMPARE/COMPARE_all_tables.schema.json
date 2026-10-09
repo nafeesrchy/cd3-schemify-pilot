@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/COMPARE_all_tables.schema.json",
+  "title": "COMPARE: all tables (explorer view)",
+  "description": "Generated browsing view of the COMPARE schemify package: every table's categories side by side in one record, so the cohort appears as one dataset in the schema explorer. Not for validating data: the tables have different row types (see the package's own schemas).",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "title": "COMPARE record (all tables)",
+    "allOf": [
+      {
+        "$ref": "basic_info/categories/identification.json"
+      },
+      {
+        "$ref": "basic_info/categories/demographics.json"
+      },
+      {
+        "$ref": "basic_info/categories/blood_group.json"
+      },
+      {
+        "$ref": "questionnaires/categories/questionnaire_completion.json"
+      },
+      {
+        "$ref": "questionnaires/categories/demographics.json"
+      },
+      {
+        "$ref": "questionnaires/categories/anthropometric.json"
+      },
+      {
+        "$ref": "questionnaires/categories/fitzpatrick_skin_type.json"
+      },
+      {
+        "$ref": "questionnaires/categories/reproductive_hormonal.json"
+      },
+      {
+        "$ref": "questionnaires/categories/behavioral.json"
+      },
+      {
+        "$ref": "questionnaires/categories/occupation_physical_activity.json"
+      },
+      {
+        "$ref": "questionnaires/categories/blood_donation.json"
+      },
+      {
+        "$ref": "questionnaires/categories/dietary.json"
+      },
+      {
+        "$ref": "questionnaires/categories/general_health.json"
+      },
+      {
+        "$ref": "questionnaires/categories/medical_history.json"
+      },
+      {
+        "$ref": "hb_measurements/categories/haemoglobin_measurements.json"
+      },
+      {
+        "$ref": "bloods/categories/blood_counts_assays_visit_1.json"
+      },
+      {
+        "$ref": "bloods/categories/blood_counts_assays_visit_2.json"
+      },
+      {
+        "$ref": "biomarkers/categories/blood_biomarkers.json"
+      },
+      {
+        "$ref": "omics/categories/omics.json"
+      }
+    ]
+  }
+}

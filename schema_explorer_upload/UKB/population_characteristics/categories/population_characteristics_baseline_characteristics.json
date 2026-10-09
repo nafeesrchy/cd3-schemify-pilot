@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/population_characteristics/categories/population_characteristics_baseline_characteristics.json",
+  "title": "Population characteristics — Baseline characteristics",
+  "description": "UK Biobank fields in the category Population characteristics > Baseline characteristics, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "population_characteristics_baseline_characteristics",
+  "properties": {
+    "f31": {
+      "title": "Sex",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Female"
+        },
+        {
+          "const": 1,
+          "title": "Male"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding (encoding 9): 0 Female; 1 Male. Acquired from central registry at recruitment, sometimes updated by the participant; may mix NHS-recorded and self-reported sex."
+    },
+    "f33": {
+      "title": "Date of birth",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Marked private in UK Biobank's field list. Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f34": {
+      "title": "Year of birth",
+      "x-unit": "years",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "$comment": "No plausibility bound stated by the source (D013)."
+    },
+    "f52": {
+      "title": "Month of birth",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "January"
+        },
+        {
+          "const": 2,
+          "title": "February"
+        },
+        {
+          "const": 3,
+          "title": "March"
+        },
+        {
+          "const": 4,
+          "title": "April"
+        },
+        {
+          "const": 5,
+          "title": "May"
+        },
+        {
+          "const": 6,
+          "title": "June"
+        },
+        {
+          "const": 7,
+          "title": "July"
+        },
+        {
+          "const": 8,
+          "title": "August"
+        },
+        {
+          "const": 9,
+          "title": "September"
+        },
+        {
+          "const": 10,
+          "title": "October"
+        },
+        {
+          "const": 11,
+          "title": "November"
+        },
+        {
+          "const": 12,
+          "title": "December"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 8, Calendar Month, 1-12."
+    },
+    "f21022": {
+      "title": "Age at recruitment",
+      "x-unit": "years",
+      "x-derivation": "Based on date of birth and date of attending the initial assessment centre; age on the day of that visit, truncated to whole years.",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "$comment": "No plausibility bound stated (D013)."
+    },
+    "f22189": {
+      "title": "Townsend deprivation index at recruitment",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Same source title and description as f189; this version's values are rounded to 2 decimal places, replacing an earlier unrounded version (f189, no longer available from UK Biobank) per the source's own notes. No plausibility bound stated (D013)."
+    }
+  },
+  "required": [
+    "f31",
+    "f33",
+    "f34",
+    "f52",
+    "f21022",
+    "f22189"
+  ]
+}

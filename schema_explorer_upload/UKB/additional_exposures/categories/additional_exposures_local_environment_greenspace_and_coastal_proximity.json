@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/additional_exposures/categories/additional_exposures_local_environment_greenspace_and_coastal_proximity.json",
+  "title": "Additional exposures — Local environment: Greenspace and coastal proximity",
+  "description": "UK Biobank fields in the category Additional exposures > Local environment > Greenspace and coastal proximity, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "additional_exposures_local_environment_greenspace_and_coastal_proximity",
+  "properties": {
+    "f24500": {
+      "title": "Greenspace percentage, buffer 1000m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24501": {
+      "title": "Domestic garden percentage, buffer 1000m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24502": {
+      "title": "Water percentage, buffer 1000m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24503": {
+      "title": "Greenspace percentage, buffer 300m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24504": {
+      "title": "Domestic garden percentage, buffer 300m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24505": {
+      "title": "Water percentage, buffer 300m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24506": {
+      "title": "Natural environment percentage, buffer 1000m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24507": {
+      "title": "Natural environment percentage, buffer 300m",
+      "x-unit": "percent",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f24508": {
+      "title": "Distance (Euclidean) to coast",
+      "x-unit": "Kilometres",
+      "type": [
+        "number",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f24500",
+    "f24501",
+    "f24502",
+    "f24503",
+    "f24504",
+    "f24505",
+    "f24506",
+    "f24507",
+    "f24508"
+  ]
+}

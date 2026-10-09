@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-mws-pilot/MWS_all_tables.schema.json",
+  "title": "MWS: all tables (explorer view)",
+  "description": "Generated browsing view of the MWS schemify package: every table's categories side by side in one record, so the cohort appears as one dataset in the schema explorer. Not for validating data: the tables have different row types (see the package's own schemas).",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "title": "MWS record (all tables)",
+    "allOf": [
+      {
+        "$ref": "recruitment/categories/demographics.json"
+      },
+      {
+        "$ref": "recruitment/categories/socioeconomic.json"
+      },
+      {
+        "$ref": "recruitment/categories/anthropometric.json"
+      },
+      {
+        "$ref": "recruitment/categories/behavioral.json"
+      },
+      {
+        "$ref": "recruitment/categories/reproductive_hormonal.json"
+      },
+      {
+        "$ref": "recruitment/categories/breast_health.json"
+      },
+      {
+        "$ref": "recruitment/categories/gynae_surgery.json"
+      },
+      {
+        "$ref": "recruitment/categories/medical_history.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/demographics.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/reproductive_hormonal.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/dietary.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/behavioral.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/anthropometric.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/early_life.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/wellbeing_sleep.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/parental_mortality.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/socioeconomic.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/medications.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/family_history.json"
+      },
+      {
+        "$ref": "resurvey_3yr/categories/medical_history.json"
+      },
+      {
+        "$ref": "resurvey_8yr/categories/demographics.json"
+      },
+      {
+        "$ref": "resurvey_8yr/categories/anthropometric.json"
+      },
+      {
+        "$ref": "resurvey_8yr/categories/gynae_surgery.json"
+      },
+      {
+        "$ref": "resurvey_8yr/categories/reproductive_hormonal.json"
+      },
+      {
+        "$ref": "resurvey_8yr/categories/behavioral.json"
+      },
+      {
+        "$ref": "resurvey_8yr/categories/medical_history.json"
+      },
+      {
+        "$ref": "resurvey_8yr/categories/family_history.json"
+      }
+    ]
+  }
+}

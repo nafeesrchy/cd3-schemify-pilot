@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ofh-pilot/participant/categories/participant.json",
+  "title": "Participant data — Participant",
+  "description": "Registration and consent metadata, and demographics data.",
+  "type": "object",
+  "x-variable-group": "participant",
+  "properties": {
+    "PID": {
+      "title": "Participant ID",
+      "type": "string",
+      "x-role": "primary key",
+      "$comment": "Source type string, primary_key_type global (links every dataset). The source states no format, so no pattern is asserted (D025)."
+    },
+    "REGISTRATION_YEAR": {
+      "title": "Year of Registration derived from Date of Registration",
+      "type": "integer",
+      "$comment": "The source states no range, so none is asserted (D024)."
+    },
+    "REGISTRATION_MONTH": {
+      "title": "Month of Registration derived from Date of Registration",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "$comment": "The source states no range; 1-12 is the calendar range, not a plausibility bound (D024)."
+    },
+    "CONSENT_VERSION": {
+      "title": "Consent Version",
+      "type": "string",
+      "$comment": "The source lists no codes or format for this string."
+    },
+    "CONSENT_YEAR": {
+      "title": "Year of Consent derived from Date of Consent",
+      "type": "integer",
+      "$comment": "The source states no range, so none is asserted (D024)."
+    },
+    "CONSENT_MONTH": {
+      "title": "Month of Consent derived from Date of Consent",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12,
+      "$comment": "The source states no range; 1-12 is the calendar range, not a plausibility bound (D024)."
+    },
+    "BIRTH_YEAR": {
+      "title": "Year of Birth derived from Date of Birth",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -999
+            ]
+          }
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/suppressed"
+        }
+      ],
+      "$comment": "Sparse coding: only the suppressed code is listed; every other value is the year itself. The source states no range, so none is asserted (D024)."
+    },
+    "BIRTH_MONTH": {
+      "title": "Month of Birth derived from Date of Birth",
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/suppressed"
+        }
+      ],
+      "$comment": "Sparse coding: only the suppressed code is listed; every other value is the month itself."
+    },
+    "BLOOD_SAMPLE": {
+      "title": "Blood sample obtained with sufficient condition and volume for extraction of buffy coat, DNA and plasma",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Invalid Sample"
+        },
+        {
+          "const": 1,
+          "title": "Valid Sample"
+        }
+      ]
+    },
+    "DEMOG_ETHNICITY_1_1": {
+      "title": "What is your ethnic group?",
+      "description": "Choose one option that best describes your ethnic group or background.",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "White – English / Welsh / Scottish / Northern Irish / British"
+        },
+        {
+          "const": 2,
+          "title": "White – Irish"
+        },
+        {
+          "const": 3,
+          "title": "White – Gypsy or Irish Traveller"
+        },
+        {
+          "const": 4,
+          "title": "White – Polish"
+        },
+        {
+          "const": 5,
+          "title": "Any other white background"
+        },
+        {
+          "const": 6,
+          "title": "Mixed – White and Black Caribbean"
+        },
+        {
+          "const": 7,
+          "title": "Mixed – White and Black African"
+        },
+        {
+          "const": 8,
+          "title": "Mixed – White and Asian"
+        },
+        {
+          "const": 9,
+          "title": "Any other mixed multiple ethnic background"
+        },
+        {
+          "const": 10,
+          "title": "Asian or Asian British – Indian"
+        },
+        {
+          "const": 11,
+          "title": "Asian or Asian British – Pakistani"
+        },
+        {
+          "const": 12,
+          "title": "Asian or Asian British – Bangladeshi"
+        },
+        {
+          "const": 13,
+          "title": "Chinese"
+        },
+        {
+          "const": 14,
+          "title": "Any other Asian/Asian British background"
+        },
+        {
+          "const": 15,
+          "title": "Black or Black British – African"
+        },
+        {
+          "const": 16,
+          "title": "Black or Black British – Caribbean"
+        },
+        {
+          "const": 17,
+          "title": "Any other Black / African / Caribbean background"
+        },
+        {
+          "const": 18,
+          "title": "Arab"
+        },
+        {
+          "const": 19,
+          "title": "Other"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/prefer_not_to_answer"
+        }
+      ]
+    },
+    "DEMOG_GENDER_1_1": {
+      "title": "To which gender identity do you most identify?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Male"
+        },
+        {
+          "const": 2,
+          "title": "Female"
+        },
+        {
+          "const": 3,
+          "title": "Transgender Male"
+        },
+        {
+          "const": 4,
+          "title": "Transgender Female"
+        },
+        {
+          "const": 5,
+          "title": "Gender variant/non-conforming"
+        },
+        {
+          "const": 6,
+          "title": "Other"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/prefer_not_to_answer"
+        }
+      ],
+      "$comment": "Questionnaire v1 wording; the v2 question is DEMOG_GENDER_2_1 (D019, D026)."
+    },
+    "DEMOG_GENDER_2_1": {
+      "title": "Select the option that best describes your current gender identity",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Man"
+        },
+        {
+          "const": 2,
+          "title": "Woman"
+        },
+        {
+          "const": 3,
+          "title": "Gender fluid"
+        },
+        {
+          "const": 4,
+          "title": "Nonbinary/third gender"
+        },
+        {
+          "const": 5,
+          "title": "I don't identify with any option provided"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/prefer_not_to_answer"
+        }
+      ],
+      "$comment": "Questionnaire v2 wording; the v1 question is DEMOG_GENDER_1_1 (D019, D026)."
+    },
+    "DEMOG_SEX_1_1": {
+      "title": "What sex was assigned to you at birth?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Male"
+        },
+        {
+          "const": 2,
+          "title": "Female"
+        },
+        {
+          "const": 3,
+          "title": "Other"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/prefer_not_to_answer"
+        }
+      ],
+      "$comment": "Questionnaire v1 wording; the v2 question is DEMOG_SEX_2_1 (D019, D026)."
+    },
+    "DEMOG_SEX_2_1": {
+      "title": "What sex were you registered with at birth?",
+      "oneOf": [
+        {
+          "const": 2,
+          "title": "Female"
+        },
+        {
+          "const": 1,
+          "title": "Male"
+        },
+        {
+          "const": 3,
+          "title": "Intersex"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/prefer_not_to_answer"
+        }
+      ],
+      "$comment": "Questionnaire v2 wording; the v1 question is DEMOG_SEX_1_1 (D019, D026)."
+    }
+  },
+  "required": [
+    "PID",
+    "REGISTRATION_YEAR",
+    "REGISTRATION_MONTH",
+    "CONSENT_VERSION",
+    "CONSENT_YEAR",
+    "CONSENT_MONTH",
+    "BIRTH_YEAR",
+    "BIRTH_MONTH",
+    "BLOOD_SAMPLE",
+    "DEMOG_ETHNICITY_1_1",
+    "DEMOG_GENDER_1_1",
+    "DEMOG_GENDER_2_1",
+    "DEMOG_SEX_1_1",
+    "DEMOG_SEX_2_1"
+  ]
+}

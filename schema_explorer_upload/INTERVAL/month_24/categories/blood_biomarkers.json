@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_24/categories/blood_biomarkers.json",
+  "title": "MONTH_24 — Blood Biomarkers",
+  "description": "Haematological, lipid and glycaemic biomarkers for the 24-month research blood sample, each with the date the lab processed the sample.",
+  "type": "object",
+  "x-variable-group": "blood_biomarkers",
+  "$comment": "Units are as written in the source. The dictionary states no ranges, so none are asserted; measured values are typed number because no data type is stated (D080).",
+  "$defs": {
+    "lab_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source gives the description only, no Categories text: no date format is stated, so no pattern is asserted and the column is typed as text (D022, D080)."
+    }
+  },
+  "properties": {
+    "TCHOL_24m": {
+      "title": "total cholesterol",
+      "x-unit": "mmol/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateTCHOL_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "CRP_24m": {
+      "title": "c-reactive protein",
+      "x-unit": "mg/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateCRP_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "FERR_24m": {
+      "title": "ferritin",
+      "x-unit": "µg/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateFERR_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "HEP_24m": {
+      "title": "hepcidin",
+      "x-unit": "ng/mL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateHEP_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "FRUCTO_24m": {
+      "title": "fructosamine",
+      "x-unit": "µmol/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateFRUCTO_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "HDL_24m": {
+      "title": "high density lipoprotein",
+      "x-unit": "mmol/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateHDL_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "TRIG_24m": {
+      "title": "triglycerides",
+      "x-unit": "mmol/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateTRIG_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "LDL_24m": {
+      "title": "low density lipoprotein",
+      "x-unit": "mmol/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateLDL_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "HBA1C_24m": {
+      "title": "hba1c",
+      "x-unit": "mmol/mol",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateHBA1C_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "HBF_24m": {
+      "title": "foetal haemoglobin",
+      "x-unit": "%",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateHBF_24m": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    }
+  },
+  "required": [
+    "TCHOL_24m",
+    "dateTCHOL_24m",
+    "CRP_24m",
+    "dateCRP_24m",
+    "FERR_24m",
+    "dateFERR_24m",
+    "HEP_24m",
+    "dateHEP_24m",
+    "FRUCTO_24m",
+    "dateFRUCTO_24m",
+    "HDL_24m",
+    "dateHDL_24m",
+    "TRIG_24m",
+    "dateTRIG_24m",
+    "LDL_24m",
+    "dateLDL_24m",
+    "HBA1C_24m",
+    "dateHBA1C_24m",
+    "HBF_24m",
+    "dateHBF_24m"
+  ]
+}

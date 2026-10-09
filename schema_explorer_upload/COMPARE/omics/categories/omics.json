@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/omics/categories/omics.json",
+  "title": "OMICS — Omics",
+  "description": "A genotyping platform item and the blood smear linkage IDs for visits 1 and 2.",
+  "type": "object",
+  "x-variable-group": "omics",
+  "$comment": "The dictionary gives only a description for each item - no Categories text, no unit, no data type. Typed as text until the data provider says what these columns hold (D040).",
+  "properties": {
+    "Affymetrix_QC": {
+      "title": "Affymetrix - Genotyping (pre-QC)",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "smearID_v1": {
+      "title": "Blood smear linkage IDs",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "smearID_v2": {
+      "title": "Blood smear linkage IDs",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "Affymetrix_QC",
+    "smearID_v1",
+    "smearID_v2"
+  ]
+}

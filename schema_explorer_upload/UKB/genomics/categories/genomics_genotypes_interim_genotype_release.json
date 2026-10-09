@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/genomics/categories/genomics_genotypes_interim_genotype_release.json",
+  "title": "Genomics — Genotypes: Interim genotype release",
+  "description": "UK Biobank fields in the category Genomics > Genotypes > Interim genotype release, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "genomics_genotypes_interim_genotype_release",
+  "properties": {
+    "f22010": {
+      "title": "Recommended genomic analysis exclusions",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "poor heterozygosity/missingness"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1101."
+    },
+    "f22011": {
+      "title": "Genetic relatedness pairing",
+      "type": [
+        "array",
+        "null"
+      ],
+      "uniqueItems": false,
+      "minItems": 0,
+      "maxItems": 5,
+      "items": {
+        "type": "integer"
+      },
+      "$comment": "Up to 5 entries, stored as an array in one field (D021)."
+    },
+    "f22012": {
+      "title": "Genetic relatedness factor",
+      "type": [
+        "array",
+        "null"
+      ],
+      "uniqueItems": false,
+      "minItems": 0,
+      "maxItems": 5,
+      "items": {
+        "type": "number"
+      },
+      "$comment": "Up to 5 entries, stored as an array in one field (D021)."
+    },
+    "f22013": {
+      "title": "Genetic relatedness IBS0",
+      "type": [
+        "array",
+        "null"
+      ],
+      "uniqueItems": false,
+      "minItems": 0,
+      "maxItems": 5,
+      "items": {
+        "type": "number"
+      },
+      "$comment": "Up to 5 entries, stored as an array in one field (D021)."
+    },
+    "f22018": {
+      "title": "Genetic relatedness exclusions",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Participant self-declared as having a mixed ancestral background"
+        },
+        {
+          "const": 2,
+          "title": "High heterozygosity rate (after correcting for ancestry) or high missing rate"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 947."
+    },
+    "f22051": {
+      "title": "UKBiLEVE genotype quality control for samples",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Fail"
+        },
+        {
+          "const": 1,
+          "title": "Pass"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100."
+    },
+    "f22052": {
+      "title": "UKBiLEVE unrelatedness indicator",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Fail"
+        },
+        {
+          "const": 1,
+          "title": "Pass"
+        },
+        {
+          "const": -1,
+          "title": "Not tested"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 101."
+    }
+  },
+  "required": [
+    "f22010",
+    "f22011",
+    "f22012",
+    "f22013",
+    "f22018",
+    "f22051",
+    "f22052"
+  ]
+}

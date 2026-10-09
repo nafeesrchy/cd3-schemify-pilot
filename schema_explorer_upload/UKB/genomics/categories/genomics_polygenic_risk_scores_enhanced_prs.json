@@ -1,0 +1,471 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/genomics/categories/genomics_polygenic_risk_scores_enhanced_prs.json",
+  "title": "Genomics — Polygenic Risk Scores: Enhanced PRS",
+  "description": "UK Biobank fields in the category Genomics > Polygenic Risk Scores > Enhanced PRS, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "genomics_polygenic_risk_scores_enhanced_prs",
+  "properties": {
+    "f26203": {
+      "title": "Enhanced PRS for age at menopause (AAM)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26205": {
+      "title": "Enhanced PRS for age-related macular degeneration (AMD)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26207": {
+      "title": "Enhanced PRS for alzheimer's disease (AD)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26208": {
+      "title": "Enhanced PRS for apolipoprotein a1 (APOEA)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26209": {
+      "title": "Enhanced PRS for apolipoprotein b (APOEB)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26211": {
+      "title": "Enhanced PRS for asthma (AST)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26213": {
+      "title": "Enhanced PRS for atrial fibrillation (AF)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26215": {
+      "title": "Enhanced PRS for bipolar disorder (BD)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26217": {
+      "title": "Enhanced PRS for body mass index (BMI)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26219": {
+      "title": "Enhanced PRS for bowel cancer (CRC)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26221": {
+      "title": "Enhanced PRS for breast cancer (BC)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26222": {
+      "title": "Enhanced PRS for calcium (CAL)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26224": {
+      "title": "Enhanced PRS for cardiovascular disease (CVD)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26226": {
+      "title": "Enhanced PRS for coeliac disease (CED)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26228": {
+      "title": "Enhanced PRS for coronary artery disease (CAD)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26231": {
+      "title": "Enhanced PRS for docosahexaenoic acid (DOA)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26233": {
+      "title": "Enhanced PRS for epithelial ovarian cancer (EOC)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26235": {
+      "title": "Enhanced PRS for estimated bone mineral density t-score (EBMDT)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26236": {
+      "title": "Enhanced PRS for estimated glomerular filtration rate (creatinine based) (EGCR)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26237": {
+      "title": "Enhanced PRS for estimated glomerular filtration rate (cystatin based) (EGCY)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26239": {
+      "title": "Enhanced PRS for glycated haemoglobin (HBA1C_DF)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26241": {
+      "title": "Enhanced PRS for height (HEIGHT)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26243": {
+      "title": "Enhanced PRS for high density lipoprotein cholesterol (HDL)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26245": {
+      "title": "Enhanced PRS for hypertension (HT)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26247": {
+      "title": "Enhanced PRS for intraocular pressure (IOP)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26249": {
+      "title": "Enhanced PRS for ischaemic stroke (ISS)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26251": {
+      "title": "Enhanced PRS for low density lipoprotein cholesterol (LDL_SF)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26253": {
+      "title": "Enhanced PRS for melanoma (MEL)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26255": {
+      "title": "Enhanced PRS for multiple sclerosis (MS)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26256": {
+      "title": "Enhanced PRS for omega-3 fatty acids (OTFA)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26257": {
+      "title": "Enhanced PRS for omega-6 fatty acids (OSFA)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26259": {
+      "title": "Enhanced PRS for osteoporosis (OP)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26261": {
+      "title": "Enhanced PRS for parkinson's disease (PD)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26262": {
+      "title": "Enhanced PRS for phosphatidylcholines (PDCL)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26263": {
+      "title": "Enhanced PRS for phosphoglycerides (PHG)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26264": {
+      "title": "Enhanced PRS for polyunsaturated fatty acids (PFA)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26266": {
+      "title": "Enhanced PRS for primary open angle glaucoma (POAG)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26268": {
+      "title": "Enhanced PRS for prostate cancer (PC)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26270": {
+      "title": "Enhanced PRS for psoriasis (PSO)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26271": {
+      "title": "Enhanced PRS for remnant cholesterol (Non-HDL, Non-LDL cholesterol) (RMNC)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26272": {
+      "title": "Enhanced PRS for resting heart rate (RHR)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26274": {
+      "title": "Enhanced PRS for rheumatoid arthritis (RA)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26276": {
+      "title": "Enhanced PRS for schizophrenia (SCZ)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26277": {
+      "title": "Enhanced PRS for sphingomyelins (SGM)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26279": {
+      "title": "Enhanced PRS for systemic lupus erythematosus (SLE)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26280": {
+      "title": "Enhanced PRS for total cholesterol (TCH)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26281": {
+      "title": "Enhanced PRS for total fatty acids (TFA)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26282": {
+      "title": "Enhanced PRS for total triglycerides (TTG)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26284": {
+      "title": "Enhanced PRS for type 1 diabetes (T1D)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26286": {
+      "title": "Enhanced PRS for type 2 diabetes (T2D)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "f26290": {
+      "title": "Enhanced PRS for venous thromboembolic disease (VTE)",
+      "x-unit": "relative risk",
+      "type": [
+        "number",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "f26203",
+    "f26205",
+    "f26207",
+    "f26208",
+    "f26209",
+    "f26211",
+    "f26213",
+    "f26215",
+    "f26217",
+    "f26219",
+    "f26221",
+    "f26222",
+    "f26224",
+    "f26226",
+    "f26228",
+    "f26231",
+    "f26233",
+    "f26235",
+    "f26236",
+    "f26237",
+    "f26239",
+    "f26241",
+    "f26243",
+    "f26245",
+    "f26247",
+    "f26249",
+    "f26251",
+    "f26253",
+    "f26255",
+    "f26256",
+    "f26257",
+    "f26259",
+    "f26261",
+    "f26262",
+    "f26263",
+    "f26264",
+    "f26266",
+    "f26268",
+    "f26270",
+    "f26271",
+    "f26272",
+    "f26274",
+    "f26276",
+    "f26277",
+    "f26279",
+    "f26280",
+    "f26281",
+    "f26282",
+    "f26284",
+    "f26286",
+    "f26290"
+  ]
+}

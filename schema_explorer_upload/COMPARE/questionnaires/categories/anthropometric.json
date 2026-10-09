@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/questionnaires/categories/anthropometric.json",
+  "title": "QUESTIONNAIRES — Anthropometric",
+  "description": "Self-reported height and weight from the questionnaire.",
+  "type": "object",
+  "x-variable-group": "anthropometric",
+  "properties": {
+    "ht": {
+      "title": "self-reported height",
+      "x-unit": "metres",
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2.99
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: '0 - 2.99 metres as given' - the stated range 0-2.99 is kept (D017)."
+    },
+    "wt": {
+      "title": "self-reported weight",
+      "x-unit": "kilograms",
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 38,
+          "maximum": 190
+        },
+        {
+          "const": 777,
+          "title": "> 190kg"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: '38 -190 kilograms as given  (777 > 190kg)' - the stated range 38-190 is kept and 777 is its own labelled code (a top-code for weights above 190 kg, D017)."
+    }
+  },
+  "required": [
+    "ht",
+    "wt"
+  ]
+}

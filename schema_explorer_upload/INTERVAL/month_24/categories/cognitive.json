@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_24/categories/cognitive.json",
+  "title": "MONTH_24 — Cognitive",
+  "description": "Cognitive test scores from the 24-month contact: pairs, fluid intelligence, Stroop, mood questionnaire and trail making.",
+  "type": "object",
+  "x-variable-group": "cognitive",
+  "$comment": "The dictionary states units (ms) for some items and nothing for others, and no ranges; none are asserted. Scores are typed number because no data type is stated (D076).",
+  "properties": {
+    "pairs_24m": {
+      "title": "pairs error score",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "fluidIQ_24m": {
+      "title": "fluid intelligence test score",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "stroop_MRT_24m": {
+      "title": "stroop test – part 1 (mean reaction time)",
+      "x-unit": "ms",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "colours_MRT_24m": {
+      "title": "stroop test – part 2 (mean reaction time)",
+      "x-unit": "ms",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "attention_24m": {
+      "title": "stroop_MRT - colours_MRT",
+      "x-unit": "ms",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The source description is itself the formula ('stroop_MRT - colours_MRT'); no derivation is asserted beyond the source text."
+    },
+    "mood_24m": {
+      "title": "composite mood questionnaire score",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "trailsA_duration_24m": {
+      "title": "Trail making test duration - Part A",
+      "x-unit": "ms",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "trailsB_duration_24m": {
+      "title": "Trail making test duration - Part B",
+      "x-unit": "ms",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "trailsDiff_24m": {
+      "title": "trailsA_duration - trailsB_duration",
+      "x-unit": "ms",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The source description is itself the formula ('trailsA_duration - trailsB_duration'); no derivation is asserted beyond the source text."
+    }
+  },
+  "required": [
+    "pairs_24m",
+    "fluidIQ_24m",
+    "stroop_MRT_24m",
+    "colours_MRT_24m",
+    "attention_24m",
+    "mood_24m",
+    "trailsA_duration_24m",
+    "trailsB_duration_24m",
+    "trailsDiff_24m"
+  ]
+}

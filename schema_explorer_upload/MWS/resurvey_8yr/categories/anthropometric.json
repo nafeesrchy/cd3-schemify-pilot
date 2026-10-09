@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-mws-pilot/resurvey_8yr/categories/anthropometric.json",
+  "title": "MWS 8-year resurvey — Anthropometric",
+  "description": "Weight and BMI at the 8-year resurvey.",
+  "type": "object",
+  "x-variable-group": "anthropometric",
+  "properties": {
+    "F2WGT": {
+      "title": "Weight now",
+      "x-unit": "kg",
+      "description": "Calculated from stones/pounds.",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
+    },
+    "F2BMI": {
+      "title": "Body mass index",
+      "x-unit": "kg/m2",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Source states no valid range; Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
+    }
+  },
+  "required": [
+    "F2WGT",
+    "F2BMI"
+  ]
+}

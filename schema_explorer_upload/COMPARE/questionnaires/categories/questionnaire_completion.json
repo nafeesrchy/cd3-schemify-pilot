@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/questionnaires/categories/questionnaire_completion.json",
+  "title": "QUESTIONNAIRES — Questionnaire Completion",
+  "description": "The dates the donor started and finished the questionnaire, and the same dates for the second questionnaire (_p2) where the donor completed two.",
+  "type": "object",
+  "x-variable-group": "questionnaire_completion",
+  "properties": {
+    "startDate": {
+      "title": "Date started",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Date of the (first or only) questionnaire. No date format is stated (the Categories cell is empty), so no pattern is asserted and the column is typed as text (D014)."
+    },
+    "endDate": {
+      "title": "Date finished",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Date of the (first or only) questionnaire. No date format is stated (the Categories cell is empty), so no pattern is asserted and the column is typed as text (D014)."
+    },
+    "startDate_p2": {
+      "title": "Date started",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "x-universe": "Participants who completed a second questionnaire.",
+      "$comment": "Date of the second questionnaire (the '_p2' columns; source note on the questionnaires sheet: 'some participants were asked to complete a second questionnaire (see BasicInfo-CommsCode variable)'). No date format is stated, so no pattern is asserted and the column is typed as text (D015). The rule that ties these columns to commsCode = CP1 is not enforced: commsCode is in another table and is not requested (R003, D011)."
+    },
+    "endDate_p2": {
+      "title": "Date finished",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "x-universe": "Participants who completed a second questionnaire.",
+      "$comment": "Date of the second questionnaire (the '_p2' columns; source note on the questionnaires sheet: 'some participants were asked to complete a second questionnaire (see BasicInfo-CommsCode variable)'). No date format is stated, so no pattern is asserted and the column is typed as text (D015). The rule that ties these columns to commsCode = CP1 is not enforced: commsCode is in another table and is not requested (R003, D011)."
+    }
+  },
+  "required": [
+    "startDate",
+    "endDate",
+    "startDate_p2",
+    "endDate_p2"
+  ]
+}

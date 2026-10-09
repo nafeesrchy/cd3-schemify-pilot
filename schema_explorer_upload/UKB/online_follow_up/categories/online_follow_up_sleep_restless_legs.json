@@ -1,0 +1,334 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/online_follow_up/categories/online_follow_up_sleep_restless_legs.json",
+  "title": "Online follow-up — Sleep: Restless legs",
+  "description": "UK Biobank fields in the category Online follow-up > Sleep > Restless legs, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "online_follow_up_sleep_restless_legs",
+  "properties": {
+    "f30579": {
+      "title": "Recurrent uncomfortable feelings in legs while sitting or lying down",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349."
+    },
+    "f30580": {
+      "title": "Recurrent need to move legs while sitting or lying down",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349."
+    },
+    "f30581": {
+      "title": "Feelings in legs when resting or moving",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Resting"
+        },
+        {
+          "const": 2,
+          "title": "Active"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2521."
+    },
+    "f30582": {
+      "title": "Improvement of feeling in legs with movement",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349."
+    },
+    "f30583": {
+      "title": "Times of day that feelings in legs occur",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Morning"
+              },
+              {
+                "const": 2,
+                "title": "Mid-day"
+              },
+              {
+                "const": 3,
+                "title": "Afternoon"
+              },
+              {
+                "const": 4,
+                "title": "Evening"
+              },
+              {
+                "const": 5,
+                "title": "Night"
+              },
+              {
+                "const": 6,
+                "title": "About equal at all times"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Morning"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Mid-day"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Afternoon"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Evening"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Night"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "About equal at all times"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2522. Up to 5 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031)."
+    },
+    "f30584": {
+      "title": "Does changing leg position help",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Usually relieves"
+        },
+        {
+          "const": 2,
+          "title": "Does not usually relieve"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2578."
+    },
+    "f30585": {
+      "title": "Are feelings in legs due to muscle cramps",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349."
+    },
+    "f32070": {
+      "title": "Frequency of feelings in legs in past 12 months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 1,
+          "title": "6-7 days per week"
+        },
+        {
+          "const": 2,
+          "title": "4-5 days per week"
+        },
+        {
+          "const": 3,
+          "title": "2-3 days per week"
+        },
+        {
+          "const": 4,
+          "title": "1 day per week"
+        },
+        {
+          "const": 5,
+          "title": "2 days per month"
+        },
+        {
+          "const": 6,
+          "title": "1 day per month or less"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2579."
+    },
+    "f32125": {
+      "title": "When online restless legs questionnaire started",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f32126": {
+      "title": "When online restless legs questionnaire completed",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    }
+  },
+  "required": [
+    "f30579",
+    "f30580",
+    "f30581",
+    "f30582",
+    "f30583",
+    "f30584",
+    "f30585",
+    "f32070",
+    "f32125",
+    "f32126"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/occupation_physical_activity.json",
+  "title": "BASELINE — Occupation & Physical Activity",
+  "description": "Activity at work, activity outside work and current employment situation from the baseline questionnaire.",
+  "type": "object",
+  "x-variable-group": "occupation_physical_activity",
+  "properties": {
+    "work_bl": {
+      "title": "How do you spend most of your time at work?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "sitting"
+        },
+        {
+          "const": 2,
+          "title": "standing / walking"
+        },
+        {
+          "const": 3,
+          "title": "Manual work/some physical effort"
+        },
+        {
+          "const": 4,
+          "title": "Heavy manual/physical work"
+        },
+        {
+          "const": 5,
+          "title": "do not work"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "leisure_bl": {
+      "title": "Please indicate how active you are outside work (including travel to and from work, activity in the home and in your leisure time)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "inactive"
+        },
+        {
+          "const": 2,
+          "title": "moderately inactive"
+        },
+        {
+          "const": 3,
+          "title": "moderately active"
+        },
+        {
+          "const": 4,
+          "title": "very active"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "occupation_bl": {
+      "title": "Which of the following best describes your current situation?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "In full-time employment (paid or unpaid)"
+        },
+        {
+          "const": 2,
+          "title": "In part-time employment (paid or unpaid)"
+        },
+        {
+          "const": 3,
+          "title": "Do not work (e.g. retired, unemployed, student)"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "work_bl",
+    "leisure_bl",
+    "occupation_bl"
+  ]
+}

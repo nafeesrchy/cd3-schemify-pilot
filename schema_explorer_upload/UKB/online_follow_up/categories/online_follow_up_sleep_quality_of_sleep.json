@@ -1,0 +1,1073 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/online_follow_up/categories/online_follow_up_sleep_quality_of_sleep.json",
+  "title": "Online follow-up — Sleep: Quality of sleep",
+  "description": "UK Biobank fields in the category Online follow-up > Sleep > Quality of sleep, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "online_follow_up_sleep_quality_of_sleep",
+  "properties": {
+    "f30442": {
+      "title": "Time usually gone to bed during the past month",
+      "x-unit": "mins past midnight",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100584."
+    },
+    "f30443": {
+      "title": "Length of time to get to sleep during the past month",
+      "x-unit": "minutes",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100584."
+    },
+    "f30444": {
+      "title": "Time usually got up in the morning during the past month",
+      "x-unit": "mins past midnight",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100584."
+    },
+    "f30445": {
+      "title": "How many hours of actual sleep each night during the past month",
+      "x-unit": "minutes",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100584."
+    },
+    "f30446": {
+      "title": "Trouble sleeping in past month as cannot get to sleep within 30 minutes",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30447": {
+      "title": "Trouble sleeping in past month as wake up in the middle of the night",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30448": {
+      "title": "Trouble sleeping in past month as need to use the bathroom",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30449": {
+      "title": "Trouble sleeping in past month as cannot breathe comfortably",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30450": {
+      "title": "Trouble sleeping in past month as cough or snore loudly",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30451": {
+      "title": "Trouble sleeping in past month as feel too cold",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30452": {
+      "title": "Trouble sleeping in past month as feel too hot",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30453": {
+      "title": "Trouble sleeping in past month as have bad dreams",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30454": {
+      "title": "Trouble sleeping in past month as have pain",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30455": {
+      "title": "Trouble sleeping in past month as find it noisy",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30456": {
+      "title": "Trouble sleeping in past month as find the bed uncomfortable",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30457": {
+      "title": "Trouble sleeping in past month as disturbed by light levels",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30458": {
+      "title": "Trouble sleeping in past month as worried about something",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30459": {
+      "title": "Trouble sleeping in past month as disturbed by children",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30460": {
+      "title": "Trouble sleeping in past month as disturbed by bed partner",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30461": {
+      "title": "Trouble sleeping in past month because of some other reason",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30462": {
+      "title": "Number of times woke up in the night during the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0 times"
+        },
+        {
+          "const": 1,
+          "title": "1-2 times"
+        },
+        {
+          "const": 2,
+          "title": "3-4 times"
+        },
+        {
+          "const": 3,
+          "title": "5-6 times"
+        },
+        {
+          "const": 4,
+          "title": "7-8 times"
+        },
+        {
+          "const": 5,
+          "title": "9-10 times"
+        },
+        {
+          "const": 6,
+          "title": "More than 10 times"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2556."
+    },
+    "f30463": {
+      "title": "Frequency of taking over the counter sleep medication in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30464": {
+      "title": "Frequency of taking prescription sleep medication in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30465": {
+      "title": "Frequency of having trouble staying awake in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not during the past month"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2554."
+    },
+    "f30466": {
+      "title": "Problems with enthusiasm to get things done in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No problem at all"
+        },
+        {
+          "const": 1,
+          "title": "Only a slight problem"
+        },
+        {
+          "const": 2,
+          "title": "Somewhat of a problem"
+        },
+        {
+          "const": 3,
+          "title": "A very big problem"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2557."
+    },
+    "f30467": {
+      "title": "Overall quality of sleep in past month",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Very good"
+        },
+        {
+          "const": 2,
+          "title": "Fairly good"
+        },
+        {
+          "const": 3,
+          "title": "Fairly bad"
+        },
+        {
+          "const": 4,
+          "title": "Very bad"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2553."
+    },
+    "f30468": {
+      "title": "Number of nights a week had problems with sleep in 2019",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Never"
+        },
+        {
+          "const": 1,
+          "title": "Less than once a week"
+        },
+        {
+          "const": 2,
+          "title": "Once or twice a week"
+        },
+        {
+          "const": 3,
+          "title": "Three or more times a week"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know/remember"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2558."
+    },
+    "f30469": {
+      "title": "Likelihood of falling asleep when didn't intend to in 2019",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not likely at all"
+        },
+        {
+          "const": 1,
+          "title": "Slightly likely"
+        },
+        {
+          "const": 2,
+          "title": "Moderately likely"
+        },
+        {
+          "const": 3,
+          "title": "Highly likely"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know/remember"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2559."
+    },
+    "f30470": {
+      "title": "Sleep quality on a typical night in 2019",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Very good"
+        },
+        {
+          "const": 1,
+          "title": "Fairly good"
+        },
+        {
+          "const": 2,
+          "title": "Fairly bad"
+        },
+        {
+          "const": 3,
+          "title": "Very bad"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know/remember"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2560."
+    },
+    "f30471": {
+      "title": "Change to usual number of hours of sleep per night since 2019",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Yes, I sleep a lot more now compared to before the pandemic"
+        },
+        {
+          "const": 1,
+          "title": "Yes, I sleep a little bit more now compared to before the pandemic"
+        },
+        {
+          "const": 2,
+          "title": "No, the amount I sleep has not changed"
+        },
+        {
+          "const": 3,
+          "title": "Yes, I sleep a little bit less now compared to before the pandemic"
+        },
+        {
+          "const": 4,
+          "title": "Yes, I sleep a lot less now compared to before the pandemic"
+        },
+        {
+          "const": -4,
+          "title": "It varies significantly"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know/remember"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2561."
+    },
+    "f30472": {
+      "title": "Hours of actual sleep per night in 2019",
+      "x-unit": "minutes",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100584."
+    },
+    "f30473": {
+      "title": "Reasons for change to hours of sleep",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 7,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "I have retired"
+              },
+              {
+                "const": 2,
+                "title": "I have changed my job"
+              },
+              {
+                "const": 3,
+                "title": "I have changed my working hours e.g. gone part-time or begun working shifts"
+              },
+              {
+                "const": 4,
+                "title": "I now work from home so I no longer need to commute"
+              },
+              {
+                "const": 5,
+                "title": "I have/had physical health issues"
+              },
+              {
+                "const": 6,
+                "title": "I have/had mental health issues"
+              },
+              {
+                "const": 7,
+                "title": "Other reason(s)"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "I have retired"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "I have changed my job"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "I have changed my working hours e.g. gone part-time or begun working shifts"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "I now work from home so I no longer need to commute"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "I have/had physical health issues"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "I have/had mental health issues"
+        },
+        {
+          "const": [
+            7
+          ],
+          "title": "Other reason(s)"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2562. Up to 7 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031)."
+    },
+    "f30492": {
+      "title": "When online sleep quality questionnaire started",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f30493": {
+      "title": "When online sleep quality questionnaire completed",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    }
+  },
+  "required": [
+    "f30442",
+    "f30443",
+    "f30444",
+    "f30445",
+    "f30446",
+    "f30447",
+    "f30448",
+    "f30449",
+    "f30450",
+    "f30451",
+    "f30452",
+    "f30453",
+    "f30454",
+    "f30455",
+    "f30456",
+    "f30457",
+    "f30458",
+    "f30459",
+    "f30460",
+    "f30461",
+    "f30462",
+    "f30463",
+    "f30464",
+    "f30465",
+    "f30466",
+    "f30467",
+    "f30468",
+    "f30469",
+    "f30470",
+    "f30471",
+    "f30472",
+    "f30473",
+    "f30492",
+    "f30493"
+  ]
+}

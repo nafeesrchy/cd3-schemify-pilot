@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/biological_samples/categories/biological_samples_blood_assays_proteomics.json",
+  "title": "Biological samples — Blood assays: Proteomics",
+  "description": "UK Biobank fields in the category Biological samples > Blood assays > Proteomics, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "biological_samples_blood_assays_proteomics",
+  "properties": {
+    "f30901": {
+      "title": "Plate used for sample run",
+      "type": [
+        "string",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f30902": {
+      "title": "Well used for sample run",
+      "type": [
+        "string",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f30903": {
+      "title": "UKB-PPP Consortium selected participant",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1. Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f30901",
+    "f30902",
+    "f30903"
+  ]
+}

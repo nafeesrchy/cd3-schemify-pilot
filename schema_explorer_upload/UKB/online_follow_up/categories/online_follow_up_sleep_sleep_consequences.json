@@ -1,0 +1,1322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/online_follow_up/categories/online_follow_up_sleep_sleep_consequences.json",
+  "title": "Online follow-up — Sleep: Sleep consequences",
+  "description": "UK Biobank fields in the category Online follow-up > Sleep > Sleep consequences, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "online_follow_up_sleep_sleep_consequences",
+  "properties": {
+    "f32071": {
+      "title": "Likelihood of falling asleep without intending to in the past 2 weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2580."
+    },
+    "f32072": {
+      "title": "Likelihood of falling asleep without intending to in the past 2 weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2580."
+    },
+    "f32073": {
+      "title": "Likelihood of falling asleep without intending to in the past 2 weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2580."
+    },
+    "f32074": {
+      "title": "Likelihood of falling asleep when sitting at a desk working on a computer in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32075": {
+      "title": "Likelihood of falling asleep when sitting at a desk working on a computer in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32076": {
+      "title": "Likelihood of falling asleep when sitting at a desk working on a computer in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32077": {
+      "title": "Likelihood of falling asleep when  on the phone in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32078": {
+      "title": "Likelihood of falling asleep when  on the phone in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32079": {
+      "title": "Likelihood of falling asleep when  on the phone in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32080": {
+      "title": "Likelihood of falling asleep when in a meeting in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32081": {
+      "title": "Likelihood of falling asleep when in a meeting in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32082": {
+      "title": "Likelihood of falling asleep when in a meeting in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32083": {
+      "title": "Likelihood of falling asleep when listening to someone talking in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32084": {
+      "title": "Likelihood of falling asleep when listening to someone talking in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32085": {
+      "title": "Likelihood of falling asleep when listening to someone talking in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32086": {
+      "title": "Likelihood of falling asleep when playing cards or a board game in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32087": {
+      "title": "Likelihood of falling asleep when playing cards or a board game in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32088": {
+      "title": "Likelihood of falling asleep when playing cards or a board game in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32089": {
+      "title": "Likelihood of falling asleep when driving a car in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32090": {
+      "title": "Likelihood of falling asleep when driving a car in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32091": {
+      "title": "Likelihood of falling asleep when driving a car in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32092": {
+      "title": "Likelihood of falling asleep when playing a videogame in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32093": {
+      "title": "Likelihood of falling asleep when playing a videogame in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32094": {
+      "title": "Likelihood of falling asleep when playing a videogame in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32095": {
+      "title": "Likelihood of falling asleep when lying down to take a nap in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32096": {
+      "title": "Likelihood of falling asleep when lying down to take a nap in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32097": {
+      "title": "Likelihood of falling asleep when lying down to rest in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32098": {
+      "title": "Likelihood of falling asleep when travelling as a passenger in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32099": {
+      "title": "Likelihood of falling asleep when travelling as a passenger in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32100": {
+      "title": "Likelihood of falling asleep when travelling as a passenger in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32101": {
+      "title": "Likelihood of falling asleep when watching a film at home in the past two weeks - version 1",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32102": {
+      "title": "Likelihood of falling asleep when watching a film at home in the past two weeks - version 2",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32103": {
+      "title": "Likelihood of falling asleep when watching a film at home in the past two weeks - version 3",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No chance"
+        },
+        {
+          "const": 1,
+          "title": "Slight chance"
+        },
+        {
+          "const": 2,
+          "title": "Moderate chance"
+        },
+        {
+          "const": 3,
+          "title": "High chance"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2581."
+    },
+    "f32104": {
+      "title": "Problems with forgetfulness/memory in past 7 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "Some"
+        },
+        {
+          "const": 2,
+          "title": "Quite a bit"
+        },
+        {
+          "const": 3,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2582."
+    },
+    "f32105": {
+      "title": "Problems with poor concentration in past 7 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "Some"
+        },
+        {
+          "const": 2,
+          "title": "Quite a bit"
+        },
+        {
+          "const": 3,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2582."
+    },
+    "f32106": {
+      "title": "Problems with trouble expressing thoughts in past 7 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "Some"
+        },
+        {
+          "const": 2,
+          "title": "Quite a bit"
+        },
+        {
+          "const": 3,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2582."
+    },
+    "f32107": {
+      "title": "Problems with trouble finding the right word in past 7 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "Some"
+        },
+        {
+          "const": 2,
+          "title": "Quite a bit"
+        },
+        {
+          "const": 3,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2582."
+    },
+    "f32108": {
+      "title": "Problems with slow thinking speed in past 7 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "Some"
+        },
+        {
+          "const": 2,
+          "title": "Quite a bit"
+        },
+        {
+          "const": 3,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2582."
+    },
+    "f32109": {
+      "title": "Trouble with figuring things out or solving problems in past 7 days",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "Some"
+        },
+        {
+          "const": 2,
+          "title": "Quite a bit"
+        },
+        {
+          "const": 3,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2582."
+    },
+    "f32127": {
+      "title": "When online sleep consequences questionnaire started",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f32128": {
+      "title": "When online sleep consequences questionnaire completed",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    }
+  },
+  "required": [
+    "f32071",
+    "f32072",
+    "f32073",
+    "f32074",
+    "f32075",
+    "f32076",
+    "f32077",
+    "f32078",
+    "f32079",
+    "f32080",
+    "f32081",
+    "f32082",
+    "f32083",
+    "f32084",
+    "f32085",
+    "f32086",
+    "f32087",
+    "f32088",
+    "f32089",
+    "f32090",
+    "f32091",
+    "f32092",
+    "f32093",
+    "f32094",
+    "f32095",
+    "f32096",
+    "f32097",
+    "f32098",
+    "f32099",
+    "f32100",
+    "f32101",
+    "f32102",
+    "f32103",
+    "f32104",
+    "f32105",
+    "f32106",
+    "f32107",
+    "f32108",
+    "f32109",
+    "f32127",
+    "f32128"
+  ]
+}

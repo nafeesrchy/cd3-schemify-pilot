@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/basic_info/categories/blood_group.json",
+  "title": "BASIC_INFO — Blood Group",
+  "description": "ABO blood group combined with rhesus status, from the basicInfo sheet.",
+  "type": "object",
+  "x-variable-group": "blood_group",
+  "properties": {
+    "ABORH": {
+      "title": "ABO blood group combined with rhesus status",
+      "oneOf": [
+        {
+          "const": "A+",
+          "title": "A+"
+        },
+        {
+          "const": "B+",
+          "title": "B+"
+        },
+        {
+          "const": "AB+",
+          "title": "AB+"
+        },
+        {
+          "const": "O+",
+          "title": "O+"
+        },
+        {
+          "const": "A-",
+          "title": "A-"
+        },
+        {
+          "const": "B-",
+          "title": "B-"
+        },
+        {
+          "const": "AB-",
+          "title": "AB-"
+        },
+        {
+          "const": "O-",
+          "title": "O-"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: 'A+/ B+/ AB+/ O+/ A-/ B-/ AB-/ O-'. Codes are text (D013)."
+    }
+  },
+  "required": [
+    "ABORH"
+  ]
+}

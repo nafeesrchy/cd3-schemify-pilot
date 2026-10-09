@@ -1,0 +1,995 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/assessment_centre/categories/assessment_centre_touchscreen_questionnaire_sex_specific_factors.json",
+  "title": "Assessment centre — Touchscreen questionnaire: Sex-specific factors",
+  "description": "UK Biobank fields in the category Assessment centre > Touchscreen questionnaire > Sex-specific factors, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "assessment_centre_touchscreen_questionnaire_sex_specific_factors",
+  "properties": {
+    "f2375": {
+      "title": "Relative age of first facial hair",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Younger than average"
+        },
+        {
+          "const": 2,
+          "title": "About average age"
+        },
+        {
+          "const": 3,
+          "title": "Older than average"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100570. Initial assessment visit (instance 0)."
+    },
+    "f2385": {
+      "title": "Relative age voice broke",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Younger than average"
+        },
+        {
+          "const": 2,
+          "title": "About average age"
+        },
+        {
+          "const": 3,
+          "title": "Older than average"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100570. Initial assessment visit (instance 0)."
+    },
+    "f2395": {
+      "title": "Hair/balding pattern",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Pattern 1"
+        },
+        {
+          "const": 2,
+          "title": "Pattern 2"
+        },
+        {
+          "const": 3,
+          "title": "Pattern 3"
+        },
+        {
+          "const": 4,
+          "title": "Pattern 4"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100572. Initial assessment visit (instance 0)."
+    },
+    "f2405": {
+      "title": "Number of children fathered",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2674": {
+      "title": "Ever had breast cancer screening / mammogram",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2684": {
+      "title": "Years since last breast cancer screening / mammogram",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -10,
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -10,
+          "title": "Less than 1 year ago"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100567. Initial assessment visit (instance 0)."
+    },
+    "f2694": {
+      "title": "Ever had cervical smear test",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2704": {
+      "title": "Years since last cervical smear test",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -10,
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -10,
+          "title": "Less than a year ago"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100569. Initial assessment visit (instance 0)."
+    },
+    "f2714": {
+      "title": "Age when periods started (menarche)",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2724": {
+      "title": "Had menopause",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "Not sure - had a hysterectomy"
+        },
+        {
+          "const": 3,
+          "title": "Not sure - other reason"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100579. Initial assessment visit (instance 0)."
+    },
+    "f2734": {
+      "title": "Number of live births",
+      "x-unit": "children",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100584. Initial assessment visit (instance 0)."
+    },
+    "f2744": {
+      "title": "Birth weight of first child",
+      "x-unit": "pounds",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -2,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Only had twins"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100585. Initial assessment visit (instance 0)."
+    },
+    "f2754": {
+      "title": "Age at first live birth",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -4,
+              -3
+            ]
+          }
+        },
+        {
+          "const": -4,
+          "title": "Do not remember"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100586. Initial assessment visit (instance 0)."
+    },
+    "f2764": {
+      "title": "Age at last live birth",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -4,
+              -3
+            ]
+          }
+        },
+        {
+          "const": -4,
+          "title": "Do not remember"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100586. Initial assessment visit (instance 0)."
+    },
+    "f2774": {
+      "title": "Ever had stillbirth, spontaneous miscarriage or termination",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2784": {
+      "title": "Ever taken oral contraceptive pill",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2794": {
+      "title": "Age started oral contraceptive pill",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2804": {
+      "title": "Age when last used oral contraceptive pill",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -11,
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -11,
+          "title": "Still taking the pill"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100595. Initial assessment visit (instance 0)."
+    },
+    "f2814": {
+      "title": "Ever used hormone-replacement therapy (HRT)",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2824": {
+      "title": "Age at hysterectomy",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2834": {
+      "title": "Bilateral oophorectomy (both ovaries removed)",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -5,
+          "title": "Not sure"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100599. Initial assessment visit (instance 0)."
+    },
+    "f3536": {
+      "title": "Age started hormone-replacement therapy (HRT)",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3546": {
+      "title": "Age last used hormone-replacement therapy (HRT)",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -11,
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -11,
+          "title": "Still taking HRT"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100598. Initial assessment visit (instance 0)."
+    },
+    "f3581": {
+      "title": "Age at menopause (last menstrual period)",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3591": {
+      "title": "Ever had hysterectomy (womb removed)",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -5,
+          "title": "Not sure"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100599. Initial assessment visit (instance 0)."
+    },
+    "f3700": {
+      "title": "Time since last menstrual period",
+      "x-unit": "days",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3710": {
+      "title": "Length of menstrual cycle",
+      "x-unit": "days",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -6,
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -6,
+          "title": "Irregular cycle"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100582. Initial assessment visit (instance 0)."
+    },
+    "f3720": {
+      "title": "Menstruating today",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3829": {
+      "title": "Number of stillbirths",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3839": {
+      "title": "Number of spontaneous miscarriages",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3849": {
+      "title": "Number of pregnancy terminations",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3872": {
+      "title": "Age of primiparous women at birth of child",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -4,
+              -3
+            ]
+          }
+        },
+        {
+          "const": -4,
+          "title": "Do not remember"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100586. Initial assessment visit (instance 0)."
+    },
+    "f3882": {
+      "title": "Age at bilateral oophorectomy (both ovaries removed)",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f10132": {
+      "title": "Type of progestan-only oral contraceptive used (pilot)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Microval"
+        },
+        {
+          "const": 2,
+          "title": "Micronor"
+        },
+        {
+          "const": 3,
+          "title": "Noriday"
+        },
+        {
+          "const": 4,
+          "title": "Norgeston"
+        },
+        {
+          "const": 5,
+          "title": "Femulen"
+        },
+        {
+          "const": 6,
+          "title": "Cerazette"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "None of the above"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100686. Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f2375",
+    "f2385",
+    "f2395",
+    "f2405",
+    "f2674",
+    "f2684",
+    "f2694",
+    "f2704",
+    "f2714",
+    "f2724",
+    "f2734",
+    "f2744",
+    "f2754",
+    "f2764",
+    "f2774",
+    "f2784",
+    "f2794",
+    "f2804",
+    "f2814",
+    "f2824",
+    "f2834",
+    "f3536",
+    "f3546",
+    "f3581",
+    "f3591",
+    "f3700",
+    "f3710",
+    "f3720",
+    "f3829",
+    "f3839",
+    "f3849",
+    "f3872",
+    "f3882",
+    "f10132"
+  ]
+}

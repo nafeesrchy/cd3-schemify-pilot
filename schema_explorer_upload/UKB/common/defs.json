@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/common/defs.json",
+  "title": "UKB — shared definitions",
+  "description": "Only invariant tokens are centralised here. Special answers are taken from UK Biobank's own code lists and written per field; none is generated (D036).",
+  "$defs": {
+    "yes_no": {
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        }
+      ],
+      "description": "A plain Yes/No pair, same code and meaning everywhere it is used (e.g. UK Biobank encoding 7) (D024)."
+    },
+    "eid": {
+      "type": "integer",
+      "minimum": 1,
+      "title": "Encoded participant identifier",
+      "description": "The application-specific encoded identifier for a UK Biobank participant. Not itself a Showcase field; added as the table's link key (D012).",
+      "$comment": "Typed as a positive integer on the evidence of record_column.txt, where every linked-record table's own eid column is declared value_type=11 (Integer)."
+    }
+  }
+}

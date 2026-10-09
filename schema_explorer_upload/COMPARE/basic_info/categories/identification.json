@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/basic_info/categories/identification.json",
+  "title": "BASIC_INFO — Identification",
+  "description": "The unique anonymous identifier of the donor, from the basicInfo sheet.",
+  "type": "object",
+  "x-variable-group": "identification",
+  "properties": {
+    "identifier": {
+      "title": "unique anonymous identifier",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "x-role": "primary key",
+      "$comment": "Source (basicInfo) gives only 'unique anonymous identifier': no format, no type. Typed as text with no pattern until the data provider says what the identifier looks like (D009, D013). The other requested sheets do not list it, so it is not repeated in the other tables."
+    }
+  },
+  "required": [
+    "identifier"
+  ]
+}

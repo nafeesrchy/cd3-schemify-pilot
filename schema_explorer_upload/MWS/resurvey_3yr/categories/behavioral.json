@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-mws-pilot/resurvey_3yr/categories/behavioral.json",
+  "title": "MWS 3-year resurvey — Behavioral",
+  "description": "Diet, alcohol, and smoking behaviors reported at the 3-year resurvey.",
+  "type": "object",
+  "x-variable-group": "behavioral",
+  "properties": {
+    "F1FQORGN": {
+      "title": "Frequency of eating organic food",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Sometimes"
+        },
+        {
+          "const": 3,
+          "title": "Usually"
+        },
+        {
+          "const": 4,
+          "title": "Always"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_on_questionnaire"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (not available on the 9903/9907 versions, available on 9909/0012) -- kept as the source-documented sentinel, same unenforced treatment as recruitment's REXANY (D020/D021): no skip pair added against F1QTYPE, the field's own -1 code covers it."
+    },
+    "F15YDIET": {
+      "title": "Major diet changes in the last 5 years",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Yes, because of illness"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "const": 3,
+          "title": "Yes, for some other reason"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Available on every questionnaire version -- no not_on_questionnaire sentinel needed, generic null fallback per D020."
+    },
+    "F1ALCNUM": {
+      "title": "Alcoholic drinks per week",
+      "x-unit": "drinks/week",
+      "$comment": "Steward confirmed: non-drinkers were instructed to answer 0, so no skip rule applies -- 0 is a real, substantive value, not a sentinel (Q30's own 'put 0 if you do not drink' instruction, verified against mws-Q3.pdf, D103). Bound removed entirely -- the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104). 97 and 99 are the source's own two distinct 'unknown' codes (kept as their own const branches, not merged into null, same treatment as F1MENOAG's 77/99 -- D051); field converted oneOf->anyOf since the now-unbounded numeric branch would otherwise overlap them (D101).",
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "const": 97,
+          "title": "Unknown (lots/many/too much/97+ etc)"
+        },
+        {
+          "const": 99,
+          "title": "Unknown (tick/?/varies etc)"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ]
+    },
+    "F1ALCEAT": {
+      "title": "Drinks alcohol with meals",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "const": 3,
+          "title": "It varies"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Steward confirmed this field is not skipped for non-drinkers (F1ALCNUM=0) in the real questionnaire, despite there being no explicit instruction either way -- some non-drinking participants may have left it blank on their own judgment, but nothing in the source documents a structural not-applicable case, so no skip rule is added and no null branch is included. Any gap here is generic null."
+    },
+    "F1ALCDAY": {
+      "title": "Number of drinking days per week",
+      "x-unit": "days/week",
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Bound removed entirely -- the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104) (the field's own 'per week' framing was never a stated D/E bound, only a structural implication, which does not survive the stricter dictionary-fidelity rule -- D101). Steward confirmed this field is not skipped for non-drinkers -- no null branch, same as F1ALCEAT."
+    },
+    "F1DRTEA": {
+      "title": "Tea consumption",
+      "x-unit": "cups or glasses/day",
+      "$comment": "Bound removed entirely -- the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104). 97 and 99 are the source's own two distinct 'unknown' codes (kept as their own const branches); field converted oneOf->anyOf since the now-unbounded numeric branch would otherwise overlap them (D101).",
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "const": 97,
+          "title": "Unknown (lots/many/too much/97+ etc)"
+        },
+        {
+          "const": 99,
+          "title": "Unknown (tick/?/varies etc)"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ]
+    },
+    "F1DRCOF": {
+      "title": "Coffee consumption",
+      "x-unit": "cups or glasses/day",
+      "$comment": "Same structure and reasoning as F1DRTEA. Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104).",
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "const": 97,
+          "title": "Unknown (lots/many/too much/97+ etc)"
+        },
+        {
+          "const": 99,
+          "title": "Unknown (tick/?/varies etc)"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ]
+    },
+    "F1CIGSPD": {
+      "title": "Cigarettes per day",
+      "x-universe": "Participants who have ever smoked (F1SMOKE=2 Past or 3 Current) -- someone who has never smoked skips this and any other smoking-related follow-up questions.",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "None"
+        },
+        {
+          "const": 2,
+          "title": "Less than 5"
+        },
+        {
+          "const": 3,
+          "title": "5-9"
+        },
+        {
+          "const": 4,
+          "title": "10-14"
+        },
+        {
+          "const": 5,
+          "title": "15-19"
+        },
+        {
+          "const": 6,
+          "title": "20-24"
+        },
+        {
+          "const": 7,
+          "title": "25 or more"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Corrects D060 (superseded): the real questionnaire's actual smoking-status question is 'have you ever been a smoker?' -- a Never answer skips this and subsequent smoking questions entirely, so this IS a real skip pattern, unlike recruitment's RCIGSPD/RSMOKE pair (D035 doesn't transplant here). Steward confirmed '1=None' stays as a real, untouched answer option for Past/Current smokers who report smoking zero on average -- not remapped to null. null branch enforced by a mother-file skip pair keyed on F1SMOKE -- D062."
+    },
+    "F1SMOKE": {
+      "title": "Smoking status",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Past"
+        },
+        {
+          "const": 3,
+          "title": "Current"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ],
+      "$comment": "Source marks this field 'Derived' for every questionnaire version. 3-level code list, distinct from recruitment's 4-level RSMOKE (which also had a separate 'Not current' level). Real skip pattern against F1CIGSPD -- D062 (corrects D060, which wrongly transplanted recruitment's D035 no-skip reasoning onto this field pair)."
+    }
+  },
+  "required": [
+    "F1FQORGN",
+    "F15YDIET",
+    "F1ALCNUM",
+    "F1ALCEAT",
+    "F1ALCDAY",
+    "F1DRTEA",
+    "F1DRCOF",
+    "F1CIGSPD",
+    "F1SMOKE"
+  ]
+}
