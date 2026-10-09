@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/recruitment.json",
+  "title": "BASELINE — Recruitment",
+  "description": "When and where the donor was recruited, and the outcome of the recruitment donation, from the basicInfo and baseline questionnaire sheets.",
+  "type": "object",
+  "x-variable-group": "recruitment",
+  "properties": {
+    "startDate_bl": {
+      "title": "Date started",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: 'date'. The dictionary states no date format, so no pattern is asserted and the column is typed as text (D022)."
+    },
+    "attendanceDate": {
+      "title": "date of recruitment into INTERVAL",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: 'date'. The dictionary states no date format, so no pattern is asserted and the column is typed as text (D022)."
+    },
+    "centre": {
+      "title": "static donor centre at which donor was recruited",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "leeds - city"
+        },
+        {
+          "const": 2,
+          "title": "bradford"
+        },
+        {
+          "const": 3,
+          "title": "leeds - seacroft"
+        },
+        {
+          "const": 4,
+          "title": "sheffield"
+        },
+        {
+          "const": 5,
+          "title": "leicester"
+        },
+        {
+          "const": 6,
+          "title": "nottingham"
+        },
+        {
+          "const": 7,
+          "title": "stoke"
+        },
+        {
+          "const": 8,
+          "title": "birmingham"
+        },
+        {
+          "const": 9,
+          "title": "manchester - norfolk house"
+        },
+        {
+          "const": 10,
+          "title": "cambridge"
+        },
+        {
+          "const": 11,
+          "title": "brentwood"
+        },
+        {
+          "const": 12,
+          "title": "lancaster"
+        },
+        {
+          "const": 13,
+          "title": "manchester - plymouth grove"
+        },
+        {
+          "const": 14,
+          "title": "liverpool"
+        },
+        {
+          "const": 15,
+          "title": "newcastle"
+        },
+        {
+          "const": 16,
+          "title": "southmead (bristol)"
+        },
+        {
+          "const": 17,
+          "title": "tooting"
+        },
+        {
+          "const": 18,
+          "title": "southampton"
+        },
+        {
+          "const": 19,
+          "title": "oxford"
+        },
+        {
+          "const": 20,
+          "title": "poole"
+        },
+        {
+          "const": 21,
+          "title": "gloucester"
+        },
+        {
+          "const": 22,
+          "title": "plymouth"
+        },
+        {
+          "const": 23,
+          "title": "edgware"
+        },
+        {
+          "const": 24,
+          "title": "luton"
+        },
+        {
+          "const": 25,
+          "title": "west end"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "outCome": {
+      "title": "the recruitment donation outcome",
+      "oneOf": [
+        {
+          "const": 1.0,
+          "title": "whole blood (overweight)"
+        },
+        {
+          "const": 1.1,
+          "title": "whole blood (normal weight)"
+        },
+        {
+          "const": 1.2,
+          "title": "whole blood (underweight)"
+        },
+        {
+          "const": 2.0,
+          "title": "low HB (haemoglobin)"
+        },
+        {
+          "const": 3.0,
+          "title": "medical NOS (Not otherwise specified)"
+        },
+        {
+          "const": 3.1,
+          "title": "medical (surgery)"
+        },
+        {
+          "const": 4.0,
+          "title": "no donation NOS"
+        },
+        {
+          "const": 4.1,
+          "title": "no donation (failed venepuncture)"
+        },
+        {
+          "const": 4.2,
+          "title": "no donation (administrative)"
+        },
+        {
+          "const": 5.0,
+          "title": "sample NOS"
+        },
+        {
+          "const": 9.99,
+          "title": "other"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source codes are written to two decimals ('1.00', '1.10', … '9.99'); stored as numbers here. Whether the delivered column holds numbers or text such as '1.10' is for the data provider (D023)."
+    }
+  },
+  "required": [
+    "startDate_bl",
+    "attendanceDate",
+    "centre",
+    "outCome"
+  ]
+}

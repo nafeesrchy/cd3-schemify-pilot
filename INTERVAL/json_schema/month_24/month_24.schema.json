@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_24/month_24.schema.json",
+  "title": "INTERVAL — MONTH_24 table",
+  "description": "Array of donor records. One element is one donor at the 24-month contact (end of Phase I): the 24-month questionnaire, cognitive test, physical activity monitor and the 24-month blood sample. A blank in the provider's data is written as an empty string; the dictionary's own codes are kept as constants.",
+  "$comment": "Category files are wired into allOf as each category is converted. JSON Schema cannot enforce uniqueness of rows: the dictionary lists no participant identifier (D010/D011).",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "MONTH_24 record",
+    "allOf": [
+      {
+        "$ref": "categories/general_health_sf36.json"
+      },
+      {
+        "$ref": "categories/medical_history.json"
+      },
+      {
+        "$ref": "categories/dietary.json"
+      },
+      {
+        "$ref": "categories/occupation_physical_activity.json"
+      },
+      {
+        "$ref": "categories/blood_donation.json"
+      },
+      {
+        "$ref": "categories/cognitive.json"
+      },
+      {
+        "$ref": "categories/physical_activity_accelerometer.json"
+      },
+      {
+        "$ref": "categories/blood_biomarkers.json"
+      },
+      {
+        "$ref": "categories/blood_counts_assays.json"
+      },
+      {
+        "$ref": "categories/omics.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/blood_biomarkers.json",
+  "title": "BASELINE — Blood Biomarkers",
+  "description": "ABO/rhesus blood group and the baseline haematological and NMR biomarkers, each with the date the lab processed the sample where the dictionary lists one.",
+  "type": "object",
+  "x-variable-group": "blood_biomarkers",
+  "$comment": "Units are as written in the source. The dictionary states no ranges, so none are asserted; measured values are typed number because no data type is stated (D041).",
+  "$defs": {
+    "lab_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source gives the description only, no Categories text: no date format is stated, so no pattern is asserted and the column is typed as text (D022, D041)."
+    }
+  },
+  "properties": {
+    "ABORH": {
+      "title": "ABO blood group combined with rhesus status",
+      "oneOf": [
+        {
+          "const": "A+",
+          "title": "A+"
+        },
+        {
+          "const": "B+",
+          "title": "B+"
+        },
+        {
+          "const": "AB+",
+          "title": "AB+"
+        },
+        {
+          "const": "O+",
+          "title": "O+"
+        },
+        {
+          "const": "A-",
+          "title": "A-"
+        },
+        {
+          "const": "B-",
+          "title": "B-"
+        },
+        {
+          "const": "AB-",
+          "title": "AB-"
+        },
+        {
+          "const": "O-",
+          "title": "O-"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: 'A+/ B+/ AB+/ O+/ A-/ B-/ AB-/ O-'. Codes are text; the source gives no Time_point for this row (D042)."
+    },
+    "CRP_bl": {
+      "title": "c-reactive protein",
+      "x-unit": "mg/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateCRP_bl": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "FERR_bl": {
+      "title": "ferritin",
+      "x-unit": "µg/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateFERR_bl": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "HEP_bl": {
+      "title": "hepcidin",
+      "x-unit": "ng/mL",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateHEP_bl": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "IRON_bl": {
+      "title": "iron",
+      "x-unit": "µmol/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateIRON_bl": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "TRANSFS_bl": {
+      "title": "soluble transferrin receptor",
+      "x-unit": "mg/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateTRANSFS_bl": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "UIBC_bl": {
+      "title": "iron binding capacity",
+      "x-unit": "µmol/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateUIBC_bl": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "TRANSF_bl": {
+      "title": "transferrin",
+      "x-unit": "mg/L",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "dateTRANSF_bl": {
+      "$ref": "#/$defs/lab_date",
+      "title": "date lab processed the sample"
+    },
+    "Total_C_bl": {
+      "title": "Total cholesterol (Brainshake/ Nightingale NMR)",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "LDL_C_bl": {
+      "title": "LDL cholesterol (Brainshake/ Nightingale NMR)",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "HDL_C_bl": {
+      "title": "HDL cholesterol (Brainshake/ Nightingale NMR)",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Total_TG_bl": {
+      "title": "Total triglycerides (Brainshake/ Nightingale NMR)",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ApoB_bl": {
+      "title": "Apolipoprotein B (Brainshake/ Nightingale NMR)",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ApoA1_bl": {
+      "title": "Apolipoprotein A1 (Brainshake/ Nightingale NMR)",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Glucose_bl": {
+      "title": "Glucose (Brainshake/ Nightingale NMR)",
+      "x-unit": "mmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Creatinine_bl": {
+      "title": "Creatinine (Brainshake/ Nightingale NMR)",
+      "x-unit": "μmol/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "Albumin_bl": {
+      "title": "Albumin (Brainshake/ Nightingale NMR)",
+      "x-unit": "g/l",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "ABORH",
+    "CRP_bl",
+    "dateCRP_bl",
+    "FERR_bl",
+    "dateFERR_bl",
+    "HEP_bl",
+    "dateHEP_bl",
+    "IRON_bl",
+    "dateIRON_bl",
+    "TRANSFS_bl",
+    "dateTRANSFS_bl",
+    "UIBC_bl",
+    "dateUIBC_bl",
+    "TRANSF_bl",
+    "dateTRANSF_bl",
+    "Total_C_bl",
+    "LDL_C_bl",
+    "HDL_C_bl",
+    "Total_TG_bl",
+    "ApoB_bl",
+    "ApoA1_bl",
+    "Glucose_bl",
+    "Creatinine_bl",
+    "Albumin_bl"
+  ]
+}

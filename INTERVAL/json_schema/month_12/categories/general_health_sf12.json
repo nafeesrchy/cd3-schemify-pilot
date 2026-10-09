@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/month_12/categories/general_health_sf12.json",
+  "title": "MONTH_12 — General Health & SF-12",
+  "description": "Self-rated health, activity limitation and mood items from the 12-month questionnaire, and the SF12 scores.",
+  "type": "object",
+  "x-variable-group": "general_health_sf12",
+  "$defs": {
+    "limited_activity": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes, limited a lot"
+        },
+        {
+          "const": 2,
+          "title": "yes, limited a little"
+        },
+        {
+          "const": 3,
+          "title": "no, not limited at all"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "time_scale_all_of_the_time": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "all of the time"
+        },
+        {
+          "const": 2,
+          "title": "most of the time"
+        },
+        {
+          "const": 3,
+          "title": "some of the time"
+        },
+        {
+          "const": 4,
+          "title": "a little of the time"
+        },
+        {
+          "const": 5,
+          "title": "none of the time"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "time_scale_all_the_time": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "all the time"
+        },
+        {
+          "const": 2,
+          "title": "most of the time"
+        },
+        {
+          "const": 3,
+          "title": "some of the time"
+        },
+        {
+          "const": 4,
+          "title": "a little of the time"
+        },
+        {
+          "const": 5,
+          "title": "none of the time"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "sf_score": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source Categories cell: '0 - 100' (stated range, kept)."
+    }
+  },
+  "properties": {
+    "health1_12m": {
+      "title": "In general, would you say your health is:",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "excellent"
+        },
+        {
+          "const": 2,
+          "title": "very good"
+        },
+        {
+          "const": 3,
+          "title": "good"
+        },
+        {
+          "const": 4,
+          "title": "fair"
+        },
+        {
+          "const": 5,
+          "title": "poor"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "mod_12m": {
+      "$ref": "#/$defs/limited_activity",
+      "title": "Does your health now limit to in the following activity: moderate activities?",
+      "$comment": "Source typo kept in the title: 'limit to' [sic]."
+    },
+    "stairA_12m": {
+      "$ref": "#/$defs/limited_activity",
+      "title": "Does your health now limit to in the following activity: climbing several flights of stairs?",
+      "$comment": "Source typo kept in the title: 'limit to' [sic]."
+    },
+    "phys_less_12m": {
+      "$ref": "#/$defs/time_scale_all_of_the_time",
+      "title": "During the past 4 weeks, have you accomplished less at work / on other regular daily activities due to physical health?"
+    },
+    "phys_kind_12m": {
+      "$ref": "#/$defs/time_scale_all_of_the_time",
+      "title": "During the past 4 weeks, have you been limited in the kind of work / regular daily activities due to physical health?"
+    },
+    "emo_less_12m": {
+      "$ref": "#/$defs/time_scale_all_of_the_time",
+      "title": "During the past 4 weeks, have you accomplished less at work / on other regular daily activities due to emotional problems?"
+    },
+    "emo_care_12m": {
+      "$ref": "#/$defs/time_scale_all_of_the_time",
+      "title": "During the past 4 weeks, have you accomplished work / other regular daily activities less carefully due to emotional problems?"
+    },
+    "pain2_12m": {
+      "title": "During the past 4 weeks, how much did pain interfere with normal daily activities?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "not at all"
+        },
+        {
+          "const": 2,
+          "title": "a little bit"
+        },
+        {
+          "const": 3,
+          "title": "moderately"
+        },
+        {
+          "const": 4,
+          "title": "quite a bit"
+        },
+        {
+          "const": 5,
+          "title": "extremely"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "calm_12m": {
+      "$ref": "#/$defs/time_scale_all_the_time",
+      "title": "How you feel and how things have been for you during the last 4 weeks: Have you felt calm and peaceful?"
+    },
+    "energy_12m": {
+      "$ref": "#/$defs/time_scale_all_the_time",
+      "title": "How you feel and how things have been for you during the last 4 weeks: Did you have a lot of energy?"
+    },
+    "sad_12m": {
+      "$ref": "#/$defs/time_scale_all_the_time",
+      "title": "How you feel and how things have been for you during the last 4 weeks: Have you felt downhearted and sad?"
+    },
+    "social2_12m": {
+      "$ref": "#/$defs/time_scale_all_the_time",
+      "title": "During the past 4 weeks, how much of the time has your physical health or emotional problems interfered with your social activities?"
+    },
+    "PF_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- physical functioning"
+    },
+    "RP_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- physical role functioning"
+    },
+    "BP_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- bodily pain"
+    },
+    "GH_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- general health perceptions"
+    },
+    "VT_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- vitality"
+    },
+    "SF_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- social role functioning"
+    },
+    "RE_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- emotional role functioning"
+    },
+    "MH_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- mental health"
+    },
+    "PF_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- physical functioning  -  norm-based scoring"
+    },
+    "RP_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- physical role functioning -  norm-based scoring"
+    },
+    "BP_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- bodily pain -  norm-based scoring"
+    },
+    "GH_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- general health perceptions -  norm-based scoring"
+    },
+    "VT_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- vitality -  norm-based scoring"
+    },
+    "SF_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- social role functioning -  norm-based scoring"
+    },
+    "RE_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- emotional role functioning -  norm-based scoring"
+    },
+    "MH_NBS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- mental health -  norm-based scoring"
+    },
+    "PCS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- physical component summary"
+    },
+    "MCS_12m": {
+      "$ref": "#/$defs/sf_score",
+      "title": "SF12 -- mental component summary"
+    }
+  },
+  "required": [
+    "health1_12m",
+    "mod_12m",
+    "stairA_12m",
+    "phys_less_12m",
+    "phys_kind_12m",
+    "emo_less_12m",
+    "emo_care_12m",
+    "pain2_12m",
+    "calm_12m",
+    "energy_12m",
+    "sad_12m",
+    "social2_12m",
+    "PF_12m",
+    "RP_12m",
+    "BP_12m",
+    "GH_12m",
+    "VT_12m",
+    "SF_12m",
+    "RE_12m",
+    "MH_12m",
+    "PF_NBS_12m",
+    "RP_NBS_12m",
+    "BP_NBS_12m",
+    "GH_NBS_12m",
+    "VT_NBS_12m",
+    "SF_NBS_12m",
+    "RE_NBS_12m",
+    "MH_NBS_12m",
+    "PCS_12m",
+    "MCS_12m"
+  ]
+}

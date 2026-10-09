@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/medical_history.json",
+  "title": "BASELINE — Medical History",
+  "description": "Self-reported anaemia, restless legs, symptoms on walking and iron supplement use from the baseline questionnaire.",
+  "type": "object",
+  "x-variable-group": "medical_history",
+  "properties": {
+    "anemia_bl": {
+      "title": "Has a doctor ever told you that you have low iron levels or anaemia?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "restlessLeg_bl": {
+      "title": "Have you ever suffered from restless legs (a tingling/aching feeling in your legs especially at night)?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "painChest_bl": {
+      "title": "Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to: Chest pain that goes away within 10 minutes of resting?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "shortBreath_bl": {
+      "title": "Shortness of breath that requires you to stop?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source wording for this row is the title alone; it follows painChest_bl in the dictionary, whose wording opens with the stem 'Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to:'."
+    },
+    "painCalf_bl": {
+      "title": "Pain in your calves that goes away on resting?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source wording for this row is the title alone; it follows painChest_bl in the dictionary, whose wording opens with the stem 'Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to:'."
+    },
+    "painJoint_bl": {
+      "title": "Pain in your joints?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source wording for this row is the title alone; it follows painChest_bl in the dictionary, whose wording opens with the stem 'Do you often have difficulty walking on level ground at the same speed as other people of a similar age due to:'."
+    },
+    "ironDr_bl": {
+      "title": "Do you currently take supplements of iron that have been prescribed by a doctor?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ironMulti_bl": {
+      "title": "Do you currently take supplements of iron that are contained within multivitamins / other supplements?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ironSupp_bl": {
+      "title": "Do you currently take supplements of iron that are iron only supplements?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "anemia_bl",
+    "restlessLeg_bl",
+    "painChest_bl",
+    "shortBreath_bl",
+    "painCalf_bl",
+    "painJoint_bl",
+    "ironDr_bl",
+    "ironMulti_bl",
+    "ironSupp_bl"
+  ]
+}

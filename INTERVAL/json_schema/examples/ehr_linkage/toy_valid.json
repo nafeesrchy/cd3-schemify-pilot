@@ -1,0 +1,74 @@
+[
+  {
+    "Caliber_CAN": "ID0001",
+    "Caliber_MOR": "ID0001",
+    "Caliber_HES": "ID0001",
+    "Caliber_OP": null
+  },
+  {
+    "Caliber_CAN": "ID0002",
+    "Caliber_MOR": "ID0002",
+    "Caliber_HES": null,
+    "Caliber_OP": "ID0002"
+  },
+  {
+    "Caliber_CAN": "ID0003",
+    "Caliber_MOR": null,
+    "Caliber_HES": "ID0003",
+    "Caliber_OP": "ID0003"
+  },
+  {
+    "Caliber_CAN": null,
+    "Caliber_MOR": "ID0004",
+    "Caliber_HES": "ID0004",
+    "Caliber_OP": "ID0004"
+  },
+  {
+    "Caliber_CAN": "ID0005",
+    "Caliber_MOR": "ID0005",
+    "Caliber_HES": "ID0005",
+    "Caliber_OP": null
+  },
+  {
+    "Caliber_CAN": "ID0006",
+    "Caliber_MOR": "ID0006",
+    "Caliber_HES": null,
+    "Caliber_OP": "ID0006"
+  },
+  {
+    "Caliber_CAN": "ID0007",
+    "Caliber_MOR": null,
+    "Caliber_HES": "ID0007",
+    "Caliber_OP": "ID0007"
+  },
+  {
+    "Caliber_CAN": null,
+    "Caliber_MOR": "ID0008",
+    "Caliber_HES": "ID0008",
+    "Caliber_OP": "ID0008"
+  },
+  {
+    "Caliber_CAN": "ID0009",
+    "Caliber_MOR": "ID0009",
+    "Caliber_HES": "ID0009",
+    "Caliber_OP": null
+  },
+  {
+    "Caliber_CAN": "ID0010",
+    "Caliber_MOR": "ID0010",
+    "Caliber_HES": null,
+    "Caliber_OP": "ID0010"
+  },
+  {
+    "Caliber_CAN": "ID0011",
+    "Caliber_MOR": null,
+    "Caliber_HES": "ID0011",
+    "Caliber_OP": "ID0011"
+  },
+  {
+    "Caliber_CAN": null,
+    "Caliber_MOR": "ID0012",
+    "Caliber_HES": "ID0012",
+    "Caliber_OP": "ID0012"
+  }
+]

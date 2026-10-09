@@ -1,0 +1,20 @@
+[
+  {
+    "Caliber_CAN": "ID0001",
+    "Caliber_MOR": "ID0002",
+    "Caliber_HES": null,
+    "Caliber_OP": 12345
+  },
+  {
+    "Caliber_CAN": "ID0001",
+    "Caliber_MOR": "ID0002",
+    "Caliber_HES": null
+  },
+  {
+    "Caliber_CAN": "ID0001",
+    "Caliber_MOR": "ID0002",
+    "Caliber_HES": null,
+    "Caliber_OP": "ID0001",
+    "shoeSize": 42
+  }
+]

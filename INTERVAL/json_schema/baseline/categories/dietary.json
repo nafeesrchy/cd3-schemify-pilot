@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-interval-pilot/baseline/categories/dietary.json",
+  "title": "BASELINE — Dietary",
+  "description": "Meat, fish, fruit, vegetable and tea consumption from the baseline questionnaire.",
+  "type": "object",
+  "x-variable-group": "dietary",
+  "$defs": {
+    "weekly_times": {
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "do not eat it"
+        },
+        {
+          "const": 0.1,
+          "title": "less than once a week"
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20,
+          "title": "times / week"
+        },
+        {
+          "const": 777,
+          "title": "more than 20 times per week"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source codes: 0 = do not eat it, 0.1 = less than once a week, 1 – 20 = times / week, 777 = more than 20 times per week. The source gives no 999 for these items. Whole numbers assumed for 1 – 20 because the fractional value 0.1 is listed as its own code (D035)."
+    },
+    "daily_times": {
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "with meals"
+        },
+        {
+          "const": 2,
+          "title": "between meals"
+        },
+        {
+          "const": 3,
+          "title": "with and between meals"
+        },
+        {
+          "const": 4,
+          "title": "never / rarely"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "The source gives no 999 for these items."
+    }
+  },
+  "properties": {
+    "meatEater_bl": {
+      "title": "Do you eat meat or fish?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "ageVeg_bl": {
+      "title": "How old were you when you last ate any kind of meat or fish (vegetarians only)?",
+      "x-universe": "Vegetarians only.",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "never eaten meat / fish"
+        },
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 70,
+          "title": "age"
+        },
+        {
+          "const": 777,
+          "title": "more than 70 years old"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source wording: '(vegetarians only)' (R001). The dictionary gives no value for people outside that universe, so no rule is enforced (D036). Whole years assumed for 1 - 70 (D035)."
+    },
+    "liver_bl": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average WEEK how many times do you eat liver (any type e.g. pigs, chicken, lambs)?"
+    },
+    "redMeat_bl": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average WEEK how many times do you eat red meat (e.g. beef, lamb, pork, bacon, ham, sausages, burgers)?"
+    },
+    "poultry_bl": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average WEEK how many times do you eat poultry (e.g. chicken, turkey)?"
+    },
+    "whiteFish_bl": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average WEEK how many times do you eat White fish (e.g. cod, haddock, tinned tuna)?"
+    },
+    "oilyFish_bl": {
+      "$ref": "#/$defs/weekly_times",
+      "title": "In an average WEEK how many times do you eat oily fish (canned or fresh e.g. sardines, mackerel, salmon, trout)?"
+    },
+    "veg_bl": {
+      "$ref": "#/$defs/daily_times",
+      "title": "Please indicate the times during an average day that you consume vegetables (excluding potatoes)"
+    },
+    "fruit_bl": {
+      "$ref": "#/$defs/daily_times",
+      "title": "Please indicate the times during an average day that you consume fruit (whole)"
+    },
+    "juice_bl": {
+      "$ref": "#/$defs/daily_times",
+      "title": "Please indicate the times during an average day that you consume fruit juice"
+    },
+    "smooth_bl": {
+      "$ref": "#/$defs/daily_times",
+      "title": "Please indicate the times during an average day that you consume fruit smoothies"
+    },
+    "tea_bl": {
+      "$ref": "#/$defs/daily_times",
+      "title": "Please indicate the times during an average day that you consume tea"
+    }
+  },
+  "required": [
+    "meatEater_bl",
+    "ageVeg_bl",
+    "liver_bl",
+    "redMeat_bl",
+    "poultry_bl",
+    "whiteFish_bl",
+    "oilyFish_bl",
+    "veg_bl",
+    "fruit_bl",
+    "juice_bl",
+    "smooth_bl",
+    "tea_bl"
+  ]
+}

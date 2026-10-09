@@ -1,0 +1,219 @@
+{
+  "$comment": "Ground truth for month_24/toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "health1_24m",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 1,
+      "column": "PF_24m",
+      "kind": "range-break",
+      "value": 101,
+      "reason": "above the source-stated maximum 100"
+    },
+    {
+      "row": 2,
+      "column": "health1_24m",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 3,
+      "column": "MCS_24m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 4,
+      "column": "MCS_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 5,
+      "column": "shoeSize",
+      "kind": "undeclared-column",
+      "reason": "not in the dictionary; rejected by unevaluatedProperties"
+    },
+    {
+      "row": 6,
+      "column": "ironLow_24m",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 7,
+      "column": "ironLow_24m",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 8,
+      "column": "supp_otc_24m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 9,
+      "column": "supp_otc_2_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 10,
+      "column": "eatTyp_change_24m",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 11,
+      "column": "eatTyp_change_24m",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 12,
+      "column": "eatTyp_more_j_24m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 13,
+      "column": "eatTyp_more_j_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 14,
+      "column": "pa_change_24m",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 15,
+      "column": "pa_change_24m",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 16,
+      "column": "work_transwalk_24m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 17,
+      "column": "leis_fightMin_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 18,
+      "column": "haemLow_24m",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 19,
+      "column": "haemLow_24m",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 20,
+      "column": "haemLow_24m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 21,
+      "column": "haemLow_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 22,
+      "column": "trailsDiff_24m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 23,
+      "column": "trailsDiff_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 24,
+      "column": "mvpa_150",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 25,
+      "column": "mvpa_150",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 26,
+      "column": "dateHBF_24m",
+      "kind": "wrong-type",
+      "value": 12345,
+      "reason": "a number is never legal here (text column)"
+    },
+    {
+      "row": 27,
+      "column": "dateHBF_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 28,
+      "column": "IPFx_10_9_L_24m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 29,
+      "column": "IPFx_10_9_L_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 30,
+      "column": "RNASeq_gwasQC_24m",
+      "kind": "wrong-type",
+      "value": 12345,
+      "reason": "a number is never legal here"
+    },
+    {
+      "row": 31,
+      "column": "RNASeq_gwasQC_24m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    }
+  ]
+}

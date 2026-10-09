@@ -1,0 +1,73 @@
+{
+  "$comment": "Ground truth for month_6/toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "health1_6m",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 1,
+      "column": "PF_6m",
+      "kind": "range-break",
+      "value": 101,
+      "reason": "above the source-stated maximum 100"
+    },
+    {
+      "row": 2,
+      "column": "health1_6m",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 3,
+      "column": "MCS_6m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 4,
+      "column": "MCS_6m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 5,
+      "column": "shoeSize",
+      "kind": "undeclared-column",
+      "reason": "not in the dictionary; rejected by unevaluatedProperties"
+    },
+    {
+      "row": 6,
+      "column": "heartProblems_6m",
+      "kind": "unknown-level",
+      "value": 9999,
+      "reason": "not a declared code"
+    },
+    {
+      "row": 7,
+      "column": "heartProblems_6m",
+      "kind": "invented-sentinel",
+      "value": 998,
+      "reason": "998 is not a code this item defines"
+    },
+    {
+      "row": 8,
+      "column": "restlessLeg_6m",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 9,
+      "column": "restlessLeg_6m",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    }
+  ]
+}
