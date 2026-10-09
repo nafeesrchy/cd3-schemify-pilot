@@ -11,20 +11,33 @@
       "x-unit": "kg",
       "description": "Calculated from stones/pounds.",
       "anyOf": [
-        { "type": "number", "minimum": 35, "maximum": 195 },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "type": "number"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source states no valid range for this field. 35-195 reuses resurvey_3yr's already-confirmed F1WGT bound (D064's category) rather than re-deriving a fresh one, for consistency across the same measurement type -- note recruitment's RWGT used a narrower stated range (35-150), transcribed as its own source stated, not reconciled."
+      "$comment": "Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
     },
     "F2BMI": {
       "title": "Body mass index",
       "x-unit": "kg/m2",
       "anyOf": [
-        { "type": "number", "minimum": 10, "maximum": 80 },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "type": "number"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source states no valid range; 10-80 reuses recruitment's RBMI bound (D018) and resurvey_3yr's F1BMI bound (D064), for consistency across all three tables rather than re-deriving a fresh one."
+      "$comment": "Source states no valid range; Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
     }
   },
-  "required": ["F2WGT", "F2BMI"]
+  "required": [
+    "F2WGT",
+    "F2BMI"
+  ]
 }

@@ -9,8 +9,14 @@
     "F2HYST": {
       "title": "Hysterectomy (operation during past 5 years)",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Checkbox-style: the source documents only '1=Yes', no '2=No', unlike recruitment's RHYST (which has both). Steward confirmed the semantic relationship to F2HYSTAG matches recruitment's confirmed RHYST/RHYSTAG pattern, but explicitly declined to enforce it as a schema rule -- with no explicit No code to key an if/then off of, enforcing either half would risk conflating 'no hysterectomy' with 'genuinely unrecorded', so both fields are left independent -- D088."
     },
@@ -18,12 +24,19 @@
       "title": "Age at hysterectomy",
       "x-unit": "years",
       "anyOf": [
-        { "type": "integer", "minimum": 10, "maximum": 90 },
-        { "$ref": "../../common/defs.json#/$defs/not_applicable" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source states no valid range; 10-90 reuses recruitment's RHYSTAG bound (D029) for consistency. not_applicable is included as a legal value (in case it's coded that way in practice) but deliberately not enforced by any mother-file conditional -- steward's call, D088."
+      "$comment": "Source states no valid range; null is included as a legal value (in case it's coded that way in practice) but deliberately not enforced by any mother-file conditional -- steward's call, D088. Bound removed entirely -- source states no range for this field; the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104)."
     }
   },
-  "required": ["F2HYST", "F2HYSTAG"]
+  "required": [
+    "F2HYST",
+    "F2HYSTAG"
+  ]
 }

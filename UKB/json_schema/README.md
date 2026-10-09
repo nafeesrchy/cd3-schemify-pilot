@@ -8,61 +8,69 @@ UK Biobank is a UK cohort of about half a million participants. This package des
 
 | Table | Mother file | One row is | Categories | Variables |
 |---|---|---|---|---|
-| UK Biobank | `uk_biobank/uk_biobank.schema.json` | One participant, identified by `eid`, with the selected fields from the initial assessment visit. | 50 | 4454 |
+| Population characteristics | `population_characteristics/population_characteristics.schema.json` | One participant, identified by `eid`, with the selected population characteristics fields from the initial assessment visit. | 3 | 38 |
+| Assessment centre | `assessment_centre/assessment_centre.schema.json` | One participant, identified by `eid`, with the selected assessment centre fields from the initial assessment visit. | 13 | 658 |
+| Biological samples | `biological_samples/biological_samples.schema.json` | One participant, identified by `eid`, with the selected biological samples fields from the initial assessment visit. | 4 | 880 |
+| Genomics | `genomics/genomics.schema.json` | One participant, identified by `eid`, with the selected genomics fields from the initial assessment visit. | 7 | 129 |
+| Health outcomes | `health_outcomes/health_outcomes.schema.json` | One participant, identified by `eid`, with the selected health outcomes fields from the initial assessment visit. | 4 | 2416 |
+| Online follow-up | `online_follow_up/online_follow_up.schema.json` | One participant, identified by `eid`, with the selected online follow-up fields from the initial assessment visit. | 13 | 290 |
+| Additional exposures | `additional_exposures/additional_exposures.schema.json` | One participant, identified by `eid`, with the selected additional exposures fields from the initial assessment visit. | 5 | 42 |
+
+The tables are the Showcase primary categories (D054). Every table is one row per participant keyed by `eid` and repeats an Identification category holding `eid`, so the tables join on `eid`. Each category file below sits in the table of its primary category.
 
 The categories follow the organisation of the CD3 UKB cohort description exactly: primary category, level 1, level 2, one category per level-2 row (or level-1 row where it has none), in the same order. Each category's title is its path, for example "Assessment centre — Touchscreen questionnaire: Sociodemographics". The variable counts reproduce the researchers' own counts, because a field is in scope only if UK Biobank marks it available (D043); where a count differs it is because some fields exist only at a repeat or imaging visit, or are table-access flags or bulk-file pointers (section 7). The first category, Identification, holds `eid`, which is not a Showcase field.
 
 | Primary category | Level 1 | Level 2 | File | Variables |
 |---|---|---|---|---|
-| Population characteristics | Baseline characteristics |  | `uk_biobank/categories/population_characteristics_baseline_characteristics.json` | 6 |
-| Population characteristics | Baseline characteristics | Indices of Multiple Deprivation | `uk_biobank/categories/population_characteristics_baseline_characteristics_indices_of_multiple_deprivation.json` | 25 |
-| Population characteristics | Ongoing characteristics |  | `uk_biobank/categories/population_characteristics_ongoing_characteristics.json` | 7 |
-| Assessment centre | Touchscreen questionnaire | Sociodemographics | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_sociodemographics.json` | 29 |
-| Assessment centre | Touchscreen questionnaire | Lifestyle and environment | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_lifestyle_and_environment.json` | 155 |
-| Assessment centre | Touchscreen questionnaire | Early life factors | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_early_life_factors.json` | 8 |
-| Assessment centre | Touchscreen questionnaire | Family history | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_family_history.json` | 20 |
-| Assessment centre | Touchscreen questionnaire | Psychosocial factors | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_psychosocial_factors.json` | 48 |
-| Assessment centre | Touchscreen questionnaire | Health and medical history | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_health_and_medical_history.json` | 102 |
-| Assessment centre | Touchscreen questionnaire | Sex-specific factors | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_sex_specific_factors.json` | 34 |
-| Assessment centre | Verbal interview | Early life factors | `uk_biobank/categories/assessment_centre_verbal_interview_early_life_factors.json` | 9 |
-| Assessment centre | Verbal interview | Employment | `uk_biobank/categories/assessment_centre_verbal_interview_employment.json` | 2 |
-| Assessment centre | Verbal interview | Medical conditions | `uk_biobank/categories/assessment_centre_verbal_interview_medical_conditions.json` | 13 |
-| Assessment centre | Verbal interview | Medications | `uk_biobank/categories/assessment_centre_verbal_interview_medications.json` | 2 |
-| Assessment centre | Verbal interview | Operations | `uk_biobank/categories/assessment_centre_verbal_interview_operations.json` | 7 |
-| Assessment centre | Physical measures |  | `uk_biobank/categories/assessment_centre_physical_measures.json` | 229 |
-| Biological samples | Blood assays | Blood count | `uk_biobank/categories/biological_samples_blood_assays_blood_count.json` | 155 |
-| Biological samples | Blood assays | Blood biochemistry | `uk_biobank/categories/biological_samples_blood_assays_blood_biochemistry.json` | 210 |
-| Biological samples | Blood assays | NMR metabolomics | `uk_biobank/categories/biological_samples_blood_assays_nmr_metabolomics.json` | 512 |
-| Biological samples | Blood assays | Proteomics | `uk_biobank/categories/biological_samples_blood_assays_proteomics.json` | 3 |
-| Genomics | Polygenic Risk Scores | Standard PRS | `uk_biobank/categories/genomics_polygenic_risk_scores_standard_prs.json` | 39 |
-| Genomics | Polygenic Risk Scores | Enhanced PRS | `uk_biobank/categories/genomics_polygenic_risk_scores_enhanced_prs.json` | 51 |
-| Genomics | Polygenic Risk Scores | Genetically deduced phenotypes | `uk_biobank/categories/genomics_polygenic_risk_scores_genetically_deduced_phenotypes.json` | 5 |
-| Genomics | Genotypes | HLA | `uk_biobank/categories/genomics_genotypes_hla.json` | 1 |
-| Genomics | Genotypes | Genotyping process and sample QC | `uk_biobank/categories/genomics_genotypes_genotyping_process_and_sample_qc.json` | 21 |
-| Genomics | Genotypes | Interim genotype release | `uk_biobank/categories/genomics_genotypes_interim_genotype_release.json` | 7 |
-| Genomics | Whole genome sequences | Telomeres | `uk_biobank/categories/genomics_whole_genome_sequences_telomeres.json` | 5 |
-| Online follow-up | Sleep | Sleep behaviour | `uk_biobank/categories/online_follow_up_sleep_sleep_behaviour.json` | 7 |
-| Online follow-up | Sleep | Work and sleep | `uk_biobank/categories/online_follow_up_sleep_work_and_sleep.json` | 14 |
-| Online follow-up | Sleep | Quality of sleep | `uk_biobank/categories/online_follow_up_sleep_quality_of_sleep.json` | 34 |
-| Online follow-up | Sleep | Insomnia | `uk_biobank/categories/online_follow_up_sleep_insomnia.json` | 11 |
-| Online follow-up | Sleep | Sleep disturbances | `uk_biobank/categories/online_follow_up_sleep_sleep_disturbances.json` | 30 |
-| Online follow-up | Sleep | Fatigue | `uk_biobank/categories/online_follow_up_sleep_fatigue.json` | 9 |
-| Online follow-up | Sleep | Restless legs | `uk_biobank/categories/online_follow_up_sleep_restless_legs.json` | 10 |
-| Online follow-up | Sleep | Sleep consequences | `uk_biobank/categories/online_follow_up_sleep_sleep_consequences.json` | 41 |
-| Online follow-up | Sleep | Family history | `uk_biobank/categories/online_follow_up_sleep_family_history.json` | 9 |
-| Online follow-up | Sleep | Lifestyle routines | `uk_biobank/categories/online_follow_up_sleep_lifestyle_routines.json` | 14 |
-| Online follow-up | Mental well-being | Alcohol use | `uk_biobank/categories/online_follow_up_mental_well_being_alcohol_use.json` | 15 |
-| Online follow-up | Work environment | Medical information | `uk_biobank/categories/online_follow_up_work_environment_medical_information.json` | 55 |
-| Online follow-up | Work environment | Employment history | `uk_biobank/categories/online_follow_up_work_environment_employment_history.json` | 41 |
-| Additional exposures | Local environment | Home locations | `uk_biobank/categories/additional_exposures_local_environment_home_locations.json` | 5 |
-| Additional exposures | Local environment | Residential air pollution | `uk_biobank/categories/additional_exposures_local_environment_residential_air_pollution.json` | 17 |
-| Additional exposures | Local environment | Residential noise pollution | `uk_biobank/categories/additional_exposures_local_environment_residential_noise_pollution.json` | 5 |
-| Additional exposures | Local environment | Greenspace and coastal proximity | `uk_biobank/categories/additional_exposures_local_environment_greenspace_and_coastal_proximity.json` | 9 |
-| Additional exposures | Local environment | Water minerals | `uk_biobank/categories/additional_exposures_local_environment_water_minerals.json` | 6 |
-| Health outcomes | Externally sourced health outcomes | Hospital inpatient | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_hospital_inpatient.json` | 74 |
-| Health outcomes | Externally sourced health outcomes | Death register | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_death_register.json` | 7 |
-| Health outcomes | Externally sourced health outcomes | Cancer register | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_cancer_register.json` | 5 |
-| Health outcomes | Externally sourced health outcomes | First occurrences | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_first_occurrences.json` | 2330 |
+| Population characteristics | Baseline characteristics |  | `population_characteristics/categories/population_characteristics_baseline_characteristics.json` | 6 |
+| Population characteristics | Baseline characteristics | Indices of Multiple Deprivation | `population_characteristics/categories/population_characteristics_baseline_characteristics_indices_of_multiple_deprivation.json` | 25 |
+| Population characteristics | Ongoing characteristics |  | `population_characteristics/categories/population_characteristics_ongoing_characteristics.json` | 7 |
+| Assessment centre | Touchscreen questionnaire | Sociodemographics | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_sociodemographics.json` | 29 |
+| Assessment centre | Touchscreen questionnaire | Lifestyle and environment | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_lifestyle_and_environment.json` | 155 |
+| Assessment centre | Touchscreen questionnaire | Early life factors | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_early_life_factors.json` | 8 |
+| Assessment centre | Touchscreen questionnaire | Family history | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_family_history.json` | 20 |
+| Assessment centre | Touchscreen questionnaire | Psychosocial factors | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_psychosocial_factors.json` | 48 |
+| Assessment centre | Touchscreen questionnaire | Health and medical history | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_health_and_medical_history.json` | 102 |
+| Assessment centre | Touchscreen questionnaire | Sex-specific factors | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_sex_specific_factors.json` | 34 |
+| Assessment centre | Verbal interview | Early life factors | `assessment_centre/categories/assessment_centre_verbal_interview_early_life_factors.json` | 9 |
+| Assessment centre | Verbal interview | Employment | `assessment_centre/categories/assessment_centre_verbal_interview_employment.json` | 2 |
+| Assessment centre | Verbal interview | Medical conditions | `assessment_centre/categories/assessment_centre_verbal_interview_medical_conditions.json` | 13 |
+| Assessment centre | Verbal interview | Medications | `assessment_centre/categories/assessment_centre_verbal_interview_medications.json` | 2 |
+| Assessment centre | Verbal interview | Operations | `assessment_centre/categories/assessment_centre_verbal_interview_operations.json` | 7 |
+| Assessment centre | Physical measures |  | `assessment_centre/categories/assessment_centre_physical_measures.json` | 229 |
+| Biological samples | Blood assays | Blood count | `biological_samples/categories/biological_samples_blood_assays_blood_count.json` | 155 |
+| Biological samples | Blood assays | Blood biochemistry | `biological_samples/categories/biological_samples_blood_assays_blood_biochemistry.json` | 210 |
+| Biological samples | Blood assays | NMR metabolomics | `biological_samples/categories/biological_samples_blood_assays_nmr_metabolomics.json` | 512 |
+| Biological samples | Blood assays | Proteomics | `biological_samples/categories/biological_samples_blood_assays_proteomics.json` | 3 |
+| Genomics | Polygenic Risk Scores | Standard PRS | `genomics/categories/genomics_polygenic_risk_scores_standard_prs.json` | 39 |
+| Genomics | Polygenic Risk Scores | Enhanced PRS | `genomics/categories/genomics_polygenic_risk_scores_enhanced_prs.json` | 51 |
+| Genomics | Polygenic Risk Scores | Genetically deduced phenotypes | `genomics/categories/genomics_polygenic_risk_scores_genetically_deduced_phenotypes.json` | 5 |
+| Genomics | Genotypes | HLA | `genomics/categories/genomics_genotypes_hla.json` | 1 |
+| Genomics | Genotypes | Genotyping process and sample QC | `genomics/categories/genomics_genotypes_genotyping_process_and_sample_qc.json` | 21 |
+| Genomics | Genotypes | Interim genotype release | `genomics/categories/genomics_genotypes_interim_genotype_release.json` | 7 |
+| Genomics | Whole genome sequences | Telomeres | `genomics/categories/genomics_whole_genome_sequences_telomeres.json` | 5 |
+| Online follow-up | Sleep | Sleep behaviour | `online_follow_up/categories/online_follow_up_sleep_sleep_behaviour.json` | 7 |
+| Online follow-up | Sleep | Work and sleep | `online_follow_up/categories/online_follow_up_sleep_work_and_sleep.json` | 14 |
+| Online follow-up | Sleep | Quality of sleep | `online_follow_up/categories/online_follow_up_sleep_quality_of_sleep.json` | 34 |
+| Online follow-up | Sleep | Insomnia | `online_follow_up/categories/online_follow_up_sleep_insomnia.json` | 11 |
+| Online follow-up | Sleep | Sleep disturbances | `online_follow_up/categories/online_follow_up_sleep_sleep_disturbances.json` | 30 |
+| Online follow-up | Sleep | Fatigue | `online_follow_up/categories/online_follow_up_sleep_fatigue.json` | 9 |
+| Online follow-up | Sleep | Restless legs | `online_follow_up/categories/online_follow_up_sleep_restless_legs.json` | 10 |
+| Online follow-up | Sleep | Sleep consequences | `online_follow_up/categories/online_follow_up_sleep_sleep_consequences.json` | 41 |
+| Online follow-up | Sleep | Family history | `online_follow_up/categories/online_follow_up_sleep_family_history.json` | 9 |
+| Online follow-up | Sleep | Lifestyle routines | `online_follow_up/categories/online_follow_up_sleep_lifestyle_routines.json` | 14 |
+| Online follow-up | Mental well-being | Alcohol use | `online_follow_up/categories/online_follow_up_mental_well_being_alcohol_use.json` | 15 |
+| Online follow-up | Work environment | Medical information | `online_follow_up/categories/online_follow_up_work_environment_medical_information.json` | 55 |
+| Online follow-up | Work environment | Employment history | `online_follow_up/categories/online_follow_up_work_environment_employment_history.json` | 41 |
+| Additional exposures | Local environment | Home locations | `additional_exposures/categories/additional_exposures_local_environment_home_locations.json` | 5 |
+| Additional exposures | Local environment | Residential air pollution | `additional_exposures/categories/additional_exposures_local_environment_residential_air_pollution.json` | 17 |
+| Additional exposures | Local environment | Residential noise pollution | `additional_exposures/categories/additional_exposures_local_environment_residential_noise_pollution.json` | 5 |
+| Additional exposures | Local environment | Greenspace and coastal proximity | `additional_exposures/categories/additional_exposures_local_environment_greenspace_and_coastal_proximity.json` | 9 |
+| Additional exposures | Local environment | Water minerals | `additional_exposures/categories/additional_exposures_local_environment_water_minerals.json` | 6 |
+| Health outcomes | Externally sourced health outcomes | Hospital inpatient | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_hospital_inpatient.json` | 74 |
+| Health outcomes | Externally sourced health outcomes | Death register | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_death_register.json` | 7 |
+| Health outcomes | Externally sourced health outcomes | Cancer register | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_cancer_register.json` | 5 |
+| Health outcomes | Externally sourced health outcomes | First occurrences | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_first_occurrences.json` | 2330 |
 
 Some categories the researchers listed have no file because there is nothing to convert from the dictionary: Genotype Results, Imputation, Primary care and the UK Biobank Urban Morphometric Platform have only table-access flags, bulk-file pointers or fields UK Biobank marks as not available (D029, D043).
 
@@ -70,12 +78,13 @@ Some categories the researchers listed have no file because there is nothing to 
 
 ```
 common/defs.json                    shared definitions: the Yes/No answer and the eid
-uk_biobank/uk_biobank.schema.json   the mother file: an array of participants; each is the allOf of its category files
-uk_biobank/categories/*.json        one file per category of variables, plus identification.json
-examples/                           toy_valid.json, toy_invalid.json (+ a ledger of seeded violations)
+<table>/<table>.schema.json         one mother file per table (seven): an array of participants; each is the allOf of its category files
+<table>/categories/*.json           one file per category of variables, plus identification.json (eid)
+manifest.json                       the seven tables
+examples/<table>/                   toy_valid.json, toy_invalid.json (+ a ledger of seeded violations), one set per table
 tools/                              validate.py, requirements.txt
 dictionary.html                     the browsable data dictionary
-playground.html                     an in-browser validator
+playground-<table>.html             an in-browser validator, one per table
 VARIABLES.csv, ROUTING.csv          the variable inventory and the routing register the validator reconciles
 ```
 
@@ -240,10 +249,10 @@ The scope comes from the CD3 researchers' second-review selection (`Data Access 
 ```
 pip install -r tools/requirements.txt      # or use: uv run tools/validate.py …
 python3 tools/validate.py summary .        # schemas, fixtures, coverage — everything
-python3 tools/validate.py data . --file your_export.json
+python3 tools/validate.py data . --table assessment_centre --file your_export.json
 ```
 
-Validate a **JSON** export (an array with one object per participant). Many columns are lists, which a CSV cannot carry. In a CSV an empty cell is read as `null`. The summary takes about ten seconds because the package is large.
+Validate a **JSON** export (an array with one object per participant) one table at a time with `--table`, and give it only that table's columns (`eid` plus the table's category columns): a table rejects any column it does not declare (D054). A full extract is split by table first. Many columns are lists, which a CSV cannot carry. In a CSV an empty cell is read as `null`. The summary takes about ten seconds because the package is large.
 
 Double-click `dictionary.html` to browse the dictionary (keyword search built in; the Semantic search switch fetches a small model once, then also finds related variables by meaning). Run `python3 -m http.server 8000` from the package root, which serves the whole directory so `assets/vendor/` travels with the page, then open `playground.html`. The `$id` namespace (`https://schemas.example.org/cd3-ukb-pilot/`) is a placeholder to replace before publishing the schemas anywhere public.
 

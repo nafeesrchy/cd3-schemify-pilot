@@ -9,27 +9,49 @@
     "F2MCABR": {
       "title": "Family history (mother): breast cancer",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Checkbox-style: only '1=Yes' documented, no '2=No'. Available on every questionnaire version, no -1 code (unlike some of resurvey_3yr's mother/father family-history fields)."
     },
     "F2FCABR": {
       "title": "Family history (father): breast cancer",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Same checkbox-style treatment as F2MCABR."
     },
     "F2SCABR": {
       "title": "Family history (sister): breast cancer",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Same checkbox-style treatment as F2MCABR. New relative not asked about in recruitment or resurvey_3yr -- this wave is the only one of the three that surveys sisters."
     }
   },
-  "required": ["F2MCABR", "F2FCABR", "F2SCABR"]
+  "required": [
+    "F2MCABR",
+    "F2FCABR",
+    "F2SCABR"
+  ]
 }

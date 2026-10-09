@@ -1,0 +1,55 @@
+{
+  "$comment": "Ground truth for toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row; tools/validate.py fixtures asserts each row FAILS with an error pointer on the named column. Routing: one skip-break case per rule; each gate family also has a valid row where the gate excludes the participant and the dependent cells are empty.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "eid",
+      "kind": "range-break",
+      "value": 0,
+      "reason": "below minimum 1 (eid is a positive identifier)"
+    },
+    {
+      "row": 1,
+      "column": "eid",
+      "kind": "type-break",
+      "value": "1234567",
+      "reason": "string, not the declared integer type"
+    },
+    {
+      "row": 2,
+      "column": "eid",
+      "kind": "required-break",
+      "value": null,
+      "reason": "eid is required and absent"
+    },
+    {
+      "row": 3,
+      "column": "eid",
+      "kind": "type-break",
+      "value": null,
+      "reason": "null, but eid is never empty"
+    },
+    {
+      "row": 4,
+      "column": "f31",
+      "kind": "unknown-level",
+      "value": 1001,
+      "reason": "1001 is not a declared code for Sex"
+    },
+    {
+      "row": 5,
+      "column": "f33",
+      "kind": "pattern-break",
+      "value": "15-06-1970",
+      "reason": "DD-MM-YYYY does not match the declared YYYY-MM-DD pattern for Date of birth"
+    },
+    {
+      "row": 6,
+      "column": "f22189",
+      "kind": "type-break",
+      "value": "12.5",
+      "reason": "string, not the declared number type for Townsend deprivation index at recruitment"
+    }
+  ]
+}

@@ -9,29 +9,63 @@
     "RMAMM": {
       "title": "Previously attended breast screening",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RFHBC": {
       "title": "Mother or sister with breast cancer",
       "description": "Derived field.",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RBRCA": {
       "title": "Ever had breast cancer",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "const": 3, "title": "Don't know" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "const": 3,
+          "title": "Don't know"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     }
   },
-  "required": ["RMAMM", "RFHBC", "RBRCA"]
+  "required": [
+    "RMAMM",
+    "RFHBC",
+    "RBRCA"
+  ]
 }

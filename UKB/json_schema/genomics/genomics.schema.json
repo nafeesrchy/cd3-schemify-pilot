@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/genomics/genomics.schema.json",
+  "title": "UK Biobank: Genomics",
+  "description": "Array of UK Biobank participant records holding the Showcase top-level category 'Genomics'. One element is one participant, keyed by eid, so every table of this package has the same grain and joins to the others on eid. Questions UK Biobank asks at several assessment visits carry only the initial-visit (instance 0) value; the repeat and imaging visits are out of scope. Any column except eid may be null, which is how an empty cell in the delivered data is written (D048).",
+  "$comment": "One table per Showcase top-level category (D054). The category files are the Showcase sub-categories as converted. ",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "UK Biobank record (Genomics)",
+    "allOf": [
+      {
+        "$ref": "categories/identification.json"
+      },
+      {
+        "$ref": "categories/genomics_polygenic_risk_scores_standard_prs.json"
+      },
+      {
+        "$ref": "categories/genomics_polygenic_risk_scores_enhanced_prs.json"
+      },
+      {
+        "$ref": "categories/genomics_polygenic_risk_scores_genetically_deduced_phenotypes.json"
+      },
+      {
+        "$ref": "categories/genomics_genotypes_hla.json"
+      },
+      {
+        "$ref": "categories/genomics_genotypes_genotyping_process_and_sample_qc.json"
+      },
+      {
+        "$ref": "categories/genomics_genotypes_interim_genotype_release.json"
+      },
+      {
+        "$ref": "categories/genomics_whole_genome_sequences_telomeres.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/additional_exposures/categories/identification.json",
+  "title": "Identification",
+  "description": "The participant link key. Not itself a UK Biobank Showcase field.",
+  "type": "object",
+  "x-variable-group": "identification",
+  "properties": {
+    "eid": {
+      "$ref": "../../common/defs.json#/$defs/eid"
+    }
+  },
+  "required": [
+    "eid"
+  ]
+}

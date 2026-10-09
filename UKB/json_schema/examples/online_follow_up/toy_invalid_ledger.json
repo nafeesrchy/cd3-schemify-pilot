@@ -1,0 +1,34 @@
+{
+  "$comment": "Ground truth for toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row; tools/validate.py fixtures asserts each row FAILS with an error pointer on the named column. Routing: one skip-break case per rule; each gate family also has a valid row where the gate excludes the participant and the dependent cells are empty.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "eid",
+      "kind": "range-break",
+      "value": 0,
+      "reason": "below minimum 1 (eid is a positive identifier)"
+    },
+    {
+      "row": 1,
+      "column": "eid",
+      "kind": "type-break",
+      "value": "1234567",
+      "reason": "string, not the declared integer type"
+    },
+    {
+      "row": 2,
+      "column": "eid",
+      "kind": "required-break",
+      "value": null,
+      "reason": "eid is required and absent"
+    },
+    {
+      "row": 3,
+      "column": "eid",
+      "kind": "type-break",
+      "value": null,
+      "reason": "null, but eid is never empty"
+    }
+  ]
+}

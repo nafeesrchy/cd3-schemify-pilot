@@ -1,0 +1,2400 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/assessment_centre/assessment_centre.schema.json",
+  "title": "UK Biobank: Assessment centre",
+  "description": "Array of UK Biobank participant records holding the Showcase top-level category 'Assessment centre'. One element is one participant, keyed by eid, so every table of this package has the same grain and joins to the others on eid. Questions UK Biobank asks at several assessment visits carry only the initial-visit (instance 0) value; the repeat and imaging visits are out of scope. Any column except eid may be null, which is how an empty cell in the delivered data is written (D048).",
+  "$comment": "One table per Showcase top-level category (D054). The category files are the Showcase sub-categories as converted. After the categories come the 87 routing conditionals R-ids in ROUTING.csv (D049); all of them involve only Assessment centre fields. ",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "UK Biobank record (Assessment centre)",
+    "allOf": [
+      {
+        "$ref": "categories/identification.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_touchscreen_questionnaire_sociodemographics.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_touchscreen_questionnaire_lifestyle_and_environment.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_touchscreen_questionnaire_early_life_factors.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_touchscreen_questionnaire_family_history.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_touchscreen_questionnaire_psychosocial_factors.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_touchscreen_questionnaire_health_and_medical_history.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_touchscreen_questionnaire_sex_specific_factors.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_verbal_interview_early_life_factors.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_verbal_interview_employment.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_verbal_interview_medical_conditions.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_verbal_interview_medications.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_verbal_interview_operations.json"
+      },
+      {
+        "$ref": "categories/assessment_centre_physical_measures.json"
+      },
+      {
+        "$comment": "Questionnaire routing R001: when the answer to f670 (Type of accommodation lived in) is one of: 4 = Sheltered accommodation; 5 = Care home, the participant was not asked f680 (Own or rent accommodation lived in), f709 (Number in household), f728 (Number of vehicles in household), f738 (Average total household income before tax), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they were living in a sheltered accommodation or in a care home\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f670"
+          ],
+          "properties": {
+            "f670": {
+              "enum": [
+                4,
+                5
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f680": {
+              "type": "null"
+            },
+            "f709": {
+              "type": "null"
+            },
+            "f728": {
+              "type": "null"
+            },
+            "f738": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R006: when the answer to f864 (Number of days/week walked 10+ minutes) is one of: -2 = Unable to walk, the participant was not asked f924 (Usual walking pace), f943 (Frequency of stair climbing in last 4 weeks), f6162 (Types of transport used (excluding work)), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they were unable to walk\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f864"
+          ],
+          "properties": {
+            "f864": {
+              "enum": [
+                -2
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f924": {
+              "type": "null"
+            },
+            "f943": {
+              "type": "null"
+            },
+            "f6162": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R007: when the answer to f864 (Number of days/week walked 10+ minutes) is one of: 0 = a count with that value; -1 = Do not know; -2 = Unable to walk; -3 = Prefer not to answer, the participant was not asked f874 (Duration of walks), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they walked for 10 minutes on at least 1 day per week in the previous 4 weeks\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f864"
+          ],
+          "properties": {
+            "f864": {
+              "enum": [
+                0,
+                -1,
+                -2,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f874": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R008: when the answer to f884 (Number of days/week of moderate physical activity 10+ minutes) is one of: 0 = a count with that value; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f894 (Duration of moderate activity), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they did moderate physical activities for 10 minutes on at least 1 day per week in the previous 4 weeks, as defined by their answers to questi\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f884"
+          ],
+          "properties": {
+            "f884": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f894": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R011: when the answer to f1110 (Length of mobile phone use) is one of: 0 = Never used mobile phone at least once per week; -3 = Prefer not to answer, the participant was not asked f1120 (Weekly usage of mobile phone in last 3 months), f1130 (Hands-free device/speakerphone use with mobile phone in last 3 month), f1140 (Difference in mobile phone use compared to two years previously), f1150 (Usual side of head for mobile phone use), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have used a mobile phone at least once per week in the past or do not know whether they have used or not\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1110"
+          ],
+          "properties": {
+            "f1110": {
+              "enum": [
+                0,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1120": {
+              "type": "null"
+            },
+            "f1130": {
+              "type": "null"
+            },
+            "f1140": {
+              "type": "null"
+            },
+            "f1150": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R012: when the answer to f1239 (Current tobacco smoking) is one of: 1 = Yes, on most or all days, the participant was not asked f1249 (Past tobacco smoking), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they currently smoke on most or all days\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1239"
+          ],
+          "properties": {
+            "f1239": {
+              "enum": [
+                1
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1249": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R013: when the answer to f1239 (Current tobacco smoking) is one of: 1 = Yes, on most or all days, the participant was not asked f1259 (Smoking/smokers in household), f1269 (Exposure to tobacco smoke at home), f1279 (Exposure to tobacco smoke outside home), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they currently smoke tobacco on most or all days\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1239"
+          ],
+          "properties": {
+            "f1239": {
+              "enum": [
+                1
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1259": {
+              "type": "null"
+            },
+            "f1269": {
+              "type": "null"
+            },
+            "f1279": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R014: when the answer to f1239 (Current tobacco smoking) is one of: 0 = No; 2 = Only occasionally; -3 = Prefer not to answer, the participant was not asked f3436 (Age started smoking in current smokers), f3446 (Type of tobacco currently smoked), f3486 (Ever tried to stop smoking), f3496 (Wants to stop smoking), f3506 (Smoking compared to 10 years previous), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they currently smoke tobacco on most or all days\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1239"
+          ],
+          "properties": {
+            "f1239": {
+              "enum": [
+                0,
+                2,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3436": {
+              "type": "null"
+            },
+            "f3446": {
+              "type": "null"
+            },
+            "f3486": {
+              "type": "null"
+            },
+            "f3496": {
+              "type": "null"
+            },
+            "f3506": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R016: when the answer to f1249 (Past tobacco smoking) is one of: 2 = Smoked occasionally; 3 = Just tried once or twice; 4 = I have never smoked; -3 = Prefer not to answer, the participant was not asked f2867 (Age started smoking in former smokers), f2877 (Type of tobacco previously smoked), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the past they smoked on most or all days\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1249"
+          ],
+          "properties": {
+            "f1249": {
+              "enum": [
+                2,
+                3,
+                4,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2867": {
+              "type": "null"
+            },
+            "f2877": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R017: when the answer to f1249 (Past tobacco smoking) is one of: 2 = Smoked occasionally; 3 = Just tried once or twice; 4 = I have never smoked; -3 = Prefer not to answer, the participant was not asked f2897 (Age stopped smoking), f2907 (Ever stopped smoking for 6+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the past they smoked tobacco on most or all days\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1249"
+          ],
+          "properties": {
+            "f1249": {
+              "enum": [
+                2,
+                3,
+                4,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2897": {
+              "type": "null"
+            },
+            "f2907": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R018: when the answer to f1249 (Past tobacco smoking) is one of: 1 = Smoked on most or all days; 4 = I have never smoked; -3 = Prefer not to answer, the participant was not asked f2644 (Light smokers, at least 100 smokes in lifetime), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they smoked occasionally or Just tried once or twice\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1249"
+          ],
+          "properties": {
+            "f1249": {
+              "enum": [
+                1,
+                4,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2644": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R025: when the answer to f1428 (Spread type) is one of: 0 = Never/rarely use spread; 1 = Butter/spreadable butter; 2 = Flora Pro-Active/Benecol; -3 = Prefer not to answer, the participant was not asked f2654 (Non-butter spread type details), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they mainly use another type of spread/margarine rather than butter/spreadable butter or do not know what they use, as defined by their answers to\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1428"
+          ],
+          "properties": {
+            "f1428": {
+              "enum": [
+                0,
+                1,
+                2,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2654": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R026: when the answer to f1438 (Bread intake) is one of: 0 = a count with that value; -10 = Less than one, the participant was not asked f1448 (Bread type), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated that they do not eat bread or less than one slice each week\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1438"
+          ],
+          "properties": {
+            "f1438": {
+              "enum": [
+                0,
+                -10
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1448": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R027: when the answer to f1458 (Cereal intake) is one of: 0 = a count with that value; -10 = Less than one, the participant was not asked f1468 (Cereal type), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated that they do not eat cereal or less than one bowl of cereal each week\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1458"
+          ],
+          "properties": {
+            "f1458": {
+              "enum": [
+                0,
+                -10
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1468": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R028: when the answer to f1498 (Coffee intake) is one of: 0 = a count with that value; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f1508 (Coffee type), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they drank at least 1 cup of coffee each day or less than one cup each day\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1498"
+          ],
+          "properties": {
+            "f1498": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1508": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R029: when the answer to f1558 (Alcohol intake frequency.) is one of: 6 = Never; -3 = Prefer not to answer, the participant was not asked f1618 (Alcohol usually taken with meals), f1628 (Alcohol intake versus 10 years previously), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they drink alcohol\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1558"
+          ],
+          "properties": {
+            "f1558": {
+              "enum": [
+                6,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1618": {
+              "type": "null"
+            },
+            "f1628": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R030: when the answer to f1558 (Alcohol intake frequency.) is one of: 4 = One to three times a month; 5 = Special occasions only; 6 = Never; -3 = Prefer not to answer, the participant was not asked f1568 (Average weekly red wine intake), f1578 (Average weekly champagne plus white wine intake), f1588 (Average weekly beer plus cider intake), f1598 (Average weekly spirits intake), f1608 (Average weekly fortified wine intake), f5364 (Average weekly intake of other alcoholic drinks), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they drink alcohol more often than once or twice a week\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1558"
+          ],
+          "properties": {
+            "f1558": {
+              "enum": [
+                4,
+                5,
+                6,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1568": {
+              "type": "null"
+            },
+            "f1578": {
+              "type": "null"
+            },
+            "f1588": {
+              "type": "null"
+            },
+            "f1598": {
+              "type": "null"
+            },
+            "f1608": {
+              "type": "null"
+            },
+            "f5364": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R031: when the answer to f1558 (Alcohol intake frequency.) is one of: 1 = Daily or almost daily; 2 = Three or four times a week; 3 = Once or twice a week; 6 = Never; -3 = Prefer not to answer, the participant was not asked f4407 (Average monthly red wine intake), f4418 (Average monthly champagne plus white wine intake), f4429 (Average monthly beer plus cider intake), f4440 (Average monthly spirits intake), f4451 (Average monthly fortified wine intake), f4462 (Average monthly intake of other alcoholic drinks), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they drink alcohol on special occasions or one to three times a month\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1558"
+          ],
+          "properties": {
+            "f1558": {
+              "enum": [
+                1,
+                2,
+                3,
+                6,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4407": {
+              "type": "null"
+            },
+            "f4418": {
+              "type": "null"
+            },
+            "f4429": {
+              "type": "null"
+            },
+            "f4440": {
+              "type": "null"
+            },
+            "f4451": {
+              "type": "null"
+            },
+            "f4462": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R032: when the answer to f1558 (Alcohol intake frequency.) is one of: 1 = Daily or almost daily; 2 = Three or four times a week; 3 = Once or twice a week; 4 = One to three times a month; 5 = Special occasions only; -3 = Prefer not to answer, the participant was not asked f3731 (Former alcohol drinker), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they never drink alcohol\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1558"
+          ],
+          "properties": {
+            "f1558": {
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3731": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R035: when the answer to f1647 (Country of birth (UK/elsewhere)) is one of: 1 = England; 2 = Wales; 3 = Scotland; 4 = Northern Ireland; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f3659 (Year immigrated to UK (United Kingdom)), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were born outside the United Kingdom\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1647"
+          ],
+          "properties": {
+            "f1647": {
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3659": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R037: when the answer to f1767 (Adopted as a child) is one of: 1 = Yes, the participant was not asked f1777 (Part of a multiple birth), f1787 (Maternal smoking around birth), f1797 (Father still alive), f1835 (Mother still alive), f5057 (Number of older siblings), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they were adopted as a child\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1767"
+          ],
+          "properties": {
+            "f1767": {
+              "enum": [
+                1
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1777": {
+              "type": "null"
+            },
+            "f1787": {
+              "type": "null"
+            },
+            "f1797": {
+              "type": "null"
+            },
+            "f1835": {
+              "type": "null"
+            },
+            "f5057": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R038: when the answer to f1767 (Adopted as a child) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f3912 (Adopted father still alive), f3942 (Adopted mother still alive), f3972 (Number of adopted brothers), f3982 (Number of adopted sisters), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were adopted as a child\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1767"
+          ],
+          "properties": {
+            "f1767": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3912": {
+              "type": "null"
+            },
+            "f3942": {
+              "type": "null"
+            },
+            "f3972": {
+              "type": "null"
+            },
+            "f3982": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R039: when the answer to f1767 (Adopted as a child) is one of: 1 = Yes; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f1873 (Number of full brothers), f1883 (Number of full sisters), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were not adopted as a child\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f1767"
+          ],
+          "properties": {
+            "f1767": {
+              "enum": [
+                1,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1873": {
+              "type": "null"
+            },
+            "f1883": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R042: when the answer to f2139 (Age first had sexual intercourse) is one of: -2 = Never had sex, the participant was not asked f2149 (Lifetime number of sexual partners), f2159 (Ever had same-sex intercourse), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they never had had sexual intercourse\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2139"
+          ],
+          "properties": {
+            "f2139": {
+              "enum": [
+                -2
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2149": {
+              "type": "null"
+            },
+            "f2159": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R043: when the answer to f2159 (Ever had same-sex intercourse) is one of: 0 = No; -3 = Prefer not to answer, the participant was not asked f3669 (Lifetime number of same-sex sexual partners), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they had had sexual intercourse with someone of the same sex\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2159"
+          ],
+          "properties": {
+            "f2159": {
+              "enum": [
+                0,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3669": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R044: when the answer to f2207 (Wears glasses or contact lenses) is one of: 0 = No; -3 = Prefer not to answer, the participant was not asked f2217 (Age started wearing glasses or contact lenses), f6147 (Reason for glasses/contact lenses), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear glasses or contact lenses to correct their vision\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2207"
+          ],
+          "properties": {
+            "f2207": {
+              "enum": [
+                0,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2217": {
+              "type": "null"
+            },
+            "f6147": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R045: when the answer to f2247 (Hearing difficulty/problems) is one of: 99 = I am completely deaf, the participant was not asked f2257 (Hearing difficulty/problems with background noise), f3393 (Hearing aid user), f4792 (Cochlear implant), f4803 (Tinnitus), f4825 (Noisy workplace), f4836 (Loud music exposure frequency), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they were completely deaf\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2247"
+          ],
+          "properties": {
+            "f2247": {
+              "enum": [
+                99
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2257": {
+              "type": "null"
+            },
+            "f3393": {
+              "type": "null"
+            },
+            "f4792": {
+              "type": "null"
+            },
+            "f4803": {
+              "type": "null"
+            },
+            "f4825": {
+              "type": "null"
+            },
+            "f4836": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R047: when the answer to f2335 (Chest pain or discomfort) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f3606 (Chest pain or discomfort walking normally), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they get pain or discomfort in their chest\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2335"
+          ],
+          "properties": {
+            "f2335": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3606": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R049: when the answer to f2345 (Ever had bowel cancer screening) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f2355 (Most recent bowel cancer screening), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have had a screening test for bowel (colorectal) cancer\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2345"
+          ],
+          "properties": {
+            "f2345": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2355": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R050: when the answer to f2365 (Ever had prostate specific antigen (PSA) test) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f3809 (Time since last prostate specific antigen (PSA) test), so the cell is empty (null). Source, related.txt: \"collected from men who indicated that they have had a blood test for prostate cancer\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2365"
+          ],
+          "properties": {
+            "f2365": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3809": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R051: when the answer to f2443 (Diabetes diagnosed by doctor) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f4041 (Gestational diabetes only), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that a doctor had told them they had diabetes\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2443"
+          ],
+          "properties": {
+            "f2443": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4041": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R053: when the answer to f2463 (Fractured/broken bones in last 5 years) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f3005 (Fracture resulting from simple fall), f6151 (Fractured bone site(s)), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have had fractured/broken bones in the last 5 years\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2463"
+          ],
+          "properties": {
+            "f2463": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3005": {
+              "type": "null"
+            },
+            "f6151": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R054: when the answer to f2674 (Ever had breast cancer screening / mammogram) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f2684 (Years since last breast cancer screening / mammogram), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that they had been for a mammogram\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2674"
+          ],
+          "properties": {
+            "f2674": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2684": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R055: when the answer to f2694 (Ever had cervical smear test) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f2704 (Years since last cervical smear test), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that they had had a cervical smear test\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2694"
+          ],
+          "properties": {
+            "f2694": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2704": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R056: when the answer to f2724 (Had menopause) is one of: 1 = Yes; 2 = Not sure - had a hysterectomy, the participant was not asked f3720 (Menstruating today), so the cell is empty (null). Source, related.txt: \"collected from participants women except those who indicated that their periods had stopped (menopause) or not sure (had a hysterectomy)\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2724"
+          ],
+          "properties": {
+            "f2724": {
+              "enum": [
+                1,
+                2
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3720": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R057: when the answer to f2724 (Had menopause) is one of: 2 = Not sure - had a hysterectomy, the participant was not asked f3591 (Ever had hysterectomy (womb removed)), so the cell is empty (null). Source, related.txt: \"collected from participants women except those who indicated they have had a hysterectomy (womb removed)\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2724"
+          ],
+          "properties": {
+            "f2724": {
+              "enum": [
+                2
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3591": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R058: when the answer to f2724 (Had menopause) is one of: 1 = Yes; 2 = Not sure - had a hysterectomy; 3 = Not sure - other reason; -3 = Prefer not to answer, the participant was not asked f3700 (Time since last menstrual period), f3710 (Length of menstrual cycle), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that their periods had not stopped (menopause)\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2724"
+          ],
+          "properties": {
+            "f2724": {
+              "enum": [
+                1,
+                2,
+                3,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3700": {
+              "type": "null"
+            },
+            "f3710": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R059: when the answer to f2724 (Had menopause) is one of: 0 = No; 2 = Not sure - had a hysterectomy; 3 = Not sure - other reason; -3 = Prefer not to answer, the participant was not asked f3581 (Age at menopause (last menstrual period)), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that their periods had stopped\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2724"
+          ],
+          "properties": {
+            "f2724": {
+              "enum": [
+                0,
+                2,
+                3,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3581": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R061: when the answer to f2734 (Number of live births) is one of: 0 = a count with that value; -3 = Prefer not to answer, the participant was not asked f2744 (Birth weight of first child), so the cell is empty (null). Source, related.txt: \"collected from women who indicated they had given birth to at least one child\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2734"
+          ],
+          "properties": {
+            "f2734": {
+              "enum": [
+                0,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2744": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R062: when the answer to f2734 (Number of live births) is one of: 0 = a count with that value; 1 = a count with that value; -3 = Prefer not to answer, the participant was not asked f2754 (Age at first live birth), f2764 (Age at last live birth), so the cell is empty (null). Source, related.txt: \"collected from women who indicated they had given birth to more than one child\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2734"
+          ],
+          "properties": {
+            "f2734": {
+              "enum": [
+                0,
+                1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2754": {
+              "type": "null"
+            },
+            "f2764": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R063: when the answer to f2734 (Number of live births) is anything other than 1, the participant was not asked f3872 (Age of primiparous women at birth of child), so the cell is empty (null). Source, related.txt: \"collected from women who indicated they had given birth to only one child\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2734"
+          ],
+          "properties": {
+            "f2734": {
+              "not": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      1
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3872": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R064: when the answer to f2774 (Ever had stillbirth, spontaneous miscarriage or termination) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f3829 (Number of stillbirths), f3839 (Number of spontaneous miscarriages), f3849 (Number of pregnancy terminations), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that they had had a stillbirth, spontaneous miscarriage or termination\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2774"
+          ],
+          "properties": {
+            "f2774": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3829": {
+              "type": "null"
+            },
+            "f3839": {
+              "type": "null"
+            },
+            "f3849": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R065: when the answer to f2784 (Ever taken oral contraceptive pill) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f2794 (Age started oral contraceptive pill), f2804 (Age when last used oral contraceptive pill), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that they had taken the contraceptive pill\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2784"
+          ],
+          "properties": {
+            "f2784": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2794": {
+              "type": "null"
+            },
+            "f2804": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R066: when the answer to f2814 (Ever used hormone-replacement therapy (HRT)) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f3536 (Age started hormone-replacement therapy (HRT)), f3546 (Age last used hormone-replacement therapy (HRT)), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that they had used HRT\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2814"
+          ],
+          "properties": {
+            "f2814": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3536": {
+              "type": "null"
+            },
+            "f3546": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R067: when the answer to f2834 (Bilateral oophorectomy (both ovaries removed)) is one of: 0 = No; -5 = Not sure; -3 = Prefer not to answer, the participant was not asked f3882 (Age at bilateral oophorectomy (both ovaries removed)), so the cell is empty (null). Source, related.txt: \"collected from women who indicated that they had had both ovaries removed\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f2834"
+          ],
+          "properties": {
+            "f2834": {
+              "enum": [
+                0,
+                -5,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3882": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R079: when the answer to f4598 (Ever depressed for a whole week) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f4609 (Longest period of depression), f4620 (Number of depression episodes), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have felt depressed or down for at least a whole week\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f4598"
+          ],
+          "properties": {
+            "f4598": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4609": {
+              "type": "null"
+            },
+            "f4620": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R080: when the answer to f4631 (Ever unenthusiastic/disinterested for a whole week) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f5375 (Longest period of unenthusiasm / disinterest), f5386 (Number of unenthusiastic/disinterested episodes), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have been uninterested in things or unable to enjoy things they used to for at least a week\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f4631"
+          ],
+          "properties": {
+            "f4631": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5375": {
+              "type": "null"
+            },
+            "f5386": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R083: when the answer to f4728 (Leg pain on walking) is one of: 0 = No; -1 = Do not know; -3 = Prefer not to answer, the participant was not asked f5452 (Leg pain when standing still or sitting), f5463 (Leg pain in calf/calves), f5474 (Leg pain when walking uphill or hurrying), f5485 (Leg pain when walking normally), f5507 (Leg pain on walking : action taken), f5518 (Leg pain on walking : effect of standing still), f5529 (Surgery on leg arteries (other than for varicose veins)), f5540 (Surgery/amputation of toe or leg), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they get a pain in either leg on walking\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f4728"
+          ],
+          "properties": {
+            "f4728": {
+              "enum": [
+                0,
+                -1,
+                -3
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5452": {
+              "type": "null"
+            },
+            "f5463": {
+              "type": "null"
+            },
+            "f5474": {
+              "type": "null"
+            },
+            "f5485": {
+              "type": "null"
+            },
+            "f5507": {
+              "type": "null"
+            },
+            "f5518": {
+              "type": "null"
+            },
+            "f5529": {
+              "type": "null"
+            },
+            "f5540": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R088: when the selections for f6138 (Qualifications) include 1 = College or University degree, the participant was not asked f845 (Age completed full time education), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated they have a College or University degree\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6138"
+          ],
+          "properties": {
+            "f6138": {
+              "type": "array",
+              "contains": {
+                "const": 1
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f845": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R089: when the selections for f6142 (Current employment status) do not include 1 = In paid employment or self-employed, the participant was not asked f757 (Time employed in main current job), f767 (Length of working week for main job), f777 (Frequency of travelling from home to job workplace), f806 (Job involves mainly walking or standing), f816 (Job involves heavy manual or physical work), f826 (Job involves shift work), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were in paid employment or self-employed\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6142"
+          ],
+          "properties": {
+            "f6142": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f757": {
+              "type": "null"
+            },
+            "f767": {
+              "type": "null"
+            },
+            "f777": {
+              "type": "null"
+            },
+            "f806": {
+              "type": "null"
+            },
+            "f816": {
+              "type": "null"
+            },
+            "f826": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R091: when the selections for f6144 (Never eat eggs, dairy, wheat, sugar) include 2 = Dairy products, the participant was not asked f1408 (Cheese intake), so the cell is empty (null). Source, related.txt: \"collected from participants except those who indicated that they never eat dairy products\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6144"
+          ],
+          "properties": {
+            "f6144": {
+              "type": "array",
+              "contains": {
+                "const": 2
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1408": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R092: when the selections for f6147 (Reason for glasses/contact lenses) do not include 4 = For 'astigmatism', the participant was not asked f5855 (Which eye(s) affected by astigmatism), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear glasses or contact lenses to correct their astigmatism\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6147"
+          ],
+          "properties": {
+            "f6147": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 4
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5855": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R093: when the selections for f6147 (Reason for glasses/contact lenses) do not include 2 = For long-sightedness, i.e. for distance and near, but particularly for near tasks like reading (called 'hypermetropia'), the participant was not asked f5832 (Which eye(s) affected by hypermetropia (long sight)), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear glasses or contact lenses to correct their hypermetropia\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6147"
+          ],
+          "properties": {
+            "f6147": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 2
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5832": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R094: when the selections for f6147 (Reason for glasses/contact lenses) do not include 1 = For short-sightedness, i.e. only or mainly for distance viewing such as driving, cinema etc (called 'myopia'), the participant was not asked f5843 (Which eye(s) affected by myopia (short sight)), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear glasses or contact lenses to correct their myopia\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6147"
+          ],
+          "properties": {
+            "f6147": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5843": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R095: when the selections for f6147 (Reason for glasses/contact lenses) do not include 7 = Other eye condition, the participant was not asked f5877 (Which eye(s) affected by other eye condition), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear glasses or contact lenses to correct their other type of eye condition (not myopia, hypermetropia, presbyopia, astigmatism, strabismus o\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6147"
+          ],
+          "properties": {
+            "f6147": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 7
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5877": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R096: when the selections for f6147 (Reason for glasses/contact lenses) do not include 3 = For just reading/near work as you are getting older (called 'presbyopia'), the participant was not asked f5610 (Which eye(s) affected by presbyopia), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear glasses or contact lenses to correct their presbyopia\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6147"
+          ],
+          "properties": {
+            "f6147": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 3
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5610": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R097: when the selections for f6147 (Reason for glasses/contact lenses) do not include 5 = For a 'squint' or 'turn' in an eye since childhood (called 'strabismus'), the participant was not asked f6205 (Which eye(s) affected by strabismus (squint)), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear glasses or contact lenses to correct their strabismus\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6147"
+          ],
+          "properties": {
+            "f6147": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 5
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f6205": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R098: when the selections for f6147 (Reason for glasses/contact lenses) do not include 6 = For a 'lazy' eye or an eye with poor vision since childhood (called 'amblyopia'), the participant was not asked f5408 (Which eye(s) affected by amblyopia (lazy eye)), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they wear prescribed glasses or contact lenses to correct their amblyopia\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6147"
+          ],
+          "properties": {
+            "f6147": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 6
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5408": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R099: when the selections for f6148 (Eye problems/disorders) do not include 6 = Other serious eye condition, the participant was not asked f5945 (Age other serious eye condition diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have another serious eye condition (i.e. not diabetes, glaucoma, trauma, cataract or macular degeneration), as defined by their answers to F\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6148"
+          ],
+          "properties": {
+            "f6148": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 6
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5945": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R100: when the selections for f6148 (Eye problems/disorders) do not include 4 = Cataract, the participant was not asked f4700 (Age cataract diagnosed), f5441 (Which eye(s) are affected by cataract), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have cataract\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6148"
+          ],
+          "properties": {
+            "f6148": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 4
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4700": {
+              "type": "null"
+            },
+            "f5441": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R101: when the selections for f6148 (Eye problems/disorders) do not include 1 = Diabetes related eye disease, the participant was not asked f5890 (Which eye(s) affected by diabetes-related eye disease), f5901 (Age when diabetes-related eye disease diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have diabetes related eye disease\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6148"
+          ],
+          "properties": {
+            "f6148": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5890": {
+              "type": "null"
+            },
+            "f5901": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R102: when the selections for f6148 (Eye problems/disorders) do not include 2 = Glaucoma, the participant was not asked f4689 (Age glaucoma diagnosed), f6119 (Which eye(s) affected by glaucoma), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have glaucoma\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6148"
+          ],
+          "properties": {
+            "f6148": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 2
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4689": {
+              "type": "null"
+            },
+            "f6119": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R103: when the selections for f6148 (Eye problems/disorders) do not include 3 = Injury or trauma resulting in loss of vision, the participant was not asked f5419 (Which eye(s) affected by injury or trauma resulting in loss of vision), f5430 (Age when loss of vision due to injury or trauma diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have had an injury or trauma resulting in loss of vision\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6148"
+          ],
+          "properties": {
+            "f6148": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 3
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5419": {
+              "type": "null"
+            },
+            "f5430": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R104: when the selections for f6148 (Eye problems/disorders) do not include 5 = Macular degeneration, the participant was not asked f5912 (Which eye(s) affected by macular degeneration), f5923 (Age macular degeneration diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have macular degeneration\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6148"
+          ],
+          "properties": {
+            "f6148": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 5
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5912": {
+              "type": "null"
+            },
+            "f5923": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R105: when the selections for f6148 (Eye problems/disorders) do not include 6 = Other serious eye condition, the participant was not asked f5934 (Which eye(s) affected by other serious eye condition), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they have other serious eye condition (i.e. not diabetes, glaucoma, trauma, cataract or macular degeneration)\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6148"
+          ],
+          "properties": {
+            "f6148": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 6
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f5934": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R106: when the selections for f6150 (Vascular/heart problems diagnosed by doctor) do not include 1 = Heart attack, the participant was not asked f3894 (Age heart attack diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had a heart attack\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6150"
+          ],
+          "properties": {
+            "f6150": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3894": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R107: when the selections for f6150 (Vascular/heart problems diagnosed by doctor) do not include 3 = Stroke, the participant was not asked f4056 (Age stroke diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had a stroke\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6150"
+          ],
+          "properties": {
+            "f6150": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 3
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4056": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R108: when the selections for f6150 (Vascular/heart problems diagnosed by doctor) do not include 2 = Angina, the participant was not asked f3627 (Age angina diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had an angina\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6150"
+          ],
+          "properties": {
+            "f6150": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 2
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3627": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R109: when the selections for f6150 (Vascular/heart problems diagnosed by doctor) do not include 4 = High blood pressure, the participant was not asked f2966 (Age high blood pressure diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had high blood pressure\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6150"
+          ],
+          "properties": {
+            "f6150": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 4
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2966": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R110: when the selections for f6152 (Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor) do not include 5 = Blood clot in the leg (DVT), the participant was not asked f4012 (Age deep-vein thrombosis (DVT, blood clot in leg) diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had a Blood clot in the leg (DVT)\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6152"
+          ],
+          "properties": {
+            "f6152": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 5
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4012": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R111: when the selections for f6152 (Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor) do not include 7 = Blood clot in the lung, the participant was not asked f4022 (Age pulmonary embolism (blood clot in lung) diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had a blood clot in the lung\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6152"
+          ],
+          "properties": {
+            "f6152": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 7
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4022": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R112: when the selections for f6152 (Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor) do not include 8 = Asthma, the participant was not asked f3786 (Age asthma diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had asthma\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6152"
+          ],
+          "properties": {
+            "f6152": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 8
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3786": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R113: when the selections for f6152 (Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor) do not include 6 = Emphysema/chronic bronchitis, the participant was not asked f3992 (Age emphysema/chronic bronchitis diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had emphysema or chronic bronchitis\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6152"
+          ],
+          "properties": {
+            "f6152": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 6
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3992": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R114: when the selections for f6152 (Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor) do not include 9 = Hayfever, allergic rhinitis or eczema, the participant was not asked f3761 (Age hay fever, rhinitis or eczema diagnosed), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated they were told by a doctor that they have had hayfever, allergic rhinitis or eczema\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6152"
+          ],
+          "properties": {
+            "f6152": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 9
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3761": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R115: when the selections for f6159 (Pain type(s) experienced in last month) do not include 4 = Back pain, the participant was not asked f3571 (Back pain for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced back pain that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 4
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3571": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R116: when the selections for f6159 (Pain type(s) experienced in last month) do not include 2 = Facial pain, the participant was not asked f4067 (Facial pains for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced facial pain that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 2
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f4067": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R117: when the selections for f6159 (Pain type(s) experienced in last month) do not include 1 = Headache, the participant was not asked f3799 (Headaches for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced headache that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3799": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R118: when the selections for f6159 (Pain type(s) experienced in last month) do not include 6 = Hip pain, the participant was not asked f3414 (Hip pain for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced hip pain that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 6
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3414": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R119: when the selections for f6159 (Pain type(s) experienced in last month) do not include 7 = Knee pain, the participant was not asked f3773 (Knee pain for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced knee pain that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 7
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3773": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R120: when the selections for f6159 (Pain type(s) experienced in last month) do not include 3 = Neck or shoulder pain, the participant was not asked f3404 (Neck/shoulder pain for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced neck or shoulder pain that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 3
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3404": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R121: when the selections for f6159 (Pain type(s) experienced in last month) do not include 8 = Pain all over the body, the participant was not asked f2956 (General pain for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced pain all over the body that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 8
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2956": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R122: when the selections for f6159 (Pain type(s) experienced in last month) do not include 5 = Stomach or abdominal pain, the participant was not asked f3741 (Stomach/abdominal pain for 3+ months), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that in the last month they experienced stomach or abdominal pain that interfered with their usual activities\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6159"
+          ],
+          "properties": {
+            "f6159": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 5
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3741": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R123: when the selections for f6164 (Types of physical activity in last 4 weeks) do not include 5 = Heavy DIY (eg: weeding, lawn mowing, carpentry, digging), the participant was not asked f2624 (Frequency of heavy DIY in last 4 weeks), f2634 (Duration of heavy DIY), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they spent time doing heavy DIY (e.g. weeding, lawn mowing, carpentry, digging) in the previous 4 weeks, as defined by their answers to\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6164"
+          ],
+          "properties": {
+            "f6164": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 5
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f2624": {
+              "type": "null"
+            },
+            "f2634": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R124: when the selections for f6164 (Types of physical activity in last 4 weeks) do not include 4 = Light DIY (eg: pruning, watering the lawn), the participant was not asked f1011 (Frequency of light DIY in last 4 weeks), f1021 (Duration of light DIY), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they spent time doing light DIY (e.g. pruning, watering the lawn) in the previous 4 weeks\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6164"
+          ],
+          "properties": {
+            "f6164": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 4
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f1011": {
+              "type": "null"
+            },
+            "f1021": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R125: when the selections for f6164 (Types of physical activity in last 4 weeks) do not include 2 = Other exercises (eg: swimming, cycling, keep fit, bowling), the participant was not asked f3637 (Frequency of other exercises in last 4 weeks), f3647 (Duration of other exercises), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they spent time doing other exercises (e.g. swimming, cycling, keep fit, bowling) in the previous 4 weeks, as defined by their answers to\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6164"
+          ],
+          "properties": {
+            "f6164": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 2
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f3637": {
+              "type": "null"
+            },
+            "f3647": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R126: when the selections for f6164 (Types of physical activity in last 4 weeks) do not include 3 = Strenuous sports, the participant was not asked f991 (Frequency of strenuous sports in last 4 weeks), f1001 (Duration of strenuous sports), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they spent time doing strenuous sports in the previous 4 weeks\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6164"
+          ],
+          "properties": {
+            "f6164": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 3
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f991": {
+              "type": "null"
+            },
+            "f1001": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      {
+        "$comment": "Questionnaire routing R127: when the selections for f6164 (Types of physical activity in last 4 weeks) do not include 1 = Walking for pleasure (not as a means of transport), the participant was not asked f971 (Frequency of walking for pleasure in last 4 weeks), f981 (Duration walking for pleasure), so the cell is empty (null). Source, related.txt: \"collected from participants who indicated that they spent time walking for pleasure in the previous 4 weeks\" (D049, D051). Skip half only: an empty cell is legal everywhere, so there is no reverse rule (D048).",
+        "if": {
+          "required": [
+            "f6164"
+          ],
+          "properties": {
+            "f6164": {
+              "type": "array",
+              "not": {
+                "contains": {
+                  "const": 1
+                }
+              }
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "f971": {
+              "type": "null"
+            },
+            "f981": {
+              "type": "null"
+            }
+          }
+        }
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

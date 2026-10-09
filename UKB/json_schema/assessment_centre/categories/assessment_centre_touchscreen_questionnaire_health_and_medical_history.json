@@ -1,0 +1,4033 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/assessment_centre/categories/assessment_centre_touchscreen_questionnaire_health_and_medical_history.json",
+  "title": "Assessment centre — Touchscreen questionnaire: Health and medical history",
+  "description": "UK Biobank fields in the category Assessment centre > Touchscreen questionnaire > Health and medical history, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "assessment_centre_touchscreen_questionnaire_health_and_medical_history",
+  "properties": {
+    "f2178": {
+      "title": "Overall health rating",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Excellent"
+        },
+        {
+          "const": 2,
+          "title": "Good"
+        },
+        {
+          "const": 3,
+          "title": "Fair"
+        },
+        {
+          "const": 4,
+          "title": "Poor"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100508. Initial assessment visit (instance 0)."
+    },
+    "f2188": {
+      "title": "Long-standing illness, disability or infirmity",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2207": {
+      "title": "Wears glasses or contact lenses",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100352. Initial assessment visit (instance 0)."
+    },
+    "f2217": {
+      "title": "Age started wearing glasses or contact lenses",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2227": {
+      "title": "Other eye problems",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100352. Initial assessment visit (instance 0)."
+    },
+    "f2247": {
+      "title": "Hearing difficulty/problems",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 99,
+          "title": "I am completely deaf"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100631. Initial assessment visit (instance 0)."
+    },
+    "f2257": {
+      "title": "Hearing difficulty/problems with background noise",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2296": {
+      "title": "Falls in the last year",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "No falls"
+        },
+        {
+          "const": 2,
+          "title": "Only one fall"
+        },
+        {
+          "const": 3,
+          "title": "More than one fall"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100539. Initial assessment visit (instance 0)."
+    },
+    "f2306": {
+      "title": "Weight change compared with 1 year ago",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No - weigh about the same"
+        },
+        {
+          "const": 2,
+          "title": "Yes - gained weight"
+        },
+        {
+          "const": 3,
+          "title": "Yes - lost weight"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100540. Initial assessment visit (instance 0)."
+    },
+    "f2316": {
+      "title": "Wheeze or whistling in the chest in last year",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2335": {
+      "title": "Chest pain or discomfort",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2345": {
+      "title": "Ever had bowel cancer screening",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2355": {
+      "title": "Most recent bowel cancer screening",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -10,
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -10,
+          "title": "Less than 1 year ago"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100567. Initial assessment visit (instance 0)."
+    },
+    "f2365": {
+      "title": "Ever had prostate specific antigen (PSA) test",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2415": {
+      "title": "Had major operations",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes - you will be asked about this later by an interviewer"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100603. Initial assessment visit (instance 0)."
+    },
+    "f2443": {
+      "title": "Diabetes diagnosed by doctor",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2453": {
+      "title": "Cancer diagnosed by doctor",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes - you will be asked about this later by an interviewer"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100603. Initial assessment visit (instance 0)."
+    },
+    "f2463": {
+      "title": "Fractured/broken bones in last 5 years",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2473": {
+      "title": "Other serious medical condition/disability diagnosed by doctor",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes - you will be asked about this later by an interviewer"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100603. Initial assessment visit (instance 0)."
+    },
+    "f2492": {
+      "title": "Taking other prescription medications",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes - you will be asked about this later by an interviewer"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100603. Initial assessment visit (instance 0)."
+    },
+    "f2844": {
+      "title": "Had other major operations",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes - you will be asked about this later by an interviewer"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100603. Initial assessment visit (instance 0)."
+    },
+    "f2956": {
+      "title": "General pain for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f2966": {
+      "title": "Age high blood pressure diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2976": {
+      "title": "Age diabetes diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f2986": {
+      "title": "Started insulin within one year diagnosis of diabetes",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3005": {
+      "title": "Fracture resulting from simple fall",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3393": {
+      "title": "Hearing aid user",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100352. Initial assessment visit (instance 0)."
+    },
+    "f3404": {
+      "title": "Neck/shoulder pain for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3414": {
+      "title": "Hip pain for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3571": {
+      "title": "Back pain for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3606": {
+      "title": "Chest pain or discomfort walking normally",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Unable to walk on the level"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100563. Initial assessment visit (instance 0)."
+    },
+    "f3616": {
+      "title": "Chest pain due to walking ceases when standing still",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3627": {
+      "title": "Age angina diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3741": {
+      "title": "Stomach/abdominal pain for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3751": {
+      "title": "Chest pain or discomfort when walking uphill or hurrying",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Unable to walk up hills or to hurry"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100564. Initial assessment visit (instance 0)."
+    },
+    "f3761": {
+      "title": "Age hay fever, rhinitis or eczema diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3773": {
+      "title": "Knee pain for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3786": {
+      "title": "Age asthma diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3799": {
+      "title": "Headaches for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f3809": {
+      "title": "Time since last prostate specific antigen (PSA) test",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -10,
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -10,
+          "title": "Less than a year ago"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100569. Initial assessment visit (instance 0)."
+    },
+    "f3894": {
+      "title": "Age heart attack diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f3992": {
+      "title": "Age emphysema/chronic bronchitis diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4012": {
+      "title": "Age deep-vein thrombosis (DVT, blood clot in leg) diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4022": {
+      "title": "Age pulmonary embolism (blood clot in lung) diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4041": {
+      "title": "Gestational diabetes only",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -2,
+          "title": "Not applicable"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100617. Initial assessment visit (instance 0)."
+    },
+    "f4056": {
+      "title": "Age stroke diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4067": {
+      "title": "Facial pains for 3+ months",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f4689": {
+      "title": "Age glaucoma diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4700": {
+      "title": "Age cataract diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f4717": {
+      "title": "Shortness of breath walking on level ground",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f4728": {
+      "title": "Leg pain on walking",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f4792": {
+      "title": "Cochlear implant",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100352. Initial assessment visit (instance 0)."
+    },
+    "f4803": {
+      "title": "Tinnitus",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No, never"
+        },
+        {
+          "const": 11,
+          "title": "Yes, now most or all of the time"
+        },
+        {
+          "const": 12,
+          "title": "Yes, now a lot of the time"
+        },
+        {
+          "const": 13,
+          "title": "Yes, now some of the time"
+        },
+        {
+          "const": 14,
+          "title": "Yes, but not now, but have in the past"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100635. Initial assessment visit (instance 0)."
+    },
+    "f4814": {
+      "title": "Tinnitus severity/nuisance",
+      "oneOf": [
+        {
+          "const": 4,
+          "title": "Not at all"
+        },
+        {
+          "const": 11,
+          "title": "Severely"
+        },
+        {
+          "const": 12,
+          "title": "Moderately"
+        },
+        {
+          "const": 13,
+          "title": "Slightly"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100636. Initial assessment visit (instance 0)."
+    },
+    "f4825": {
+      "title": "Noisy workplace",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 11,
+          "title": "Yes, for more than 5 years"
+        },
+        {
+          "const": 12,
+          "title": "Yes, for around 1-5 years"
+        },
+        {
+          "const": 13,
+          "title": "Yes, for less than a year"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100637. Initial assessment visit (instance 0)."
+    },
+    "f4836": {
+      "title": "Loud music exposure frequency",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 11,
+          "title": "Yes, for more than 5 years"
+        },
+        {
+          "const": 12,
+          "title": "Yes, for around 1-5 years"
+        },
+        {
+          "const": 13,
+          "title": "Yes, for less than a year"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100637. Initial assessment visit (instance 0)."
+    },
+    "f5408": {
+      "title": "Which eye(s) affected by amblyopia (lazy eye)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5419": {
+      "title": "Which eye(s) affected by injury or trauma resulting in loss of vision",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5430": {
+      "title": "Age when loss of vision due to injury or trauma diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f5441": {
+      "title": "Which eye(s) are affected by cataract",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5452": {
+      "title": "Leg pain when standing still or sitting",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5463": {
+      "title": "Leg pain in calf/calves",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5474": {
+      "title": "Leg pain when walking uphill or hurrying",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5485": {
+      "title": "Leg pain when walking normally",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5496": {
+      "title": "Leg pain when walking ever disappears while walking",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5507": {
+      "title": "Leg pain on walking : action taken",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Stop"
+        },
+        {
+          "const": 2,
+          "title": "Slow down"
+        },
+        {
+          "const": 3,
+          "title": "Continue at same pace"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100549. Initial assessment visit (instance 0)."
+    },
+    "f5518": {
+      "title": "Leg pain on walking : effect of standing still",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Pain usually continues for more than 10 minutes"
+        },
+        {
+          "const": 2,
+          "title": "Pain usually disappears in less than 10 minutes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100550. Initial assessment visit (instance 0)."
+    },
+    "f5529": {
+      "title": "Surgery on leg arteries (other than for varicose veins)",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f5540": {
+      "title": "Surgery/amputation of toe or leg",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes, toes"
+        },
+        {
+          "const": 2,
+          "title": "Yes, leg below the knee"
+        },
+        {
+          "const": 3,
+          "title": "Yes, leg above the knee"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100552. Initial assessment visit (instance 0)."
+    },
+    "f5610": {
+      "title": "Which eye(s) affected by presbyopia",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5832": {
+      "title": "Which eye(s) affected by hypermetropia (long sight)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5843": {
+      "title": "Which eye(s) affected by myopia (short sight)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5855": {
+      "title": "Which eye(s) affected by astigmatism",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5877": {
+      "title": "Which eye(s) affected by other eye condition",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5890": {
+      "title": "Which eye(s) affected by diabetes-related eye disease",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5901": {
+      "title": "Age when diabetes-related eye disease diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f5912": {
+      "title": "Which eye(s) affected by macular degeneration",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5923": {
+      "title": "Age macular degeneration diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f5934": {
+      "title": "Which eye(s) affected by other serious eye condition",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f5945": {
+      "title": "Age other serious eye condition diagnosed",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "integer",
+          "not": {
+            "enum": [
+              -3,
+              -1
+            ]
+          }
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100291. Initial assessment visit (instance 0)."
+    },
+    "f6119": {
+      "title": "Which eye(s) affected by glaucoma",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f6147": {
+      "title": "Reason for glasses/contact lenses",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "For short-sightedness, i.e. only or mainly for distance viewing such as driving, cinema etc (called 'myopia')"
+              },
+              {
+                "const": 2,
+                "title": "For long-sightedness, i.e. for distance and near, but particularly for near tasks like reading (called 'hypermetropia')"
+              },
+              {
+                "const": 3,
+                "title": "For just reading/near work as you are getting older (called 'presbyopia')"
+              },
+              {
+                "const": 4,
+                "title": "For 'astigmatism'"
+              },
+              {
+                "const": 5,
+                "title": "For a 'squint' or 'turn' in an eye since childhood (called 'strabismus')"
+              },
+              {
+                "const": 6,
+                "title": "For a 'lazy' eye or an eye with poor vision since childhood (called 'amblyopia')"
+              },
+              {
+                "const": 7,
+                "title": "Other eye condition"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "For short-sightedness, i.e. only or mainly for distance viewing such as driving, cinema etc (called 'myopia')"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "For long-sightedness, i.e. for distance and near, but particularly for near tasks like reading (called 'hypermetropia')"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "For just reading/near work as you are getting older (called 'presbyopia')"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "For 'astigmatism'"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "For a 'squint' or 'turn' in an eye since childhood (called 'strabismus')"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "For a 'lazy' eye or an eye with poor vision since childhood (called 'amblyopia')"
+        },
+        {
+          "const": [
+            7
+          ],
+          "title": "Other eye condition"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100514. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6148": {
+      "title": "Eye problems/disorders",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Diabetes related eye disease"
+              },
+              {
+                "const": 2,
+                "title": "Glaucoma"
+              },
+              {
+                "const": 3,
+                "title": "Injury or trauma resulting in loss of vision"
+              },
+              {
+                "const": 4,
+                "title": "Cataract"
+              },
+              {
+                "const": 5,
+                "title": "Macular degeneration"
+              },
+              {
+                "const": 6,
+                "title": "Other serious eye condition"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Diabetes related eye disease"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Glaucoma"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Injury or trauma resulting in loss of vision"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Cataract"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Macular degeneration"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Other serious eye condition"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100523. Up to 5 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6149": {
+      "title": "Mouth/teeth dental problems",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Mouth ulcers"
+              },
+              {
+                "const": 2,
+                "title": "Painful gums"
+              },
+              {
+                "const": 3,
+                "title": "Bleeding gums"
+              },
+              {
+                "const": 4,
+                "title": "Loose teeth"
+              },
+              {
+                "const": 5,
+                "title": "Toothache"
+              },
+              {
+                "const": 6,
+                "title": "Dentures"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Mouth ulcers"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Painful gums"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Bleeding gums"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Loose teeth"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Toothache"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Dentures"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100538. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6150": {
+      "title": "Vascular/heart problems diagnosed by doctor",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Heart attack"
+              },
+              {
+                "const": 2,
+                "title": "Angina"
+              },
+              {
+                "const": 3,
+                "title": "Stroke"
+              },
+              {
+                "const": 4,
+                "title": "High blood pressure"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Heart attack"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Angina"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Stroke"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "High blood pressure"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100605. Up to 4 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6151": {
+      "title": "Fractured bone site(s)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 7,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Ankle"
+              },
+              {
+                "const": 2,
+                "title": "Leg"
+              },
+              {
+                "const": 3,
+                "title": "Hip"
+              },
+              {
+                "const": 4,
+                "title": "Spine"
+              },
+              {
+                "const": 5,
+                "title": "Wrist"
+              },
+              {
+                "const": 6,
+                "title": "Arm"
+              },
+              {
+                "const": 7,
+                "title": "Other bones"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Ankle"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Leg"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Hip"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Spine"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Wrist"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Arm"
+        },
+        {
+          "const": [
+            7
+          ],
+          "title": "Other bones"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100622. Up to 7 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6152": {
+      "title": "Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "oneOf": [
+              {
+                "const": 5,
+                "title": "Blood clot in the leg (DVT)"
+              },
+              {
+                "const": 6,
+                "title": "Emphysema/chronic bronchitis"
+              },
+              {
+                "const": 7,
+                "title": "Blood clot in the lung"
+              },
+              {
+                "const": 8,
+                "title": "Asthma"
+              },
+              {
+                "const": 9,
+                "title": "Hayfever, allergic rhinitis or eczema"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Blood clot in the leg (DVT)"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Emphysema/chronic bronchitis"
+        },
+        {
+          "const": [
+            7
+          ],
+          "title": "Blood clot in the lung"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "Asthma"
+        },
+        {
+          "const": [
+            9
+          ],
+          "title": "Hayfever, allergic rhinitis or eczema"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100610. Up to 5 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6153": {
+      "title": "Medication for cholesterol, blood pressure, diabetes, or take exogenous hormones",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Cholesterol lowering medication"
+              },
+              {
+                "const": 2,
+                "title": "Blood pressure medication"
+              },
+              {
+                "const": 3,
+                "title": "Insulin"
+              },
+              {
+                "const": 4,
+                "title": "Hormone replacement therapy"
+              },
+              {
+                "const": 5,
+                "title": "Oral contraceptive pill or minipill"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Cholesterol lowering medication"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Blood pressure medication"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Insulin"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Hormone replacement therapy"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Oral contraceptive pill or minipill"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100626. Up to 4 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6154": {
+      "title": "Medication for pain relief, constipation, heartburn",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Aspirin"
+              },
+              {
+                "const": 2,
+                "title": "Ibuprofen (e.g. Nurofen)"
+              },
+              {
+                "const": 3,
+                "title": "Paracetamol"
+              },
+              {
+                "const": 4,
+                "title": "Ranitidine (e.g. Zantac)"
+              },
+              {
+                "const": 5,
+                "title": "Omeprazole (e.g. Zanprol)"
+              },
+              {
+                "const": 6,
+                "title": "Laxatives (e.g. Dulcolax, Senokot)"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Aspirin"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Ibuprofen (e.g. Nurofen)"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Paracetamol"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Ranitidine (e.g. Zantac)"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Omeprazole (e.g. Zanprol)"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Laxatives (e.g. Dulcolax, Senokot)"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100628. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6155": {
+      "title": "Vitamin and mineral supplements",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 7,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Vitamin A"
+              },
+              {
+                "const": 2,
+                "title": "Vitamin B"
+              },
+              {
+                "const": 3,
+                "title": "Vitamin C"
+              },
+              {
+                "const": 4,
+                "title": "Vitamin D"
+              },
+              {
+                "const": 5,
+                "title": "Vitamin E"
+              },
+              {
+                "const": 6,
+                "title": "Folic acid or Folate (Vit B9)"
+              },
+              {
+                "const": 7,
+                "title": "Multivitamins +/- minerals"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Vitamin A"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Vitamin B"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Vitamin C"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Vitamin D"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Vitamin E"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Folic acid or Folate (Vit B9)"
+        },
+        {
+          "const": [
+            7
+          ],
+          "title": "Multivitamins +/- minerals"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100629. Up to 7 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6159": {
+      "title": "Pain type(s) experienced in last month",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 7,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Headache"
+              },
+              {
+                "const": 2,
+                "title": "Facial pain"
+              },
+              {
+                "const": 3,
+                "title": "Neck or shoulder pain"
+              },
+              {
+                "const": 4,
+                "title": "Back pain"
+              },
+              {
+                "const": 5,
+                "title": "Stomach or abdominal pain"
+              },
+              {
+                "const": 6,
+                "title": "Hip pain"
+              },
+              {
+                "const": 7,
+                "title": "Knee pain"
+              },
+              {
+                "const": 8,
+                "title": "Pain all over the body"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Headache"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Facial pain"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Neck or shoulder pain"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Back pain"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Stomach or abdominal pain"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Hip pain"
+        },
+        {
+          "const": [
+            7
+          ],
+          "title": "Knee pain"
+        },
+        {
+          "const": [
+            8
+          ],
+          "title": "Pain all over the body"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100553. Up to 7 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6177": {
+      "title": "Medication for cholesterol, blood pressure or diabetes",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Cholesterol lowering medication"
+              },
+              {
+                "const": 2,
+                "title": "Blood pressure medication"
+              },
+              {
+                "const": 3,
+                "title": "Insulin"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Cholesterol lowering medication"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Blood pressure medication"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Insulin"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100625. Up to 3 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6179": {
+      "title": "Mineral and other dietary supplements",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Fish oil (including cod liver oil)"
+              },
+              {
+                "const": 2,
+                "title": "Glucosamine"
+              },
+              {
+                "const": 3,
+                "title": "Calcium"
+              },
+              {
+                "const": 4,
+                "title": "Zinc"
+              },
+              {
+                "const": 5,
+                "title": "Iron"
+              },
+              {
+                "const": 6,
+                "title": "Selenium"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Fish oil (including cod liver oil)"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Glucosamine"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Calcium"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Zinc"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Iron"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Selenium"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100630. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f6205": {
+      "title": "Which eye(s) affected by strabismus (squint)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right eye"
+        },
+        {
+          "const": 2,
+          "title": "Left eye"
+        },
+        {
+          "const": 3,
+          "title": "Both eyes"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100515. Initial assessment visit (instance 0)."
+    },
+    "f10004": {
+      "title": "Medication for pain relief, constipation, heartburn (pilot)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Aspirin"
+              },
+              {
+                "const": 2,
+                "title": "Ibuprofen (e.g. Nurofen)"
+              },
+              {
+                "const": 3,
+                "title": "Paracetamol"
+              },
+              {
+                "const": 4,
+                "title": "Codeine"
+              },
+              {
+                "const": 5,
+                "title": "Ranitidine (e.g. Zantac)"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Aspirin"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Ibuprofen (e.g. Nurofen)"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Paracetamol"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Codeine"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Ranitidine (e.g. Zantac)"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100688. Up to 5 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f10005": {
+      "title": "Medication for smoking cessation, constipation, heartburn, allergies (pilot)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 3,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Omeprazole (e.g. Zanprol)"
+              },
+              {
+                "const": 2,
+                "title": "Laxatives (e.g. Dulcolax, Senokot)"
+              },
+              {
+                "const": 3,
+                "title": "Nicotine patches/sprays/tablets/gum etc"
+              },
+              {
+                "const": 4,
+                "title": "Antihistamines (e.g. Loratidine, Cetirizine)"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Do not know"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Omeprazole (e.g. Zanprol)"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Laxatives (e.g. Dulcolax, Senokot)"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Nicotine patches/sprays/tablets/gum etc"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Antihistamines (e.g. Loratidine, Cetirizine)"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100689. Up to 3 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f10006": {
+      "title": "Mouth/teeth dental problems (pilot)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Painful teeth"
+              },
+              {
+                "const": 2,
+                "title": "Painful gums"
+              },
+              {
+                "const": 3,
+                "title": "Bleeding gums"
+              },
+              {
+                "const": 4,
+                "title": "Lost or loose teeth"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Painful teeth"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Painful gums"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Bleeding gums"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Lost or loose teeth"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100685. Up to 4 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f10007": {
+      "title": "Vitamin and mineral supplements (pilot)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Evening primrose oil"
+              },
+              {
+                "const": 2,
+                "title": "Fish oil (including cod liver oil"
+              },
+              {
+                "const": 3,
+                "title": "Garlic"
+              },
+              {
+                "const": 4,
+                "title": "Ginkgo"
+              },
+              {
+                "const": 5,
+                "title": "Glucosamine"
+              },
+              {
+                "const": 6,
+                "title": "Other supplements, vitamins or minerals"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Evening primrose oil"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Fish oil (including cod liver oil"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Garlic"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Ginkgo"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Glucosamine"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Other supplements, vitamins or minerals"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100692. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f10723": {
+      "title": "Vitamin supplements (pilot)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Vitamin A"
+              },
+              {
+                "const": 2,
+                "title": "Vitamin B"
+              },
+              {
+                "const": 3,
+                "title": "Vitamin C"
+              },
+              {
+                "const": 4,
+                "title": "Vitamin D"
+              },
+              {
+                "const": 5,
+                "title": "Vitamin E"
+              },
+              {
+                "const": 6,
+                "title": "Folic acid or Folate (Vit B9)"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Vitamin A"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Vitamin B"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Vitamin C"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Vitamin D"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Vitamin E"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Folic acid or Folate (Vit B9)"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100691. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f10793": {
+      "title": "Hearing difficulty/problems (pilot)",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f10844": {
+      "title": "Gestational diabetes only (pilot)",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f10854": {
+      "title": "Other dietary supplements (pilot)",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Iron"
+              },
+              {
+                "const": 2,
+                "title": "Zinc"
+              },
+              {
+                "const": 3,
+                "title": "Calcium"
+              },
+              {
+                "const": 4,
+                "title": "Selenium"
+              },
+              {
+                "const": 5,
+                "title": "Multivitamins"
+              },
+              {
+                "const": 6,
+                "title": "Multivitamins with minerals"
+              },
+              {
+                "const": -7,
+                "title": "None of the above"
+              },
+              {
+                "const": -3,
+                "title": "Prefer not to answer"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Iron"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Zinc"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Calcium"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Selenium"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Multivitamins"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Multivitamins with minerals"
+        },
+        {
+          "const": [
+            -7
+          ],
+          "title": "None of the above"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100690. Up to 6 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f2178",
+    "f2188",
+    "f2207",
+    "f2217",
+    "f2227",
+    "f2247",
+    "f2257",
+    "f2296",
+    "f2306",
+    "f2316",
+    "f2335",
+    "f2345",
+    "f2355",
+    "f2365",
+    "f2415",
+    "f2443",
+    "f2453",
+    "f2463",
+    "f2473",
+    "f2492",
+    "f2844",
+    "f2956",
+    "f2966",
+    "f2976",
+    "f2986",
+    "f3005",
+    "f3393",
+    "f3404",
+    "f3414",
+    "f3571",
+    "f3606",
+    "f3616",
+    "f3627",
+    "f3741",
+    "f3751",
+    "f3761",
+    "f3773",
+    "f3786",
+    "f3799",
+    "f3809",
+    "f3894",
+    "f3992",
+    "f4012",
+    "f4022",
+    "f4041",
+    "f4056",
+    "f4067",
+    "f4689",
+    "f4700",
+    "f4717",
+    "f4728",
+    "f4792",
+    "f4803",
+    "f4814",
+    "f4825",
+    "f4836",
+    "f5408",
+    "f5419",
+    "f5430",
+    "f5441",
+    "f5452",
+    "f5463",
+    "f5474",
+    "f5485",
+    "f5496",
+    "f5507",
+    "f5518",
+    "f5529",
+    "f5540",
+    "f5610",
+    "f5832",
+    "f5843",
+    "f5855",
+    "f5877",
+    "f5890",
+    "f5901",
+    "f5912",
+    "f5923",
+    "f5934",
+    "f5945",
+    "f6119",
+    "f6147",
+    "f6148",
+    "f6149",
+    "f6150",
+    "f6151",
+    "f6152",
+    "f6153",
+    "f6154",
+    "f6155",
+    "f6159",
+    "f6177",
+    "f6179",
+    "f6205",
+    "f10004",
+    "f10005",
+    "f10006",
+    "f10007",
+    "f10723",
+    "f10793",
+    "f10844",
+    "f10854"
+  ]
+}

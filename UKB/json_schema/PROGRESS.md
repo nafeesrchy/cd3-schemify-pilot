@@ -23,7 +23,7 @@ many sittings — depth over coverage; a category taken all the way to
 ## Conventions
 
 - sentinels: only special answers the source defines, written per field (for UK Biobank the negative codes such as -1 "Do not know", -3 "Prefer not to answer"); none is generated, and a blank cell is rejected · D036, D037 (supersedes D003, D016)
-- table: one, `uk_biobank`, as the provider's data is one dataset; category titles carry the artifact path ("Assessment centre — Touchscreen questionnaire: Sociodemographics"); no "PARTICIPANT" prefix · D046
+- tables: seven, one per Showcase primary category (population_characteristics, assessment_centre, biological_samples, genomics, health_outcomes, online_follow_up, additional_exposures), each one row per participant keyed by `eid` (D054, supersedes D046); category titles carry the artifact path ("Assessment centre — Touchscreen questionnaire: Sociodemographics"); no "PARTICIPANT" prefix · D046
 - $id base: https://schemas.example.org/cd3-ukb-pilot/ (replace before publishing) · D011
 - grain: see header · title separator: — (em dash) · formatting: 2-space, one key per line · D011
 - real data: none in repo; stays inside UK Biobank's own TRE · D004
@@ -41,65 +41,65 @@ many sittings — depth over coverage; a category taken all the way to
 
 ## Categories
 
-**Re-planned 2026-10-05 (D042, D046).** One table, `uk_biobank`, one row per participant. Its categories follow the organisation of the CD3 UKB cohort description artifact: one category per level-2 row (or level-1 row where it has no level 2), titled "<primary category> — <level 1>: <level 2>" and listed in the artifact's order. "vars" is what can be converted from the dictionary files; the number in brackets is the artifact's own count, the number of available fields (D043), which differs where fields exist only at repeat or imaging visits (D028), are table-access flags or bulk pointers (D029), or are held (D032).
+**Re-planned 2026-10-05 (D042, D046); tables re-split 2026-10-08 (D054).** Seven tables, one per primary category (formerly one table, `uk_biobank`), one row per participant. Its categories follow the organisation of the CD3 UKB cohort description artifact: one category per level-2 row (or level-1 row where it has no level 2), titled "<primary category> — <level 1>: <level 2>" and listed in the artifact's order. "vars" is what can be converted from the dictionary files; the number in brackets is the artifact's own count, the number of available fields (D043), which differs where fields exist only at repeat or imaging visits (D028), are table-access flags or bulk pointers (D029), or are held (D032).
 
 
 | # | primary category | level 1 | level 2 | file | vars (artifact) | status | touched |
 |---|---|---|---|---|---|---|---|
-| 1 | — | — | — | `uk_biobank/categories/identification.json` | 1 | confirmed | 2026-09-22 |
-| 2 | Population characteristics | Baseline characteristics | — | `uk_biobank/categories/population_characteristics_baseline_characteristics.json` | 6 (6) | confirmed | 2026-10-05 |
-| 3 | Population characteristics | Baseline characteristics | Indices of Multiple Deprivation | `uk_biobank/categories/population_characteristics_baseline_characteristics_indices_of_multiple_deprivation.json` | 25 (25) | confirmed | 2026-10-05 |
-| 4 | Population characteristics | Ongoing characteristics | — | `uk_biobank/categories/population_characteristics_ongoing_characteristics.json` | 7 (7) | confirmed | 2026-10-05 |
-| 5 | Assessment centre | Touchscreen questionnaire | Sociodemographics | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_sociodemographics.json` | 29 (29) | confirmed | 2026-10-05 |
-| 6 | Assessment centre | Touchscreen questionnaire | Lifestyle and environment | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_lifestyle_and_environment.json` | 155 (155) | confirmed | 2026-10-05 |
-| 7 | Assessment centre | Touchscreen questionnaire | Early life factors | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_early_life_factors.json` | 8 (8) | confirmed | 2026-10-05 |
-| 8 | Assessment centre | Touchscreen questionnaire | Family history | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_family_history.json` | 20 (20) | confirmed | 2026-10-05 |
-| 9 | Assessment centre | Touchscreen questionnaire | Psychosocial factors | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_psychosocial_factors.json` | 48 (48) | confirmed | 2026-10-05 |
-| 10 | Assessment centre | Touchscreen questionnaire | Health and medical history | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_health_and_medical_history.json` | 102 (102) | confirmed | 2026-10-05 |
-| 11 | Assessment centre | Touchscreen questionnaire | Sex-specific factors | `uk_biobank/categories/assessment_centre_touchscreen_questionnaire_sex_specific_factors.json` | 34 (34) | confirmed | 2026-10-05 |
-| 12 | Assessment centre | Verbal interview | Early life factors | `uk_biobank/categories/assessment_centre_verbal_interview_early_life_factors.json` | 9 (9) | confirmed | 2026-10-05 |
-| 13 | Assessment centre | Verbal interview | Employment | `uk_biobank/categories/assessment_centre_verbal_interview_employment.json` | 2 (2) | confirmed | 2026-10-05 |
-| 14 | Assessment centre | Verbal interview | Medical conditions | `uk_biobank/categories/assessment_centre_verbal_interview_medical_conditions.json` | 13 (13) | confirmed | 2026-10-05 |
-| 15 | Assessment centre | Verbal interview | Medications | `uk_biobank/categories/assessment_centre_verbal_interview_medications.json` | 2 (4) | confirmed | 2026-10-05 |
-| 16 | Assessment centre | Verbal interview | Operations | `uk_biobank/categories/assessment_centre_verbal_interview_operations.json` | 7 (7) | confirmed | 2026-10-05 |
-| 17 | Assessment centre | Physical measures | — | `uk_biobank/categories/assessment_centre_physical_measures.json` | 229 (271) | confirmed | 2026-10-05 |
-| 18 | Biological samples | Blood assays | Blood count | `uk_biobank/categories/biological_samples_blood_assays_blood_count.json` | 155 (155) | confirmed | 2026-10-05 |
-| 19 | Biological samples | Blood assays | Blood biochemistry | `uk_biobank/categories/biological_samples_blood_assays_blood_biochemistry.json` | 210 (210) | confirmed | 2026-10-05 |
-| 20 | Biological samples | Blood assays | NMR metabolomics | `uk_biobank/categories/biological_samples_blood_assays_nmr_metabolomics.json` | 512 (512) | confirmed | 2026-10-05 |
-| 21 | Biological samples | Blood assays | Proteomics | `uk_biobank/categories/biological_samples_blood_assays_proteomics.json` | 3 (5) | confirmed | 2026-10-05 |
-| 22 | Genomics | Polygenic Risk Scores | Standard PRS | `uk_biobank/categories/genomics_polygenic_risk_scores_standard_prs.json` | 39 (39) | confirmed | 2026-10-05 |
-| 23 | Genomics | Polygenic Risk Scores | Enhanced PRS | `uk_biobank/categories/genomics_polygenic_risk_scores_enhanced_prs.json` | 51 (51) | confirmed | 2026-10-05 |
-| 24 | Genomics | Polygenic Risk Scores | Genetically deduced phenotypes | `uk_biobank/categories/genomics_polygenic_risk_scores_genetically_deduced_phenotypes.json` | 5 (5) | confirmed | 2026-10-05 |
-| 25 | Genomics | Genotypes | Genotype Results | `uk_biobank/categories/genomics_genotypes_genotype_results.json` | 0 (5) | nothing to convert | 2026-10-05 |
-| 26 | Genomics | Genotypes | HLA | `uk_biobank/categories/genomics_genotypes_hla.json` | 1 (1) | confirmed | 2026-10-05 |
-| 27 | Genomics | Genotypes | Genotyping process and sample QC | `uk_biobank/categories/genomics_genotypes_genotyping_process_and_sample_qc.json` | 21 (22) | confirmed | 2026-10-05 |
-| 28 | Genomics | Genotypes | Interim genotype release | `uk_biobank/categories/genomics_genotypes_interim_genotype_release.json` | 7 (7) | confirmed | 2026-10-05 |
-| 29 | Genomics | Genotypes | Imputation | `uk_biobank/categories/genomics_genotypes_imputation.json` | 0 (4) | nothing to convert | 2026-10-05 |
-| 30 | Genomics | Whole genome sequences | Telomeres | `uk_biobank/categories/genomics_whole_genome_sequences_telomeres.json` | 5 (5) | confirmed | 2026-10-05 |
-| 31 | Online follow-up | Sleep | Sleep behaviour | `uk_biobank/categories/online_follow_up_sleep_sleep_behaviour.json` | 7 (7) | confirmed | 2026-10-05 |
-| 32 | Online follow-up | Sleep | Work and sleep | `uk_biobank/categories/online_follow_up_sleep_work_and_sleep.json` | 14 (14) | confirmed | 2026-10-05 |
-| 33 | Online follow-up | Sleep | Quality of sleep | `uk_biobank/categories/online_follow_up_sleep_quality_of_sleep.json` | 34 (34) | confirmed | 2026-10-05 |
-| 34 | Online follow-up | Sleep | Insomnia | `uk_biobank/categories/online_follow_up_sleep_insomnia.json` | 11 (11) | confirmed | 2026-10-05 |
-| 35 | Online follow-up | Sleep | Sleep disturbances | `uk_biobank/categories/online_follow_up_sleep_sleep_disturbances.json` | 30 (30) | confirmed | 2026-10-05 |
-| 36 | Online follow-up | Sleep | Fatigue | `uk_biobank/categories/online_follow_up_sleep_fatigue.json` | 9 (9) | confirmed | 2026-10-05 |
-| 37 | Online follow-up | Sleep | Restless legs | `uk_biobank/categories/online_follow_up_sleep_restless_legs.json` | 10 (10) | confirmed | 2026-10-05 |
-| 38 | Online follow-up | Sleep | Sleep consequences | `uk_biobank/categories/online_follow_up_sleep_sleep_consequences.json` | 41 (41) | confirmed | 2026-10-05 |
-| 39 | Online follow-up | Sleep | Family history | `uk_biobank/categories/online_follow_up_sleep_family_history.json` | 9 (9) | confirmed | 2026-10-05 |
-| 40 | Online follow-up | Sleep | Lifestyle routines | `uk_biobank/categories/online_follow_up_sleep_lifestyle_routines.json` | 14 (14) | confirmed | 2026-10-05 |
-| 41 | Online follow-up | Mental well-being | Alcohol use | `uk_biobank/categories/online_follow_up_mental_well_being_alcohol_use.json` | 15 (15) | confirmed | 2026-10-05 |
-| 42 | Online follow-up | Work environment | Medical information | `uk_biobank/categories/online_follow_up_work_environment_medical_information.json` | 55 (55) | confirmed | 2026-10-05 |
-| 43 | Online follow-up | Work environment | Employment history | `uk_biobank/categories/online_follow_up_work_environment_employment_history.json` | 41 (41) | confirmed | 2026-10-05 |
-| 44 | Additional exposures | Local environment | Home locations | `uk_biobank/categories/additional_exposures_local_environment_home_locations.json` | 5 (5) | confirmed | 2026-10-05 |
-| 45 | Additional exposures | Local environment | Residential air pollution | `uk_biobank/categories/additional_exposures_local_environment_residential_air_pollution.json` | 17 (17) | confirmed | 2026-10-05 |
-| 46 | Additional exposures | Local environment | Residential noise pollution | `uk_biobank/categories/additional_exposures_local_environment_residential_noise_pollution.json` | 5 (5) | confirmed | 2026-10-05 |
-| 47 | Additional exposures | Local environment | Greenspace and coastal proximity | `uk_biobank/categories/additional_exposures_local_environment_greenspace_and_coastal_proximity.json` | 9 (9) | confirmed | 2026-10-05 |
-| 48 | Additional exposures | Local environment | UK Biobank Urban Morphometric Platform | `uk_biobank/categories/additional_exposures_local_environment_uk_biobank_urban_morphometric_platform.json` | 0 (0) | no fields | 2026-10-05 |
-| 49 | Additional exposures | Local environment | Water minerals | `uk_biobank/categories/additional_exposures_local_environment_water_minerals.json` | 6 (6) | confirmed | 2026-10-05 |
-| 50 | Health outcomes | Externally sourced health outcomes | Primary care | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_primary_care.json` | 0 (3) | nothing to convert | 2026-10-05 |
-| 51 | Health outcomes | Externally sourced health outcomes | Hospital inpatient | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_hospital_inpatient.json` | 74 (82) | confirmed | 2026-10-05 |
-| 52 | Health outcomes | Externally sourced health outcomes | Death register | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_death_register.json` | 7 (8) | confirmed | 2026-10-05 |
-| 53 | Health outcomes | Externally sourced health outcomes | Cancer register | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_cancer_register.json` | 5 (9) | confirmed | 2026-10-05 |
-| 54 | Health outcomes | Externally sourced health outcomes | First occurrences | `uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_first_occurrences.json` | 2330 (2330) | confirmed | 2026-10-05 |
+| 1 | — | — | — | `<table>/categories/identification.json` (one per table) | 1 | confirmed | 2026-09-22 |
+| 2 | Population characteristics | Baseline characteristics | — | `population_characteristics/categories/population_characteristics_baseline_characteristics.json` | 6 (6) | confirmed | 2026-10-05 |
+| 3 | Population characteristics | Baseline characteristics | Indices of Multiple Deprivation | `population_characteristics/categories/population_characteristics_baseline_characteristics_indices_of_multiple_deprivation.json` | 25 (25) | confirmed | 2026-10-05 |
+| 4 | Population characteristics | Ongoing characteristics | — | `population_characteristics/categories/population_characteristics_ongoing_characteristics.json` | 7 (7) | confirmed | 2026-10-05 |
+| 5 | Assessment centre | Touchscreen questionnaire | Sociodemographics | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_sociodemographics.json` | 29 (29) | confirmed | 2026-10-05 |
+| 6 | Assessment centre | Touchscreen questionnaire | Lifestyle and environment | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_lifestyle_and_environment.json` | 155 (155) | confirmed | 2026-10-05 |
+| 7 | Assessment centre | Touchscreen questionnaire | Early life factors | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_early_life_factors.json` | 8 (8) | confirmed | 2026-10-05 |
+| 8 | Assessment centre | Touchscreen questionnaire | Family history | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_family_history.json` | 20 (20) | confirmed | 2026-10-05 |
+| 9 | Assessment centre | Touchscreen questionnaire | Psychosocial factors | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_psychosocial_factors.json` | 48 (48) | confirmed | 2026-10-05 |
+| 10 | Assessment centre | Touchscreen questionnaire | Health and medical history | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_health_and_medical_history.json` | 102 (102) | confirmed | 2026-10-05 |
+| 11 | Assessment centre | Touchscreen questionnaire | Sex-specific factors | `assessment_centre/categories/assessment_centre_touchscreen_questionnaire_sex_specific_factors.json` | 34 (34) | confirmed | 2026-10-05 |
+| 12 | Assessment centre | Verbal interview | Early life factors | `assessment_centre/categories/assessment_centre_verbal_interview_early_life_factors.json` | 9 (9) | confirmed | 2026-10-05 |
+| 13 | Assessment centre | Verbal interview | Employment | `assessment_centre/categories/assessment_centre_verbal_interview_employment.json` | 2 (2) | confirmed | 2026-10-05 |
+| 14 | Assessment centre | Verbal interview | Medical conditions | `assessment_centre/categories/assessment_centre_verbal_interview_medical_conditions.json` | 13 (13) | confirmed | 2026-10-05 |
+| 15 | Assessment centre | Verbal interview | Medications | `assessment_centre/categories/assessment_centre_verbal_interview_medications.json` | 2 (4) | confirmed | 2026-10-05 |
+| 16 | Assessment centre | Verbal interview | Operations | `assessment_centre/categories/assessment_centre_verbal_interview_operations.json` | 7 (7) | confirmed | 2026-10-05 |
+| 17 | Assessment centre | Physical measures | — | `assessment_centre/categories/assessment_centre_physical_measures.json` | 229 (271) | confirmed | 2026-10-05 |
+| 18 | Biological samples | Blood assays | Blood count | `biological_samples/categories/biological_samples_blood_assays_blood_count.json` | 155 (155) | confirmed | 2026-10-05 |
+| 19 | Biological samples | Blood assays | Blood biochemistry | `biological_samples/categories/biological_samples_blood_assays_blood_biochemistry.json` | 210 (210) | confirmed | 2026-10-05 |
+| 20 | Biological samples | Blood assays | NMR metabolomics | `biological_samples/categories/biological_samples_blood_assays_nmr_metabolomics.json` | 512 (512) | confirmed | 2026-10-05 |
+| 21 | Biological samples | Blood assays | Proteomics | `biological_samples/categories/biological_samples_blood_assays_proteomics.json` | 3 (5) | confirmed | 2026-10-05 |
+| 22 | Genomics | Polygenic Risk Scores | Standard PRS | `genomics/categories/genomics_polygenic_risk_scores_standard_prs.json` | 39 (39) | confirmed | 2026-10-05 |
+| 23 | Genomics | Polygenic Risk Scores | Enhanced PRS | `genomics/categories/genomics_polygenic_risk_scores_enhanced_prs.json` | 51 (51) | confirmed | 2026-10-05 |
+| 24 | Genomics | Polygenic Risk Scores | Genetically deduced phenotypes | `genomics/categories/genomics_polygenic_risk_scores_genetically_deduced_phenotypes.json` | 5 (5) | confirmed | 2026-10-05 |
+| 25 | Genomics | Genotypes | Genotype Results | `genomics/categories/genomics_genotypes_genotype_results.json` | 0 (5) | nothing to convert | 2026-10-05 |
+| 26 | Genomics | Genotypes | HLA | `genomics/categories/genomics_genotypes_hla.json` | 1 (1) | confirmed | 2026-10-05 |
+| 27 | Genomics | Genotypes | Genotyping process and sample QC | `genomics/categories/genomics_genotypes_genotyping_process_and_sample_qc.json` | 21 (22) | confirmed | 2026-10-05 |
+| 28 | Genomics | Genotypes | Interim genotype release | `genomics/categories/genomics_genotypes_interim_genotype_release.json` | 7 (7) | confirmed | 2026-10-05 |
+| 29 | Genomics | Genotypes | Imputation | `genomics/categories/genomics_genotypes_imputation.json` | 0 (4) | nothing to convert | 2026-10-05 |
+| 30 | Genomics | Whole genome sequences | Telomeres | `genomics/categories/genomics_whole_genome_sequences_telomeres.json` | 5 (5) | confirmed | 2026-10-05 |
+| 31 | Online follow-up | Sleep | Sleep behaviour | `online_follow_up/categories/online_follow_up_sleep_sleep_behaviour.json` | 7 (7) | confirmed | 2026-10-05 |
+| 32 | Online follow-up | Sleep | Work and sleep | `online_follow_up/categories/online_follow_up_sleep_work_and_sleep.json` | 14 (14) | confirmed | 2026-10-05 |
+| 33 | Online follow-up | Sleep | Quality of sleep | `online_follow_up/categories/online_follow_up_sleep_quality_of_sleep.json` | 34 (34) | confirmed | 2026-10-05 |
+| 34 | Online follow-up | Sleep | Insomnia | `online_follow_up/categories/online_follow_up_sleep_insomnia.json` | 11 (11) | confirmed | 2026-10-05 |
+| 35 | Online follow-up | Sleep | Sleep disturbances | `online_follow_up/categories/online_follow_up_sleep_sleep_disturbances.json` | 30 (30) | confirmed | 2026-10-05 |
+| 36 | Online follow-up | Sleep | Fatigue | `online_follow_up/categories/online_follow_up_sleep_fatigue.json` | 9 (9) | confirmed | 2026-10-05 |
+| 37 | Online follow-up | Sleep | Restless legs | `online_follow_up/categories/online_follow_up_sleep_restless_legs.json` | 10 (10) | confirmed | 2026-10-05 |
+| 38 | Online follow-up | Sleep | Sleep consequences | `online_follow_up/categories/online_follow_up_sleep_sleep_consequences.json` | 41 (41) | confirmed | 2026-10-05 |
+| 39 | Online follow-up | Sleep | Family history | `online_follow_up/categories/online_follow_up_sleep_family_history.json` | 9 (9) | confirmed | 2026-10-05 |
+| 40 | Online follow-up | Sleep | Lifestyle routines | `online_follow_up/categories/online_follow_up_sleep_lifestyle_routines.json` | 14 (14) | confirmed | 2026-10-05 |
+| 41 | Online follow-up | Mental well-being | Alcohol use | `online_follow_up/categories/online_follow_up_mental_well_being_alcohol_use.json` | 15 (15) | confirmed | 2026-10-05 |
+| 42 | Online follow-up | Work environment | Medical information | `online_follow_up/categories/online_follow_up_work_environment_medical_information.json` | 55 (55) | confirmed | 2026-10-05 |
+| 43 | Online follow-up | Work environment | Employment history | `online_follow_up/categories/online_follow_up_work_environment_employment_history.json` | 41 (41) | confirmed | 2026-10-05 |
+| 44 | Additional exposures | Local environment | Home locations | `additional_exposures/categories/additional_exposures_local_environment_home_locations.json` | 5 (5) | confirmed | 2026-10-05 |
+| 45 | Additional exposures | Local environment | Residential air pollution | `additional_exposures/categories/additional_exposures_local_environment_residential_air_pollution.json` | 17 (17) | confirmed | 2026-10-05 |
+| 46 | Additional exposures | Local environment | Residential noise pollution | `additional_exposures/categories/additional_exposures_local_environment_residential_noise_pollution.json` | 5 (5) | confirmed | 2026-10-05 |
+| 47 | Additional exposures | Local environment | Greenspace and coastal proximity | `additional_exposures/categories/additional_exposures_local_environment_greenspace_and_coastal_proximity.json` | 9 (9) | confirmed | 2026-10-05 |
+| 48 | Additional exposures | Local environment | UK Biobank Urban Morphometric Platform | `additional_exposures/categories/additional_exposures_local_environment_uk_biobank_urban_morphometric_platform.json` | 0 (0) | no fields | 2026-10-05 |
+| 49 | Additional exposures | Local environment | Water minerals | `additional_exposures/categories/additional_exposures_local_environment_water_minerals.json` | 6 (6) | confirmed | 2026-10-05 |
+| 50 | Health outcomes | Externally sourced health outcomes | Primary care | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_primary_care.json` | 0 (3) | nothing to convert | 2026-10-05 |
+| 51 | Health outcomes | Externally sourced health outcomes | Hospital inpatient | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_hospital_inpatient.json` | 74 (82) | confirmed | 2026-10-05 |
+| 52 | Health outcomes | Externally sourced health outcomes | Death register | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_death_register.json` | 7 (8) | confirmed | 2026-10-05 |
+| 53 | Health outcomes | Externally sourced health outcomes | Cancer register | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_cancer_register.json` | 5 (9) | confirmed | 2026-10-05 |
+| 54 | Health outcomes | Externally sourced health outcomes | First occurrences | `health_outcomes/categories/health_outcomes_externally_sourced_health_outcomes_first_occurrences.json` | 2330 (2330) | confirmed | 2026-10-05 |
 
 ## Package milestones
 
@@ -152,4 +152,4 @@ many sittings — depth over coverage; a category taken all the way to
 - 2026-10-05 · routing scan (after review) · the review had ticked the skip audit on the wrong premise that the dictionary states no routing; `related.txt` does ("collected from … except those who …", "affects who was asked"). Scanned all 5,977 field links that touch the selection: 171 register rows in ROUTING.csv (87 quoted rules proposed, 61 gate-only not enforceable, 22 waiting on deferred fields, 1 undelivered gate); `validate.py routing` runs clean on them. Nothing is encoded: the cell question (D049) is open and rides the next message · next: the steward's answer on D049, then encode the 87 rules with PASS/FAIL toy rows, then re-run the audit, fix README sections 5–7 and the GitHub branch
 - 2026-10-05 · routing encoded · steward chose (a) on the cell question: a skipped question is an empty cell, skip half only (D049). 87 `Questionnaire routing` conditionals added to the mother after the category files (words mapped to codes in D051; two deliberately loose readings, R030 and R035); `ROUTING.csv` 87 encoded, 62 not-enforceable, 22 waiting on deferred fields. Fixtures: 87 seeded skip violations (one per rule) and one valid row per gate family (42); the earlier toy rows made consistent with the rules; fixtures written one row per line, 11 MB. README section 5 now lists the 87 rules from the mother; sections 6 and 10 updated. Validators green (87 conditionals clean, 96/96 violations caught) · next: push to the GitHub branch
 - 2026-10-05 · routing open items settled · steward kept R009 (gate `F903` is not a field, probably `f904`) and the 83 gate-only links for confirmation with the data provider (D053); they stay unencoded and are in README section 10; ROUTING.csv notes and decision columns updated · next: — (complete)
-
+- 2026-10-08 · tables re-split by primary category · steward asked to divide UKB into the categories Showcase shows (D054, reverses D046). Seven tables; category files moved unchanged; 87 routing conditionals stay in assessment_centre; fixtures projected per table; VARIABLES.csv and ROUTING.csv carry a table. `validate.py summary` ok: 64 schema files valid, 7 of 7 tables pass fixtures, coverage 4460 rows (eid once per table), 87 conditionals clean. Pages rebuilt (dictionary.html, seven playgrounds) · next: — (complete)

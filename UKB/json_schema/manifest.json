@@ -1,0 +1,12 @@
+{
+  "study": "UK Biobank",
+  "tables": [
+    "population_characteristics",
+    "assessment_centre",
+    "biological_samples",
+    "genomics",
+    "health_outcomes",
+    "online_follow_up",
+    "additional_exposures"
+  ]
+}

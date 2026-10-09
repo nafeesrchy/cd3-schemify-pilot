@@ -1,0 +1,665 @@
+{
+  "$comment": "Ground truth for toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row; tools/validate.py fixtures asserts each row FAILS with an error pointer on the named column. Routing: one skip-break case per rule; each gate family also has a valid row where the gate excludes the participant and the dependent cells are empty.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "eid",
+      "kind": "range-break",
+      "value": 0,
+      "reason": "below minimum 1 (eid is a positive identifier)"
+    },
+    {
+      "row": 1,
+      "column": "eid",
+      "kind": "type-break",
+      "value": "1234567",
+      "reason": "string, not the declared integer type"
+    },
+    {
+      "row": 2,
+      "column": "eid",
+      "kind": "required-break",
+      "value": null,
+      "reason": "eid is required and absent"
+    },
+    {
+      "row": 3,
+      "column": "eid",
+      "kind": "type-break",
+      "value": null,
+      "reason": "null, but eid is never empty"
+    },
+    {
+      "row": 4,
+      "column": "f699",
+      "kind": "type-break",
+      "value": "5",
+      "reason": "string, not the declared integer type for Length of time at current address"
+    },
+    {
+      "row": 5,
+      "column": "f6138",
+      "kind": "range-break",
+      "value": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        -7
+      ],
+      "reason": "7 selections exceeds maxItems 6 for Qualifications"
+    },
+    {
+      "row": 6,
+      "column": "f680",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R001: f670 excludes this participant but f680 holds an answer (must be empty)"
+    },
+    {
+      "row": 7,
+      "column": "f924",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R006: f864 excludes this participant but f924 holds an answer (must be empty)"
+    },
+    {
+      "row": 8,
+      "column": "f874",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R007: f864 excludes this participant but f874 holds an answer (must be empty)"
+    },
+    {
+      "row": 9,
+      "column": "f894",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R008: f884 excludes this participant but f894 holds an answer (must be empty)"
+    },
+    {
+      "row": 10,
+      "column": "f1120",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R011: f1110 excludes this participant but f1120 holds an answer (must be empty)"
+    },
+    {
+      "row": 11,
+      "column": "f1249",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R012: f1239 excludes this participant but f1249 holds an answer (must be empty)"
+    },
+    {
+      "row": 12,
+      "column": "f1259",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R013: f1239 excludes this participant but f1259 holds an answer (must be empty)"
+    },
+    {
+      "row": 13,
+      "column": "f3436",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R014: f1239 excludes this participant but f3436 holds an answer (must be empty)"
+    },
+    {
+      "row": 14,
+      "column": "f2867",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R016: f1249 excludes this participant but f2867 holds an answer (must be empty)"
+    },
+    {
+      "row": 15,
+      "column": "f2897",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R017: f1249 excludes this participant but f2897 holds an answer (must be empty)"
+    },
+    {
+      "row": 16,
+      "column": "f2644",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R018: f1249 excludes this participant but f2644 holds an answer (must be empty)"
+    },
+    {
+      "row": 17,
+      "column": "f2654",
+      "kind": "skip-break",
+      "value": 2,
+      "reason": "R025: f1428 excludes this participant but f2654 holds an answer (must be empty)"
+    },
+    {
+      "row": 18,
+      "column": "f1448",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R026: f1438 excludes this participant but f1448 holds an answer (must be empty)"
+    },
+    {
+      "row": 19,
+      "column": "f1468",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R027: f1458 excludes this participant but f1468 holds an answer (must be empty)"
+    },
+    {
+      "row": 20,
+      "column": "f1508",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R028: f1498 excludes this participant but f1508 holds an answer (must be empty)"
+    },
+    {
+      "row": 21,
+      "column": "f1618",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R029: f1558 excludes this participant but f1618 holds an answer (must be empty)"
+    },
+    {
+      "row": 22,
+      "column": "f1568",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R030: f1558 excludes this participant but f1568 holds an answer (must be empty)"
+    },
+    {
+      "row": 23,
+      "column": "f4407",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R031: f1558 excludes this participant but f4407 holds an answer (must be empty)"
+    },
+    {
+      "row": 24,
+      "column": "f3731",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R032: f1558 excludes this participant but f3731 holds an answer (must be empty)"
+    },
+    {
+      "row": 25,
+      "column": "f3659",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R035: f1647 excludes this participant but f3659 holds an answer (must be empty)"
+    },
+    {
+      "row": 26,
+      "column": "f1777",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R037: f1767 excludes this participant but f1777 holds an answer (must be empty)"
+    },
+    {
+      "row": 27,
+      "column": "f3912",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R038: f1767 excludes this participant but f3912 holds an answer (must be empty)"
+    },
+    {
+      "row": 28,
+      "column": "f1873",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R039: f1767 excludes this participant but f1873 holds an answer (must be empty)"
+    },
+    {
+      "row": 29,
+      "column": "f2149",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R042: f2139 excludes this participant but f2149 holds an answer (must be empty)"
+    },
+    {
+      "row": 30,
+      "column": "f3669",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R043: f2159 excludes this participant but f3669 holds an answer (must be empty)"
+    },
+    {
+      "row": 31,
+      "column": "f2217",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R044: f2207 excludes this participant but f2217 holds an answer (must be empty)"
+    },
+    {
+      "row": 32,
+      "column": "f2257",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R045: f2247 excludes this participant but f2257 holds an answer (must be empty)"
+    },
+    {
+      "row": 33,
+      "column": "f3606",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R047: f2335 excludes this participant but f3606 holds an answer (must be empty)"
+    },
+    {
+      "row": 34,
+      "column": "f2355",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R049: f2345 excludes this participant but f2355 holds an answer (must be empty)"
+    },
+    {
+      "row": 35,
+      "column": "f3809",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R050: f2365 excludes this participant but f3809 holds an answer (must be empty)"
+    },
+    {
+      "row": 36,
+      "column": "f4041",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R051: f2443 excludes this participant but f4041 holds an answer (must be empty)"
+    },
+    {
+      "row": 37,
+      "column": "f3005",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R053: f2463 excludes this participant but f3005 holds an answer (must be empty)"
+    },
+    {
+      "row": 38,
+      "column": "f2684",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R054: f2674 excludes this participant but f2684 holds an answer (must be empty)"
+    },
+    {
+      "row": 39,
+      "column": "f2704",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R055: f2694 excludes this participant but f2704 holds an answer (must be empty)"
+    },
+    {
+      "row": 40,
+      "column": "f3720",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R056: f2724 excludes this participant but f3720 holds an answer (must be empty)"
+    },
+    {
+      "row": 41,
+      "column": "f3591",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R057: f2724 excludes this participant but f3591 holds an answer (must be empty)"
+    },
+    {
+      "row": 42,
+      "column": "f3700",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R058: f2724 excludes this participant but f3700 holds an answer (must be empty)"
+    },
+    {
+      "row": 43,
+      "column": "f3581",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R059: f2724 excludes this participant but f3581 holds an answer (must be empty)"
+    },
+    {
+      "row": 44,
+      "column": "f2744",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R061: f2734 excludes this participant but f2744 holds an answer (must be empty)"
+    },
+    {
+      "row": 45,
+      "column": "f2754",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R062: f2734 excludes this participant but f2754 holds an answer (must be empty)"
+    },
+    {
+      "row": 46,
+      "column": "f3872",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R063: f2734 excludes this participant but f3872 holds an answer (must be empty)"
+    },
+    {
+      "row": 47,
+      "column": "f3829",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R064: f2774 excludes this participant but f3829 holds an answer (must be empty)"
+    },
+    {
+      "row": 48,
+      "column": "f2794",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R065: f2784 excludes this participant but f2794 holds an answer (must be empty)"
+    },
+    {
+      "row": 49,
+      "column": "f3536",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R066: f2814 excludes this participant but f3536 holds an answer (must be empty)"
+    },
+    {
+      "row": 50,
+      "column": "f3882",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R067: f2834 excludes this participant but f3882 holds an answer (must be empty)"
+    },
+    {
+      "row": 51,
+      "column": "f4609",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R079: f4598 excludes this participant but f4609 holds an answer (must be empty)"
+    },
+    {
+      "row": 52,
+      "column": "f5375",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R080: f4631 excludes this participant but f5375 holds an answer (must be empty)"
+    },
+    {
+      "row": 53,
+      "column": "f5452",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R083: f4728 excludes this participant but f5452 holds an answer (must be empty)"
+    },
+    {
+      "row": 54,
+      "column": "f845",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R088: f6138 excludes this participant but f845 holds an answer (must be empty)"
+    },
+    {
+      "row": 55,
+      "column": "f757",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R089: f6142 excludes this participant but f757 holds an answer (must be empty)"
+    },
+    {
+      "row": 56,
+      "column": "f1408",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R091: f6144 excludes this participant but f1408 holds an answer (must be empty)"
+    },
+    {
+      "row": 57,
+      "column": "f5855",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R092: f6147 excludes this participant but f5855 holds an answer (must be empty)"
+    },
+    {
+      "row": 58,
+      "column": "f5832",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R093: f6147 excludes this participant but f5832 holds an answer (must be empty)"
+    },
+    {
+      "row": 59,
+      "column": "f5843",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R094: f6147 excludes this participant but f5843 holds an answer (must be empty)"
+    },
+    {
+      "row": 60,
+      "column": "f5877",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R095: f6147 excludes this participant but f5877 holds an answer (must be empty)"
+    },
+    {
+      "row": 61,
+      "column": "f5610",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R096: f6147 excludes this participant but f5610 holds an answer (must be empty)"
+    },
+    {
+      "row": 62,
+      "column": "f6205",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R097: f6147 excludes this participant but f6205 holds an answer (must be empty)"
+    },
+    {
+      "row": 63,
+      "column": "f5408",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R098: f6147 excludes this participant but f5408 holds an answer (must be empty)"
+    },
+    {
+      "row": 64,
+      "column": "f5945",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R099: f6148 excludes this participant but f5945 holds an answer (must be empty)"
+    },
+    {
+      "row": 65,
+      "column": "f4700",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R100: f6148 excludes this participant but f4700 holds an answer (must be empty)"
+    },
+    {
+      "row": 66,
+      "column": "f5890",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R101: f6148 excludes this participant but f5890 holds an answer (must be empty)"
+    },
+    {
+      "row": 67,
+      "column": "f4689",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R102: f6148 excludes this participant but f4689 holds an answer (must be empty)"
+    },
+    {
+      "row": 68,
+      "column": "f5419",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R103: f6148 excludes this participant but f5419 holds an answer (must be empty)"
+    },
+    {
+      "row": 69,
+      "column": "f5912",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R104: f6148 excludes this participant but f5912 holds an answer (must be empty)"
+    },
+    {
+      "row": 70,
+      "column": "f5934",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R105: f6148 excludes this participant but f5934 holds an answer (must be empty)"
+    },
+    {
+      "row": 71,
+      "column": "f3894",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R106: f6150 excludes this participant but f3894 holds an answer (must be empty)"
+    },
+    {
+      "row": 72,
+      "column": "f4056",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R107: f6150 excludes this participant but f4056 holds an answer (must be empty)"
+    },
+    {
+      "row": 73,
+      "column": "f3627",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R108: f6150 excludes this participant but f3627 holds an answer (must be empty)"
+    },
+    {
+      "row": 74,
+      "column": "f2966",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R109: f6150 excludes this participant but f2966 holds an answer (must be empty)"
+    },
+    {
+      "row": 75,
+      "column": "f4012",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R110: f6152 excludes this participant but f4012 holds an answer (must be empty)"
+    },
+    {
+      "row": 76,
+      "column": "f4022",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R111: f6152 excludes this participant but f4022 holds an answer (must be empty)"
+    },
+    {
+      "row": 77,
+      "column": "f3786",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R112: f6152 excludes this participant but f3786 holds an answer (must be empty)"
+    },
+    {
+      "row": 78,
+      "column": "f3992",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R113: f6152 excludes this participant but f3992 holds an answer (must be empty)"
+    },
+    {
+      "row": 79,
+      "column": "f3761",
+      "kind": "skip-break",
+      "value": 3,
+      "reason": "R114: f6152 excludes this participant but f3761 holds an answer (must be empty)"
+    },
+    {
+      "row": 80,
+      "column": "f3571",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R115: f6159 excludes this participant but f3571 holds an answer (must be empty)"
+    },
+    {
+      "row": 81,
+      "column": "f4067",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R116: f6159 excludes this participant but f4067 holds an answer (must be empty)"
+    },
+    {
+      "row": 82,
+      "column": "f3799",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R117: f6159 excludes this participant but f3799 holds an answer (must be empty)"
+    },
+    {
+      "row": 83,
+      "column": "f3414",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R118: f6159 excludes this participant but f3414 holds an answer (must be empty)"
+    },
+    {
+      "row": 84,
+      "column": "f3773",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R119: f6159 excludes this participant but f3773 holds an answer (must be empty)"
+    },
+    {
+      "row": 85,
+      "column": "f3404",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R120: f6159 excludes this participant but f3404 holds an answer (must be empty)"
+    },
+    {
+      "row": 86,
+      "column": "f2956",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R121: f6159 excludes this participant but f2956 holds an answer (must be empty)"
+    },
+    {
+      "row": 87,
+      "column": "f3741",
+      "kind": "skip-break",
+      "value": 0,
+      "reason": "R122: f6159 excludes this participant but f3741 holds an answer (must be empty)"
+    },
+    {
+      "row": 88,
+      "column": "f2624",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R123: f6164 excludes this participant but f2624 holds an answer (must be empty)"
+    },
+    {
+      "row": 89,
+      "column": "f1011",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R124: f6164 excludes this participant but f1011 holds an answer (must be empty)"
+    },
+    {
+      "row": 90,
+      "column": "f3637",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R125: f6164 excludes this participant but f3637 holds an answer (must be empty)"
+    },
+    {
+      "row": 91,
+      "column": "f991",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R126: f6164 excludes this participant but f991 holds an answer (must be empty)"
+    },
+    {
+      "row": 92,
+      "column": "f971",
+      "kind": "skip-break",
+      "value": 1,
+      "reason": "R127: f6164 excludes this participant but f971 holds an answer (must be empty)"
+    }
+  ]
+}

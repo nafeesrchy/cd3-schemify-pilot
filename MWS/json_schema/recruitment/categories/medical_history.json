@@ -9,166 +9,365 @@
     "RBPPREG": {
       "title": "Ever had high blood pressure when pregnant",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RBP": {
       "title": "Ever had high blood pressure when not pregnant",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RHDIS": {
       "title": "Ever had heart disease",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RSTRK": {
       "title": "Ever had a stroke",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RDIAB": {
       "title": "Ever had diabetes",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RCHOL": {
       "title": "Ever had high blood cholesterol",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RTHROM": {
       "title": "Ever had a blood clot / thrombosis",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RTRBP": {
       "title": "Treated now: high blood pressure",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "No skip relationship to RBP -- steward-confirmed, D032."
     },
     "RTRHDIS": {
       "title": "Treated now: heart disease",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "No skip relationship to RHDIS -- steward-confirmed, D032."
     },
     "RTRDIAB": {
       "title": "Treated now: diabetes",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "No skip relationship to RDIAB -- steward-confirmed, D032."
     },
     "RTRAST": {
       "title": "Treated now: asthma",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RTRTHY": {
       "title": "Treated now: thyroid problems",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RTRRA": {
       "title": "Treated now: rheumatoid arthritis",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RTROA": {
       "title": "Treated now: osteoarthritis",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RTRDEP": {
       "title": "Treated now: depression/anxiety",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ]
     },
     "RTRVV": {
       "title": "Treated now: varicose veins",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/not_on_questionnaire" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_on_questionnaire"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). missing_numeric added alongside per D020."
+      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). null added alongside per D020."
     },
     "RTRCHOL": {
       "title": "Treated now: high blood cholesterol",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/not_on_questionnaire" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_on_questionnaire"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). missing_numeric added alongside per D020. No skip relationship to RCHOL -- steward-confirmed, D032."
+      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). null added alongside per D020. No skip relationship to RCHOL -- steward-confirmed, D032."
     },
     "RTRCLOT": {
       "title": "Treated now: clotting problems",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/not_on_questionnaire" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_on_questionnaire"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). missing_numeric added alongside per D020."
+      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). null added alongside per D020."
     },
     "RTROPOR": {
       "title": "Treated now: osteoporosis",
       "oneOf": [
-        { "const": 1, "title": "Yes" },
-        { "const": 2, "title": "No" },
-        { "$ref": "../../common/defs.json#/$defs/not_on_questionnaire" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": 2,
+          "title": "No"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/not_on_questionnaire"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
-      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). missing_numeric added alongside per D020."
+      "$comment": "Source's own code list includes -1=Not on questionnaire for this field (Other version = No availability). null added alongside per D020."
     }
   },
-  "required": ["RBPPREG", "RBP", "RHDIS", "RSTRK", "RDIAB", "RCHOL", "RTHROM", "RTRBP", "RTRHDIS", "RTRDIAB", "RTRAST", "RTRTHY", "RTRRA", "RTROA", "RTRDEP", "RTRVV", "RTRCHOL", "RTRCLOT", "RTROPOR"]
+  "required": [
+    "RBPPREG",
+    "RBP",
+    "RHDIS",
+    "RSTRK",
+    "RDIAB",
+    "RCHOL",
+    "RTHROM",
+    "RTRBP",
+    "RTRHDIS",
+    "RTRDIAB",
+    "RTRAST",
+    "RTRTHY",
+    "RTRRA",
+    "RTROA",
+    "RTRDEP",
+    "RTRVV",
+    "RTRCHOL",
+    "RTRCLOT",
+    "RTROPOR"
+  ]
 }

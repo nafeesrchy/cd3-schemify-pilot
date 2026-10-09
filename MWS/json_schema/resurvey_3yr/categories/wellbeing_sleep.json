@@ -9,78 +9,181 @@
     "F1HAPPY": {
       "title": "Frequency of feeling happy",
       "oneOf": [
-        { "const": 1, "title": "Rarely/never" },
-        { "const": 2, "title": "Sometimes" },
-        { "const": 3, "title": "Usually" },
-        { "const": 4, "title": "Most of the time" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Rarely/never"
+        },
+        {
+          "const": 2,
+          "title": "Sometimes"
+        },
+        {
+          "const": 3,
+          "title": "Usually"
+        },
+        {
+          "const": 4,
+          "title": "Most of the time"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Available on every questionnaire version."
     },
     "F1RELAX": {
       "title": "Frequency of feeling relaxed",
       "oneOf": [
-        { "const": 1, "title": "Rarely/never" },
-        { "const": 2, "title": "Sometimes" },
-        { "const": 3, "title": "Usually" },
-        { "const": 4, "title": "Most of the time" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Rarely/never"
+        },
+        {
+          "const": 2,
+          "title": "Sometimes"
+        },
+        {
+          "const": 3,
+          "title": "Usually"
+        },
+        {
+          "const": 4,
+          "title": "Most of the time"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Same 4-level shape as F1HAPPY, an independent question."
     },
     "F1CONTRL": {
       "title": "Frequency of feeling in control",
       "oneOf": [
-        { "const": 1, "title": "Rarely/never" },
-        { "const": 2, "title": "Sometimes" },
-        { "const": 3, "title": "Usually" },
-        { "const": 4, "title": "Most of the time" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Rarely/never"
+        },
+        {
+          "const": 2,
+          "title": "Sometimes"
+        },
+        {
+          "const": 3,
+          "title": "Usually"
+        },
+        {
+          "const": 4,
+          "title": "Most of the time"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Same 4-level shape as F1HAPPY, an independent question."
     },
     "F1STRESS": {
       "title": "Frequency of feeling stressed",
       "oneOf": [
-        { "const": 1, "title": "Rarely/never" },
-        { "const": 2, "title": "Sometimes" },
-        { "const": 3, "title": "Usually" },
-        { "const": 4, "title": "Most of the time" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Rarely/never"
+        },
+        {
+          "const": 2,
+          "title": "Sometimes"
+        },
+        {
+          "const": 3,
+          "title": "Usually"
+        },
+        {
+          "const": 4,
+          "title": "Most of the time"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Same 4-level shape as F1HAPPY, an independent question."
     },
     "F1TIRED": {
       "title": "Frequency of feeling tired",
       "oneOf": [
-        { "const": 1, "title": "Rarely/never" },
-        { "const": 2, "title": "Sometimes" },
-        { "const": 3, "title": "Usually" },
-        { "const": 4, "title": "Most of the time" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Rarely/never"
+        },
+        {
+          "const": 2,
+          "title": "Sometimes"
+        },
+        {
+          "const": 3,
+          "title": "Usually"
+        },
+        {
+          "const": 4,
+          "title": "Most of the time"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Same 4-level shape as F1HAPPY, an independent question."
     },
     "F1NAP": {
       "title": "Frequency of daytime naps",
       "oneOf": [
-        { "const": 1, "title": "Rarely/never" },
-        { "const": 2, "title": "Sometimes" },
-        { "const": 3, "title": "Usually" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
+        {
+          "const": 1,
+          "title": "Rarely/never"
+        },
+        {
+          "const": 2,
+          "title": "Sometimes"
+        },
+        {
+          "const": 3,
+          "title": "Usually"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
       ],
       "$comment": "Only 3 levels (no 'Most of the time' option), unlike the 5 feeling-frequency fields above -- transcribed verbatim from the source's own code list."
     },
     "F1SLEEP": {
       "title": "Total sleep duration",
       "x-unit": "hours/24 hours",
-      "oneOf": [
-        { "type": "number", "minimum": 0, "maximum": 24 },
-        { "const": 99, "title": "Unknown (tick/?/varies etc)" },
-        { "$ref": "../../common/defs.json#/$defs/missing_numeric" }
-      ],
-      "$comment": "Source states no valid range, but the field's own 'every 24 hours' framing structurally caps it at 24 -- not a stated D/E bound, but a structural fact rather than a guess, same reasoning as F1ALCDAY's 7-day cap (D061). Type number since sleep duration can be fractional (e.g. 7.5 hours). The source's own 99 code is kept as its own const branch, not merged into missing_numeric, same treatment as F1MENOAG's 77/99 (D051)."
+      "$comment": "Bound removed entirely -- the earlier agent-decided/derived plausibility bound was retired per Montse's dictionary-fidelity requirement (D101-D104) (the field's own 'every 24 hours' framing was never a stated D/E bound, only a structural implication, which does not survive the stricter dictionary-fidelity rule -- D101). Type number since sleep duration can be fractional (e.g. 7.5 hours). The source's own 99 code is kept as its own const branch, not merged into null, same treatment as F1MENOAG's 77/99 (D051); field converted oneOf->anyOf for the same overlap reason as F1ALCNUM (D101).",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "const": 99,
+          "title": "Unknown (tick/?/varies etc)"
+        },
+        {
+          "type": "null",
+          "title": "No value recorded"
+        }
+      ]
     }
   },
-  "required": ["F1HAPPY", "F1RELAX", "F1CONTRL", "F1STRESS", "F1TIRED", "F1NAP", "F1SLEEP"]
+  "required": [
+    "F1HAPPY",
+    "F1RELAX",
+    "F1CONTRL",
+    "F1STRESS",
+    "F1TIRED",
+    "F1NAP",
+    "F1SLEEP"
+  ]
 }
