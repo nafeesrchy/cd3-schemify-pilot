@@ -1,0 +1,17 @@
+[
+  {
+    "Affymetrix_QC": "ID0001",
+    "smearID_v1": "ID0002",
+    "smearID_v2": 12345
+  },
+  {
+    "Affymetrix_QC": "ID0001",
+    "smearID_v1": "ID0002"
+  },
+  {
+    "Affymetrix_QC": "ID0001",
+    "smearID_v1": "ID0002",
+    "smearID_v2": null,
+    "shoeSize": 42
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/common/defs.json",
+  "title": "COMPARE — shared definitions",
+  "description": "Only invariant tokens are centralised here; codes whose label differs by variable are inlined per field.",
+  "$defs": {
+    "dont_know_prefer_not_to_answer": {
+      "const": 999,
+      "title": "Don't know / prefer not to answer",
+      "$comment": "Source: '999 = don't know / prefer not to answer' (some items state only '999 = don't know' - those inline their own label)."
+    },
+    "not_applicable": {
+      "const": 998,
+      "title": "Not applicable",
+      "$comment": "Source: '998 = not applicable'. The dictionary does not state which answers make an item not applicable."
+    },
+    "no_value_recorded": {
+      "type": "null",
+      "title": "No value recorded",
+      "description": "The provider's data carries a blank where no value was recorded and the dictionary defines no code for it; the blank is a JSON null (D004).",
+      "$comment": "Not a code from the dictionary: the dictionary defines no code for a missing value. D004."
+    }
+  }
+}

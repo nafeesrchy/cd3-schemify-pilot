@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/questionnaires/categories/blood_donation.json",
+  "title": "QUESTIONNAIRES — Blood Donation",
+  "description": "Whether the donor was told they had low haemoglobin at donation, and how they felt after giving blood, from the questionnaire.",
+  "type": "object",
+  "x-variable-group": "blood_donation",
+  "$comment": "The source gives no 999 for these items.",
+  "properties": {
+    "haemLow": {
+      "title": "In the last 6 months have you been told by a member of NHSBT staff at your blood donation that you have low haemoglobin levels?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "yes"
+        },
+        {
+          "const": 2,
+          "title": "no"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "feel_after": {
+      "title": "Immediately after giving blood how do you feel physically compared to how you usually feel?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Much better"
+        },
+        {
+          "const": 2,
+          "title": "Slightly better"
+        },
+        {
+          "const": 3,
+          "title": "About the same"
+        },
+        {
+          "const": 4,
+          "title": "Slightly worse"
+        },
+        {
+          "const": 5,
+          "title": "Much worse"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "haemLow",
+    "feel_after"
+  ]
+}

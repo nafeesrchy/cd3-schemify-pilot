@@ -1,0 +1,38 @@
+[
+  {
+    "Total_C_ntg": 3.5,
+    "non_HDL_C_ntg": 12.25,
+    "LDL_C_ntg": 0,
+    "HDL_C_ntg": null,
+    "Total_TG_ntg": 3.5,
+    "ApoB_ntg": 12.25,
+    "ApoA1_ntg": 0,
+    "Glucose_ntg": null,
+    "Creatinine_ntg": 3.5,
+    "Albumin_ntg": "text"
+  },
+  {
+    "Total_C_ntg": 3.5,
+    "non_HDL_C_ntg": 12.25,
+    "LDL_C_ntg": 0,
+    "HDL_C_ntg": null,
+    "Total_TG_ntg": 3.5,
+    "ApoB_ntg": 12.25,
+    "ApoA1_ntg": 0,
+    "Glucose_ntg": null,
+    "Creatinine_ntg": 3.5
+  },
+  {
+    "Total_C_ntg": 3.5,
+    "non_HDL_C_ntg": 12.25,
+    "LDL_C_ntg": 0,
+    "HDL_C_ntg": null,
+    "Total_TG_ntg": 3.5,
+    "ApoB_ntg": 12.25,
+    "ApoA1_ntg": 0,
+    "Glucose_ntg": null,
+    "Creatinine_ntg": 3.5,
+    "Albumin_ntg": 12.25,
+    "shoeSize": 42
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "identifier": "ID0001",
+    "sexPulse": 1,
+    "agePulse": 45.5,
+    "ethnicPulse": null,
+    "ABORH": "A+"
+  },
+  {
+    "identifier": "ID0002",
+    "sexPulse": 2,
+    "agePulse": 80,
+    "ethnicPulse": "White",
+    "ABORH": "B+"
+  },
+  {
+    "identifier": "ID0003",
+    "sexPulse": null,
+    "agePulse": null,
+    "ethnicPulse": "Asian",
+    "ABORH": "AB+"
+  },
+  {
+    "identifier": null,
+    "sexPulse": 1,
+    "agePulse": 17,
+    "ethnicPulse": null,
+    "ABORH": "O+"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": 2,
+    "agePulse": 45.5,
+    "ethnicPulse": "White",
+    "ABORH": "A-"
+  },
+  {
+    "identifier": "ID0002",
+    "sexPulse": null,
+    "agePulse": 80,
+    "ethnicPulse": "Asian",
+    "ABORH": "B-"
+  },
+  {
+    "identifier": "ID0003",
+    "sexPulse": 1,
+    "agePulse": null,
+    "ethnicPulse": null,
+    "ABORH": "AB-"
+  },
+  {
+    "identifier": null,
+    "sexPulse": 2,
+    "agePulse": 17,
+    "ethnicPulse": "White",
+    "ABORH": "O-"
+  },
+  {
+    "identifier": "ID0001",
+    "sexPulse": null,
+    "agePulse": 45.5,
+    "ethnicPulse": "Asian",
+    "ABORH": null
+  },
+  {
+    "identifier": "ID0002",
+    "sexPulse": 1,
+    "agePulse": 80,
+    "ethnicPulse": null,
+    "ABORH": "A+"
+  },
+  {
+    "identifier": "ID0003",
+    "sexPulse": 2,
+    "agePulse": null,
+    "ethnicPulse": "White",
+    "ABORH": "B+"
+  },
+  {
+    "identifier": null,
+    "sexPulse": null,
+    "agePulse": 17,
+    "ethnicPulse": "Asian",
+    "ABORH": "AB+"
+  }
+]

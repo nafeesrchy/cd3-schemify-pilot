@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/omics/omics.schema.json",
+  "title": "COMPARE — OMICS table",
+  "description": "Array of donor records. One element is one donor in the omics and linkage items (omics sheet). A blank in the provider's data is written as null; the dictionary's own codes are kept as constants.",
+  "$comment": "Category files are wired into allOf as each category is converted. JSON Schema cannot enforce uniqueness of rows across the table; the identifier's format and whether the other tables carry it are open questions for the data provider (D009).",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "OMICS record",
+    "allOf": [
+      {
+        "$ref": "categories/omics.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

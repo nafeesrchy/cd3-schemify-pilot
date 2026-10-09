@@ -1,0 +1,25 @@
+{
+  "$comment": "Ground truth for biomarkers/toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "Albumin_ntg",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 1,
+      "column": "Albumin_ntg",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 2,
+      "column": "shoeSize",
+      "kind": "undeclared-column",
+      "reason": "not in the dictionary; rejected by unevaluatedProperties"
+    }
+  ]
+}

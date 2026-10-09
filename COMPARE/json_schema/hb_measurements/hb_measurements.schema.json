@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/hb_measurements/hb_measurements.schema.json",
+  "title": "COMPARE — HB_MEASUREMENTS table",
+  "description": "Array of donor records. One element is one donor in the haemoglobin measurements taken at donation (Hb_measurements sheet): the Haemospect, Hemocue and Orsense dates and values. A blank in the provider's data is written as null; the dictionary's own codes are kept as constants.",
+  "$comment": "Category files are wired into allOf as each category is converted. JSON Schema cannot enforce uniqueness of rows across the table; the identifier's format and whether the other tables carry it are open questions for the data provider (D009).",
+  "type": "array",
+  "minItems": 1,
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "HB_MEASUREMENTS record",
+    "allOf": [
+      {
+        "$ref": "categories/haemoglobin_measurements.json"
+      }
+    ],
+    "unevaluatedProperties": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "$comment": "Ground truth for basic_info/toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "identifier",
+      "kind": "wrong-type",
+      "value": 12345,
+      "reason": "a number is never legal here"
+    },
+    {
+      "row": 1,
+      "column": "identifier",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 2,
+      "column": "shoeSize",
+      "kind": "undeclared-column",
+      "reason": "not in the dictionary; rejected by unevaluatedProperties"
+    },
+    {
+      "row": 3,
+      "column": "ethnicPulse",
+      "kind": "wrong-type",
+      "value": 12345,
+      "reason": "a number is never legal here"
+    },
+    {
+      "row": 4,
+      "column": "sexPulse",
+      "kind": "unknown-level",
+      "value": 3,
+      "reason": "3 is not a declared code (1 male, 2 female)"
+    },
+    {
+      "row": 5,
+      "column": "ethnicPulse",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 6,
+      "column": "ABORH",
+      "kind": "wrong-type",
+      "value": "text",
+      "reason": "a string is never legal here"
+    },
+    {
+      "row": 7,
+      "column": "ABORH",
+      "kind": "unknown-level",
+      "value": "C+",
+      "reason": "not one of the eight listed blood groups"
+    },
+    {
+      "row": 8,
+      "column": "ABORH",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    }
+  ]
+}

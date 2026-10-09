@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/questionnaires/categories/fitzpatrick_skin_type.json",
+  "title": "QUESTIONNAIRES — Fitzpatrick Skin Type",
+  "description": "Eye, hair and skin colour, freckles and reaction to the sun, from the questionnaire.",
+  "type": "object",
+  "x-variable-group": "fitzpatrick_skin_type",
+  "$comment": "Items carry a 999 'Don't know / prefer not to answer'; each item's wording is a question plus the instruction 'Please choose one that matches you ...', which is the description.",
+  "properties": {
+    "fitzEyes": {
+      "title": "Which of the following best describes your natural eye colour?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Light blue or light grey or light green"
+        },
+        {
+          "const": 2,
+          "title": "Blue or grey or green"
+        },
+        {
+          "const": 3,
+          "title": "Hazel or light brown"
+        },
+        {
+          "const": 4,
+          "title": "Dark brown"
+        },
+        {
+          "const": 5,
+          "title": "Brownish black"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you most."
+    },
+    "fitzHair": {
+      "title": "Which of the following best describes your natural hair colour?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Red or light blond"
+        },
+        {
+          "const": 2,
+          "title": "Blond"
+        },
+        {
+          "const": 3,
+          "title": "Dark blond or light brown"
+        },
+        {
+          "const": 4,
+          "title": "Dark brown"
+        },
+        {
+          "const": 5,
+          "title": "Brownish black"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you the most."
+    },
+    "fitzSkin": {
+      "title": "Which of the following best describes your natural skin colour before sun exposure?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Ivory white or reddish"
+        },
+        {
+          "const": 2,
+          "title": "Fair or pale"
+        },
+        {
+          "const": 3,
+          "title": "Fair to beige, with golden undertone"
+        },
+        {
+          "const": 4,
+          "title": "Olive or light brown"
+        },
+        {
+          "const": 5,
+          "title": "Dark brown or black"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you the most."
+    },
+    "fitzFreckle": {
+      "title": "How many freckles do you have on unexposed areas of your skin?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Many"
+        },
+        {
+          "const": 2,
+          "title": "Several"
+        },
+        {
+          "const": 3,
+          "title": "A few"
+        },
+        {
+          "const": 4,
+          "title": "Very few"
+        },
+        {
+          "const": 5,
+          "title": "None"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you the most."
+    },
+    "fitzBurn": {
+      "title": "How does your skin respond to spending too long in the sun?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Always burns and blisters and peels"
+        },
+        {
+          "const": 2,
+          "title": "Often burns and blisters and peels"
+        },
+        {
+          "const": 3,
+          "title": "Burns moderately"
+        },
+        {
+          "const": 4,
+          "title": "Burn rarely if at all"
+        },
+        {
+          "const": 5,
+          "title": "Never burns"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you the most."
+    },
+    "fitzTan1": {
+      "title": "To what degree does your skin tan?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Never, I always burn"
+        },
+        {
+          "const": 2,
+          "title": "I seldom tan"
+        },
+        {
+          "const": 3,
+          "title": "I sometimes tan"
+        },
+        {
+          "const": 4,
+          "title": "I often tan"
+        },
+        {
+          "const": 5,
+          "title": "I always tan"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you the most."
+    },
+    "fitzTan2": {
+      "title": "Do you tan within several hours after sun exposure?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Never"
+        },
+        {
+          "const": 2,
+          "title": "Seldom"
+        },
+        {
+          "const": 3,
+          "title": "Sometimes"
+        },
+        {
+          "const": 4,
+          "title": "Often"
+        },
+        {
+          "const": 5,
+          "title": "Always"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you the most."
+    },
+    "fitzFace": {
+      "title": "How sensitive is your face to the sun?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Very sensitive"
+        },
+        {
+          "const": 2,
+          "title": "Sensitive"
+        },
+        {
+          "const": 3,
+          "title": "Normal"
+        },
+        {
+          "const": 4,
+          "title": "Resistant"
+        },
+        {
+          "const": 5,
+          "title": "Very resistant / never had a problem"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "description": "Please choose one that matches you the most."
+    },
+    "fitzExpose": {
+      "title": "When did you last expose your body to sun (or artificial sunlamp / tanning cream)?",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "More than 3 months ago"
+        },
+        {
+          "const": 2,
+          "title": "2-3 months ago"
+        },
+        {
+          "const": 3,
+          "title": "1-2 months ago"
+        },
+        {
+          "const": 4,
+          "title": "Less than a month ago"
+        },
+        {
+          "const": 5,
+          "title": "less than 2 weeks ago"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/dont_know_prefer_not_to_answer"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    }
+  },
+  "required": [
+    "fitzEyes",
+    "fitzHair",
+    "fitzSkin",
+    "fitzFreckle",
+    "fitzBurn",
+    "fitzTan1",
+    "fitzTan2",
+    "fitzFace",
+    "fitzExpose"
+  ]
+}

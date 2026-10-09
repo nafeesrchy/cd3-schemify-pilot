@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-compare-pilot/basic_info/categories/demographics.json",
+  "title": "BASIC_INFO — Demographics",
+  "description": "Sex, age at recruitment and ethnicity from the basicInfo sheet.",
+  "type": "object",
+  "x-variable-group": "demographics",
+  "properties": {
+    "sexPulse": {
+      "title": "gender",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "male"
+        },
+        {
+          "const": 2,
+          "title": "female"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ]
+    },
+    "agePulse": {
+      "title": "age at recruitment into COMPARE",
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source (basicInfo, Time_point 'recruitment') gives no unit, coding or range; none asserted. Typed number because no data type is stated (D013)."
+    },
+    "ethnicPulse": {
+      "title": "ethnicity",
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "../../common/defs.json#/$defs/no_value_recorded"
+        }
+      ],
+      "$comment": "Source (basicInfo) gives the description 'ethnicity' and no Categories text at all: no codes, no type. Typed as text until the data provider says what the column holds (D013)."
+    }
+  },
+  "required": [
+    "sexPulse",
+    "agePulse",
+    "ethnicPulse"
+  ]
+}

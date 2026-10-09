@@ -1,0 +1,25 @@
+{
+  "$comment": "Ground truth for omics/toy_invalid.json. Row indexes are 0-based array positions. One seeded violation per row.",
+  "rowIndexBase": 0,
+  "violations": [
+    {
+      "row": 0,
+      "column": "smearID_v2",
+      "kind": "wrong-type",
+      "value": 12345,
+      "reason": "a number is never legal here"
+    },
+    {
+      "row": 1,
+      "column": "smearID_v2",
+      "kind": "missing-key",
+      "reason": "column omitted - a missing value is written as null, never an absent key"
+    },
+    {
+      "row": 2,
+      "column": "shoeSize",
+      "kind": "undeclared-column",
+      "reason": "not in the dictionary; rejected by unevaluatedProperties"
+    }
+  ]
+}
