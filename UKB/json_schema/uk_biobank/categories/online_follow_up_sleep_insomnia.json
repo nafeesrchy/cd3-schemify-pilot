@@ -1,0 +1,354 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/online_follow_up_sleep_insomnia.json",
+  "title": "Online follow-up — Sleep: Insomnia",
+  "description": "UK Biobank fields in the category Online follow-up > Sleep > Insomnia, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "online_follow_up_sleep_insomnia",
+  "properties": {
+    "f30474": {
+      "title": "Time taken to fall asleep on a typical night in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0-15 mins"
+        },
+        {
+          "const": 1,
+          "title": "16-30 mins"
+        },
+        {
+          "const": 2,
+          "title": "31-45 mins"
+        },
+        {
+          "const": 3,
+          "title": "46-60 mins"
+        },
+        {
+          "const": 4,
+          "title": "61 mins or more"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2563."
+    },
+    "f30494": {
+      "title": "When online insomnia questionnaire started",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f30536": {
+      "title": "Time awake for when wake up during the night in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0-15 mins"
+        },
+        {
+          "const": 1,
+          "title": "16-30 mins"
+        },
+        {
+          "const": 2,
+          "title": "31-45 mins"
+        },
+        {
+          "const": 3,
+          "title": "46-60 mins"
+        },
+        {
+          "const": 4,
+          "title": "61 mins or more"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2563."
+    },
+    "f30537": {
+      "title": "Amount of time wake up early by in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "I don't wake up too early"
+        },
+        {
+          "const": 1,
+          "title": "Up to 15 mins early"
+        },
+        {
+          "const": 2,
+          "title": "16-30 mins early"
+        },
+        {
+          "const": 3,
+          "title": "31-45 mins early"
+        },
+        {
+          "const": 4,
+          "title": "46-60 mins early"
+        },
+        {
+          "const": 5,
+          "title": "More than 60 mins early"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2564."
+    },
+    "f30538": {
+      "title": "Number of nights a week of problematic sleep in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0-1"
+        },
+        {
+          "const": 1,
+          "title": "2"
+        },
+        {
+          "const": 2,
+          "title": "3"
+        },
+        {
+          "const": 3,
+          "title": "4"
+        },
+        {
+          "const": 4,
+          "title": "5-7"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2565."
+    },
+    "f30539": {
+      "title": "Sleep quality in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Very good"
+        },
+        {
+          "const": 1,
+          "title": "Good"
+        },
+        {
+          "const": 2,
+          "title": "Average"
+        },
+        {
+          "const": 3,
+          "title": "Poor"
+        },
+        {
+          "const": 4,
+          "title": "Very poor"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2566."
+    },
+    "f30540": {
+      "title": "The extent that poor sleep has affected mood or energy in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "A little"
+        },
+        {
+          "const": 2,
+          "title": "Somewhat"
+        },
+        {
+          "const": 3,
+          "title": "Much"
+        },
+        {
+          "const": 4,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2567."
+    },
+    "f30541": {
+      "title": "The extent that poor sleep has affected concentration or productivity in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "A little"
+        },
+        {
+          "const": 2,
+          "title": "Somewhat"
+        },
+        {
+          "const": 3,
+          "title": "Much"
+        },
+        {
+          "const": 4,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2567."
+    },
+    "f30542": {
+      "title": "The extent that poor sleep has troubled the respondent in the past month",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "Not at all"
+        },
+        {
+          "const": 1,
+          "title": "A little"
+        },
+        {
+          "const": 2,
+          "title": "Somewhat"
+        },
+        {
+          "const": 3,
+          "title": "Much"
+        },
+        {
+          "const": 4,
+          "title": "Very much"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2567."
+    },
+    "f30543": {
+      "title": "Length of time had a problem with sleep",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "I don't have a problem"
+        },
+        {
+          "const": 1,
+          "title": "Less than 1 month"
+        },
+        {
+          "const": 2,
+          "title": "1-2 months"
+        },
+        {
+          "const": 3,
+          "title": "3-6 months"
+        },
+        {
+          "const": 4,
+          "title": "7-12 months"
+        },
+        {
+          "const": 5,
+          "title": "1-5 years"
+        },
+        {
+          "const": 6,
+          "title": "6-10 years"
+        },
+        {
+          "const": 7,
+          "title": "More than 10 years"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2568."
+    },
+    "f32120": {
+      "title": "When online insomnia questionnaire completed",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    }
+  },
+  "required": [
+    "f30474",
+    "f30494",
+    "f30536",
+    "f30537",
+    "f30538",
+    "f30539",
+    "f30540",
+    "f30541",
+    "f30542",
+    "f30543",
+    "f32120"
+  ]
+}

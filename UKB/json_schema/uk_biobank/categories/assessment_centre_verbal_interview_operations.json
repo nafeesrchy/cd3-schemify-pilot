@@ -1,0 +1,2793 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/assessment_centre_verbal_interview_operations.json",
+  "title": "Assessment centre — Verbal interview: Operations",
+  "description": "UK Biobank fields in the category Assessment centre > Verbal interview > Operations, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "assessment_centre_verbal_interview_operations",
+  "properties": {
+    "f92": {
+      "title": "Operation year/age first occurred",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 32,
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Time uncertain/unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Time uncertain/unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 37. Up to 32 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f136": {
+      "title": "Number of operations, self-reported",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "$comment": "Initial assessment visit (instance 0)."
+    },
+    "f3079": {
+      "title": "Pace-maker",
+      "oneOf": [
+        {
+          "$ref": "../../common/defs.json#/$defs/yes_no"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 7. Initial assessment visit (instance 0)."
+    },
+    "f20004": {
+      "title": "Operation code",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 0,
+          "maxItems": 32,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1069,
+                "title": "heart surgery"
+              },
+              {
+                "const": 1070,
+                "title": "coronary angioplasty (ptca) +/- stent"
+              },
+              {
+                "const": 1071,
+                "title": "other arterial surgery/revascularisation procedures"
+              },
+              {
+                "const": 1095,
+                "title": "coronary artery bypass grafts (cabg)"
+              },
+              {
+                "const": 1096,
+                "title": "pacemaker/defibrillator insertion"
+              },
+              {
+                "const": 1097,
+                "title": "heart valve surgery"
+              },
+              {
+                "const": 1098,
+                "title": "heart transplant"
+              },
+              {
+                "const": 1099,
+                "title": "aortic valve repair/replacement"
+              },
+              {
+                "const": 1100,
+                "title": "mitral valve repair/replacement"
+              },
+              {
+                "const": 1101,
+                "title": "other valve repair/replacement"
+              },
+              {
+                "const": 1102,
+                "title": "fem-pop bypass/leg artery bypass"
+              },
+              {
+                "const": 1103,
+                "title": "leg artery aneurysm repair"
+              },
+              {
+                "const": 1104,
+                "title": "aortic aneurysm/repair or stent"
+              },
+              {
+                "const": 1105,
+                "title": "carotid artery surgery/endarterectomy"
+              },
+              {
+                "const": 1106,
+                "title": "cerebral artery aneurysm surgery or clipping"
+              },
+              {
+                "const": 1107,
+                "title": "non-coronary artery angioplasty +/- stent"
+              },
+              {
+                "const": 1108,
+                "title": "leg artery angioplasty +/- stent"
+              },
+              {
+                "const": 1109,
+                "title": "carotid artery angioplasty +/- stent"
+              },
+              {
+                "const": 1110,
+                "title": "renal artery angioplasty +/- stent"
+              },
+              {
+                "const": 1118,
+                "title": "ent surgery"
+              },
+              {
+                "const": 1127,
+                "title": "ear surgery"
+              },
+              {
+                "const": 1128,
+                "title": "nasal/sinus/nose surgery"
+              },
+              {
+                "const": 1129,
+                "title": "throat/larynx surgery (incl tracheostomy)"
+              },
+              {
+                "const": 1130,
+                "title": "mouth/salivary gland surgery"
+              },
+              {
+                "const": 1195,
+                "title": "renal/kidney transplant"
+              },
+              {
+                "const": 1197,
+                "title": "percutaneous/open kidney stone surgery/lithotripsy"
+              },
+              {
+                "const": 1199,
+                "title": "ureteric surgery"
+              },
+              {
+                "const": 1207,
+                "title": "prostate operation"
+              },
+              {
+                "const": 1208,
+                "title": "radical prostatectomy"
+              },
+              {
+                "const": 1209,
+                "title": "transurethral resection of prostate (turp)"
+              },
+              {
+                "const": 1216,
+                "title": "testicular/scrotal operation"
+              },
+              {
+                "const": 1217,
+                "title": "removal of testicle/orchidectomy"
+              },
+              {
+                "const": 1218,
+                "title": "vasectomy"
+              },
+              {
+                "const": 1219,
+                "title": "other urological surgery"
+              },
+              {
+                "const": 1224,
+                "title": "thyroid surgery"
+              },
+              {
+                "const": 1228,
+                "title": "thyroid radioablation therapy"
+              },
+              {
+                "const": 1229,
+                "title": "parathyroidectomy"
+              },
+              {
+                "const": 1232,
+                "title": "adrenal surgery"
+              },
+              {
+                "const": 1296,
+                "title": "bone surgery/joint surgery"
+              },
+              {
+                "const": 1297,
+                "title": "muscle/soft tissue surgery"
+              },
+              {
+                "const": 1318,
+                "title": "hip replacement/revision"
+              },
+              {
+                "const": 1319,
+                "title": "knee replacement/revision"
+              },
+              {
+                "const": 1320,
+                "title": "spine or back surgery"
+              },
+              {
+                "const": 1354,
+                "title": "gynaecological surgery"
+              },
+              {
+                "const": 1355,
+                "title": "bilateral oophorectomy"
+              },
+              {
+                "const": 1356,
+                "title": "unilateral oophorectomy"
+              },
+              {
+                "const": 1357,
+                "title": "hysterectomy"
+              },
+              {
+                "const": 1358,
+                "title": "hysterectomy with oophorectomy"
+              },
+              {
+                "const": 1359,
+                "title": "hysterectomy with cervical sparing"
+              },
+              {
+                "const": 1360,
+                "title": "endometrial ablation"
+              },
+              {
+                "const": 1361,
+                "title": "vaginal prolapse/colposuspension"
+              },
+              {
+                "const": 1362,
+                "title": "sterilisation"
+              },
+              {
+                "const": 1363,
+                "title": "intrauterine contraceptive device insertion/removal"
+              },
+              {
+                "const": 1365,
+                "title": "breast surgery"
+              },
+              {
+                "const": 1368,
+                "title": "mastectomy"
+              },
+              {
+                "const": 1369,
+                "title": "lumpectomy"
+              },
+              {
+                "const": 1370,
+                "title": "mammoplasty/cosmetic operation on breast"
+              },
+              {
+                "const": 1393,
+                "title": "venous surgery/procedures"
+              },
+              {
+                "const": 1402,
+                "title": "hernia surgery"
+              },
+              {
+                "const": 1403,
+                "title": "inguinal/femoral hernia repair"
+              },
+              {
+                "const": 1404,
+                "title": "umbilical hernia repair"
+              },
+              {
+                "const": 1405,
+                "title": "incisional hernia repair"
+              },
+              {
+                "const": 1427,
+                "title": "bladder surgery"
+              },
+              {
+                "const": 1428,
+                "title": "transurethral resection bladder tumour (turbt)"
+              },
+              {
+                "const": 1429,
+                "title": "cystectomy"
+              },
+              {
+                "const": 1431,
+                "title": "urethral surgery"
+              },
+              {
+                "const": 1432,
+                "title": "thyroidectomy/partial thyroidectomy"
+              },
+              {
+                "const": 1434,
+                "title": "eye surgery"
+              },
+              {
+                "const": 1435,
+                "title": "cataract extraction/lens implant"
+              },
+              {
+                "const": 1436,
+                "title": "glaucoma surgery/trabeculectomy"
+              },
+              {
+                "const": 1437,
+                "title": "retinal operation/vitrectomy"
+              },
+              {
+                "const": 1438,
+                "title": "bone marrow transplant"
+              },
+              {
+                "const": 1439,
+                "title": "reduction or fixation of bone fracture"
+              },
+              {
+                "const": 1440,
+                "title": "amputation of leg"
+              },
+              {
+                "const": 1441,
+                "title": "amputation of foot"
+              },
+              {
+                "const": 1442,
+                "title": "amputation of toe"
+              },
+              {
+                "const": 1443,
+                "title": "other amputation"
+              },
+              {
+                "const": 1444,
+                "title": "lung removal/pneumonectomy/lobectomy"
+              },
+              {
+                "const": 1445,
+                "title": "bullaectomy/bullae removal"
+              },
+              {
+                "const": 1446,
+                "title": "lung transplant"
+              },
+              {
+                "const": 1447,
+                "title": "other thoracic surgery"
+              },
+              {
+                "const": 1448,
+                "title": "stomach surgery"
+              },
+              {
+                "const": 1449,
+                "title": "oesophageal surgery"
+              },
+              {
+                "const": 1450,
+                "title": "liver surgery"
+              },
+              {
+                "const": 1451,
+                "title": "biliary surgery"
+              },
+              {
+                "const": 1452,
+                "title": "pancreas surgery"
+              },
+              {
+                "const": 1453,
+                "title": "splenectomy"
+              },
+              {
+                "const": 1454,
+                "title": "liver transplant"
+              },
+              {
+                "const": 1455,
+                "title": "cholecystectomy/gall bladder removal"
+              },
+              {
+                "const": 1456,
+                "title": "bile duct surgery"
+              },
+              {
+                "const": 1457,
+                "title": "pancreatic transplant"
+              },
+              {
+                "const": 1458,
+                "title": "appendicectomy"
+              },
+              {
+                "const": 1459,
+                "title": "bowel resection"
+              },
+              {
+                "const": 1460,
+                "title": "anal surgery"
+              },
+              {
+                "const": 1461,
+                "title": "large bowel resection +/- colostomy"
+              },
+              {
+                "const": 1462,
+                "title": "small bowel resection"
+              },
+              {
+                "const": 1463,
+                "title": "rectal or colon polypectomy"
+              },
+              {
+                "const": 1464,
+                "title": "colectomy/hemicolectomy"
+              },
+              {
+                "const": 1465,
+                "title": "rectal/sigmoid resection"
+              },
+              {
+                "const": 1466,
+                "title": "other bowel surgery"
+              },
+              {
+                "const": 1467,
+                "title": "brain surgery"
+              },
+              {
+                "const": 1468,
+                "title": "intracranial haematoma drainage"
+              },
+              {
+                "const": 1469,
+                "title": "cerebroventricular shunt/shunt for hydrocephalus"
+              },
+              {
+                "const": 1470,
+                "title": "spinal cord surgery"
+              },
+              {
+                "const": 1471,
+                "title": "peripheral nerve surgery"
+              },
+              {
+                "const": 1472,
+                "title": "pituitary surgery"
+              },
+              {
+                "const": 1473,
+                "title": "pituitary transplant"
+              },
+              {
+                "const": 1474,
+                "title": "skin operation or plastic surgery"
+              },
+              {
+                "const": 1475,
+                "title": "fertility treatment procedures"
+              },
+              {
+                "const": 1476,
+                "title": "fistula for dialysis"
+              },
+              {
+                "const": 1477,
+                "title": "caesarean section / caesarian section"
+              },
+              {
+                "const": 1478,
+                "title": "tonsillectomy +/- adenoids"
+              },
+              {
+                "const": 1479,
+                "title": "varicose vein surgery"
+              },
+              {
+                "const": 1480,
+                "title": "wisdom teeth surgery"
+              },
+              {
+                "const": 1481,
+                "title": "maxillo-facial surgery"
+              },
+              {
+                "const": 1482,
+                "title": "oesphageal fundoplication/hiatus hernia surgery"
+              },
+              {
+                "const": 1483,
+                "title": "haemorroidectomy / piles surgery/ banding of piles"
+              },
+              {
+                "const": 1484,
+                "title": "pilonidal sinus surgery (anal)"
+              },
+              {
+                "const": 1485,
+                "title": "abdominal/pelvic adhesion surgery"
+              },
+              {
+                "const": 1486,
+                "title": "laparotomy nos"
+              },
+              {
+                "const": 1487,
+                "title": "nephrectomy/kidney removed"
+              },
+              {
+                "const": 1488,
+                "title": "anterior/posterior repair bladder/uterus"
+              },
+              {
+                "const": 1489,
+                "title": "testicular hydrocoele surgery / drainage"
+              },
+              {
+                "const": 1490,
+                "title": "male circumcision"
+              },
+              {
+                "const": 1491,
+                "title": "squint correction"
+              },
+              {
+                "const": 1492,
+                "title": "spinal laminectomy"
+              },
+              {
+                "const": 1493,
+                "title": "arthroscopy nos"
+              },
+              {
+                "const": 1494,
+                "title": "foot surgery"
+              },
+              {
+                "const": 1495,
+                "title": "lower limb surgery"
+              },
+              {
+                "const": 1496,
+                "title": "knee surgery (not replacement)"
+              },
+              {
+                "const": 1497,
+                "title": "hip surgery (not replacement)"
+              },
+              {
+                "const": 1498,
+                "title": "upper limb surgery"
+              },
+              {
+                "const": 1499,
+                "title": "shoulder surgery"
+              },
+              {
+                "const": 1500,
+                "title": "elbow surgery"
+              },
+              {
+                "const": 1501,
+                "title": "carpal tunnel surgery"
+              },
+              {
+                "const": 1502,
+                "title": "cruciate ligament surgery"
+              },
+              {
+                "const": 1503,
+                "title": "bunion/hallus valgus surgery"
+              },
+              {
+                "const": 1504,
+                "title": "removal of mole/skin lesion"
+              },
+              {
+                "const": 1505,
+                "title": "ovarian/tubal surgery"
+              },
+              {
+                "const": 1506,
+                "title": "ovarian cyst removal/surgery"
+              },
+              {
+                "const": 1507,
+                "title": "ectopic pregnancy surgery"
+              },
+              {
+                "const": 1508,
+                "title": "uterine surgery"
+              },
+              {
+                "const": 1509,
+                "title": "myomectomy/fibroids removed"
+              },
+              {
+                "const": 1510,
+                "title": "dilatation and curettage/d+c"
+              },
+              {
+                "const": 1511,
+                "title": "cervix surgery"
+              },
+              {
+                "const": 1512,
+                "title": "cone biopsy"
+              },
+              {
+                "const": 1513,
+                "title": "breast cyst/abscess removal"
+              },
+              {
+                "const": 1514,
+                "title": "coronary angiogram"
+              },
+              {
+                "const": 1515,
+                "title": "angiogram not coronary"
+              },
+              {
+                "const": 1516,
+                "title": "echocardiogram/transoesophageal echo"
+              },
+              {
+                "const": 1517,
+                "title": "endoscopy / gastroscopy"
+              },
+              {
+                "const": 1518,
+                "title": "ercp/endoscopic retrograde cholangiopancreatogram"
+              },
+              {
+                "const": 1519,
+                "title": "colonoscopy/sigmoidoscopy"
+              },
+              {
+                "const": 1520,
+                "title": "laparoscopy"
+              },
+              {
+                "const": 1521,
+                "title": "hysteroscopy +/- biopsy"
+              },
+              {
+                "const": 1522,
+                "title": "colposcopy +/- biopsy"
+              },
+              {
+                "const": 1523,
+                "title": "triple heart bypass"
+              },
+              {
+                "const": 1524,
+                "title": "cardioversion"
+              },
+              {
+                "const": 1525,
+                "title": "mastoidectomy/mastoid surgery"
+              },
+              {
+                "const": 1526,
+                "title": "stapedectomy"
+              },
+              {
+                "const": 1527,
+                "title": "dental/tooth surgery"
+              },
+              {
+                "const": 1528,
+                "title": "gallstones removed"
+              },
+              {
+                "const": 1529,
+                "title": "duodenal surgery"
+              },
+              {
+                "const": 1530,
+                "title": "ileostomy/colostomy surgery"
+              },
+              {
+                "const": 1531,
+                "title": "discectomy"
+              },
+              {
+                "const": 1532,
+                "title": "ankle surgery"
+              },
+              {
+                "const": 1533,
+                "title": "achilles tendon repair"
+              },
+              {
+                "const": 1534,
+                "title": "hand/finger surgery"
+              },
+              {
+                "const": 1535,
+                "title": "dupuytren's contracture surgery"
+              },
+              {
+                "const": 1536,
+                "title": "lipoma removed / excision of lipoma"
+              },
+              {
+                "const": 1537,
+                "title": "lymph node surgery"
+              },
+              {
+                "const": 1538,
+                "title": "salpingectomy"
+              },
+              {
+                "const": 1539,
+                "title": "uterine polypectomy/uterine polyps removed"
+              },
+              {
+                "const": 1540,
+                "title": "termination of pregnancy/top"
+              },
+              {
+                "const": 1541,
+                "title": "cervical polyps removed"
+              },
+              {
+                "const": 1542,
+                "title": "laser treatment cervix"
+              },
+              {
+                "const": 1543,
+                "title": "pelvic floor surgery"
+              },
+              {
+                "const": 1544,
+                "title": "breast biopsy"
+              },
+              {
+                "const": 1545,
+                "title": "ecg/electrocardiogram"
+              },
+              {
+                "const": 1546,
+                "title": "bronchoscopy"
+              },
+              {
+                "const": 1547,
+                "title": "cystoscopy"
+              },
+              {
+                "const": 1548,
+                "title": "pacemaker insertion"
+              },
+              {
+                "const": 1549,
+                "title": "pacemaker battery change"
+              },
+              {
+                "const": 1550,
+                "title": "defibrillator/icd insertion"
+              },
+              {
+                "const": 1551,
+                "title": "defibrillator/icd battery change"
+              },
+              {
+                "const": 1552,
+                "title": "electrophysiological studies (eps)"
+              },
+              {
+                "const": 1553,
+                "title": "cardiac ablation"
+              },
+              {
+                "const": 1554,
+                "title": "pericardial surgery"
+              },
+              {
+                "const": 1555,
+                "title": "femoral/popliteal/iliac aneurysm repair"
+              },
+              {
+                "const": 1556,
+                "title": "tympanic membrane surgery / ear drum repair"
+              },
+              {
+                "const": 1557,
+                "title": "rhinoplasty / nose surgery"
+              },
+              {
+                "const": 1558,
+                "title": "sinus surgery"
+              },
+              {
+                "const": 1559,
+                "title": "nasal polyp surgery / nasal polypectomy"
+              },
+              {
+                "const": 1560,
+                "title": "parotid surgery / parotidectomy"
+              },
+              {
+                "const": 1561,
+                "title": "tonsillectomy / tonsil surgery"
+              },
+              {
+                "const": 1562,
+                "title": "adenoid surgery / adenoidectomy"
+              },
+              {
+                "const": 1563,
+                "title": "inguinal hernia repair"
+              },
+              {
+                "const": 1564,
+                "title": "femoral hernia repair"
+              },
+              {
+                "const": 1565,
+                "title": "gastrectomy"
+              },
+              {
+                "const": 1566,
+                "title": "peptic ulcer surgery"
+              },
+              {
+                "const": 1567,
+                "title": "gastric ulcer surgery"
+              },
+              {
+                "const": 1568,
+                "title": "duodenal ulcer surgery"
+              },
+              {
+                "const": 1570,
+                "title": "ileostomy surgery"
+              },
+              {
+                "const": 1571,
+                "title": "ileostomy formation"
+              },
+              {
+                "const": 1572,
+                "title": "ileostomy reversal"
+              },
+              {
+                "const": 1573,
+                "title": "surgery for pyloric stenosis"
+              },
+              {
+                "const": 1574,
+                "title": "colostomy surgery"
+              },
+              {
+                "const": 1575,
+                "title": "colostomy formation"
+              },
+              {
+                "const": 1576,
+                "title": "colostomy reversal"
+              },
+              {
+                "const": 1577,
+                "title": "anterior resection"
+              },
+              {
+                "const": 1578,
+                "title": "abdomino-perineal resection / ap resection"
+              },
+              {
+                "const": 1579,
+                "title": "anal fissure surgery"
+              },
+              {
+                "const": 1580,
+                "title": "dialysis access surgery"
+              },
+              {
+                "const": 1581,
+                "title": "haemodialysis access / fistula surgery"
+              },
+              {
+                "const": 1582,
+                "title": "peritoneal dialysis (capd) access surgery"
+              },
+              {
+                "const": 1583,
+                "title": "urethral stricture surgery / dilatation"
+              },
+              {
+                "const": 1584,
+                "title": "testicular lump removal"
+              },
+              {
+                "const": 1586,
+                "title": "varicocoele / varicocele surgery"
+              },
+              {
+                "const": 1587,
+                "title": "removal of epididymal cyst"
+              },
+              {
+                "const": 1588,
+                "title": "orchidopexy"
+              },
+              {
+                "const": 1589,
+                "title": "reversal of vasectomy / vasectomy reversal"
+              },
+              {
+                "const": 1590,
+                "title": "spinal fusion"
+              },
+              {
+                "const": 1591,
+                "title": "eyelid surgery"
+              },
+              {
+                "const": 1592,
+                "title": "nasolacrimal / tear duct surgery"
+              },
+              {
+                "const": 1593,
+                "title": "removal of malignant melanoma"
+              },
+              {
+                "const": 1594,
+                "title": "removal of benign skin lesion"
+              },
+              {
+                "const": 1595,
+                "title": "removal of squamous cell carcinoma (scc)"
+              },
+              {
+                "const": 1596,
+                "title": "removal of rodent ulcer / basal cell carcinoma (bcc)"
+              },
+              {
+                "const": 1597,
+                "title": "skin graft"
+              },
+              {
+                "const": 1598,
+                "title": "nail surgery / nail removal"
+              },
+              {
+                "const": 1599,
+                "title": "exercise ecg"
+              },
+              {
+                "const": 1600,
+                "title": "mri / magnetic resonance imaging"
+              },
+              {
+                "const": 1601,
+                "title": "laryngoscopy"
+              },
+              {
+                "const": 1602,
+                "title": "nasal endoscopy"
+              },
+              {
+                "const": 1603,
+                "title": "scan / x-ray"
+              },
+              {
+                "const": 1604,
+                "title": "cardiac investigation"
+              },
+              {
+                "const": 1605,
+                "title": "gastrointestinal investigation"
+              },
+              {
+                "const": 1606,
+                "title": "genito-urinary investigation"
+              },
+              {
+                "const": 1607,
+                "title": "ct scan"
+              },
+              {
+                "const": 1608,
+                "title": "bone scan"
+              },
+              {
+                "const": 1609,
+                "title": "ultrasound scan"
+              },
+              {
+                "const": 1610,
+                "title": "pet scan"
+              },
+              {
+                "const": 1611,
+                "title": "barium meal / barium swallow"
+              },
+              {
+                "const": 1612,
+                "title": "barium enema"
+              },
+              {
+                "const": 1613,
+                "title": "ct colonoscopy"
+              },
+              {
+                "const": 1614,
+                "title": "biopsy"
+              },
+              {
+                "const": 1615,
+                "title": "bone marrow biopsy"
+              },
+              {
+                "const": 1616,
+                "title": "liver biopsy"
+              },
+              {
+                "const": 1617,
+                "title": "prostate biopsy"
+              },
+              {
+                "const": 1618,
+                "title": "renal biopsy / kidney biopsy"
+              },
+              {
+                "const": 1619,
+                "title": "lung biopsy"
+              },
+              {
+                "const": 1620,
+                "title": "lumbar puncture"
+              },
+              {
+                "const": 1621,
+                "title": "cystoscopy"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1069
+          ],
+          "title": "heart surgery"
+        },
+        {
+          "const": [
+            1070
+          ],
+          "title": "coronary angioplasty (ptca) +/- stent"
+        },
+        {
+          "const": [
+            1071
+          ],
+          "title": "other arterial surgery/revascularisation procedures"
+        },
+        {
+          "const": [
+            1095
+          ],
+          "title": "coronary artery bypass grafts (cabg)"
+        },
+        {
+          "const": [
+            1096
+          ],
+          "title": "pacemaker/defibrillator insertion"
+        },
+        {
+          "const": [
+            1097
+          ],
+          "title": "heart valve surgery"
+        },
+        {
+          "const": [
+            1098
+          ],
+          "title": "heart transplant"
+        },
+        {
+          "const": [
+            1099
+          ],
+          "title": "aortic valve repair/replacement"
+        },
+        {
+          "const": [
+            1100
+          ],
+          "title": "mitral valve repair/replacement"
+        },
+        {
+          "const": [
+            1101
+          ],
+          "title": "other valve repair/replacement"
+        },
+        {
+          "const": [
+            1102
+          ],
+          "title": "fem-pop bypass/leg artery bypass"
+        },
+        {
+          "const": [
+            1103
+          ],
+          "title": "leg artery aneurysm repair"
+        },
+        {
+          "const": [
+            1104
+          ],
+          "title": "aortic aneurysm/repair or stent"
+        },
+        {
+          "const": [
+            1105
+          ],
+          "title": "carotid artery surgery/endarterectomy"
+        },
+        {
+          "const": [
+            1106
+          ],
+          "title": "cerebral artery aneurysm surgery or clipping"
+        },
+        {
+          "const": [
+            1107
+          ],
+          "title": "non-coronary artery angioplasty +/- stent"
+        },
+        {
+          "const": [
+            1108
+          ],
+          "title": "leg artery angioplasty +/- stent"
+        },
+        {
+          "const": [
+            1109
+          ],
+          "title": "carotid artery angioplasty +/- stent"
+        },
+        {
+          "const": [
+            1110
+          ],
+          "title": "renal artery angioplasty +/- stent"
+        },
+        {
+          "const": [
+            1118
+          ],
+          "title": "ent surgery"
+        },
+        {
+          "const": [
+            1127
+          ],
+          "title": "ear surgery"
+        },
+        {
+          "const": [
+            1128
+          ],
+          "title": "nasal/sinus/nose surgery"
+        },
+        {
+          "const": [
+            1129
+          ],
+          "title": "throat/larynx surgery (incl tracheostomy)"
+        },
+        {
+          "const": [
+            1130
+          ],
+          "title": "mouth/salivary gland surgery"
+        },
+        {
+          "const": [
+            1195
+          ],
+          "title": "renal/kidney transplant"
+        },
+        {
+          "const": [
+            1197
+          ],
+          "title": "percutaneous/open kidney stone surgery/lithotripsy"
+        },
+        {
+          "const": [
+            1199
+          ],
+          "title": "ureteric surgery"
+        },
+        {
+          "const": [
+            1207
+          ],
+          "title": "prostate operation"
+        },
+        {
+          "const": [
+            1208
+          ],
+          "title": "radical prostatectomy"
+        },
+        {
+          "const": [
+            1209
+          ],
+          "title": "transurethral resection of prostate (turp)"
+        },
+        {
+          "const": [
+            1216
+          ],
+          "title": "testicular/scrotal operation"
+        },
+        {
+          "const": [
+            1217
+          ],
+          "title": "removal of testicle/orchidectomy"
+        },
+        {
+          "const": [
+            1218
+          ],
+          "title": "vasectomy"
+        },
+        {
+          "const": [
+            1219
+          ],
+          "title": "other urological surgery"
+        },
+        {
+          "const": [
+            1224
+          ],
+          "title": "thyroid surgery"
+        },
+        {
+          "const": [
+            1228
+          ],
+          "title": "thyroid radioablation therapy"
+        },
+        {
+          "const": [
+            1229
+          ],
+          "title": "parathyroidectomy"
+        },
+        {
+          "const": [
+            1232
+          ],
+          "title": "adrenal surgery"
+        },
+        {
+          "const": [
+            1296
+          ],
+          "title": "bone surgery/joint surgery"
+        },
+        {
+          "const": [
+            1297
+          ],
+          "title": "muscle/soft tissue surgery"
+        },
+        {
+          "const": [
+            1318
+          ],
+          "title": "hip replacement/revision"
+        },
+        {
+          "const": [
+            1319
+          ],
+          "title": "knee replacement/revision"
+        },
+        {
+          "const": [
+            1320
+          ],
+          "title": "spine or back surgery"
+        },
+        {
+          "const": [
+            1354
+          ],
+          "title": "gynaecological surgery"
+        },
+        {
+          "const": [
+            1355
+          ],
+          "title": "bilateral oophorectomy"
+        },
+        {
+          "const": [
+            1356
+          ],
+          "title": "unilateral oophorectomy"
+        },
+        {
+          "const": [
+            1357
+          ],
+          "title": "hysterectomy"
+        },
+        {
+          "const": [
+            1358
+          ],
+          "title": "hysterectomy with oophorectomy"
+        },
+        {
+          "const": [
+            1359
+          ],
+          "title": "hysterectomy with cervical sparing"
+        },
+        {
+          "const": [
+            1360
+          ],
+          "title": "endometrial ablation"
+        },
+        {
+          "const": [
+            1361
+          ],
+          "title": "vaginal prolapse/colposuspension"
+        },
+        {
+          "const": [
+            1362
+          ],
+          "title": "sterilisation"
+        },
+        {
+          "const": [
+            1363
+          ],
+          "title": "intrauterine contraceptive device insertion/removal"
+        },
+        {
+          "const": [
+            1365
+          ],
+          "title": "breast surgery"
+        },
+        {
+          "const": [
+            1368
+          ],
+          "title": "mastectomy"
+        },
+        {
+          "const": [
+            1369
+          ],
+          "title": "lumpectomy"
+        },
+        {
+          "const": [
+            1370
+          ],
+          "title": "mammoplasty/cosmetic operation on breast"
+        },
+        {
+          "const": [
+            1393
+          ],
+          "title": "venous surgery/procedures"
+        },
+        {
+          "const": [
+            1402
+          ],
+          "title": "hernia surgery"
+        },
+        {
+          "const": [
+            1403
+          ],
+          "title": "inguinal/femoral hernia repair"
+        },
+        {
+          "const": [
+            1404
+          ],
+          "title": "umbilical hernia repair"
+        },
+        {
+          "const": [
+            1405
+          ],
+          "title": "incisional hernia repair"
+        },
+        {
+          "const": [
+            1427
+          ],
+          "title": "bladder surgery"
+        },
+        {
+          "const": [
+            1428
+          ],
+          "title": "transurethral resection bladder tumour (turbt)"
+        },
+        {
+          "const": [
+            1429
+          ],
+          "title": "cystectomy"
+        },
+        {
+          "const": [
+            1431
+          ],
+          "title": "urethral surgery"
+        },
+        {
+          "const": [
+            1432
+          ],
+          "title": "thyroidectomy/partial thyroidectomy"
+        },
+        {
+          "const": [
+            1434
+          ],
+          "title": "eye surgery"
+        },
+        {
+          "const": [
+            1435
+          ],
+          "title": "cataract extraction/lens implant"
+        },
+        {
+          "const": [
+            1436
+          ],
+          "title": "glaucoma surgery/trabeculectomy"
+        },
+        {
+          "const": [
+            1437
+          ],
+          "title": "retinal operation/vitrectomy"
+        },
+        {
+          "const": [
+            1438
+          ],
+          "title": "bone marrow transplant"
+        },
+        {
+          "const": [
+            1439
+          ],
+          "title": "reduction or fixation of bone fracture"
+        },
+        {
+          "const": [
+            1440
+          ],
+          "title": "amputation of leg"
+        },
+        {
+          "const": [
+            1441
+          ],
+          "title": "amputation of foot"
+        },
+        {
+          "const": [
+            1442
+          ],
+          "title": "amputation of toe"
+        },
+        {
+          "const": [
+            1443
+          ],
+          "title": "other amputation"
+        },
+        {
+          "const": [
+            1444
+          ],
+          "title": "lung removal/pneumonectomy/lobectomy"
+        },
+        {
+          "const": [
+            1445
+          ],
+          "title": "bullaectomy/bullae removal"
+        },
+        {
+          "const": [
+            1446
+          ],
+          "title": "lung transplant"
+        },
+        {
+          "const": [
+            1447
+          ],
+          "title": "other thoracic surgery"
+        },
+        {
+          "const": [
+            1448
+          ],
+          "title": "stomach surgery"
+        },
+        {
+          "const": [
+            1449
+          ],
+          "title": "oesophageal surgery"
+        },
+        {
+          "const": [
+            1450
+          ],
+          "title": "liver surgery"
+        },
+        {
+          "const": [
+            1451
+          ],
+          "title": "biliary surgery"
+        },
+        {
+          "const": [
+            1452
+          ],
+          "title": "pancreas surgery"
+        },
+        {
+          "const": [
+            1453
+          ],
+          "title": "splenectomy"
+        },
+        {
+          "const": [
+            1454
+          ],
+          "title": "liver transplant"
+        },
+        {
+          "const": [
+            1455
+          ],
+          "title": "cholecystectomy/gall bladder removal"
+        },
+        {
+          "const": [
+            1456
+          ],
+          "title": "bile duct surgery"
+        },
+        {
+          "const": [
+            1457
+          ],
+          "title": "pancreatic transplant"
+        },
+        {
+          "const": [
+            1458
+          ],
+          "title": "appendicectomy"
+        },
+        {
+          "const": [
+            1459
+          ],
+          "title": "bowel resection"
+        },
+        {
+          "const": [
+            1460
+          ],
+          "title": "anal surgery"
+        },
+        {
+          "const": [
+            1461
+          ],
+          "title": "large bowel resection +/- colostomy"
+        },
+        {
+          "const": [
+            1462
+          ],
+          "title": "small bowel resection"
+        },
+        {
+          "const": [
+            1463
+          ],
+          "title": "rectal or colon polypectomy"
+        },
+        {
+          "const": [
+            1464
+          ],
+          "title": "colectomy/hemicolectomy"
+        },
+        {
+          "const": [
+            1465
+          ],
+          "title": "rectal/sigmoid resection"
+        },
+        {
+          "const": [
+            1466
+          ],
+          "title": "other bowel surgery"
+        },
+        {
+          "const": [
+            1467
+          ],
+          "title": "brain surgery"
+        },
+        {
+          "const": [
+            1468
+          ],
+          "title": "intracranial haematoma drainage"
+        },
+        {
+          "const": [
+            1469
+          ],
+          "title": "cerebroventricular shunt/shunt for hydrocephalus"
+        },
+        {
+          "const": [
+            1470
+          ],
+          "title": "spinal cord surgery"
+        },
+        {
+          "const": [
+            1471
+          ],
+          "title": "peripheral nerve surgery"
+        },
+        {
+          "const": [
+            1472
+          ],
+          "title": "pituitary surgery"
+        },
+        {
+          "const": [
+            1473
+          ],
+          "title": "pituitary transplant"
+        },
+        {
+          "const": [
+            1474
+          ],
+          "title": "skin operation or plastic surgery"
+        },
+        {
+          "const": [
+            1475
+          ],
+          "title": "fertility treatment procedures"
+        },
+        {
+          "const": [
+            1476
+          ],
+          "title": "fistula for dialysis"
+        },
+        {
+          "const": [
+            1477
+          ],
+          "title": "caesarean section / caesarian section"
+        },
+        {
+          "const": [
+            1478
+          ],
+          "title": "tonsillectomy +/- adenoids"
+        },
+        {
+          "const": [
+            1479
+          ],
+          "title": "varicose vein surgery"
+        },
+        {
+          "const": [
+            1480
+          ],
+          "title": "wisdom teeth surgery"
+        },
+        {
+          "const": [
+            1481
+          ],
+          "title": "maxillo-facial surgery"
+        },
+        {
+          "const": [
+            1482
+          ],
+          "title": "oesphageal fundoplication/hiatus hernia surgery"
+        },
+        {
+          "const": [
+            1483
+          ],
+          "title": "haemorroidectomy / piles surgery/ banding of piles"
+        },
+        {
+          "const": [
+            1484
+          ],
+          "title": "pilonidal sinus surgery (anal)"
+        },
+        {
+          "const": [
+            1485
+          ],
+          "title": "abdominal/pelvic adhesion surgery"
+        },
+        {
+          "const": [
+            1486
+          ],
+          "title": "laparotomy nos"
+        },
+        {
+          "const": [
+            1487
+          ],
+          "title": "nephrectomy/kidney removed"
+        },
+        {
+          "const": [
+            1488
+          ],
+          "title": "anterior/posterior repair bladder/uterus"
+        },
+        {
+          "const": [
+            1489
+          ],
+          "title": "testicular hydrocoele surgery / drainage"
+        },
+        {
+          "const": [
+            1490
+          ],
+          "title": "male circumcision"
+        },
+        {
+          "const": [
+            1491
+          ],
+          "title": "squint correction"
+        },
+        {
+          "const": [
+            1492
+          ],
+          "title": "spinal laminectomy"
+        },
+        {
+          "const": [
+            1493
+          ],
+          "title": "arthroscopy nos"
+        },
+        {
+          "const": [
+            1494
+          ],
+          "title": "foot surgery"
+        },
+        {
+          "const": [
+            1495
+          ],
+          "title": "lower limb surgery"
+        },
+        {
+          "const": [
+            1496
+          ],
+          "title": "knee surgery (not replacement)"
+        },
+        {
+          "const": [
+            1497
+          ],
+          "title": "hip surgery (not replacement)"
+        },
+        {
+          "const": [
+            1498
+          ],
+          "title": "upper limb surgery"
+        },
+        {
+          "const": [
+            1499
+          ],
+          "title": "shoulder surgery"
+        },
+        {
+          "const": [
+            1500
+          ],
+          "title": "elbow surgery"
+        },
+        {
+          "const": [
+            1501
+          ],
+          "title": "carpal tunnel surgery"
+        },
+        {
+          "const": [
+            1502
+          ],
+          "title": "cruciate ligament surgery"
+        },
+        {
+          "const": [
+            1503
+          ],
+          "title": "bunion/hallus valgus surgery"
+        },
+        {
+          "const": [
+            1504
+          ],
+          "title": "removal of mole/skin lesion"
+        },
+        {
+          "const": [
+            1505
+          ],
+          "title": "ovarian/tubal surgery"
+        },
+        {
+          "const": [
+            1506
+          ],
+          "title": "ovarian cyst removal/surgery"
+        },
+        {
+          "const": [
+            1507
+          ],
+          "title": "ectopic pregnancy surgery"
+        },
+        {
+          "const": [
+            1508
+          ],
+          "title": "uterine surgery"
+        },
+        {
+          "const": [
+            1509
+          ],
+          "title": "myomectomy/fibroids removed"
+        },
+        {
+          "const": [
+            1510
+          ],
+          "title": "dilatation and curettage/d+c"
+        },
+        {
+          "const": [
+            1511
+          ],
+          "title": "cervix surgery"
+        },
+        {
+          "const": [
+            1512
+          ],
+          "title": "cone biopsy"
+        },
+        {
+          "const": [
+            1513
+          ],
+          "title": "breast cyst/abscess removal"
+        },
+        {
+          "const": [
+            1514
+          ],
+          "title": "coronary angiogram"
+        },
+        {
+          "const": [
+            1515
+          ],
+          "title": "angiogram not coronary"
+        },
+        {
+          "const": [
+            1516
+          ],
+          "title": "echocardiogram/transoesophageal echo"
+        },
+        {
+          "const": [
+            1517
+          ],
+          "title": "endoscopy / gastroscopy"
+        },
+        {
+          "const": [
+            1518
+          ],
+          "title": "ercp/endoscopic retrograde cholangiopancreatogram"
+        },
+        {
+          "const": [
+            1519
+          ],
+          "title": "colonoscopy/sigmoidoscopy"
+        },
+        {
+          "const": [
+            1520
+          ],
+          "title": "laparoscopy"
+        },
+        {
+          "const": [
+            1521
+          ],
+          "title": "hysteroscopy +/- biopsy"
+        },
+        {
+          "const": [
+            1522
+          ],
+          "title": "colposcopy +/- biopsy"
+        },
+        {
+          "const": [
+            1523
+          ],
+          "title": "triple heart bypass"
+        },
+        {
+          "const": [
+            1524
+          ],
+          "title": "cardioversion"
+        },
+        {
+          "const": [
+            1525
+          ],
+          "title": "mastoidectomy/mastoid surgery"
+        },
+        {
+          "const": [
+            1526
+          ],
+          "title": "stapedectomy"
+        },
+        {
+          "const": [
+            1527
+          ],
+          "title": "dental/tooth surgery"
+        },
+        {
+          "const": [
+            1528
+          ],
+          "title": "gallstones removed"
+        },
+        {
+          "const": [
+            1529
+          ],
+          "title": "duodenal surgery"
+        },
+        {
+          "const": [
+            1530
+          ],
+          "title": "ileostomy/colostomy surgery"
+        },
+        {
+          "const": [
+            1531
+          ],
+          "title": "discectomy"
+        },
+        {
+          "const": [
+            1532
+          ],
+          "title": "ankle surgery"
+        },
+        {
+          "const": [
+            1533
+          ],
+          "title": "achilles tendon repair"
+        },
+        {
+          "const": [
+            1534
+          ],
+          "title": "hand/finger surgery"
+        },
+        {
+          "const": [
+            1535
+          ],
+          "title": "dupuytren's contracture surgery"
+        },
+        {
+          "const": [
+            1536
+          ],
+          "title": "lipoma removed / excision of lipoma"
+        },
+        {
+          "const": [
+            1537
+          ],
+          "title": "lymph node surgery"
+        },
+        {
+          "const": [
+            1538
+          ],
+          "title": "salpingectomy"
+        },
+        {
+          "const": [
+            1539
+          ],
+          "title": "uterine polypectomy/uterine polyps removed"
+        },
+        {
+          "const": [
+            1540
+          ],
+          "title": "termination of pregnancy/top"
+        },
+        {
+          "const": [
+            1541
+          ],
+          "title": "cervical polyps removed"
+        },
+        {
+          "const": [
+            1542
+          ],
+          "title": "laser treatment cervix"
+        },
+        {
+          "const": [
+            1543
+          ],
+          "title": "pelvic floor surgery"
+        },
+        {
+          "const": [
+            1544
+          ],
+          "title": "breast biopsy"
+        },
+        {
+          "const": [
+            1545
+          ],
+          "title": "ecg/electrocardiogram"
+        },
+        {
+          "const": [
+            1546
+          ],
+          "title": "bronchoscopy"
+        },
+        {
+          "const": [
+            1547
+          ],
+          "title": "cystoscopy"
+        },
+        {
+          "const": [
+            1548
+          ],
+          "title": "pacemaker insertion"
+        },
+        {
+          "const": [
+            1549
+          ],
+          "title": "pacemaker battery change"
+        },
+        {
+          "const": [
+            1550
+          ],
+          "title": "defibrillator/icd insertion"
+        },
+        {
+          "const": [
+            1551
+          ],
+          "title": "defibrillator/icd battery change"
+        },
+        {
+          "const": [
+            1552
+          ],
+          "title": "electrophysiological studies (eps)"
+        },
+        {
+          "const": [
+            1553
+          ],
+          "title": "cardiac ablation"
+        },
+        {
+          "const": [
+            1554
+          ],
+          "title": "pericardial surgery"
+        },
+        {
+          "const": [
+            1555
+          ],
+          "title": "femoral/popliteal/iliac aneurysm repair"
+        },
+        {
+          "const": [
+            1556
+          ],
+          "title": "tympanic membrane surgery / ear drum repair"
+        },
+        {
+          "const": [
+            1557
+          ],
+          "title": "rhinoplasty / nose surgery"
+        },
+        {
+          "const": [
+            1558
+          ],
+          "title": "sinus surgery"
+        },
+        {
+          "const": [
+            1559
+          ],
+          "title": "nasal polyp surgery / nasal polypectomy"
+        },
+        {
+          "const": [
+            1560
+          ],
+          "title": "parotid surgery / parotidectomy"
+        },
+        {
+          "const": [
+            1561
+          ],
+          "title": "tonsillectomy / tonsil surgery"
+        },
+        {
+          "const": [
+            1562
+          ],
+          "title": "adenoid surgery / adenoidectomy"
+        },
+        {
+          "const": [
+            1563
+          ],
+          "title": "inguinal hernia repair"
+        },
+        {
+          "const": [
+            1564
+          ],
+          "title": "femoral hernia repair"
+        },
+        {
+          "const": [
+            1565
+          ],
+          "title": "gastrectomy"
+        },
+        {
+          "const": [
+            1566
+          ],
+          "title": "peptic ulcer surgery"
+        },
+        {
+          "const": [
+            1567
+          ],
+          "title": "gastric ulcer surgery"
+        },
+        {
+          "const": [
+            1568
+          ],
+          "title": "duodenal ulcer surgery"
+        },
+        {
+          "const": [
+            1570
+          ],
+          "title": "ileostomy surgery"
+        },
+        {
+          "const": [
+            1571
+          ],
+          "title": "ileostomy formation"
+        },
+        {
+          "const": [
+            1572
+          ],
+          "title": "ileostomy reversal"
+        },
+        {
+          "const": [
+            1573
+          ],
+          "title": "surgery for pyloric stenosis"
+        },
+        {
+          "const": [
+            1574
+          ],
+          "title": "colostomy surgery"
+        },
+        {
+          "const": [
+            1575
+          ],
+          "title": "colostomy formation"
+        },
+        {
+          "const": [
+            1576
+          ],
+          "title": "colostomy reversal"
+        },
+        {
+          "const": [
+            1577
+          ],
+          "title": "anterior resection"
+        },
+        {
+          "const": [
+            1578
+          ],
+          "title": "abdomino-perineal resection / ap resection"
+        },
+        {
+          "const": [
+            1579
+          ],
+          "title": "anal fissure surgery"
+        },
+        {
+          "const": [
+            1580
+          ],
+          "title": "dialysis access surgery"
+        },
+        {
+          "const": [
+            1581
+          ],
+          "title": "haemodialysis access / fistula surgery"
+        },
+        {
+          "const": [
+            1582
+          ],
+          "title": "peritoneal dialysis (capd) access surgery"
+        },
+        {
+          "const": [
+            1583
+          ],
+          "title": "urethral stricture surgery / dilatation"
+        },
+        {
+          "const": [
+            1584
+          ],
+          "title": "testicular lump removal"
+        },
+        {
+          "const": [
+            1586
+          ],
+          "title": "varicocoele / varicocele surgery"
+        },
+        {
+          "const": [
+            1587
+          ],
+          "title": "removal of epididymal cyst"
+        },
+        {
+          "const": [
+            1588
+          ],
+          "title": "orchidopexy"
+        },
+        {
+          "const": [
+            1589
+          ],
+          "title": "reversal of vasectomy / vasectomy reversal"
+        },
+        {
+          "const": [
+            1590
+          ],
+          "title": "spinal fusion"
+        },
+        {
+          "const": [
+            1591
+          ],
+          "title": "eyelid surgery"
+        },
+        {
+          "const": [
+            1592
+          ],
+          "title": "nasolacrimal / tear duct surgery"
+        },
+        {
+          "const": [
+            1593
+          ],
+          "title": "removal of malignant melanoma"
+        },
+        {
+          "const": [
+            1594
+          ],
+          "title": "removal of benign skin lesion"
+        },
+        {
+          "const": [
+            1595
+          ],
+          "title": "removal of squamous cell carcinoma (scc)"
+        },
+        {
+          "const": [
+            1596
+          ],
+          "title": "removal of rodent ulcer / basal cell carcinoma (bcc)"
+        },
+        {
+          "const": [
+            1597
+          ],
+          "title": "skin graft"
+        },
+        {
+          "const": [
+            1598
+          ],
+          "title": "nail surgery / nail removal"
+        },
+        {
+          "const": [
+            1599
+          ],
+          "title": "exercise ecg"
+        },
+        {
+          "const": [
+            1600
+          ],
+          "title": "mri / magnetic resonance imaging"
+        },
+        {
+          "const": [
+            1601
+          ],
+          "title": "laryngoscopy"
+        },
+        {
+          "const": [
+            1602
+          ],
+          "title": "nasal endoscopy"
+        },
+        {
+          "const": [
+            1603
+          ],
+          "title": "scan / x-ray"
+        },
+        {
+          "const": [
+            1604
+          ],
+          "title": "cardiac investigation"
+        },
+        {
+          "const": [
+            1605
+          ],
+          "title": "gastrointestinal investigation"
+        },
+        {
+          "const": [
+            1606
+          ],
+          "title": "genito-urinary investigation"
+        },
+        {
+          "const": [
+            1607
+          ],
+          "title": "ct scan"
+        },
+        {
+          "const": [
+            1608
+          ],
+          "title": "bone scan"
+        },
+        {
+          "const": [
+            1609
+          ],
+          "title": "ultrasound scan"
+        },
+        {
+          "const": [
+            1610
+          ],
+          "title": "pet scan"
+        },
+        {
+          "const": [
+            1611
+          ],
+          "title": "barium meal / barium swallow"
+        },
+        {
+          "const": [
+            1612
+          ],
+          "title": "barium enema"
+        },
+        {
+          "const": [
+            1613
+          ],
+          "title": "ct colonoscopy"
+        },
+        {
+          "const": [
+            1614
+          ],
+          "title": "biopsy"
+        },
+        {
+          "const": [
+            1615
+          ],
+          "title": "bone marrow biopsy"
+        },
+        {
+          "const": [
+            1616
+          ],
+          "title": "liver biopsy"
+        },
+        {
+          "const": [
+            1617
+          ],
+          "title": "prostate biopsy"
+        },
+        {
+          "const": [
+            1618
+          ],
+          "title": "renal biopsy / kidney biopsy"
+        },
+        {
+          "const": [
+            1619
+          ],
+          "title": "lung biopsy"
+        },
+        {
+          "const": [
+            1620
+          ],
+          "title": "lumbar puncture"
+        },
+        {
+          "const": [
+            1621
+          ],
+          "title": "cystoscopy"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 5. Up to 32 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20010": {
+      "title": "Interpolated Year when operation took place",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 32,
+          "items": {
+            "anyOf": [
+              {
+                "type": "number",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Date uncertain or unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Date uncertain or unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 13. Up to 32 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20011": {
+      "title": "Interpolated Age of participant when operation took place",
+      "x-unit": "years",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 32,
+          "items": {
+            "anyOf": [
+              {
+                "type": "number",
+                "not": {
+                  "enum": [
+                    -3,
+                    -1
+                  ]
+                }
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Date uncertain or unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Date uncertain or unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 13. Up to 32 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    },
+    "f20014": {
+      "title": "Method of recording time when operation occurred",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 32,
+          "items": {
+            "oneOf": [
+              {
+                "const": -5,
+                "title": "Year of event"
+              },
+              {
+                "const": -4,
+                "title": "Age at event"
+              },
+              {
+                "const": -3,
+                "title": "Preferred not to answer"
+              },
+              {
+                "const": -1,
+                "title": "Time uncertain/unknown"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -5
+          ],
+          "title": "Year of event"
+        },
+        {
+          "const": [
+            -4
+          ],
+          "title": "Age at event"
+        },
+        {
+          "const": [
+            -3
+          ],
+          "title": "Preferred not to answer"
+        },
+        {
+          "const": [
+            -1
+          ],
+          "title": "Time uncertain/unknown"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 14. Up to 32 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f92",
+    "f136",
+    "f3079",
+    "f20004",
+    "f20010",
+    "f20011",
+    "f20014"
+  ]
+}

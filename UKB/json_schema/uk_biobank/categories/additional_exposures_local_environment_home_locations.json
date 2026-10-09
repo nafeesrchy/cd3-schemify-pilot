@@ -1,0 +1,272 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/additional_exposures_local_environment_home_locations.json",
+  "title": "Additional exposures — Local environment: Home locations",
+  "description": "UK Biobank fields in the category Additional exposures > Local environment > Home locations, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "additional_exposures_local_environment_home_locations",
+  "properties": {
+    "f32220": {
+      "title": "Home location history - date first recorded",
+      "type": [
+        "array",
+        "null"
+      ],
+      "uniqueItems": false,
+      "minItems": 0,
+      "maxItems": 11,
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
+      },
+      "$comment": "Up to 11 entries, stored as an array in one field (D021). Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f32221": {
+      "title": "Home location history - east co-ordinate (100m resolution)",
+      "x-unit": "metre-grid",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 11,
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "not": {
+                  "enum": [
+                    -999,
+                    -998,
+                    -997
+                  ]
+                }
+              },
+              {
+                "const": -999,
+                "title": "Grid co-ordinates could not be assigned to address"
+              },
+              {
+                "const": -998,
+                "title": "Participant's address flagged as invalid"
+              },
+              {
+                "const": -997,
+                "title": "Grid co-ordinates redacted"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -999
+          ],
+          "title": "Grid co-ordinates could not be assigned to address"
+        },
+        {
+          "const": [
+            -998
+          ],
+          "title": "Participant's address flagged as invalid"
+        },
+        {
+          "const": [
+            -997
+          ],
+          "title": "Grid co-ordinates redacted"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2535. Up to 11 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Marked private in UK Biobank's field list."
+    },
+    "f32222": {
+      "title": "Home location history - north co-ordinate (100m resolution)",
+      "x-unit": "metre-grid",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 11,
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "not": {
+                  "enum": [
+                    -999,
+                    -998,
+                    -997
+                  ]
+                }
+              },
+              {
+                "const": -999,
+                "title": "Grid co-ordinates could not be assigned to address"
+              },
+              {
+                "const": -998,
+                "title": "Participant's address flagged as invalid"
+              },
+              {
+                "const": -997,
+                "title": "Grid co-ordinates redacted"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -999
+          ],
+          "title": "Grid co-ordinates could not be assigned to address"
+        },
+        {
+          "const": [
+            -998
+          ],
+          "title": "Participant's address flagged as invalid"
+        },
+        {
+          "const": [
+            -997
+          ],
+          "title": "Grid co-ordinates redacted"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2535. Up to 11 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Marked private in UK Biobank's field list."
+    },
+    "f32223": {
+      "title": "Home location history - east co-ordinate (1km resolution)",
+      "x-unit": "metre-grid",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 11,
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "not": {
+                  "enum": [
+                    -999,
+                    -998,
+                    -997
+                  ]
+                }
+              },
+              {
+                "const": -999,
+                "title": "Grid co-ordinates could not be assigned to address"
+              },
+              {
+                "const": -998,
+                "title": "Participant's address flagged as invalid"
+              },
+              {
+                "const": -997,
+                "title": "Grid co-ordinates redacted"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -999
+          ],
+          "title": "Grid co-ordinates could not be assigned to address"
+        },
+        {
+          "const": [
+            -998
+          ],
+          "title": "Participant's address flagged as invalid"
+        },
+        {
+          "const": [
+            -997
+          ],
+          "title": "Grid co-ordinates redacted"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2535. Up to 11 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Marked private in UK Biobank's field list."
+    },
+    "f32224": {
+      "title": "Home location history - north co-ordinate (1km resolution)",
+      "x-unit": "metre-grid",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": false,
+          "minItems": 0,
+          "maxItems": 11,
+          "items": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "not": {
+                  "enum": [
+                    -999,
+                    -998,
+                    -997
+                  ]
+                }
+              },
+              {
+                "const": -999,
+                "title": "Grid co-ordinates could not be assigned to address"
+              },
+              {
+                "const": -998,
+                "title": "Participant's address flagged as invalid"
+              },
+              {
+                "const": -997,
+                "title": "Grid co-ordinates redacted"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            -999
+          ],
+          "title": "Grid co-ordinates could not be assigned to address"
+        },
+        {
+          "const": [
+            -998
+          ],
+          "title": "Participant's address flagged as invalid"
+        },
+        {
+          "const": [
+            -997
+          ],
+          "title": "Grid co-ordinates redacted"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2535. Up to 11 entries, stored as an array in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031). Marked private in UK Biobank's field list."
+    }
+  },
+  "required": [
+    "f32220",
+    "f32221",
+    "f32222",
+    "f32223",
+    "f32224"
+  ]
+}

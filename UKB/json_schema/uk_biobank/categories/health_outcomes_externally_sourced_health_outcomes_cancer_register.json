@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/health_outcomes_externally_sourced_health_outcomes_cancer_register.json",
+  "title": "Health outcomes — Externally sourced health outcomes: Cancer register",
+  "description": "UK Biobank fields in the category Health outcomes > Externally sourced health outcomes > Cancer register, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "health_outcomes_externally_sourced_health_outcomes_cancer_register",
+  "properties": {
+    "f40005": {
+      "title": "Date of cancer diagnosis",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f40009": {
+      "title": "Reported occurrences of cancer",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "f40011": {
+      "title": "Histology of cancer tumour",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "f40012": {
+      "title": "Behaviour of cancer tumour",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "f40019": {
+      "title": "Cancer record format",
+      "oneOf": [
+        {
+          "const": 3,
+          "title": "NHS Information Centre Cancer Registry 2012 onwards"
+        },
+        {
+          "const": 4,
+          "title": "Scottish Cancer Registry (fixed width format) 2012 onwards"
+        },
+        {
+          "const": 13,
+          "title": "National Cancer Intelligence Network (NCIN) Cancer Data"
+        },
+        {
+          "const": 22,
+          "title": "Scottish Cancer Registry (fixed width format) 2012 onwards"
+        },
+        {
+          "const": 23,
+          "title": "NHS Information Centre Cancer Registry 2016 onwards"
+        },
+        {
+          "const": 73,
+          "title": "NHSD Cancer (2020- format)"
+        },
+        {
+          "const": 74,
+          "title": "PHS Enhanced cancer subset (2015-, selected records)"
+        },
+        {
+          "const": 75,
+          "title": "NRS Cancer (2018- format)"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 262."
+    }
+  },
+  "required": [
+    "f40005",
+    "f40009",
+    "f40011",
+    "f40012",
+    "f40019"
+  ]
+}

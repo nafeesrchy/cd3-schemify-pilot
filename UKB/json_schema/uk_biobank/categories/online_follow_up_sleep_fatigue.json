@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/online_follow_up_sleep_fatigue.json",
+  "title": "Online follow-up — Sleep: Fatigue",
+  "description": "UK Biobank fields in the category Online follow-up > Sleep > Fatigue, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "online_follow_up_sleep_fatigue",
+  "properties": {
+    "f30572": {
+      "title": "Fatigue a problem over the last two weeks",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0 - Not at all"
+        },
+        {
+          "const": 1,
+          "title": "1"
+        },
+        {
+          "const": 2,
+          "title": "2 - Moderately"
+        },
+        {
+          "const": 3,
+          "title": "3"
+        },
+        {
+          "const": 4,
+          "title": "4 - Extremely"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2575."
+    },
+    "f30573": {
+      "title": "Fatigue causing problems with everyday functioning over the last two weeks",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0 - Not at all"
+        },
+        {
+          "const": 1,
+          "title": "1"
+        },
+        {
+          "const": 2,
+          "title": "2 - Moderately"
+        },
+        {
+          "const": 3,
+          "title": "3"
+        },
+        {
+          "const": 4,
+          "title": "4 - Extremely"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2575."
+    },
+    "f30574": {
+      "title": "Fatigue causing distress over the last two weeks",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0 - Not at all"
+        },
+        {
+          "const": 1,
+          "title": "1"
+        },
+        {
+          "const": 2,
+          "title": "2 - Moderately"
+        },
+        {
+          "const": 3,
+          "title": "3"
+        },
+        {
+          "const": 4,
+          "title": "4 - Extremely"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2575."
+    },
+    "f30575": {
+      "title": "Frequency of fatigue over the last two weeks",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0 days per week"
+        },
+        {
+          "const": 1,
+          "title": "1-2 days per week"
+        },
+        {
+          "const": 2,
+          "title": "3-4 days per week"
+        },
+        {
+          "const": 3,
+          "title": "5-6 days per week"
+        },
+        {
+          "const": 4,
+          "title": "7 days per week"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2576."
+    },
+    "f30576": {
+      "title": "Time of day fatigue was suffered over the last two weeks",
+      "anyOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "maxItems": 7,
+          "items": {
+            "oneOf": [
+              {
+                "const": 1,
+                "title": "Early morning"
+              },
+              {
+                "const": 2,
+                "title": "Mid morning"
+              },
+              {
+                "const": 3,
+                "title": "Midday"
+              },
+              {
+                "const": 4,
+                "title": "Mid afternoon"
+              },
+              {
+                "const": 5,
+                "title": "Late afternoon"
+              },
+              {
+                "const": 6,
+                "title": "Early evening"
+              },
+              {
+                "const": 7,
+                "title": "Late evening"
+              }
+            ]
+          }
+        },
+        {
+          "const": [
+            1
+          ],
+          "title": "Early morning"
+        },
+        {
+          "const": [
+            2
+          ],
+          "title": "Mid morning"
+        },
+        {
+          "const": [
+            3
+          ],
+          "title": "Midday"
+        },
+        {
+          "const": [
+            4
+          ],
+          "title": "Mid afternoon"
+        },
+        {
+          "const": [
+            5
+          ],
+          "title": "Late afternoon"
+        },
+        {
+          "const": [
+            6
+          ],
+          "title": "Early evening"
+        },
+        {
+          "const": [
+            7
+          ],
+          "title": "Late evening"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2577. Up to 7 selections. Multi-select: stored as an array of codes in one field (D021). Each single choice is also listed as a one-item array so the dictionary page shows the options (D031)."
+    },
+    "f30577": {
+      "title": "Severity of fatigue over the last two weeks",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0 - Not at all"
+        },
+        {
+          "const": 1,
+          "title": "1"
+        },
+        {
+          "const": 2,
+          "title": "2 - Moderately"
+        },
+        {
+          "const": 3,
+          "title": "3"
+        },
+        {
+          "const": 4,
+          "title": "4 - Extremely"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2575."
+    },
+    "f30578": {
+      "title": "Fatigue caused by poor sleep over the last two weeks",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "0 - Not at all"
+        },
+        {
+          "const": 1,
+          "title": "1"
+        },
+        {
+          "const": 2,
+          "title": "2 - Moderately"
+        },
+        {
+          "const": 3,
+          "title": "3"
+        },
+        {
+          "const": 4,
+          "title": "4 - Extremely"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 2575."
+    },
+    "f32123": {
+      "title": "When online fatigue questionnaire started",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f32124": {
+      "title": "When online fatigue questionnaire completed",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    }
+  },
+  "required": [
+    "f30572",
+    "f30573",
+    "f30574",
+    "f30575",
+    "f30576",
+    "f30577",
+    "f30578",
+    "f32123",
+    "f32124"
+  ]
+}

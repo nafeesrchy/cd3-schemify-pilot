@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/assessment_centre_touchscreen_questionnaire_early_life_factors.json",
+  "title": "Assessment centre — Touchscreen questionnaire: Early life factors",
+  "description": "UK Biobank fields in the category Assessment centre > Touchscreen questionnaire > Early life factors, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "assessment_centre_touchscreen_questionnaire_early_life_factors",
+  "properties": {
+    "f1647": {
+      "title": "Country of birth (UK/elsewhere)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "England"
+        },
+        {
+          "const": 2,
+          "title": "Wales"
+        },
+        {
+          "const": 3,
+          "title": "Scotland"
+        },
+        {
+          "const": 4,
+          "title": "Northern Ireland"
+        },
+        {
+          "const": 5,
+          "title": "Republic of Ireland"
+        },
+        {
+          "const": 6,
+          "title": "Elsewhere"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100420. Initial assessment visit (instance 0)."
+    },
+    "f1677": {
+      "title": "Breastfed as a baby",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1687": {
+      "title": "Comparative body size at age 10",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Thinner"
+        },
+        {
+          "const": 2,
+          "title": "Plumper"
+        },
+        {
+          "const": 3,
+          "title": "About average"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100428. Initial assessment visit (instance 0)."
+    },
+    "f1697": {
+      "title": "Comparative height size at age 10",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Shorter"
+        },
+        {
+          "const": 2,
+          "title": "Taller"
+        },
+        {
+          "const": 3,
+          "title": "About average"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100429. Initial assessment visit (instance 0)."
+    },
+    "f1707": {
+      "title": "Handedness (chirality/laterality)",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Right-handed"
+        },
+        {
+          "const": 2,
+          "title": "Left-handed"
+        },
+        {
+          "const": 3,
+          "title": "Use both right and left hands equally"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100430. Initial assessment visit (instance 0)."
+    },
+    "f1767": {
+      "title": "Adopted as a child",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1777": {
+      "title": "Part of a multiple birth",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    },
+    "f1787": {
+      "title": "Maternal smoking around birth",
+      "oneOf": [
+        {
+          "const": 0,
+          "title": "No"
+        },
+        {
+          "const": 1,
+          "title": "Yes"
+        },
+        {
+          "const": -3,
+          "title": "Prefer not to answer"
+        },
+        {
+          "const": -1,
+          "title": "Do not know"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 100349. Initial assessment visit (instance 0)."
+    }
+  },
+  "required": [
+    "f1647",
+    "f1677",
+    "f1687",
+    "f1697",
+    "f1707",
+    "f1767",
+    "f1777",
+    "f1787"
+  ]
+}

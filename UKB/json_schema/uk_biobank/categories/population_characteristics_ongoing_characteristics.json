@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.org/cd3-ukb-pilot/uk_biobank/categories/population_characteristics_ongoing_characteristics.json",
+  "title": "Population characteristics — Ongoing characteristics",
+  "description": "UK Biobank fields in the category Population characteristics > Ongoing characteristics, as selected by the CD3 researchers.",
+  "type": "object",
+  "x-variable-group": "population_characteristics_ongoing_characteristics",
+  "properties": {
+    "f190": {
+      "title": "Reason lost to follow-up",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Death reported to UK Biobank by a relative"
+        },
+        {
+          "const": 2,
+          "title": "NHS records indicate they are lost to follow-up"
+        },
+        {
+          "const": 3,
+          "title": "NHS records indicate they have left the UK"
+        },
+        {
+          "const": 4,
+          "title": "UK Biobank sources report they have left the UK"
+        },
+        {
+          "const": 5,
+          "title": "Participant has withdrawn consent for future linkage"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1965. If more than one reason applies, only the earliest is recorded. Source notes this field has not been updated since May 2017."
+    },
+    "f191": {
+      "title": "Date lost to follow-up",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "If more than one reason for loss to follow-up applies, only the date of the earliest is recorded. Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f20005": {
+      "title": "Email access",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Current, email address assumed working"
+        },
+        {
+          "const": 2,
+          "title": "Unusable, email address failed or withdrawn"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1007. Deduced from whether the participant supplied an email address to UK Biobank; flagged Unusable on a syntax error, a bounce-back, or a withdrawal request. The address itself is never released to researchers."
+    },
+    "f20143": {
+      "title": "Date of last personal contact with UK Biobank",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Most recent occasion a participant personally contributed data: an assessment centre visit, an online questionnaire, or returning a device. Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    },
+    "f20144": {
+      "title": "Mode of last personal contact with UK Biobank",
+      "oneOf": [
+        {
+          "const": 1,
+          "title": "Assessment centre visit"
+        },
+        {
+          "const": 2,
+          "title": "Online questionnaire"
+        },
+        {
+          "const": 3,
+          "title": "Device interaction"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "$comment": "Source coding: encoding 1371."
+    },
+    "f20145": {
+      "title": "Number of personal contacts with UK Biobank",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "$comment": "Count of occasions a participant personally contributed data (assessment centre visit, online questionnaire, or device use/return). No plausibility bound stated (D013)."
+    },
+    "f110007": {
+      "title": "Newsletter communications, date sent",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$",
+      "$comment": "Dispatch date only; does not imply successful receipt or that the recipient read the newsletter. Date format YYYY-MM-DD (ISO 8601) is assumed, not stated by the source (D015)."
+    }
+  },
+  "required": [
+    "f190",
+    "f191",
+    "f20005",
+    "f20143",
+    "f20144",
+    "f20145",
+    "f110007"
+  ]
+}
